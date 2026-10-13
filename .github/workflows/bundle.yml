@@ -17,6 +17,7 @@ jobs:
       batches: ${{ steps.changes.outputs.batches }}
       deleted: ${{ steps.changes.outputs.deleted }}
       checks-only: ${{ steps.changes.outputs.checks-only }}
+      configured: ${{ steps.server.outputs.configured }}
 
     steps:
       - name: Checkout
@@ -32,19 +33,36 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "pull_request" ] ; then
             BASE=${{ github.event.pull_request.base.sha }} ;
+            BATCH=10 ;
             echo checks-only=true >> $GITHUB_OUTPUT ;
           else
             BASE=${{ github.event.before }} ;
+            BATCH=50 ;
             echo checks-only=false >> $GITHUB_OUTPUT ;
           fi ;
           if ! git cat-file -e "$BASE^{commit}" 2>/dev/null ; then
             BASE=$( git hash-object -t tree /dev/null ) ;
           fi ;
-          python3 tools/publish.py changed --batch 10 "$BASE" "${{ github.sha }}" > changes.json ;
+          python3 tools/publish.py changed --batch "$BATCH" "$BASE" "${{ github.sha }}" > changes.json ;
           echo batches=$( jq -c '.batches' changes.json ) >> $GITHUB_OUTPUT ;
           echo deleted=$( jq -c '.deleted' changes.json ) >> $GITHUB_OUTPUT ;
           jq -r '.changed[]' changes.json > changed.txt ;
           echo "BASE=$BASE" >> $GITHUB_ENV ;
+
+      - name: Check server settings
+        id: server
+        env:
+          HAS_URL: ${{ vars.QU_CATALOG_URL != '' }}
+          HAS_TOKEN: ${{ secrets.QU_CI_TOKEN != '' }}
+        run: |
+          if [ "$HAS_URL" = "true" ] && [ "$HAS_TOKEN" = "true" ] ; then
+            echo configured=true >> $GITHUB_OUTPUT ;
+          else
+            echo configured=false >> $GITHUB_OUTPUT ;
+            if [ "${{ github.event_name }}" = "push" ] ; then
+              echo "::warning::QU_CATALOG_URL variable or QU_CI_TOKEN secret is not set, nothing is submitted" ;
+            fi ;
+          fi
 
       - name: Generate diff comment data
         id: diff-comment
@@ -98,7 +116,7 @@ jobs:
   build-package:
     name: Build package
     needs: process-manifests
-    if: needs.process-manifests.outputs.batches != '[]'
+    if: needs.process-manifests.outputs.batches != '[]' && (needs.process-manifests.outputs.checks-only == 'true' || needs.process-manifests.outputs.configured == 'true')
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -115,9 +133,15 @@ jobs:
           cache: 'pip'
 
       - name: Setup Python requirements
+        if: needs.process-manifests.outputs.checks-only == 'true'
         run: python3 -m pip install -r tools/requirements.txt
 
+      - name: Setup publish requirements
+        if: needs.process-manifests.outputs.checks-only != 'true'
+        run: python3 -m pip install pyyaml
+
       - name: Setup ufbt
+        if: needs.process-manifests.outputs.checks-only == 'true'
         uses: flipperdevices/flipperzero-ufbt-action@v0.1
         with:
           task: setup
@@ -138,15 +162,14 @@ jobs:
           QU_CI_TOKEN: ${{ secrets.QU_CI_TOKEN }}
           MANIFESTS: ${{ toJson(matrix.manifests) }}
         run: |
-          echo "::add-matcher::${{ github.workspace }}/.github/problem-matcher.json" ;
           mapfile -t list < <( jq -r '.[]' <<< "$MANIFESTS" ) ;
-          .github/scripts/process.sh publish "${list[@]}"
+          python3 tools/publish.py publish "${list[@]}"
 
 
   delete-entries:
     name: Delete entries
     needs: process-manifests
-    if: needs.process-manifests.outputs.deleted != '[]' && needs.process-manifests.outputs.checks-only != 'true'
+    if: needs.process-manifests.outputs.deleted != '[]' && needs.process-manifests.outputs.checks-only != 'true' && needs.process-manifests.outputs.configured == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -167,7 +190,7 @@ jobs:
   self-test:
     name: Run self-test
     needs: process-manifests
-    if: needs.process-manifests.outputs.deleted == '[]' && needs.process-manifests.outputs.batches == '[]'
+    if: github.event_name == 'pull_request' && needs.process-manifests.outputs.deleted == '[]' && needs.process-manifests.outputs.batches == '[]'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

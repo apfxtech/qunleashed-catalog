@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-# Usage: process.sh check|publish <manifest>...
+# Usage: process.sh check <manifest>...
 set -uo pipefail
 
 mode=$1
 shift
+[ "$mode" = "check" ] || { echo "process.sh only checks; publishing is tools/publish.py" >&2; exit 2; }
 root=$(cd "$(dirname "$0")/../.." && pwd)
 work=${RUNNER_TEMP:-$(mktemp -d)}
 failed=0
@@ -43,21 +44,9 @@ for manifest in "$@"; do
       if ! bundle_entry "$manifest"; then
         echo "::error file=$manifest::bundle failed"
         failed=1
-      elif [ "$mode" = "check" ]; then
-        case "$manifest" in
-          applications/*) version_is_new "$manifest" || failed=1 ;;
-        esac
       else
         case "$manifest" in
-          applications/*)
-            curl --fail-with-body \
-              -H "Authorization: Bearer $QU_CI_TOKEN" \
-              -F "bundle=@$work/bundle.zip" \
-              "$QU_CATALOG_URL/api/v0/application/version/bundle" || failed=1
-            ;;
-          menustyles/*)
-            python3 "$root/tools/publish.py" publish "$manifest" || failed=1
-            ;;
+          applications/*) version_is_new "$manifest" || failed=1 ;;
         esac
       fi
       ;;

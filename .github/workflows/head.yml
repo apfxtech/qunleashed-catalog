@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       batches: ${{ steps.list.outputs.batches }}
+      configured: ${{ steps.server.outputs.configured }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,12 +25,25 @@ jobs:
       - name: List
         id: list
         run: |
-          echo batches=$( python3 tools/publish.py list --unpinned --batch 10 ) >> $GITHUB_OUTPUT ;
+          echo batches=$( python3 tools/publish.py list --unpinned --batch 50 ) >> $GITHUB_OUTPUT ;
+
+      - name: Check server settings
+        id: server
+        env:
+          HAS_URL: ${{ vars.QU_CATALOG_URL != '' }}
+          HAS_TOKEN: ${{ secrets.QU_CI_TOKEN != '' }}
+        run: |
+          if [ "$HAS_URL" = "true" ] && [ "$HAS_TOKEN" = "true" ] ; then
+            echo configured=true >> $GITHUB_OUTPUT ;
+          else
+            echo configured=false >> $GITHUB_OUTPUT ;
+            echo "::warning::QU_CATALOG_URL variable or QU_CI_TOKEN secret is not set, nothing is submitted" ;
+          fi
 
   submit:
     name: Submit from HEAD
     needs: list-unpinned
-    if: needs.list-unpinned.outputs.batches != '[]'
+    if: needs.list-unpinned.outputs.batches != '[]' && needs.list-unpinned.outputs.configured == 'true'
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -46,19 +60,12 @@ jobs:
           cache: 'pip'
 
       - name: Setup Python requirements
-        run: python3 -m pip install -r tools/requirements.txt
-
-      - name: Setup ufbt
-        uses: flipperdevices/flipperzero-ufbt-action@v0.1
-        with:
-          task: setup
-          skip-setup: true
+        run: python3 -m pip install pyyaml
 
       - name: Submit manifests
         env:
           QU_CI_TOKEN: ${{ secrets.QU_CI_TOKEN }}
           MANIFESTS: ${{ toJson(matrix.manifests) }}
         run: |
-          echo "::add-matcher::${{ github.workspace }}/.github/problem-matcher.json" ;
           mapfile -t list < <( jq -r '.[]' <<< "$MANIFESTS" ) ;
-          .github/scripts/process.sh publish "${list[@]}"
+          python3 tools/publish.py publish "${list[@]}"

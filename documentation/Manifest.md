@@ -300,6 +300,6 @@ If there are any errors, the script will print them and exit with non-zero exit 
 ## Build process
 
 1. A pull request runs `tools/bundle.py` for every changed app and menu style manifest, and `tools/publish.py check` for animations. Nothing is submitted.
-2. A push to `main` does the same and submits the result to the catalog server: app bundles to `/api/v0/application/version/bundle`, menu style sources to `/api/v1/sources/upload`, animation bundles to `/api/v1/animations/version/bundle`. A changed file next to an animation manifest counts as a change of that animation. A deleted app manifest hides the app.
+2. A push to `main` submits every changed manifest to the catalog server without building it in CI, since the server builds for every SDK itself: app and menu style sources to `/api/v1/sources/upload`, animation bundles to `/api/v1/animations/version/bundle`. A changed file next to an animation manifest counts as a change of that animation. A deleted app manifest hides the app. Nothing is submitted while the `QU_CATALOG_URL` variable or the `QU_CI_TOKEN` secret is not set.
 3. Once a day, every manifest without `commit_sha` is processed again from the repository HEAD.
 4. The server builds what it receives for its Release and Development SDK; an entry is shown in qUnleashed once it has a successful build for the user's firmware.
