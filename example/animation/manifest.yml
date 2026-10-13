@@ -1,0 +1,23 @@
+## This is a sample dolphin animation manifest for the qUnleashed Catalog.
+## Create one for your animation in a corresponding directory in the 'animations' folder,
+## for this one: animations/Stopoxy/stopoxy_goku_128x64/manifest.yml
+## The folder name is the name the animation gets on the SD card.
+
+sourcecode:
+  type: git
+  location:
+    ## Specify the git URL of the repository with the animation
+    ## (leave origin and commit_sha out to use the files next to this manifest)
+    origin: https://github.com/stopoxy/FZAnimations.git
+    ## Put the full commit SHA of the commit with the animation you want to submit
+    commit_sha: e73a939ed2d5dedcddb1bddd4d23cf091b56e5fc
+    ## The folder with meta.txt and frame_*.bm
+    subdir: stopoxy_goku_128x64
+author: "@stopoxy"
+short_description: Goku on the dolphin screen.
+## The entry for dolphin/manifest.txt
+weight: 3
+min_butthurt: 0
+max_butthurt: 14
+min_level: 1
+max_level: 30

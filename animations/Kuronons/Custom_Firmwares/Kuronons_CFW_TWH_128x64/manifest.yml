@@ -1,0 +1,5 @@
+sourcecode:
+  type: git
+  location:
+    subdir: .
+author: '@Kuronons'

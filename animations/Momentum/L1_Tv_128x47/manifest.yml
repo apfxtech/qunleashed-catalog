@@ -1,0 +1,9 @@
+sourcecode:
+  type: git
+  location:
+    subdir: .
+min_butthurt: 0
+max_butthurt: 9
+min_level: 3
+max_level: 30
+weight: 3

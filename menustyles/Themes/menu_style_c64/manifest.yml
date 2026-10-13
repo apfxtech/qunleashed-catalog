@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/apfxtech/all-menu-styles.git
+    commit_sha: ad72c2a8af9390f591ee162d630103138a001e6b
+id: menu_style_c64
+short_description: Commodore 64 main menu.
+description: Main menu drawn as a Commodore 64 BASIC screen.
+changelog: |
+  v0.1:
+  first version
+screenshots:
+  - screenshots/basic/1.png
+  - screenshots/basic/2.png
+  - screenshots/basic/3.png

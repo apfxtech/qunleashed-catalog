@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/apfxtech/all-menu-styles.git
+    commit_sha: ad72c2a8af9390f591ee162d630103138a001e6b
+id: menu_style_grid
+short_description: Grid menu.
+description: Main menu as a grid of apps with a page counter.
+changelog: |
+  v0.1:
+  first version
+screenshots:
+  - screenshots/grid/1.png
+  - screenshots/grid/2.png

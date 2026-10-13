@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/apfxtech/all-menu-styles.git
+    commit_sha: ad72c2a8af9390f591ee162d630103138a001e6b
+id: menu_style_favorites
+short_description: Favorites menu.
+description: Main menu of your favorite apps, added from the Archive.
+changelog: |
+  v0.1:
+  first version
+screenshots:
+  - screenshots/favorites/1.png
+  - screenshots/favorites/2.png
+  - screenshots/favorites/3.png

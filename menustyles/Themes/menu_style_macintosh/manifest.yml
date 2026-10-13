@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/apfxtech/all-menu-styles.git
+    commit_sha: ad72c2a8af9390f591ee162d630103138a001e6b
+id: menu_style_macintosh
+short_description: Classic Macintosh main menu.
+description: Main menu in the style of the classic Macintosh desktop.
+changelog: |
+  v0.1:
+  first version
+screenshots:
+  - screenshots/macintosh/1.png
+  - screenshots/macintosh/2.png
+  - screenshots/macintosh/3.png

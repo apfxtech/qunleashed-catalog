@@ -1,0 +1,19 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/quen0n/unitemp-flipperzero.git
+    commit_sha: ae6271000f9f4a06ea8f36bb86229159331d9e6e
+category: "GPIO/Sensors"
+description: "@README_CATALOG.md"
+changelog: "@CHANGELOG.md"
+version: "2.1"
+screenshots:
+  - ".github/images/screenshots/1.png"
+  - ".github/images/screenshots/2.png"
+  - ".github/images/screenshots/3.png"
+  - ".github/images/screenshots/4.png"
+  - ".github/images/screenshots/5.png"
+  - ".github/images/screenshots/6.png"
+  - ".github/images/screenshots/7.png"
+  - ".github/images/screenshots/8.png"
+  - ".github/images/screenshots/9.png"

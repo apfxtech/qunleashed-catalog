@@ -1,0 +1,7 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/stopoxy/FZAnimations.git
+    commit_sha: e73a939ed2d5dedcddb1bddd4d23cf091b56e5fc
+    subdir: STOPOXY_WHISPER_OF_THE_HEART_128x64
+author: '@stopoxy'

@@ -1,0 +1,64 @@
+name: Follow HEAD
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+env:
+  QU_CATALOG_URL: ${{ vars.QU_CATALOG_URL }}
+
+jobs:
+  list-unpinned:
+    name: List manifests without commit_sha
+    runs-on: ubuntu-latest
+    outputs:
+      batches: ${{ steps.list.outputs.batches }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python requirements
+        run: python3 -m pip install pyyaml
+
+      - name: List
+        id: list
+        run: |
+          echo batches=$( python3 tools/publish.py list --unpinned --batch 10 ) >> $GITHUB_OUTPUT ;
+
+  submit:
+    name: Submit from HEAD
+    needs: list-unpinned
+    if: needs.list-unpinned.outputs.batches != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        manifests: ${{ fromJson(needs.list-unpinned.outputs.batches) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Setup Python requirements
+        run: python3 -m pip install -r tools/requirements.txt
+
+      - name: Setup ufbt
+        uses: flipperdevices/flipperzero-ufbt-action@v0.1
+        with:
+          task: setup
+          skip-setup: true
+
+      - name: Submit manifests
+        env:
+          QU_CI_TOKEN: ${{ secrets.QU_CI_TOKEN }}
+          MANIFESTS: ${{ toJson(matrix.manifests) }}
+        run: |
+          echo "::add-matcher::${{ github.workspace }}/.github/problem-matcher.json" ;
+          mapfile -t list < <( jq -r '.[]' <<< "$MANIFESTS" ) ;
+          .github/scripts/process.sh publish "${list[@]}"

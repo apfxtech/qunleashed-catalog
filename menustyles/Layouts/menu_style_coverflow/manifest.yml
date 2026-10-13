@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/apfxtech/all-menu-styles.git
+    commit_sha: ad72c2a8af9390f591ee162d630103138a001e6b
+id: menu_style_coverflow
+short_description: Cover flow menu.
+description: Main menu as a cover flow you scroll sideways.
+changelog: |
+  v0.1:
+  first version
+screenshots:
+  - screenshots/coverflow/1.png
+  - screenshots/coverflow/2.png
+  - screenshots/coverflow/3.png

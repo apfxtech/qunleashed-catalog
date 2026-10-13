@@ -1,0 +1,10 @@
+sourcecode:
+  type: git
+  location:
+    subdir: .
+author: '@Kuronons'
+min_butthurt: 0
+max_butthurt: 14
+min_level: 1
+max_level: 30
+weight: 8

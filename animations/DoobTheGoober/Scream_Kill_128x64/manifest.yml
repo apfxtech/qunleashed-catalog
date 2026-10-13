@@ -1,0 +1,7 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/DoobTheGoober/FlipperZeroAnimation.git
+    commit_sha: 27835e886eca44dfee2546b4026c9a388ffb733f
+    subdir: Scream/Scream_Kill_128x64
+author: '@DoobTheGoober'
