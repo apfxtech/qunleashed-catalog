@@ -1,0 +1,6 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/iso15693_nfc_writer
+id: iso15693_nfc_writer

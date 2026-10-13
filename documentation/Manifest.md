@@ -196,6 +196,10 @@ sourcecode:
 
 Such an entry is built from the repository HEAD. The CI re-reads it once a day and publishes a new version when its version changes. Whether a repository is trusted is decided at review; for everyone else `commit_sha` is required.
 
+### Missing metadata
+
+Some sources, such as [all-the-plugins](https://github.com/xMasterX/all-the-plugins), carry code but no catalog metadata. When an app or menu style manifest has no `screenshots`, the CI submits a blank white screenshot; an empty `short_description` becomes the app name, an empty `description` becomes the short description, and an empty `changelog` becomes `v<version>`. Nothing is added to the source repository. This is how the catalog lists apps that exist only in all-the-plugins, and apps whose copy there is patched for Unleashed in place of the original upstream.
+
 ### Version
 
 The version is used to determine whether a new version is available for installation on the device. All submitted updates must use a higher version number than the previous one, otherwise the update will be rejected.

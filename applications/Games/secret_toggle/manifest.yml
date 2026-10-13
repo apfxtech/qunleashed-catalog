@@ -1,10 +1,8 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/nostrumuva/secret_toggle.git
-    commit_sha: 82f7532c5f4df295d68adaa1ee4201f1bd403028
-description: "@README.md"
-changelog: "v1.0 - Initial release"
-author: "@nostrumuva"
-screenshots:
-  - "screenshot.png"
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/secret_toggle
+id: secret_toggle
+author: '@nostrumuva'
+changelog: v1.0 - Initial release

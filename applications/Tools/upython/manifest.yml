@@ -1,11 +1,6 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/ofabel/mp-flipper.git
-    commit_sha: 602080eca907cad035f570541384137d786ad52a
-description: "@./docs/README.md"
-changelog: "@./docs/CHANGELOG.md"
-screenshots:
-  - docs/welcome.png
-  - docs/file-browser.png
-  - docs/tic-tac-toe.png
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/mp_flipper
+id: upython

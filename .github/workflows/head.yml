@@ -4,13 +4,21 @@ on:
   schedule:
     - cron: "0 1 * * *"
   workflow_dispatch:
+    inputs:
+      scope:
+        description: "unpinned: manifests without commit_sha; all: every manifest in the repository"
+        type: choice
+        options:
+          - unpinned
+          - all
+        default: unpinned
 
 env:
   QU_CATALOG_URL: ${{ vars.QU_CATALOG_URL }}
 
 jobs:
   list-unpinned:
-    name: List manifests without commit_sha
+    name: List manifests
     runs-on: ubuntu-latest
     outputs:
       batches: ${{ steps.list.outputs.batches }}
@@ -25,7 +33,11 @@ jobs:
       - name: List
         id: list
         run: |
-          echo batches=$( python3 tools/publish.py list --unpinned --batch 50 ) >> $GITHUB_OUTPUT ;
+          if [ "${{ inputs.scope }}" = "all" ] ; then
+            echo batches=$( python3 tools/publish.py list --batch 50 ) >> $GITHUB_OUTPUT ;
+          else
+            echo batches=$( python3 tools/publish.py list --unpinned --batch 50 ) >> $GITHUB_OUTPUT ;
+          fi
 
       - name: Check server settings
         id: server
@@ -41,7 +53,7 @@ jobs:
           fi
 
   submit:
-    name: Submit from HEAD
+    name: Submit
     needs: list-unpinned
     if: needs.list-unpinned.outputs.batches != '[]' && needs.list-unpinned.outputs.configured == 'true'
     runs-on: ubuntu-latest

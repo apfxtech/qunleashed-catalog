@@ -1,12 +1,11 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/Erbonator3000/Flipper-Zero-Space-Impact-II
-    commit_sha: 5f618a1bb269cfea799699e7fe0f6567e2a8f9c9
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/Flipper-Zero-Space-Impact-II
+id: spaceimpactii985e
+category: Games/Arcade
 short_description: Space Impact II clone
-description: |
-  Clone of classic mobile phone game Space Impact II
-changelog: "@changelog.md"
-screenshots:
-  - screenshots/gameplay.png
-category: "Games/Arcade"
+description: 'Clone of classic mobile phone game Space Impact II
+
+  '

@@ -1,14 +1,8 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/mentoster/flipper-hero
-    commit_sha: 397580153d091cade8cc82c0c587d71400c2c3e9
-description: "@./docs/README.md"
-changelog: "@./docs/changelog.md"
-author: "Mentoster"
-screenshots:
-  - "./screenshots/Screenshot-1.png"
-  - "./screenshots/Screenshot-2.png"
-  - "./screenshots/Screenshot-3.png"
-  - "./screenshots/Screenshot-4.png"
-category: "Games/Arcade"
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/flipper_hero
+id: flipper_hero
+category: Games/Arcade
+author: Mentoster

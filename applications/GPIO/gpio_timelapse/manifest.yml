@@ -1,0 +1,6 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: apps_source_code/timelapse
+id: gpio_timelapse

@@ -1,12 +1,13 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/QtRoS/flipper-zero-hex-viewer.git
-    commit_sha: 868d25451684cc55ff918526df4562fe07e58c66
-description: "App allows to view various files as HEX."
-changelog: "v2.0 - Scrolling to any % and interal refactoring, v1.1 - Various important fixes, v1.0 - Initial release"
-author: "@QtRoS"
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: base_pack/hex_viewer
+id: hex_viewer
+category: Tools/Editors
+author: '@QtRoS'
+description: App allows to view various files as HEX.
+changelog: v2.0 - Scrolling to any % and interal refactoring, v1.1 - Various important fixes, v1.0 - Initial release
 screenshots:
-  - "./img/2.png"
-  - "./img/1.png"
-category: "Tools/Editors"
+- ./img/2.png
+- ./img/1.png

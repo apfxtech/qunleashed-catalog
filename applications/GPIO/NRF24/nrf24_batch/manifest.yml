@@ -1,0 +1,7 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/nrf24-batch
+id: nrf24_batch
+category: GPIO/NRF24

@@ -1,10 +1,6 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/RebornedBrain/nfc_eink.git
-    commit_sha: edd3900c30608e9301be85bbe997833e54a1f220
-description: "@README.md"
-changelog: "@changelog.md"
-screenshots:
-  - screenshots/1.png
-  - screenshots/2.png
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: base_pack/nfc_eink
+id: nfc_eink

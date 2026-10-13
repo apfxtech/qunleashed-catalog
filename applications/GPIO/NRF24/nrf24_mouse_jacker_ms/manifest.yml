@@ -1,0 +1,7 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/mousejacker_ms
+id: nrf24_mouse_jacker_ms
+category: GPIO/NRF24

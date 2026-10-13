@@ -1,0 +1,6 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/claude_remote_ble
+id: claude_remote_ble

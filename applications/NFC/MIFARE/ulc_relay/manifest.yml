@@ -1,0 +1,7 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/ulc_relay
+id: ulc_relay
+category: NFC/MIFARE

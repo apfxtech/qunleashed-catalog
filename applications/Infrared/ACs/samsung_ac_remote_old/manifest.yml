@@ -1,0 +1,7 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/samsung_ac_remote_old
+id: samsung_ac_remote_old
+category: Infrared/ACs

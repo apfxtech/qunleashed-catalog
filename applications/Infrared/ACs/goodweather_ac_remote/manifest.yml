@@ -1,0 +1,7 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/goodweather_ac_remote
+id: goodweather_ac_remote
+category: Infrared/ACs

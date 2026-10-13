@@ -2,6 +2,8 @@ import argparse
 import json
 import os
 import re
+import shutil
+import struct
 import subprocess
 import sys
 import tempfile
@@ -9,6 +11,7 @@ import urllib.error
 import urllib.request
 import uuid
 import zipfile
+import zlib
 from pathlib import Path
 
 import yaml
@@ -121,16 +124,24 @@ def resolve_subdir(entry: Entry, base: Path) -> Path:
     return code
 
 
-def checkout(entry: Entry, dest: Path) -> tuple[Path, str, str]:
+_clones: dict[tuple[str, str], tuple[Path, str]] = {}
+
+
+def checkout(entry: Entry, clones: Path) -> tuple[Path, str, str]:
     if entry.local:
         return resolve_subdir(entry, entry.path.parent), git(["rev-parse", "HEAD"], ROOT), catalog_origin()
-    dest.mkdir(parents=True, exist_ok=True)
-    git(["init", "-q"], dest)
-    git(["remote", "add", "origin", entry.origin], dest)
-    git(["fetch", "-q", "--depth", "1", "origin", entry.commit_sha or "HEAD"], dest)
-    git(["-c", "advice.detachedHead=false", "checkout", "-q", "FETCH_HEAD"], dest)
-    git(["submodule", "update", "--init", "--recursive", "--depth", "1"], dest)
-    return resolve_subdir(entry, dest), git(["rev-parse", "HEAD"], dest), entry.origin
+    key = (entry.origin, entry.commit_sha or "HEAD")
+    if key not in _clones:
+        dest = clones / f"clone{len(_clones)}"
+        dest.mkdir(parents=True)
+        git(["init", "-q"], dest)
+        git(["remote", "add", "origin", entry.origin], dest)
+        git(["fetch", "-q", "--depth", "1", "origin", key[1]], dest)
+        git(["-c", "advice.detachedHead=false", "checkout", "-q", "FETCH_HEAD"], dest)
+        git(["submodule", "update", "--init", "--recursive", "--depth", "1"], dest)
+        _clones[key] = (dest, git(["rev-parse", "HEAD"], dest))
+    dest, sha = _clones[key]
+    return resolve_subdir(entry, dest), sha, entry.origin
 
 
 def include(entry: Entry, code: Path, key: str) -> str:
@@ -183,7 +194,52 @@ def animation_bundle(entry: Entry, code: Path, sha: str, origin: str, out: Path)
             archive.write(frame, frame.name)
 
 
+PLACEHOLDER_SCREENSHOT = "qu_placeholder_screenshot.png"
+APP_BLOCK_RE = re.compile(r"App\s*\((.*?)\n\)", re.S)
+
+
+def blank_png(width: int = 512, height: int = 256) -> bytes:
+    def chunk(kind: bytes, data: bytes) -> bytes:
+        return struct.pack(">I", len(data)) + kind + data + struct.pack(">I", zlib.crc32(kind + data) & 0xFFFFFFFF)
+
+    rows = b"".join(b"\x00" + b"\xff" * (width * 3) for _ in range(height))
+    header = struct.pack(">IIBBBBB", width, height, 8, 2, 0, 0, 0)
+    return b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", header) + chunk(b"IDAT", zlib.compress(rows, 9)) + chunk(b"IEND", b"")
+
+
+def fam_fields(code: Path, appid: str) -> dict:
+    fam = code / "application.fam"
+    if not fam.is_file():
+        return {}
+    for block in APP_BLOCK_RE.findall(fam.read_text(errors="replace") + "\n"):
+        if re.search(rf'appid\s*=\s*"{re.escape(appid)}"', block):
+            fields = dict(re.findall(r'(\w+)\s*=\s*"([^"]*)"', block))
+            version = re.search(r"fap_version\s*=\s*\(\s*(\d+)\s*,\s*(\d+)\s*\)", block)
+            if version:
+                fields["fap_version"] = f"{version.group(1)}.{version.group(2)}"
+            return fields
+    return {}
+
+
+def with_placeholders(entry: Entry, code: Path) -> tuple[dict, bool]:
+    data = dict(entry.data)
+    fam = fam_fields(code, str(data.get("id") or entry.name))
+    name = str(data.get("name") or fam.get("name") or entry.name)
+    if not data.get("short_description") and not fam.get("fap_description"):
+        data["short_description"] = name
+    if not data.get("description"):
+        data["description"] = str(data.get("short_description") or fam.get("fap_description") or name)
+    if not data.get("changelog"):
+        version = data.get("version") or fam.get("fap_version")
+        data["changelog"] = f"v{version}" if version else "Initial release"
+    placeholder = not data.get("screenshots")
+    if placeholder:
+        data["screenshots"] = [PLACEHOLDER_SCREENSHOT]
+    return data, placeholder
+
+
 def source_zip(entry: Entry, code: Path, out: Path) -> None:
+    data, placeholder = with_placeholders(entry, code)
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(code.rglob("*")):
             rel = path.relative_to(code)
@@ -191,7 +247,9 @@ def source_zip(entry: Entry, code: Path, out: Path) -> None:
                 continue
             if path.is_file() and rel.as_posix() != "manifest.yml":
                 archive.write(path, rel.as_posix())
-        archive.write(entry.path, "manifest.yml")
+        if placeholder:
+            archive.writestr(PLACEHOLDER_SCREENSHOT, blank_png())
+        archive.writestr("manifest.yml", yaml.safe_dump(data, sort_keys=False, allow_unicode=True))
 
 
 def multipart(fields: dict, file_field: str, file_path: Path) -> tuple[bytes, str]:
@@ -259,18 +317,19 @@ def cmd_list(args) -> int:
     return 0
 
 
-def prepare(path: str, tmp: Path) -> tuple[Entry, Path, str, str]:
+def prepare(path: str, clones: Path) -> tuple[Entry, Path, str, str]:
     entry = Entry(Path(path))
     errors = entry.validate()
     if errors:
         raise CatalogError(f"{entry.rel}: " + "; ".join(errors))
-    code, sha, origin = checkout(entry, tmp / "src")
+    code, sha, origin = checkout(entry, clones)
     check_sources(entry, code)
     return entry, code, sha, origin
 
 
 def cmd_check(args) -> int:
     failed = 0
+    clones = Path(tempfile.mkdtemp(prefix="catalog-clones-"))
     for path in args.manifests:
         try:
             if args.offline:
@@ -279,22 +338,23 @@ def cmd_check(args) -> int:
                 if errors:
                     raise CatalogError(f"{entry.rel}: " + "; ".join(errors))
             else:
-                with tempfile.TemporaryDirectory() as tmp:
-                    entry, *_ = prepare(path, Path(tmp))
+                entry, *_ = prepare(path, clones)
             print(f"ok {entry.rel}" + ("" if entry.pinned else " (HEAD)"))
         except CatalogError as e:
             failed += 1
             print(f"::error file={path}::{e}")
+    shutil.rmtree(clones, ignore_errors=True)
     return 1 if failed else 0
 
 
 def cmd_publish(args) -> int:
     url, token = server()
     failed = 0
+    clones = Path(tempfile.mkdtemp(prefix="catalog-clones-"))
     for path in args.manifests:
         try:
             with tempfile.TemporaryDirectory() as tmp:
-                entry, code, sha, origin = prepare(path, Path(tmp))
+                entry, code, sha, origin = prepare(path, clones)
                 zip_path = Path(tmp) / "upload.zip"
                 if entry.family == "animation":
                     animation_bundle(entry, code, sha, origin, zip_path)
@@ -313,6 +373,7 @@ def cmd_publish(args) -> int:
         except CatalogError as e:
             failed += 1
             print(f"::error file={path}::{e}")
+    shutil.rmtree(clones, ignore_errors=True)
     return 1 if failed else 0
 
 

@@ -1,0 +1,7 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/coffee_eeprom
+id: coffee_eeprom
+category: GPIO/Programmers

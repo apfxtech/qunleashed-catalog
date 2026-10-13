@@ -1,0 +1,7 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: base_pack/hc_sr04
+id: hc_sr04
+category: GPIO/Sensors

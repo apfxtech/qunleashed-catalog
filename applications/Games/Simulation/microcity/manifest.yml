@@ -1,16 +1,8 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/apfxtech/FlipperMicroCity.git
-    commit_sha: 3722eb876ef819bbabf7df43607662aecdd68339
-
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/microcity
+id: microcity
+category: Games/Simulation
 short_description: MicroCity is a SimCity-style city builder for Flipper Zero
-description: "@.catalog/APPSTORE.md"
-changelog: "@.catalog/CHANGELOG.md"
-screenshots:
-  - ".catalog/screenshots/1.png"
-  - ".catalog/screenshots/2.png"
-  - ".catalog/screenshots/3.png"
-  - ".catalog/screenshots/4.png"
-  - ".catalog/screenshots/5.png"
-category: "Games/Simulation"

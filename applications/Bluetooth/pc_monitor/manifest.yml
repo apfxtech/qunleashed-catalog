@@ -1,12 +1,7 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/TheSainEyereg/flipper-pc-monitor.git
-    commit_sha: ff4cf57e627f7924b8ad5da6cef6e681f2ea7669
-description: "@README.md"
-changelog: "@CHANGELOG.md"
-author: "Olejka"
-screenshots:
-  - "screenshots/0.png"
-  - "screenshots/1.png"
-  - "screenshots/2.png"
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/pc_monitor
+id: pc_monitor
+author: Olejka

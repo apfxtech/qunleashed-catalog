@@ -1,14 +1,8 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: 55328b486971e49078a955a7c086e4463fa6843b
-    subdir: dap_link
-description: "@.catalog/README.md"
-changelog: "@.catalog/changelog.md"
-author: "@DrZlo13"
-screenshots:
-  - ".catalog/screenshots/1.png"
-  - ".catalog/screenshots/2.png"
-  - ".catalog/screenshots/3.png"
-category: "GPIO/Programmers"
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: base_pack/dap_link
+id: dap_link
+category: GPIO/Programmers
+author: '@DrZlo13'

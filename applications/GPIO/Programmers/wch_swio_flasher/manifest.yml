@@ -1,13 +1,10 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/sukvojte/wch_swio_flasher.git
-    commit_sha: 75266a7da1ceb3283321827cea8666421bf3a075
-description: "Flipper Zero WCH SWIO Flasher and debugger"
-changelog: "v1.1 - Main app release"
-author: "Vojtech Suk"
-screenshots:
-  - "./screenshots/wchf_debug.png"
-  - "./screenshots/wchf_get_chip_info.png"
-  - "./screenshots/wchf_wiring.png"
-category: "GPIO/Programmers"
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/wch_swio_flasher
+id: wch_swio_flasher
+category: GPIO/Programmers
+author: Vojtech Suk
+description: Flipper Zero WCH SWIO Flasher and debugger
+changelog: v1.1 - Main app release

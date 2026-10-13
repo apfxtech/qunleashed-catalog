@@ -1,0 +1,7 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: base_pack/esp8266_deauth
+id: esp8266_deauther
+category: GPIO/ESP8266

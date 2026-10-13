@@ -1,11 +1,8 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/Str4ch/flipperzero-mitsubishi-ac-remote-new-protocol
-    commit_sha: 856d7d4cc526b772b930064c6bf9945e8b2e3d2f
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/mitsubishi_ac_remote_new_protocol
+id: mitsubishi_ac_remote_new_protocol
+author: Str4ch
 short_description: Mitsubishi AC Remote for newer models
-description: "@README_CATALOG.md"
-changelog: "@CHANGELOG.md"
-author: "Str4ch"
-screenshots:
-  - ./img/1.png

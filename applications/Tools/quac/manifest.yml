@@ -1,13 +1,14 @@
 sourcecode:
   type: git
   location:
-    origin: https://github.com/rdefeo/quac.git
-    commit_sha: a46cffc15fcd437587e9b013ccc21c9439c7ab5e
-changelog: "@./CHANGELOG.md"
-description: "@./README_flipperlab.md"
-author: "Roberto De Feo"
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: base_pack/quac
+id: quac
+author: Roberto De Feo
+description: '@./README_flipperlab.md'
+changelog: '@./CHANGELOG.md'
 screenshots:
-  - "./screenshots/screenshot_1_orig.png"
-  - "./screenshots/screenshot_3_orig.png"
-  - "./screenshots/screenshot_2_orig.png"
-  - "./screenshots/screenshot_4_orig.png"
+- ./screenshots/screenshot_1_orig.png
+- ./screenshots/screenshot_3_orig.png
+- ./screenshots/screenshot_2_orig.png
+- ./screenshots/screenshot_4_orig.png

@@ -1,15 +1,14 @@
-author: 'SkorP'
-category: "GPIO/Programmers"
-changelog: "@.catalog/changelog.md"
-description: "@.catalog/README.md"
-screenshots:
-  - ".catalog/screenshots/1.png"
-  - ".catalog/screenshots/2.png"
-  - ".catalog/screenshots/3.png"
 sourcecode:
   type: git
   location:
-    origin: https://github.com/flipperdevices/flipperzero-good-faps.git
-    commit_sha: 55328b486971e49078a955a7c086e4463fa6843b
-    subdir: flip_tdi
-version: 1.1
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: base_pack/flip_tdi
+id: flip_tdi
+category: GPIO/Programmers
+author: SkorP
+description: '@.catalog/README.md'
+changelog: '@.catalog/changelog.md'
+screenshots:
+- .catalog/screenshots/1.png
+- .catalog/screenshots/2.png
+- .catalog/screenshots/3.png

@@ -1,0 +1,7 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: base_pack/wifi_scanner
+id: wifi_scanner
+category: GPIO/ESP32

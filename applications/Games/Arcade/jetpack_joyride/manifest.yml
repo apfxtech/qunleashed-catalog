@@ -1,0 +1,7 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: base_pack/jetpack_joyride
+id: jetpack_joyride
+category: Games/Arcade

@@ -1,0 +1,7 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    subdir: non_catalog_apps/wifi_deauther
+id: esp8266_wifi_deauther_v2
+category: GPIO/ESP8266
