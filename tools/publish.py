@@ -132,8 +132,7 @@ def checkout(entry: Entry, clones: Path) -> tuple[Path, str, str]:
         return resolve_subdir(entry, entry.path.parent), git(["rev-parse", "HEAD"], ROOT), catalog_origin()
     key = (entry.origin, entry.commit_sha or "HEAD")
     if key not in _clones:
-        dest = clones / f"clone{len(_clones)}"
-        dest.mkdir(parents=True)
+        dest = Path(tempfile.mkdtemp(prefix="clone", dir=clones))
         git(["init", "-q"], dest)
         git(["remote", "add", "origin", entry.origin], dest)
         git(["fetch", "-q", "--depth", "1", "origin", key[1]], dest)
@@ -211,7 +210,8 @@ def fam_fields(code: Path, appid: str) -> dict:
     fam = code / "application.fam"
     if not fam.is_file():
         return {}
-    for block in APP_BLOCK_RE.findall(fam.read_text(errors="replace") + "\n"):
+    text = re.sub(r'^([^"#\n]*(?:"[^"\n]*"[^"#\n]*)*)#[^\n]*', r"\1", fam.read_text(errors="replace"), flags=re.M)
+    for block in APP_BLOCK_RE.findall(text + "\n"):
         if re.search(rf'appid\s*=\s*"{re.escape(appid)}"', block):
             fields = dict(re.findall(r'(\w+)\s*=\s*"([^"]*)"', block))
             version = re.search(r"fap_version\s*=\s*\(\s*(\d+)\s*,\s*(\d+)\s*\)", block)
@@ -223,12 +223,20 @@ def fam_fields(code: Path, appid: str) -> dict:
 
 def with_placeholders(entry: Entry, code: Path) -> tuple[dict, bool]:
     data = dict(entry.data)
+    # The folder is the id: validate() holds them equal, the server needs it
+    # to pick the app when application.fam declares several.
+    if entry.family == "application":
+        data.setdefault("id", entry.name)
     fam = fam_fields(code, str(data.get("id") or entry.name))
     name = str(data.get("name") or fam.get("name") or entry.name)
     if not data.get("short_description") and not fam.get("fap_description"):
         data["short_description"] = name
+    fam_text = fam.get("fap_description") or ""
+    if fam_text.startswith("@"):
+        fam_text = ""
+        data.setdefault("short_description", name)
     if not data.get("description"):
-        data["description"] = str(data.get("short_description") or fam.get("fap_description") or name)
+        data["description"] = str(data.get("short_description") or fam_text or name)
     if not data.get("changelog"):
         version = data.get("version") or fam.get("fap_version")
         data["changelog"] = f"v{version}" if version else "Initial release"
@@ -243,7 +251,7 @@ def source_zip(entry: Entry, code: Path, out: Path) -> None:
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as archive:
         for path in sorted(code.rglob("*")):
             rel = path.relative_to(code)
-            if path.is_symlink() or any(part.startswith(".git") for part in rel.parts):
+            if path.is_symlink() or any(part == ".git" for part in rel.parts):
                 continue
             if path.is_file() and rel.as_posix() != "manifest.yml":
                 archive.write(path, rel.as_posix())
@@ -284,6 +292,9 @@ def request(method: str, url: str, token: str, body: bytes | None = None, conten
             return response.status, response.read().decode(errors="replace")
     except urllib.error.HTTPError as e:
         return e.code, e.read().decode(errors="replace")
+    except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+        # The server restarting costs this manifest, not the rest of the run.
+        return 0, f"server unreachable: {e}"
 
 
 def batches(paths: list[str], size: int) -> list:
@@ -347,6 +358,21 @@ def cmd_check(args) -> int:
     return 1 if failed else 0
 
 
+def source_subdir(entry: Entry, code: Path) -> str:
+    """The app's folder in the repository its sources come from: next to the
+    manifest in this catalogue, or the manifest's subdir in the author's."""
+    if entry.local:
+        return code.resolve().relative_to(ROOT.resolve()).as_posix()
+    return "" if entry.subdir in ("", ".") else entry.subdir.strip("/")
+
+
+def manifest_url(entry: Entry) -> str:
+    """The manifest in this catalogue at the commit being published."""
+    sha = os.environ.get("GITHUB_SHA") or git(["rev-parse", "HEAD"], ROOT)
+    base = catalog_origin().removesuffix(".git")
+    return f"{base}/blob/{sha}/{entry.rel}" if base.startswith("https://") else ""
+
+
 def cmd_publish(args) -> int:
     url, token = server()
     failed = 0
@@ -363,7 +389,8 @@ def cmd_publish(args) -> int:
                 else:
                     source_zip(entry, code, zip_path)
                     fields = {"family": entry.family, "origin": "unleashed", "category": entry.category,
-                              "commit_sha": sha, "origin_url": origin}
+                              "commit_sha": sha, "origin_url": origin, "subdir": source_subdir(entry, code),
+                              "manifest_uri": manifest_url(entry)}
                     body, content_type = multipart(fields, "source", zip_path)
                     endpoint = "/api/v1/sources/upload"
                 status, text = request("POST", f"{url}{endpoint}", token, body, content_type)
