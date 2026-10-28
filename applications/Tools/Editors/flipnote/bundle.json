@@ -1,0 +1,15 @@
+{
+  "author": "morty517",
+  "category": "Tools/Editors",
+  "changelog": "v1.0:\nFirst release! Full text editor for Flipper Zero.\n- Open / Save / Save As with native file browser\n- Virtual buffer for large files (up to 2000 lines, streams from SD card)\n- Find with match navigation\n- Find and Replace (streams through entire file)\n- Copy and Paste line\n- Delete Row / Clear All\n- Goto Row with number input\n- Horizontal scroll, row numbers stay fixed\n- 8 zoom levels (0.25x to 2.00x)\n- Row numbers toggle\n- First Row / Last Row instant jump\n- Extended symbol keyboard on Momentum firmware\n",
+  "description": "A real text editor for Flipper Zero. Open, edit, and save files directly on your flipper — no PC needed. Features virtual buffer for large files, Find & Replace, Copy/Paste, horizontal scroll, zoom levels, and more.",
+  "family": "application",
+  "id": "flipnote",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Editors/flipnote/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/f89697d89e0872dbfc1eaf502f2fe5c5c173b6a4/base_pack/flipnote"
+  },
+  "name": "FlipNote",
+  "short_description": "Real text editor for Flipper Zero",
+  "version": "1.0"
+}

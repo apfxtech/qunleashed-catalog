@@ -1,0 +1,15 @@
+{
+  "author": "@Tyl3rA",
+  "category": "Tools/Crypto",
+  "changelog": "v0.7",
+  "description": "Encrypt, decrypt, and hash text using a wide variety of classic and modern crypto tools.",
+  "family": "application",
+  "id": "flip_crypt",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Crypto/flip_crypt/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a80f75c6705bd709d0c6f922e84eb940f99730fc/non_catalog_apps/flipcrypt"
+  },
+  "name": "FlipCrypt",
+  "short_description": "Encrypt, decrypt, and hash text using a wide variety of classic and modern crypto tools.",
+  "version": "0.7"
+}

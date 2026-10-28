@@ -1,0 +1,15 @@
+{
+  "author": "@QtRoS",
+  "category": "Tools/Editors",
+  "changelog": "v2.0 - Scrolling to any % and interal refactoring, v1.1 - Various important fixes, v1.0 - Initial release",
+  "description": "App allows to view various files as HEX.",
+  "family": "application",
+  "id": "hex_viewer",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Editors/hex_viewer/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/base_pack/hex_viewer"
+  },
+  "name": "HEX Viewer",
+  "short_description": "App allows to view various files as HEX",
+  "version": "2.0"
+}

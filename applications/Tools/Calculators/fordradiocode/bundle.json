@@ -1,0 +1,15 @@
+{
+  "author": "@DavidB445",
+  "category": "Tools/Calculators",
+  "changelog": "v0.1:\nInitial Release\n",
+  "description": "Instantly generate unlock codes for for 'M' and 'V' series radios directly on your Flipper Zero!\nSimply enter the radio's serial number using the UP and DOWN buttons and the 4-digit unlock code will be shown.\n",
+  "family": "application",
+  "id": "fordradiocode",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Calculators/fordradiocode/manifest.yml",
+    "source_code": "https://github.com/DavidB445/fz_fordradiocodes/tree/c3e3aa7d8282515d5ddd7dc3cd738e68462a0e5e"
+  },
+  "name": "Ford Radio Codes",
+  "short_description": "Ford Radio 'M' & 'V' Unlock Code Generator!",
+  "version": "0.1"
+}

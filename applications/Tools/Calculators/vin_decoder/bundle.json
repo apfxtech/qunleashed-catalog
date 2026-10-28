@@ -1,0 +1,15 @@
+{
+  "author": "@evillero",
+  "category": "Tools/Calculators",
+  "changelog": "## 0.2\n - Added more manufacturers\n## 0.1\n - Initial release\n",
+  "description": "# vin_decoder\nVIN decoder for Flipper Zero\n\n## VIN decoder\nVIN Decoder is a mini flipper zero tool that allows you to decode VIN (Vehicle Identification Number) numbers. This project provides users with the ability to enter their VIN and obtain information about the vehicle, including the name of the manufacturer and the year of manufacture. It supports vehicles such as BMW, Audi, Alfa, Citroen, Lada, Ferrari, Fiat, Mercedes, etc. Vin decoder supports years from 1996 to 2025.\n\n## Version history\n - 0.2 - Added more manufacturers\n - 0.1 - Initial release\n\n## Author\nby @evillero\n\n\n\n\n\n",
+  "family": "application",
+  "id": "vin_decoder",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Calculators/vin_decoder/manifest.yml",
+    "source_code": "https://github.com/evillero/vin_decoder/tree/d0dbc90176e053185d89fab771e5ca754e4db12a"
+  },
+  "name": "VIN decoder",
+  "short_description": "Vehicle Identification Number decoder",
+  "version": "0.2"
+}

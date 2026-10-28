@@ -1,0 +1,15 @@
+{
+  "author": "@scrolltex",
+  "category": "Tools/Clocks",
+  "changelog": "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for latest API, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version",
+  "description": "Shows analog clock on Flipper screen",
+  "family": "application",
+  "id": "analog_clock",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Clocks/analog_clock/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/8e31572ee7b48d37e51a71d5aca7b058c71ab00e/apps_source_code/flipper_analog_clock"
+  },
+  "name": "Analog Clock",
+  "short_description": "Shows analog clock on Flipper screen",
+  "version": "1.4"
+}

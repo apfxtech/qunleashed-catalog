@@ -1,0 +1,15 @@
+{
+  "author": "@panki27",
+  "category": "Tools/Crypto",
+  "changelog": "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
+  "description": "Encrypt and decrypt text using Caesar Cipher",
+  "family": "application",
+  "id": "caesar_cipher",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Crypto/caesar_cipher/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/caesarcipher"
+  },
+  "name": "Caesar Cipher",
+  "short_description": "Encrypt and decrypt text using Caesar Cipher",
+  "version": "1.3"
+}

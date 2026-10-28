@@ -1,0 +1,15 @@
+{
+  "author": "@anakod & @henrygab",
+  "category": "Tools/Crypto",
+  "changelog": "v1.0 - Initial release, v1.1 - Updates, v1.2 - Sync Updates, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version",
+  "description": "Password Generator",
+  "family": "application",
+  "id": "passgen",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Crypto/passgen/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/apps_source_code/flipper_passgen"
+  },
+  "name": "Password Generator",
+  "short_description": "Simple password generator",
+  "version": "1.4"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "@xtruan",
+  "category": "Tools/Crypto",
+  "changelog": "v1.17",
+  "description": "Cryptocurrency wallet with support for BTC, ETH, DOGE, and ZEC (t-addr)",
+  "family": "application",
+  "id": "flipbip",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Crypto/flipbip/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/FlipBIP"
+  },
+  "name": "crypto",
+  "short_description": "Crypto wallet for Flipper",
+  "version": "1.17"
+}
