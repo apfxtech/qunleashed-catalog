@@ -1,15 +1,32 @@
 {
+  "apps": [
+    {
+      "appid": "rfid_maker",
+      "file": "rfid_maker.fap",
+      "icon": "assets/icon.png",
+      "name": "RFID Maker",
+      "version": "0.9"
+    }
+  ],
   "author": "KindaCharming",
+  "authors": [],
   "category": "RFID",
+  "category_id": "64971d10577d519190ede5c2",
   "changelog": "# Changelog\n\n## v0.9\n\n- New card numbers, IDs and card-data entries start blank; missing entries cannot be saved or emulated.\n- Existing values are replaced by the first typed digit, or edited by selecting Del first.\n- Replaced firmware-dependent numeric input with a full-width decimal keypad for all presets, including wide IDs.\n- Displayed the protocol field's allowed range without changing its bit layout or truncating values.\n- Tested all 42 decimal fields across 18 presets, including five-digit Indala card numbers and wide IDs.\n\n## v0.8\n\n- Added Proxmark ID/raw HEX for seven presets and H10301 sheet-style HEX.\n- Checked HID raw values against actual Proxmark3 C packers in 2,004 vectors.\n- Added About to the type menu with Created by: KindaCharming.\n- Updated the app author metadata to KindaCharming.\n- Built and checked SDK imports against official firmware 1.4.3, F7 / API 87.1, as well as Momentum mntm-012.\n- Added catalog description, publishing checklist, and README screenshots.\n\n## v0.7\n\n- Changed the emulation indicator to a rapid 10 ms pulse every 100 ms.\n\n## v0.6\n\n- Controlled all RGB notification channels during emulation so USB charging green does not mask the pulse.\n- Alternated magenta/off and restored normal status lighting on stop.\n- Displayed the version on the type menu and emulation screen.\n\n## v0.5\n\n- Added notification service lifecycle and an emulation blink request.\n\n## v0.4\n\n- Fixed opening RFID files stopping the app's view dispatcher.\n- Deferred the file browser until the menu input callback returned.\n- Added ARM controller regression tests for import and recovery.\n\n## v0.3\n\n- Provided 18 decimal presets, HEX preview, saving and emulation.\n- Added the embedded RFID app icon.\n- Added import, lossless decimal recognition, HEX fallback and Save as.\n",
   "description": "# RFID Maker\n\nCreated by: **KindaCharming**\n\nCreate and edit 125 kHz RFID files using decimal facility codes and card numbers. Select a format, enter its decimal fields, inspect the generated HEX data, then save or emulate the card.\n\n## Features\n\n- 18 decimal presets with field limits and additional fields where required.\n- Blank new card-number entries and a numeric keypad showing each field's valid range. Typing replaces an existing value; Del edits it.\n- Open existing .rfid files and automatically fill supported decimal forms.\n- Preserve unsupported layouts in the advanced HEX editor.\n- Save edited copies without overwriting the original file.\n- Preview the stored data, the firmware interpretation, and verified Proxmark ID/raw HEX for HID H10301/H10306, EM4100, Indala26 and AWID. H10301 also shows sheet-style HEX without the format marker. Other layouts report that Proxmark conversion is not implemented.\n- Emulate directly, with a rapid magenta LED pulse and Back to stop.\n- About screen with creator credit.\n\n## Supported decimal formats\n\nHID H10301, HID H10306, EM4100 RF/64, RF/32 and RF/16, Indala26, IO Prox XSF, AWID26, Pyramid26, Gallagher, Keri, Securakey26, Viking, PAC/Stanley, Jablotron, IDTECK, Paradox and GProx II26.\n\nA protocol can contain several layouts. Decimal conversion supports these presets; other layouts use HEX editing. Some formats require extra information such as a prefix, region, issue level or check bytes. This app does not handle 13.56 MHz NFC cards.\n\n## Use\n\n- Select a type and enter its decimal fields.\n- Select **Show HEX / details** to inspect the result.\n- Select **Save .rfid** to save under SD/lfrfid, or **Emulate** to start emulation.\n- Select **Open existing .rfid** to edit a saved file. **Save as .rfid** creates a new copy.\n- Select **About** at the bottom of the type menu for version and creator information.\n\n## License\n\nGPL-3.0-or-later.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "rfid_maker",
+  "install_path": "RFID",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/RFID/rfid_maker/manifest.yml",
     "source_code": "https://github.com/jeremydbean/FlipperRFIDMaker/tree/39ff1e359257197140ba6b1fa2ac530fc39f9296"
   },
   "name": "RFID Maker",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "Create RFID files from decimal facility codes and card numbers",
   "version": "0.9"
 }

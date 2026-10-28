@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "genie_record",
+      "file": "genie_record.fap",
+      "icon": "assets/icon.png",
+      "name": "Genie Door Recorder",
+      "version": "3.1"
+    }
+  ],
   "author": "CodeAllNight (MrDerekJamison)",
+  "authors": [],
   "category": "Sub-GHz",
+  "category_id": "64971d0f6617ba37a4bc79b3",
   "changelog": "v3.1",
   "description": "This application extracts the codes from a Genie garage door remote into a .GNE file.  It also plays back a .GNE file to a Genie garage door opener.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "genie_record",
+  "install_path": "Sub-GHz",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/genie_record/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/de1539b0da6d53bb6303f819be0518a63c460b32/non_catalog_apps/genie-recorder"
   },
   "name": "Genie Door Recorder",
+  "screenshots": [],
   "short_description": "This application extracts the codes from a Genie garage door remote into a .GNE file.  It also plays back a .GNE file to a Genie garage door opener.",
   "version": "3.1"
 }

@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "freq_analyzer_ext",
+      "file": "freq_analyzer_ext.fap",
+      "icon": "assets/icon.png",
+      "name": "Frequency Analyzer",
+      "version": "1.2"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "Sub-GHz/Analyzers",
+  "category_id": "subghz-analyzers",
   "changelog": "v1.2",
   "description": "Frequency Analyzer",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "freq_analyzer_ext",
+  "install_path": "Sub-GHz/Analyzers",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/Analyzers/freq_analyzer_ext/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/619c27ba759eb75f662dd59f21c3f02e0a8d1b21/non_catalog_apps/freq_analyzer_ext"
   },
   "name": "Frequency Analyzer",
+  "screenshots": [],
   "short_description": "Frequency Analyzer",
   "version": "1.2"
 }

@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "key_generator",
+      "file": "key_generator.fap",
+      "icon": "assets/icon.png",
+      "name": "EM4100 Key generator",
+      "version": "1.1"
+    }
+  ],
   "author": "milk_cool",
+  "authors": [],
   "category": "RFID",
+  "category_id": "64971d10577d519190ede5c2",
   "changelog": "v1.1 - Increased version so that it shows up in the catalog; v1.0 - initial release",
   "description": "# fz-em4100-generator\nA program that generates universal keys from a EM4100 key\n\n## Installing\nClick the FAP badge, connect your flipper and click \"Install\".\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "key_generator",
+  "install_path": "RFID",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/RFID/key_generator/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/apps_source_code/fz-em4100-generator"
   },
   "name": "EM4100 Key generator",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "RFID potential universal keys generator",
   "version": "1.1"
 }
