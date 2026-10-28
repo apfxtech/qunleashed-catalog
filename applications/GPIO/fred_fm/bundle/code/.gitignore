@@ -1,0 +1,65 @@
+# Python / local env
+.venv/
+venv/
+__pycache__/
+*.pyc
+node_modules/
+
+# Editor / OS
+.vscode/
+.idea/
+.cursor/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Agent / IDE tooling (local only — pliki mogą istnieć w repo, nie commitujemy)
+.claude/
+hooks/
+AGENTS.md
+CLAUDE.md
+agent.md
+.gitnexus/
+
+# Build artifacts (Flipper / scons / toolchains)
+*.o
+*.a
+*.so
+*.elf
+*.map
+*.d
+*.su
+*.fap
+*.fap.debug
+build/
+dist/
+out/
+
+# Flipper catalog validation (lokalny checkout flipper-application-catalog)
+bundle.zip
+
+# Dev tools & RDS lab data
+tools/
+schematics/
+package.json
+package-lock.json
+
+# Artefakty z Flippera / SD (powstają same w aplikacji — nie commitujemy)
+rds_capture_*.raw
+rds_capture_*.txt
+rds_runtime_meta.txt
+settings.fff
+presets.fff
+
+# Wewnętrzna dokumentacja zespołu (nie do GitHuba)
+CATALOG_SUBMISSION_FRED_FLIPPER.md
+docs/
+ARCHITECTURE.md
+RDS_RUNTIME_STATE.md
+removable_candidates.md
+unused_symbols_report.md
+
+# Local git backups
+.git_backup_*/
+backups/

@@ -1,0 +1,15 @@
+{
+  "author": "Endika",
+  "category": "GPIO",
+  "changelog": "## 0.1.31\n- First catalog listing: live scan, captures, compare, merge, pcap import, known devices,\n  capture summary with an honest phone-count range, and host tools for a laptop.\n",
+  "description": "WiFi Census listens for the probe requests phones and laptops broadcast while looking for\nknown networks. Nothing is transmitted and nothing is connected to: the ESP32 Marauder board\nsniffs, the Flipper counts, and every capture stays on your SD card.\n\nScan a place and you get a live count of unique devices, how many carry a stable address, how\nmany randomize it, what kinds they are and which networks they are asking for. Save it, scan\nsomewhere else, and compare the two to see which devices were at both.\n\n## Features\n\n- Live scan with unique, stable and randomized counts, device types and networks sought.\n- Captures saved to the SD as a binary file plus a CSV you can open on a computer.\n- Auto-save on the Scan row itself, flipped with left and right: long sessions name and\n  rotate their own files.\n- Compare two captures: which devices were at both, and why each one matched.\n- Merge captures, and import a raw 802.11 pcap from anywhere on the SD.\n- Known devices: label a device by its stable address, or a network by name, so a phone that\n  rotates its address is still recognised by the network it asks for.\n- Capture summary, including how many phones are behind the randomized addresses.\n- Host tools for a laptop, past the device's own limits: import, merge, compare, undo MAC\n  rotation in a long capture, and measure how much a long scan inflates its own count.\n\nModern phones randomize their address to avoid being followed, so a device is only crossed\nbetween captures on a strong signal — the same stable address, or a named network both ask\nfor. Anything weaker is counted and reported as not crossable rather than guessed at.\n\nRequires an ESP32 board running Marauder on the GPIO header.\n",
+  "family": "application",
+  "id": "flipper_wifi_census",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flipper_wifi_census/manifest.yml",
+    "source_code": "https://github.com/Endika/flipper-wifi-census/tree/772c5630c4eaeb247d73761a4fee9328f5276daa"
+  },
+  "name": "[ESP32] WiFi Census",
+  "short_description": "Passive Wi-Fi device census over an ESP32 Marauder board - count the devices around you, then compare two places and see who was at both.",
+  "version": "0.1.31"
+}

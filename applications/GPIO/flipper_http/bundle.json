@@ -1,0 +1,15 @@
+{
+  "author": "JBlanked",
+  "category": "GPIO",
+  "changelog": "## v1.1\n- Added a new Saved Networks view to load and connect to previously saved Wi-Fi networks.\n- Added a new Commands view to execute predefined HTTP requests and display responses.\n- Updated the Font and Keyboard libraries to the latest versions.\n- Removed input debouncing logic.\n\n## v1.0\n- Initial release\n",
+  "description": "# FlipperHTTP App\nA companion app for FlipperHTTP firmware. \n\n## Requirements\n- Wi-Fi Developer Board, BW16, Raspberry Pi, or ESP32 device flashed with FlipperHTTP v2.2 or higher: https://github.com/jblanked/FlipperHTTP\n- 2.4 GHz or 5 GHz Wi-Fi access point\n\n## Connect Online\n- Discord: https://discord.gg/5aN9qwkEc6\n- YouTube: https://www.youtube.com/@jblanked\n- Instagram: https://www.instagram.com/jblanked\n- Other: https://www.jblanked.com/social/",
+  "family": "application",
+  "id": "flipper_http",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flipper_http/manifest.yml",
+    "source_code": "https://github.com/jblanked/FlipperHTTP-App/tree/345b21efbad779b3c86de890ecc64f52ee8aeb5c"
+  },
+  "name": "FlipperHTTP",
+  "short_description": "FlipperHTTP Companion App",
+  "version": "1.1"
+}
