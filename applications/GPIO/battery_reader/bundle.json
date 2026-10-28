@@ -1,0 +1,15 @@
+{
+  "author": "gazirov",
+  "category": "GPIO",
+  "changelog": "v0.4.0",
+  "description": "SBS battery reader and service tool for TI BQ30/BQ40 controllers",
+  "family": "application",
+  "id": "battery_reader",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/battery_reader/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/643ba9d910ecd0ee797702ec282dbe2414a14bba/non_catalog_apps/battery_reader"
+  },
+  "name": "I2C BMS Reader",
+  "short_description": "SBS battery reader and service tool for TI BQ30/BQ40 controllers",
+  "version": "0.4.0"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "GPIO",
+  "changelog": "v0.1",
+  "description": "[J305] Atomic Dice Roller",
+  "family": "application",
+  "id": "flipper_atomicdiceroller",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flipper_atomicdiceroller/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/flipper_atomicdiceroller"
+  },
+  "name": "[J305] Atomic Dice Roller",
+  "short_description": "[J305] Atomic Dice Roller",
+  "version": "0.1"
+}

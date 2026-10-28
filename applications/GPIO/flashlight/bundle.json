@@ -1,0 +1,15 @@
+{
+  "author": "@xMasterX",
+  "category": "GPIO",
+  "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
+  "description": "Enables 3.3v on pin 7/C3 when you press Ok and leaves it on when you exit app",
+  "family": "application",
+  "id": "flashlight",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flashlight/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/flipper-flashlight"
+  },
+  "name": "Flashlight",
+  "short_description": "Enables 3.3v on pin 7/C3 when you press Ok and leaves it on when you exit app",
+  "version": "1.3"
+}

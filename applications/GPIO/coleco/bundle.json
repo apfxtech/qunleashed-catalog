@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "GPIO",
+  "changelog": "v0.1",
+  "description": "RC2014 ColecoVision",
+  "family": "application",
+  "id": "coleco",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/coleco/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/rc2014_coleco"
+  },
+  "name": "RC2014 ColecoVision",
+  "short_description": "RC2014 ColecoVision",
+  "version": "0.1"
+}

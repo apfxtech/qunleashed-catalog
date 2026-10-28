@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "GPIO",
+  "changelog": "v2.3",
+  "description": "CAN Commander",
+  "family": "application",
+  "id": "can_commander",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/can_commander/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/can_commander"
+  },
+  "name": "CAN Commander",
+  "short_description": "CAN Commander",
+  "version": "2.3"
+}
