@@ -1,0 +1,15 @@
+{
+  "author": "JBlanked",
+  "category": "GPIO",
+  "changelog": "## v0.6\n- Added Online mode\n- Added option in the game menu to hide/show the player\n\n## v0.5\n- Added a mini map with player position and direction indicators\n- Optimized Vector usage in the rendering code to improve performance and reduce memory usage\n- Updated input handling to only parse short and long presses\n- Updated wall rendering to use 3D sprites\n- Updated the engine with various optimizations, bug fixes, and improvements to the rendering pipeline\n- Updated maps with new elements and layouts\n\n## v0.4\n- Updated the settings with a connect to WiFi button and conditional compilation for Momentum support\n- Updated the engine to use floats for triangle vertices\n\n## v0.3.2\n- Updated to use the flipper_http folder as intended\n\n## v0.3.1\n- Updated the save/load functions to use a specific folder (\"flipper_http\") for storing Wi-Fi and user credentials. This simplifies management and avoids potential conflicts with other applications.\n\n## v0.2 \n- Added teleport doors and an information screen after the user teleports\n- Updated the player's sprite to face the direction of movement\n- Fixed minor bugs with movement and interactions\n- Switched to heap allocations which resolved the reported stack overflow issues\n\n## v0.1\n- Initial release\n",
+  "description": "# Free Roam\n3D Open World Multiplayer Game for the Flipper Zero \n\n## Requirements\n- WiFi Developer Board, BW16, Raspberry Pi, or ESP32 device flashed with FlipperHTTP v2.0 or higher: https://github.com/jblanked/FlipperHTTP\n- 2.4 GHz or 5 GHz Wi-Fi access point\n\n## Connect Online\n- Discord: https://discord.gg/5aN9qwkEc6\n- YouTube: https://www.youtube.com/@jblanked\n- Instagram: https://www.instagram.com/jblanked\n- Other: https://www.jblanked.com/social/\n\n## Features\n- Login with your FlipSocial/FlipWorld account\n- Third person camera\n- Dynamic map generation (for developers)\n- 3D sprites (humans, trees, etc.)\n- PVE Multiplayer - COMING SOON\n\n## How To Play\n- Press the left button to turn the camera left\n- Press the right button to turn the camera right\n- Press the up button to move forward\n- Press the down button to move backward\n- Press the back button to open the system menu",
+  "family": "application",
+  "id": "free_roam",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/free_roam/manifest.yml",
+    "source_code": "https://github.com/jblanked/Free-Roam/tree/628593fa346f63f561a23c9c5cf1259ad08b7a46/FlipperZero"
+  },
+  "name": "Free Roam",
+  "short_description": "3D Open World Multiplayer Game",
+  "version": "0.6"
+}

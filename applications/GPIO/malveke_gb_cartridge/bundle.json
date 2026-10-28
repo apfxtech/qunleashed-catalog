@@ -1,0 +1,15 @@
+{
+  "author": "Esteban Fuentealba",
+  "category": "GPIO",
+  "changelog": "# Changelog - Patch Notes\n\n## Version 2.2\nFix \"Parse Error\" (gcc optimization)\n\n## Version 2.1\nFix FuriHalRtc: new datetime lib.\n\n## Version 2.0\nImplement new serial API with new module expansion protocol.\n\n## Version 1.0\nThe initial version of the application encompasses functionalities to view cartridge information, back up ROM and RAM of both GAME BOY & GAME BOY Color cartridges, and enables RAM restoration as well.\n\n## Version 1.1\nTo improve the visibility of the application names, the names were changed by adding a 'MALVEKE' postfix.",
+  "description": "# MALVEKE **GAME BOY** Cartridge (GB/GBC)\n\n## Introduction\nMALVEKE app, its Interacts with GAME BOY and GAME BOY Color cartridges. You can Dump & Restore RAM and ROM.\n\n## Features\n\n- Read info from GAME BOY/GAME BOY Color Cartridges\n- Backing up and restoring your saves (RAM)\n- Backing up and restoring your games (ROM) (WIP)\n\n## Instructions for use.\n\nThese instructions assume that you are starting at the Flipper Zero desktop. Otherwise, press the Back button until you are at the desktop.\n\n- Press the **OK** button on the Flipper to open the main menu.\n- Choose **Applications** from the menu.\n- Choose **GPIO** from the submenu.\n- Choose **MALVEKE GAME BOY Cartridge (GB/GBC)**\n- If the **MALVEKE** board and the cartridge are connected, The Flipper Zero will show the loading screen of the application.\n- Press the **OK** to enter to menu.\n- Press the **Back** to back to principal menu.\n",
+  "family": "application",
+  "id": "malveke_gb_cartridge",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/malveke_gb_cartridge/manifest.yml",
+    "source_code": "https://github.com/EstebanFuentealba/MALVEKE-Flipper-Zero/tree/8e3ad6ec8ab59631318ec0cd190943a26eace014/flipper_companion_apps/applications/external/malveke_gb_cartridge"
+  },
+  "name": "GAME BOY Cartridge (GB/GBC) MALVEKE",
+  "short_description": "MALVEKE app, its Interacts with GAME BOY and GAME BOY Color cartridges. You can Dump & Restore RAM and ROM.\n",
+  "version": "2.2"
+}

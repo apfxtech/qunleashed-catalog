@@ -1,0 +1,15 @@
+{
+  "author": "Esteban Fuentealba",
+  "category": "GPIO",
+  "changelog": "# Changelog - Patch Notes\n\n## Version 2.1\nFix FuriHalRtc: new datetime lib.\n\n## Version 2.0\nImplement new serial API with new module expansion protocol.\n\n## Version 1.0.0\nThe initial version of the application encompasses functionalities to inserting a GAME BOY Camera cartridge, you can use it as a camera and take snapshots from the Flipper Zero.\n\n## Version 1.1\nFix: backlight Flipper Zero refresh\n\n## Version 1.2\nFix: Image capture with inverted colors has been resolved.\n\n## Version 1.3\nTo improve the visibility of the application names, the names were changed by adding a 'MALVEKE' postfix.",
+  "description": "# MALVEKE **GAME BOY** Live Camera \n\n## Introduction\nMALVEKE app, By inserting a GAME BOY Camera cartridge, you can use it as a camera and take snapshots from the Flipper Zero.\n\n## Instructions for use.\n\nThese instructions assume that you are starting at the Flipper Zero desktop. Otherwise, press the Back button until you are at the desktop.\n\n- Press the **OK** button on the Flipper to open the main menu.\n- Choose **Applications** from the menu.\n- Choose **GPIO** from the submenu.\n- Choose **MALVEKE GB Live Camera**\n- The Flipper Zero will show the loading screen of the application. \n- If the **MALVEKE** board and the **GAME BOY Camera** cartridge are connected, an image will be displayed.\n- Press the **LEFT**/**RIGHT** buttons to change the exposure value.\n- Press the **OK** button to take a picture. The image will be saved in the **SD Card/apps_data/malveke/photos** folder. \n\n## TODO\n- Add automatic exposure calculation.\n- Refactor Code",
+  "family": "application",
+  "id": "malveke_gb_live_camera",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/malveke_gb_live_camera/manifest.yml",
+    "source_code": "https://github.com/EstebanFuentealba/MALVEKE-Flipper-Zero/tree/fb7dba8c813a659c81fc37e5e7150c0b939fd4a7/flipper_companion_apps/applications/external/malveke_gb_live_camera"
+  },
+  "name": "GAME BOY Live Camera MALVEKE",
+  "short_description": "Insert a GAME BOY Camera cartridge, you can use it as a camera and take snapshots from the Flipper Zero.\n",
+  "version": "2.1"
+}
