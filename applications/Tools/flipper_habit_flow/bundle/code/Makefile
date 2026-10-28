@@ -1,0 +1,105 @@
+PROJECT_NAME = habit_flow
+
+FAP_APPID = flipper_habit_flow
+
+FLIPPER_FIRMWARE_PATH ?= /home/<YOUR_PATH>/flipperzero-firmware
+
+PWD = $(shell pwd)
+
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror -std=c11 -I.
+
+.PHONY: all help test prepare fap clean clean_firmware format linter
+
+all: test
+
+help:
+	@echo "Targets for $(PROJECT_NAME):"
+	@echo "  make test           - Host unit tests (habit + date logic, store recovery)"
+	@echo "  make prepare        - Symlink app into firmware applications_user"
+	@echo "  make fap            - Clean firmware build + compile .fap"
+	@echo "  make format         - clang-format"
+	@echo "  make linter         - cppcheck"
+	@echo "  make clean          - Remove local objects"
+	@echo "  make clean_firmware - rm firmware build dir"
+
+FORMAT_FILES := $(shell git ls-files '*.c' '*.h' 2>/dev/null)
+ifeq ($(strip $(FORMAT_FILES)),)
+FORMAT_FILES := $(shell find . -type f \( -name '*.c' -o -name '*.h' \) ! -path './.git/*' | sort)
+endif
+
+format:
+	clang-format -i $(FORMAT_FILES)
+
+# constParameterPointer suppression: the four hf_views_*_input handlers are assigned to
+# view_set_input_callback, whose ViewInputCallback is `bool (*)(InputEvent*, void*)`. They only
+# read the event, so cppcheck asks for `const InputEvent *` — but that signature no longer matches
+# the SDK typedef and the FAP build fails with -Werror=incompatible-pointer-types, so the only way
+# to take the advice would be a function-pointer cast at every registration. The advice cannot be
+# applied; it is not a latent bug. The draw callbacks used to be reported here too and are fixed:
+# their model locals no longer carry a redundant const.
+linter:
+	cppcheck --enable=all --check-level=exhaustive --error-exitcode=1 --inline-suppr -I. \
+		--suppress=missingIncludeSystem \
+		--suppress=constParameterPointer:src/app/hf_views.c \
+		--suppress=unusedFunction:main.c \
+		src/domain/habit.c src/domain/habit_date.c src/domain/hf_store_status.c \
+		src/persistence/habit_store.c src/platform/hf_rtc.c src/platform/hf_storage.c \
+		src/application/hf_session_service.c \
+		src/app/habitflow_app.c src/app/hf_views.c main.c \
+		tests/test_habit.c tests/test_store_status.c tests/test_habit_store.c
+
+OBJS = habit_date.o habit.o test_habit.o
+STATUS_OBJS = hf_store_status.o test_store_status.o
+STORE_OBJS = habit.o hf_store_status.o habit_store.o test_habit_store.o
+
+test: $(OBJS) $(STATUS_OBJS) $(STORE_OBJS)
+	$(CC) $(CFLAGS) -o test_habit $(OBJS)
+	./test_habit
+	$(CC) $(CFLAGS) -o test_store_status $(STATUS_OBJS)
+	./test_store_status
+	$(CC) $(CFLAGS) -o test_habit_store $(STORE_OBJS)
+	./test_habit_store
+
+habit_date.o: src/domain/habit_date.c include/domain/habit_date.h
+	$(CC) $(CFLAGS) -c src/domain/habit_date.c -o habit_date.o
+
+habit.o: src/domain/habit.c include/domain/habit.h
+	$(CC) $(CFLAGS) -c src/domain/habit.c -o habit.o
+
+test_habit.o: tests/test_habit.c include/domain/habit.h include/domain/habit_date.h
+	$(CC) $(CFLAGS) -c tests/test_habit.c -o test_habit.o
+
+hf_store_status.o: src/domain/hf_store_status.c include/domain/hf_store_status.h
+	$(CC) $(CFLAGS) -c src/domain/hf_store_status.c -o hf_store_status.o
+
+test_store_status.o: tests/test_store_status.c include/domain/hf_store_status.h
+	$(CC) $(CFLAGS) -c tests/test_store_status.c -o test_store_status.o
+
+habit_store.o: src/persistence/habit_store.c include/persistence/habit_store.h include/ports/hf_store_port.h
+	$(CC) $(CFLAGS) -c src/persistence/habit_store.c -o habit_store.o
+
+test_habit_store.o: tests/test_habit_store.c include/persistence/habit_store.h include/ports/hf_store_port.h
+	$(CC) $(CFLAGS) -c tests/test_habit_store.c -o test_habit_store.o
+
+prepare:
+	@if [ -d "$(FLIPPER_FIRMWARE_PATH)" ]; then \
+		mkdir -p $(FLIPPER_FIRMWARE_PATH)/applications_user; \
+		ln -sfn $(PWD) $(FLIPPER_FIRMWARE_PATH)/applications_user/$(PROJECT_NAME); \
+		echo "Linked to $(FLIPPER_FIRMWARE_PATH)/applications_user/$(PROJECT_NAME)"; \
+	else \
+		echo "Firmware not found at $(FLIPPER_FIRMWARE_PATH)"; \
+	fi
+
+clean_firmware:
+	@if [ -d "$(FLIPPER_FIRMWARE_PATH)/build" ]; then \
+		rm -rf $(FLIPPER_FIRMWARE_PATH)/build; \
+	fi
+
+fap: prepare clean_firmware clean
+	@if [ -d "$(FLIPPER_FIRMWARE_PATH)" ]; then \
+		cd $(FLIPPER_FIRMWARE_PATH) && ./fbt fap_$(FAP_APPID); \
+	fi
+
+clean:
+	rm -f *.o tests/*.o test_habit test_store_status test_habit_store

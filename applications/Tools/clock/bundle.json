@@ -1,0 +1,15 @@
+{
+  "author": "@kowalski7cc",
+  "category": "Tools",
+  "changelog": "## 1.2\n - Update API v65.0\n## 1.1\n - Update to latest datetime API\n## 1.0\n - Initial release\n",
+  "description": "# Clock\n\nThis is a simple clock application for the Flipper Zero. It displays the current time and date.\n\nThe time gets synchronized with the network every time you connect your Flipper Zero to qFlipper or the Flipper Mobile app.\n",
+  "family": "application",
+  "id": "clock",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/clock/manifest.yml",
+    "source_code": "https://github.com/flipperdevices/flipperzero-good-faps/tree/ace22647f5f466804340821debdc19b723535487/clock"
+  },
+  "name": "Clock",
+  "short_description": "Simple clock app",
+  "version": "1.2"
+}

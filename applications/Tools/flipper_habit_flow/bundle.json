@@ -1,0 +1,15 @@
+{
+  "author": "Endika",
+  "category": "Tools",
+  "changelog": "## 0.1.4\n- Saved habits that cannot be read are kept instead of being overwritten.\n\n## 0.1.3\n- Fix UI not refreshing when the app is opened from favorites or the desktop quick-launch buttons; the app now forces its own redraws on every screen update instead of relying on the launcher animation.\n\n## 0.1.2\n- Initial catalog listing: habit list, detail, manage/edit, automatic saves, session and yesterday flow.\n",
+  "description": "HabitFlow runs entirely on the device: name your habits, set a day-based goal (1–365, default 66), mark today complete, and follow streaks and your best run toward mastery. Changes are saved automatically. When the date moves forward, the app can ask whether you finished yesterday so streaks update in a clear way instead of dropping silently.\n\n## Features\n\n- Dashboard with scrollable habits and a compact recent-activity strip per habit (filled = done, frame = missed).\n- Detail view with progress, streak and record streak, optional medal after mastery, OK to toggle today, Up to reset streak (with confirm).\n- Manage habits from the dashboard (Left): add, edit name and goal, save, delete.\n- Launch handling for calendar gaps: a one-day gap with unfinished yesterday opens Yes/No per habit; longer gaps reset streaks and clear the strip.\n",
+  "family": "application",
+  "id": "flipper_habit_flow",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/flipper_habit_flow/manifest.yml",
+    "source_code": "https://github.com/Endika/flipper-habit-flow/tree/f6ccdfc62fff7306bb9f7e2aebf32c95e1c0a346"
+  },
+  "name": "HabitFlow",
+  "short_description": "Offline habit tracker for Flipper Zero — goals, streaks, progress, automatic saves, and optional prompts when the calendar advances.",
+  "version": "0.1.4"
+}

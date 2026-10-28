@@ -1,0 +1,15 @@
+{
+  "author": "Ilia Petrov-Komotskii (Mane Function)",
+  "category": "Tools",
+  "changelog": "1.0:\nInitial release.\n",
+  "description": "**Clock out before burnout!**\n\nA Flipper Zero app that turns the device into a work-shift and overtime timer for remote workers.\nBuilt for Flipper Zero to reduce distraction and not to draw attention to your phone.\n\n## Features\n\n12-hour analog dial showing actual time of day, tracking elapsed work time, breaks, and a prediction of how much of your shift is left.\nHourly chimes, vibro, always-on backlight (everything is optional), **highly optimized** as a full-time running app.\n\n## Controls\n\n**Setting up a shift** (before you start):\n- **Left / Right** - adjust the configured shift length (1-12 hours)\n- **Up / Down** - switch the time format between H:MM and H:MM:SS\n- **OK** (tap) - start the shift\n- **OK** (hold) - open the info and options\n- **Back** (hold) - close the app\n\n**While working or on a break:**\n- **OK** (tap) - pause / resume\n- **OK** (hold) - reset back to the shift-setup screen\n- **Up** - toggle mute\n- **Down** - toggle backlight\n- **Left** - toggle vibration\n- **Right** - toggle eco mode\n- **Back** (hold) - close the app\n\n**Info and options screen:**\n- **Left / Right** - cycle between pages\n- **Back** - return to the shift-setup screen\n\n## About the optimization\n\nAs an app made to run at least a third of the day, it is highly optimized, buffering every heavy calculation needed for rendering.\nRendering runs at one screen refresh per second when animation is active, or one refresh per minute in eco mode.\n\nMy personal tests show it runs on my Flipper Zero with very little overhead.\nHere are some battery drain stats for a **9-hour** time period:\n- Nothing is running: **-2%** (for reference)\n- In eco mode without backlight: **-3%**\n- In normal mode without backlight: **-4%**\n- With backlight active: **-11%**\n\nSo, basically, the app itself adds about **1–2%** drain for a full working day.\n",
+  "family": "application",
+  "id": "clock_o_dial",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/clock_o_dial/manifest.yml",
+    "source_code": "https://github.com/ManeFunction/clock-o-dial--fz/tree/a26f8221c3ebf67c5c56728a4fd32b24f6f86303"
+  },
+  "name": "Clock'o'Dial",
+  "short_description": "A tiny app that helps you keep track of your workday and avoid overtime.",
+  "version": "1.0"
+}

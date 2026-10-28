@@ -1,0 +1,15 @@
+{
+  "author": "@paul-sopin",
+  "category": "Tools",
+  "changelog": "## v0.1:\n- app release",
+  "description": "# What does this app do?\n\nThis app is designed to prevent eye strain when looking at a screen for extended periods of time. 69 percent of Americans have reported eye strain at least once a week, and this app is designed to minimize eye fatigue and discomfort.\n\n# Features:\n\n* Repeating 20 minute timer with haptic feedback\n* 20 second break in between timers with haptic feedback\n* Message to look outside during break\n* About screen for additional info\n\n# How to use?\n\nThe timer will begin when the app is opened. Once the timer ends a reminder will be displayed for 20 seconds to look outside (preferrably 20 feet away). Once the break ends the timer will repeat.  Press **OK** to open the about screen, and **BACK** to both exit the about screen and exit the app. \n\n# To be added:\n\n* Adjustable break length\n* Adjustable timer length\n* Custom break message\n* Haptic feedback on and off switch\n",
+  "family": "application",
+  "id": "eye_saver",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/eye_saver/manifest.yml",
+    "source_code": "https://github.com/paul-sopin/flipper-eye-saver/tree/f67ad0ae9a173ec0683ac1a570b7d1d4dc8bc689"
+  },
+  "name": "Eye Saver",
+  "short_description": "Simple eye strain prevention tool using the 20-20-20 rule.",
+  "version": "0.1"
+}

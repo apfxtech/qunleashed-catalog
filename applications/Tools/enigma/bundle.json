@@ -1,0 +1,15 @@
+{
+  "author": "@xtruan",
+  "category": "Tools",
+  "changelog": "v1.1 - Added more rotors (VI, VII, VIII)",
+  "description": "Enigma cipher machine simulator",
+  "family": "application",
+  "id": "enigma",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/enigma/manifest.yml",
+    "source_code": "https://github.com/xtruan/flipper-enigma/tree/d29abc555a889c643edd0ee3ad2fda3ad9f57cf6"
+  },
+  "name": "Enigma",
+  "short_description": "Enigma for Flipper",
+  "version": "1.1"
+}

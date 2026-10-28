@@ -1,0 +1,78 @@
+/**
+ * Faraday - NFC field-strength probe.
+ *
+ * Parks the onboard ST25R3916 in external-field detect mode and samples the
+ * "carrier present?" bit hundreds of times a second, condensing it to a
+ * duty-cycle strength (0..100%). It never energises its own field.
+ *
+ * The measurement: hold the Flipper in a reader's 13.56 MHz field (a phone
+ * doing NFC, a contactless terminal) and record how much of that field lands -
+ * once bare (baseline), once with the Flipper sealed in the pouch (shielded).
+ * The pouch's job is to keep that interrogation field off the card inside it.
+ */
+#pragma once
+
+#include <furi.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#ifndef FDY_HISTORY_LEN
+#define FDY_HISTORY_LEN 64
+#endif
+
+/**
+ * Where a timed shielded capture has got to.
+ *
+ * The NFC test is the one flow where the FLIPPER goes in the pouch, not the
+ * thing being measured - so the user cannot see the screen or press a button
+ * while the measurement is being taken. Plain peak-hold cannot work here: the
+ * peak would be re-latched by the bare reader field on the way in and again on
+ * the way out, and it was - every pouch graded F. So the shielded half runs on
+ * a timer instead: arm, measure, freeze.
+ */
+typedef enum {
+    FdyNfcCaptureLive = 0, /* free-running peak-hold (the baseline half) */
+    FdyNfcCaptureArming, /* counting down while the user seals the pouch */
+    FdyNfcCaptureMeasuring, /* accumulating the sealed field              */
+    FdyNfcCaptureFrozen, /* done - the peak is held until the user looks */
+} FdyNfcCapture;
+
+/** Atomic snapshot for the meter view. */
+typedef struct {
+    bool armed; /* detector running                     */
+    bool error; /* NFC chip unavailable (held elsewhere) */
+    bool present; /* a carrier is over the noise floor now */
+    uint8_t strength; /* current field duty-cycle 0..100%      */
+    uint8_t peak; /* peak-hold strength since reset        */
+    uint8_t capture; /* FdyNfcCapture                        */
+    uint8_t seconds; /* whole seconds left in this stage      */
+    uint8_t history[FDY_HISTORY_LEN];
+    uint8_t history_head;
+} FdyNfcSnapshot;
+
+typedef struct FdyNfc FdyNfc;
+
+FdyNfc* fdy_nfc_alloc(void);
+void fdy_nfc_free(FdyNfc* n);
+
+void fdy_nfc_start(FdyNfc* n);
+void fdy_nfc_stop(FdyNfc* n);
+bool fdy_nfc_is_running(FdyNfc* n);
+
+/** Drop the peak-hold so the next capture phase starts clean. */
+void fdy_nfc_reset_peak(FdyNfc* n);
+
+/**
+ * Start the timed shielded capture: a few seconds to seal the Flipper in the
+ * pouch, then a few seconds of measurement, then the peak freezes so taking
+ * the Flipper back out cannot overwrite it.
+ */
+void fdy_nfc_begin_shielded(FdyNfc* n);
+
+void fdy_nfc_get(FdyNfc* n, FdyNfcSnapshot* out);
+
+#ifdef __cplusplus
+}
+#endif
