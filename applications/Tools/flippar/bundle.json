@@ -1,15 +1,36 @@
 {
+  "apps": [
+    {
+      "appid": "flippar",
+      "file": "flippar.fap",
+      "icon": "assets/icon.png",
+      "name": "FlipPar",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "# Changelog\n\nv0.1:\n- Initial public release\n- Supports golf and disc golf score tracking\n- Saves and restores the current round\n- Exports plain-text score sheets to the SD card\n",
   "description": "## FlipPar\n\nFlipPar is a Flipper Zero external app for tracking golf or disc golf rounds on-device. It lets you set the number of holes and players, rename players, record par and score values hole-by-hole, and export a plain-text score sheet to the SD card.\n\n- Supports 1 to 27 holes\n- Supports 1 to 10 players\n- Editable player names\n- Per-hole par tracking\n- Per-player hole scores\n- Automatic current-round persistence and restore\n- Running total view with leader summary relative to par\n- Plain-text score-sheet export to the SD card\n- In-app lock screen for quickly hiding the current round",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flippar",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/flippar/manifest.yml",
     "source_code": "https://github.com/jsammarco/FlipPar/tree/ed882a83b5ef41198f9e5999546499b3545a3afb"
   },
   "name": "FlipPar",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png"
+  ],
   "short_description": "Track golf and disc golf rounds on Flipper Zero.",
   "version": "0.1"
 }

@@ -1,15 +1,42 @@
 {
+  "apps": [
+    {
+      "appid": "dtmf_dolphin",
+      "file": "dtmf_dolphin.fap",
+      "icon": "assets/icon.png",
+      "name": "DTMF Dolphin",
+      "version": "1.4"
+    }
+  ],
   "author": "@litui & @xMasterX",
+  "authors": [
+    {
+      "id": "litui",
+      "name": "litui"
+    },
+    {
+      "id": "xmasterx",
+      "name": "xMasterX"
+    }
+  ],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v1.0 - Initial release, v1.1 - Icon fixes, v1.2 - Sync Updates, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version",
   "description": "DTMF (Dual-Tone Multi-Frequency) dialer, Bluebox, and Redbox.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "dtmf_dolphin",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/dtmf_dolphin/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/dtmf_dolphin"
   },
   "name": "DTMF Dolphin",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "DTMF (Dual-Tone Multi-Frequency) dialer, Bluebox, and Redbox.",
   "version": "1.4"
 }

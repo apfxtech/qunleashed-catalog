@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "flipper_letterbeacon",
+      "file": "flipper_letterbeacon.fap",
+      "icon": "assets/icon.png",
+      "name": "Letter Beacon",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v0.1",
   "description": "Letter Beacon",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flipper_letterbeacon",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/flipper_letterbeacon/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/77338a5a2731b621730324952e7e5e8772dc98ac/non_catalog_apps/flipper_letterbeacon"
   },
   "name": "Letter Beacon",
+  "screenshots": [],
   "short_description": "Letter Beacon",
   "version": "0.1"
 }

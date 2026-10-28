@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "financial_calc",
+      "file": "financial_calc.fap",
+      "icon": "assets/icon.png",
+      "name": "Financial Calculator",
+      "version": "1.0"
+    }
+  ],
   "author": "schaene",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v1.0 - Initial release",
   "description": "A simple TVM Calculator",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "financial_calc",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/financial_calc/manifest.yml",
     "source_code": "https://github.com/schaene/Flipper-Financial-Calculator/tree/4e901fda4784b6bcbc4444fe9d580aa07559b768"
   },
   "name": "Financial Calculator",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Solve TVM Problems with this calculator",
   "version": "1.0"
 }
