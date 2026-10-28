@@ -1,0 +1,22 @@
+{
+  "author": "@Kuronons",
+  "category": "Kuronons/Black_Flags_Collection",
+  "changelog": "",
+  "description": "",
+  "dolphin": {
+    "max_butthurt": 14,
+    "max_level": 30,
+    "min_butthurt": 0,
+    "min_level": 1,
+    "weight": 5
+  },
+  "family": "animation",
+  "id": "Kuronons_BlackFlags_Low_128x64",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/animations/Kuronons/Black_Flags_Collection/Kuronons_BlackFlags_Low_128x64/manifest.yml",
+    "source_code": "https://github.com/apfxtech/qunleashed-catalog/tree/6ddd00385e5ee87fe588f9fe380c01758c51b8ef/animations/Kuronons/Black_Flags_Collection/Kuronons_BlackFlags_Low_128x64"
+  },
+  "name": "Kuronons_BlackFlags_Low_128x64",
+  "short_description": "",
+  "version": "e2097953305b"
+}
