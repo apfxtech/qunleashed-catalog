@@ -1,0 +1,22 @@
+{
+  "author": "",
+  "category": "OFW",
+  "changelog": "",
+  "description": "",
+  "dolphin": {
+    "max_butthurt": 7,
+    "max_level": 1,
+    "min_butthurt": 0,
+    "min_level": 1,
+    "weight": 3
+  },
+  "family": "animation",
+  "id": "L1_Laptop_128x51",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/animations/OFW/L1_Laptop_128x51/manifest.yml",
+    "source_code": "https://github.com/apfxtech/qunleashed-catalog/tree/6ddd00385e5ee87fe588f9fe380c01758c51b8ef/animations/OFW/L1_Laptop_128x51"
+  },
+  "name": "L1_Laptop_128x51",
+  "short_description": "",
+  "version": "90bc5aa27900"
+}

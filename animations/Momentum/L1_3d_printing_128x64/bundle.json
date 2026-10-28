@@ -1,0 +1,22 @@
+{
+  "author": "",
+  "category": "Momentum",
+  "changelog": "",
+  "description": "",
+  "dolphin": {
+    "max_butthurt": 8,
+    "max_level": 30,
+    "min_butthurt": 0,
+    "min_level": 6,
+    "weight": 4
+  },
+  "family": "animation",
+  "id": "L1_3d_printing_128x64",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/animations/Momentum/L1_3d_printing_128x64/manifest.yml",
+    "source_code": "https://github.com/apfxtech/qunleashed-catalog/tree/6ddd00385e5ee87fe588f9fe380c01758c51b8ef/animations/Momentum/L1_3d_printing_128x64"
+  },
+  "name": "L1_3d_printing_128x64",
+  "short_description": "",
+  "version": "97639cbe3532"
+}
