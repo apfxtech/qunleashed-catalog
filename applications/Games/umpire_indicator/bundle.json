@@ -1,0 +1,15 @@
+{
+  "author": "@RocketGod-git",
+  "category": "Games",
+  "changelog": "## v0.1\n\n- Initial release by [RocketGod](@RocketGod-git.)\n",
+  "description": "# Flipper Zero Umpire Indicator\n\nA baseball umpire indicator app for the Flipper Zero device. This app simulates a traditional baseball umpire's counter, tracking balls, strikes, and outs with a classic scoreboard-style interface.\n\n## Features\n\n- Tracks balls (0-4), strikes (0-3), and outs (0-2)\n- Classic scoreboard-style display\n- Automatic reset of counts based on baseball rules\n- Undo functionality for error correction\n- Clear all counts with a single button press\n\n## Usage\n\n- **Left Button**: Increment balls (resets at 4 balls)\n- **Up Button**: Increment strikes (resets at 3 strikes, increments outs)\n- **Right Button**: Increment outs (resets all at 3 outs)\n- **Down Button**: Undo last action\n- **Back Button**: Clear all counts\n- **Long Press Back**: Exit the app\n\n## Developer:\n- **RocketGod** (@RocketGod-git)",
+  "family": "application",
+  "id": "umpire_indicator",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/umpire_indicator/manifest.yml",
+    "source_code": "https://github.com/RocketGod-git/Flipper-Zero-Umpire-Indicator/tree/dd5b57a69da969911d8ba4ead96528ccfe616542"
+  },
+  "name": "Umpire Indicator",
+  "short_description": "Baseball and Softball balls, strikes, and outs tracker for umpires",
+  "version": "0.1"
+}

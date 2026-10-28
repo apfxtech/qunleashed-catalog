@@ -1,0 +1,15 @@
+{
+  "author": "Invizabel",
+  "category": "Games",
+  "changelog": "1.0- My first commit\n",
+  "description": "A text adventure game that takes you to the African Savanna! Type 'E' to exit the game at any time!",
+  "family": "application",
+  "id": "volorsavanna",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/volorsavanna/manifest.yml",
+    "source_code": "https://github.com/Invizabel/VolorSavanna/tree/86be8fecaeccedb87b13180edbbb61e8b2f326b7/Volor Savanna/FlipperZero"
+  },
+  "name": "Volor Savanna",
+  "short_description": "A text adventure game",
+  "version": "1.0"
+}

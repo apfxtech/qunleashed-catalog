@@ -1,0 +1,15 @@
+{
+  "author": "Maxim Kulkin",
+  "category": "Games",
+  "changelog": "## v1.0.1\n\nAdded support for flipped orientation to allow using D-pad with left hand (as it is the case in the actual game). Thanks to [@SeaOfTea](https://github.com/SeaOfTea) for this contribution.\n\n## v1.0\n\nInitial release\n",
+  "description": "Stratagem Hero game made after arcade game with the same name inside Helldivers 2 video game.",
+  "family": "application",
+  "id": "stratahero",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/stratahero/manifest.yml",
+    "source_code": "https://github.com/maximkulkin/flipper-zero-stratagem-hero/tree/dc97d57ddcbca0ae4a565ab62c81fc7711c98d4d"
+  },
+  "name": "Stratagem Hero",
+  "short_description": "Helldivers 2 Stratagem Hero game for Flipper Zero",
+  "version": "1.0.1"
+}

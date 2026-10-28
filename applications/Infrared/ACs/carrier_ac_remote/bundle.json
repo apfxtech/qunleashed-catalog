@@ -1,0 +1,15 @@
+{
+  "author": "xMasterX",
+  "category": "Infrared/ACs",
+  "changelog": "v1.0",
+  "description": "IR remote for Carrier-protocol air conditioners",
+  "family": "application",
+  "id": "carrier_ac_remote",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/ACs/carrier_ac_remote/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/cbec11a129a8028fe3e6ccda2385587c89a2877f/non_catalog_apps/carrier_ac_remote"
+  },
+  "name": "Carrier",
+  "short_description": "IR remote for Carrier-protocol air conditioners",
+  "version": "1.0"
+}
