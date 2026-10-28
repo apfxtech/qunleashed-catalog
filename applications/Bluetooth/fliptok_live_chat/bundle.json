@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "fliptok_live_chat",
+      "file": "fliptok_live_chat.fap",
+      "icon": "assets/icon.png",
+      "name": "FlipTok Live",
+      "version": "1.0.0"
+    }
+  ],
   "author": "Dr.Mosfet",
+  "authors": [],
   "category": "Bluetooth",
+  "category_id": "64a69817effe1f448a4053b4",
   "changelog": "# Changelog\n\n## Version 1.1.0 - 2026-04-24\n\n**Added**\n- Word-wrap for long chat messages using screen math (128x64 px)\n- Up to 6 line slots visible at once (FontKeyboard 8px height)\n- Optional \"Send to Flipper Zero\" checkbox - monitor TikTok chat without the device\n- Text-to-Speech (TTS) with voice selection and speed control\n- Keepalive packets every 15 seconds to prevent Flipper timeout\n- Deduplication of repeated messages within 3 second window\n- 3-second backlog discard on TikTok connect\n- Letter T icon (10x10 px)\n\n**Changed**\n- Removed all developer comments from source files\n- Config file excluded from git via .gitignore\n\n## Version 1.0.0 - 2026-04-01\n\n**Added**\n- Initial release\n- Real-time FlipTok Live chat display on Flipper Zero via BLE\n- Chat, gift, follow event handling\n- LED and sound notifications per event type\n- Scrollable message history (8 messages circular buffer)\n- Splash screen with FlipTok logo\n- Python GUI server with auto-dependency installation\n- EulerStream API key support\n- Auto-reconnect on BLE disconnect\n- Transliteration of non-ASCII characters (PL, DE, FR, etc.)\n",
   "description": "Real-time FlipTok Live chat monitor for Flipper Zero.\nDisplays chat comments, gifts and follows via Bluetooth Low Energy.\nIncludes Python GUI server with Text-to-Speech, deduplication,\nauto-reconnect, and optional mode without Flipper Zero.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "fliptok_live_chat",
+  "install_path": "Bluetooth",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Bluetooth/fliptok_live_chat/manifest.yml",
     "source_code": "https://github.com/kamylwnb/FlipTok_Live_Chat/tree/ec66a72c550a8ac12ce296a32794499d395ebfc2"
   },
   "name": "FlipTok Live",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "FlipTok Live chat display on Flipper Zero via Bluetooth",
   "version": "1.0.0"
 }

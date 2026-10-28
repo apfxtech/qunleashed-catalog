@@ -1,15 +1,37 @@
 {
+  "apps": [
+    {
+      "appid": "bt_trigger",
+      "file": "bt_trigger.fap",
+      "icon": "assets/icon.png",
+      "name": "BT Trigger",
+      "version": "1.5"
+    }
+  ],
   "author": "@Nem0oo",
+  "authors": [
+    {
+      "id": "nem0oo",
+      "name": "Nem0oo"
+    }
+  ],
   "category": "Bluetooth",
+  "category_id": "64a69817effe1f448a4053b4",
   "changelog": "v1.0 - Initial release, v1.1 - Description update, v1.2 - Various important fixes, v1.3 - Fixes for latest API, v1.4 - Sync updates and latest API support, v1.5 - Sync with latest version",
   "description": "With the BT Trigger app, you can remotely take pictures with the help of your Flipper Zero via Bluetooth Low Energy.\n\nTo take a picture remotely, do as follows:\n\n1. Run the BT Trigger app and connect to your smartphone. Your Flipper Zero will be displayed as Control (device name) in Bluetooth settings.\n2. Run the Camera app on your smartphone.\n3. To take one picture, press the Right button.\n\n\nYou can take multiple pictures by pressing the Ok button. You can also set the delay between shots by pressing the Up and Down buttons. The number of photos taken is displayed in the app. To reset the shot count, press the Left button.\n\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "bt_trigger",
+  "install_path": "Bluetooth",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Bluetooth/bt_trigger/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/apps_source_code/bluetooth-trigger"
   },
   "name": "BT Trigger",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "Control your smartphone camera via your Flipper Zero",
   "version": "1.5"
 }

@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "claude_remote_ble",
+      "file": "claude_remote_ble.fap",
+      "icon": "assets/icon.png",
+      "name": "Agentic Remote",
+      "version": "0.28"
+    }
+  ],
   "author": "Kasen Sansonetti",
+  "authors": [],
   "category": "Bluetooth",
+  "category_id": "64a69817effe1f448a4053b4",
   "changelog": "v0.28",
   "description": "One-handed Bluetooth remote for AI coding agents (Claude Code). 5-button D-pad control, macros, offline manual + quiz.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "claude_remote_ble",
+  "install_path": "Bluetooth",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Bluetooth/claude_remote_ble/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/claude_remote_ble"
   },
   "name": "Agentic Remote",
+  "screenshots": [],
   "short_description": "One-handed Bluetooth remote for AI coding agents (Claude Code). 5-button D-pad control, macros, offline manual + quiz.",
   "version": "0.28"
 }

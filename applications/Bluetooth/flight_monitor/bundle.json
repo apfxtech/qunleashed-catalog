@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "flight_monitor",
+      "file": "flight_monitor.fap",
+      "icon": "assets/icon.png",
+      "name": "Flight Monitor",
+      "version": "1.0.0"
+    }
+  ],
   "author": "Dr.Mosfet",
+  "authors": [],
   "category": "Bluetooth",
+  "category_id": "64a69817effe1f448a4053b4",
   "changelog": "# Changelog\n\nAll notable changes to the Flight Monitor project will be documented in this file.\n\n## Version 1.0.0 - 2026-04-06\n\n**Initial Release**\n\n**Features:**\n- **Real-time flight data display:** Altitude, speed, vertical speed, throttle, flaps, gear status, pitch/roll\n- **Multiple view modes:** Main dashboard, throttle focus, flaps focus, orientation display\n- **Configurable alarm system:**\n  - Altitude warning (default: 120m when descending)\n  - Gear warning (default: 150m with gear down)\n  - Gear retraction alert (default: 200m with gear down at speed >150 km/h)\n  - Stall speed warning (configurable threshold)\n  - Overspeed warning (configurable threshold)\n- **Safety features:**\n  - Engine failure detection (power <100HP + falling + altitude >100m)\n  - G-force alerts with vibration (pitch >60 deg or roll >70 deg at speed >200 km/h)\n  - Automatic crash detection (data unchanging -> alarms stop)\n- **Professional UI:**\n  - 3-second startup splash screen with airplane logo\n  - Settings menu with scroll bar (BME680-style)\n  - Persistent configuration saved to /ext/apps_data/flight_monitor/settings.cfg\n  - Clean status messages (\"Waiting for data\", \"No flight data\")\n- **War Thunder integration:**\n  - BLE connectivity via custom Python server\n  - 100ms data refresh rate (10 Hz)\n  - JSON API polling from localhost:8111/state\n- **Python server tools:**\n  - GUI server with tkinter interface\n  - IP configuration with persistence\n  - Auto-start functionality\n  - Auto-dependency installation (requests, bleak)\n  - Visual status indicators and logging\n\n**Technical Details:**\n- Platform: Flipper Zero (f7 firmware)\n- Language: C (Flipper app), Python 3.x (server)\n- BLE Protocol: Custom binary format (20 bytes)\n- Data rate: 100ms refresh interval\n- Configuration: Binary file with 5 user-adjustable thresholds\n- Icon: Custom 10x10 airplane sprite\n\n**Developer:** Created by Dr.Mosfet for the War Thunder and Flipper Zero communities.\n\n**Version History:**\n\n- **v1.0.0** (2026-04-06): Initial public release with full feature set\n",
   "description": "Real-time flight monitoring application for Flipper Zero with War Thunder integration.\nFeatures live display of altitude, speed, vertical speed, throttle, flaps, gear status,\nand aircraft orientation. Includes configurable alarm system with altitude warnings,\ngear retraction alerts, stall/overspeed protection, and engine failure detection.\nProfessional settings menu with persistent configuration and automatic crash detection.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flight_monitor",
+  "install_path": "Bluetooth",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Bluetooth/flight_monitor/manifest.yml",
     "source_code": "https://github.com/kamylwnb/flight_monitor/tree/6dadcca2ab1313cc1874a36c1fec4903f7a4ee72"
   },
   "name": "Flight Monitor",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "War Thunder flight parameters monitor with BLE connectivity",
   "version": "1.0.0"
 }

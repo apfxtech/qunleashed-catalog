@@ -1,15 +1,42 @@
 {
+  "apps": [
+    {
+      "appid": "ble_spam",
+      "file": "ble_spam.fap",
+      "icon": "assets/icon.png",
+      "name": "BLE Spam",
+      "version": "6.6"
+    }
+  ],
   "author": "@WillyJL @ECTO-1A @Spooks4576",
+  "authors": [
+    {
+      "id": "willyjl",
+      "name": "WillyJL"
+    },
+    {
+      "id": "ecto-1a",
+      "name": "ECTO-1A"
+    },
+    {
+      "id": "spooks4576",
+      "name": "Spooks4576"
+    }
+  ],
   "category": "Bluetooth",
+  "category_id": "64a69817effe1f448a4053b4",
   "changelog": "v6.6",
   "description": "Flood BLE advertisements to cause spammy and annoying popups/notifications",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "ble_spam",
+  "install_path": "Bluetooth",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Bluetooth/ble_spam/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/6b33af2966bfc5efb9183d45d46a0a1c41aea196/base_pack/ble_spam"
   },
   "name": "BLE Spam",
+  "screenshots": [],
   "short_description": "Flood BLE advertisements to cause spammy and annoying popups/notifications",
   "version": "6.6"
 }
