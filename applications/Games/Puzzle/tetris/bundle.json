@@ -1,0 +1,15 @@
+{
+  "author": "@xMasterX & @jeffplang & @noiob",
+  "category": "Games/Puzzle",
+  "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Fixes for new API, Gameplay improvements, v1.3 - Various fixes, v1.4 - Sync updates and latest API support, v1.5 - Sync with latest version",
+  "description": "Tetris Game",
+  "family": "application",
+  "id": "tetris",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Puzzle/tetris/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/tetris_game"
+  },
+  "name": "Tetris",
+  "short_description": "Tetris Game",
+  "version": "1.6"
+}

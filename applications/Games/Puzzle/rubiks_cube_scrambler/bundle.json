@@ -1,0 +1,15 @@
+{
+  "author": "@RaZeSloth",
+  "category": "Games/Puzzle",
+  "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Fixes for new API, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version",
+  "description": "App generates random moves to scramble a Rubik's cube.",
+  "family": "application",
+  "id": "rubiks_cube_scrambler",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Puzzle/rubiks_cube_scrambler/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/apps_source_code/rubiks_cube_scrambler"
+  },
+  "name": "Rubik's Cube Scrambler",
+  "short_description": "App generates random moves to scramble a Rubik's cube.",
+  "version": "1.4"
+}

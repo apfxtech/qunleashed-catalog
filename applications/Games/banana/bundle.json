@@ -1,0 +1,15 @@
+{
+  "author": "Marcin Sokołowski (@DrEverr)",
+  "category": "Games",
+  "changelog": "CHANGELOG.md",
+  "description": "README.md",
+  "family": "application",
+  "id": "banana",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/banana/manifest.yml",
+    "source_code": "https://github.com/DrEverr/FlipperApps/tree/d8c17e5000a31c3088c6c0b85680f1748168d379/banana"
+  },
+  "name": "Banana",
+  "short_description": "Banana. Everyone loves banana.",
+  "version": "0.4"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Games/Simulation",
+  "changelog": "v0.1",
+  "description": "Oregon Trail",
+  "family": "application",
+  "id": "oregon_trail",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Simulation/oregon_trail/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/oregon_trail"
+  },
+  "name": "Oregon Trail",
+  "short_description": "Oregon Trail",
+  "version": "0.1"
+}

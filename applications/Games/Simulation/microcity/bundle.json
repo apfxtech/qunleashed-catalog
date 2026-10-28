@@ -1,0 +1,15 @@
+{
+  "author": "@apfxtech",
+  "category": "Games/Simulation",
+  "changelog": "v2.0",
+  "description": "MicroCity is a SimCity-style city builder for Flipper Zero",
+  "family": "application",
+  "id": "microcity",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Simulation/microcity/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/microcity"
+  },
+  "name": "MicroCity",
+  "short_description": "MicroCity is a SimCity-style city builder for Flipper Zero",
+  "version": "2.0"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "@deya-eldeen",
+  "category": "Games",
+  "changelog": "v1.1 - Initial release",
+  "description": "Classic Simon Says memory game with a pixel-art brain mascot. Follow the sequence of flashing buttons for as long as you can!",
+  "family": "application",
+  "id": "brainy",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/brainy/manifest.yml",
+    "source_code": "https://github.com/deya-eldeen/flipperzero-brainy/tree/e0475541a50f02d2b2e5013b78434bb04b69565d"
+  },
+  "name": "Brainy",
+  "short_description": "Classic Simon Says memory game. Follow the sequence of flashing buttons and sounds for as long as you can!",
+  "version": "1.1"
+}

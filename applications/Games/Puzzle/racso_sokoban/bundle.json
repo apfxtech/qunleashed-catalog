@@ -1,0 +1,15 @@
+{
+  "author": "Racso",
+  "category": "Games/Puzzle",
+  "changelog": "## v1.6\n- Internal code refactoring and cleanup.\n- Compatibility with latest firmware.\n\n## v1.5\n- You can now undo up to 256 moves.\n\n## v1.4\n- Level drawing improved: partial overdraw allowed for borders, boards are now centered, boards are rotated if that fits better.\n- Menus now auto-select the first unplayed level by default.\n- A dolphin_deed is now triggered when completing a level.\n\n## v1.3\n- Fixed error when updating to the latest API version.\n\n## v1.2\n- Fixed error when updating to the latest API version.\n\n## v1.1\n- Fixed error when reading some levels.\n\n## v1.0\n- Initial release.",
+  "description": "## About Sokoban\n\nSokoban is a classic puzzle game. Your objective is to push all the boxes onto the targets.\n\nRules are simple:\n1. You can only push boxes, not pull them.\n2. You can only push one box at a time.\n3. Score is determined by the number of PUSHES you make. The less pushes, the better.\n\n## App features\n\n- The app includes well-known sets of levels. In version 1.0, 255 levels are available.\n- Keep track of your best scores for each level, and compare them with the best possible scores. Can you star all the levels?\n- Made a mistake? No problem, you can undo some of your moves.\n\n## Upcoming features\n\n- More level sets\n- Increased undo limit\n- Load custom level sets\n\n## Credits\nMade with ♠ by Racso - [https://games.by.rac.so/fzero](https://games.by.rac.so/fzero)",
+  "family": "application",
+  "id": "racso_sokoban",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Puzzle/racso_sokoban/manifest.yml",
+    "source_code": "https://github.com/Racso/fzero-apps/tree/4163d65540f0ce2b82b4d54f06159bad580df433/sokoban"
+  },
+  "name": "Sokoban",
+  "short_description": "Sokoban on Flipper Zero. Solve your path to victory!",
+  "version": "1.6"
+}

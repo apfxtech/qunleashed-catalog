@@ -1,0 +1,15 @@
+{
+  "author": "@SimplyMinimal & @ShehabAttia96",
+  "category": "Games/Puzzle",
+  "changelog": "v0.1",
+  "description": "A Simon Says Game",
+  "family": "application",
+  "id": "simon_says",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Puzzle/simon_says/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/SimonSays"
+  },
+  "name": "Simon Says",
+  "short_description": "A Simon Says Game",
+  "version": "0.1"
+}

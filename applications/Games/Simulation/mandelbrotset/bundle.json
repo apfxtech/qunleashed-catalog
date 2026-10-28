@@ -1,0 +1,15 @@
+{
+  "author": "@Possibly-Matt",
+  "category": "Games/Simulation",
+  "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
+  "description": "The Mandelbrot set is the set of all so-called (complex) numbers that meet Mandelbrots simple arithmetic criterion.",
+  "family": "application",
+  "id": "mandelbrotset",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Simulation/mandelbrotset/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/mandelbrot"
+  },
+  "name": "Mandelbrot Set",
+  "short_description": "The Mandelbrot set is the set of all so-called (complex) numbers that meet Mandelbrots simple arithmetic criterion.",
+  "version": "1.4"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "Tom Varghese",
+  "category": "Games",
+  "changelog": "## 1.0\n\n- Initial release.\n- Eight levels with rings, checkpoints, springs, water, spikes and spikers.\n- Level select for unlocked levels, best score tracking and a sound toggle,\n  all saved between sessions.\n",
+  "description": "# Bounce\n\nA tribute to the classic Nokia *Bounce*. Roll a ball through eight brick levels,\njump through every ring to open the exit gate, and keep clear of the thorns.\n\n## Gameplay\n\n- **Rings** - roll or jump through the middle of every ring in the level. When the last one is collected, the exit gate opens.\n- **Checkpoints** - touch a flag and you respawn there after losing a ball.\n- **Springs** - launch the ball about five tiles into the air.\n- **Water** - the ball floats. Hold Down to dive, then jump at the surface to leap clear.\n- **Spikes and spikers** - a single touch pops the ball. Spikers patrol either left and right or up and down.\n- **Hearts** - an extra ball.\n\nYou start with three balls. Unlocked levels, your best score and the sound\nsetting are saved between sessions.\n\n## Controls\n\n- **Left** and **Right** - roll\n- **Up** or **OK** - jump, hold to keep bouncing\n- **Down** - dive while in water\n- **Back** - pause, with resume, restart level and title screen\n\nOn the title screen, Left and Right pick any unlocked level, Up and Down switch\nbetween the level and sound options, and Back exits the game.\n\n## Levels\n\nEight hand-built levels, unlocked in order: First Bounce, Thorns, Spring Tower,\nSpikers, The Climb, Deep Water, Spike Alley and Grand Finale.\n",
+  "family": "application",
+  "id": "bounce",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/bounce/manifest.yml",
+    "source_code": "https://github.com/tomxposed/flipper-bounce/tree/5dcca3167f69efb6fb0abe8c699e3fd88186b5df"
+  },
+  "name": "Bounce",
+  "short_description": "Nokia-style Bounce: roll, jump, collect every ring and reach the exit.",
+  "version": "1.0"
+}

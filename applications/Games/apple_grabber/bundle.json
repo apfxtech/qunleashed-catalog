@@ -1,0 +1,15 @@
+{
+  "author": "Julio Rodriguez",
+  "category": "Games",
+  "changelog": "v0.1:\nInitial Release",
+  "description": "# Apple Grabber\nApple Grabber Game for Flipper Zero\n\n# How to play\nFlip the your device on vertical mode and use LEFT/RIGHT to move, the objective is to grab all the apples.\nThe speed increases each turn.\n",
+  "family": "application",
+  "id": "apple_grabber",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/apple_grabber/manifest.yml",
+    "source_code": "https://github.com/d7d8/apple-grabber/tree/c662ff193ac361ed602670b688f33fa622e9e71a"
+  },
+  "name": "Apple Grabber",
+  "short_description": "Apple grabber game, default mode is vertical",
+  "version": "0.1"
+}

@@ -1,0 +1,50 @@
+App(
+    appid="flipcraft",
+    name="Flipcraft",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="flipcraft_app",
+    requires=["gui", "storage"],
+    sources=["src/main.cpp"],
+    stack_size=8 * 1024,
+    fap_category="Games",
+    fap_file_assets="assets/worlds",
+    fap_icon="assets/icon.png",
+    fap_author="@apfxtech",
+    fap_version="2.8",
+    fap_weburl="https://github.com/apfxtech/Flipcraft.git",
+)
+
+App(
+    appid="flipcraft_menu",
+    apptype=FlipperAppType.PLUGIN,
+    entry_point="flipcraft_menu_ep",
+    requires=["flipcraft"],
+    sources=["src/menu/menu.cpp"],
+    fal_embedded=True,
+)
+
+App(
+    appid="flipcraft_worldgen",
+    apptype=FlipperAppType.PLUGIN,
+    entry_point="flipcraft_worldgen_ep",
+    requires=["flipcraft"],
+    sources=["src/world/worldgen.cpp"],
+    fal_embedded=True,
+)
+
+App(
+    appid="flipcraft_game",
+    apptype=FlipperAppType.PLUGIN,
+    entry_point="flipcraft_game_ep",
+    requires=["flipcraft"],
+    sources=[
+        "src/game/device.cpp",
+        "src/game/game.cpp",
+        "src/game/mobs.cpp",
+        "src/game/data.cpp",
+        "src/game/world.cpp",
+        "src/game/render.cpp",
+        "src/game/gui.cpp",
+    ],
+    fal_embedded=True,
+)
