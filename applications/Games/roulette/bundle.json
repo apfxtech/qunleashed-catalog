@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "roulette",
+      "file": "roulette.fap",
+      "icon": "assets/icon.png",
+      "name": "Roulette",
+      "version": "1.0"
+    }
+  ],
   "author": "thecoolguy2001",
+  "authors": [],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "v1.0:\nInitial release.\n\n- Six-chamber revolver cylinder drawn procedurally, one chamber advanced per trigger pull\n- Bullet placement from the Flipper's hardware TRNG, re-rolled on every spin\n- Click, bang and spin feedback with tone, vibration and LED\n- Running \"Survived\" counter, shown as the final score on the bang screen\n",
   "description": "Roulette is a six-chamber revolver game for the Flipper Zero. One bullet, six chambers, and a cylinder that advances one position with every trigger pull. Survive the pull and your score goes up. Find the bullet and the screen flashes, the Flipper buzzes, and the round is over.\n\nEvery spin places the bullet using the Flipper's hardware random number generator, so no two rounds play the same way and nothing about the outcome is predictable.\n\n## How to play\n\n- **OK** on the title screen spins the cylinder and starts a round\n- **OK** on the ready screen pulls the trigger on the current chamber\n- **LEFT** or **RIGHT** re-spins the cylinder, which re-rolls the bullet and resets your Survived counter to zero\n- **BACK** returns to the title screen\n- **Hold BACK** exits the app\n\nThe cylinder on screen shows exactly where you are: the filled chamber is the one lined up with the hammer, and the chamber counter tells you how many are left. Six pulls without a re-spin means the bullet is guaranteed to come up, so the tension builds on its own.\n\n## What you get\n\n- A hand-drawn six-chamber cylinder, rendered live rather than stored as artwork\n- Distinct sound, vibration and LED feedback for a safe click, a spin, and the shot\n- A running Survived counter, shown as your final score on the game over screen\n- No setup, no SD card files, no internet, and no add-on hardware\n\nJust install it and play.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "roulette",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/roulette/manifest.yml",
     "source_code": "https://github.com/thecoolguy2001/flipper-roulette/tree/63f608ad4dc42266ecdbe8a3f459932ed2b01d34"
   },
   "name": "Roulette",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Six-chamber revolver roulette with TRNG spins, haptics and sound.",
   "version": "1.0"
 }

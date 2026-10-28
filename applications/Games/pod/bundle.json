@@ -1,15 +1,36 @@
 {
+  "apps": [
+    {
+      "appid": "pod",
+      "file": "pod.fap",
+      "icon": "assets/icon.png",
+      "name": "Pod",
+      "version": "1.0"
+    }
+  ],
   "author": "thecoolguy2001",
+  "authors": [],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "v1.0:\nInitial release.\n\n- Walk Mode: broadcast a calling card over sub-GHz and see who is nearby\n- Encounters: a log of every Flipper you have crossed paths with, kept on the SD card\n- Battles: challenge someone in range, and if they accept, a ten-second tap race decides it\n- Practice: a solo tap race against a simulated opponent\n- Progression: wins, losses and XP drive a rank, from Minnow up to Kraken\n- Your callsign is editable, and your real dolphin level is read but never changed\n- The radio checks that 433.92 MHz is permitted in your region before it transmits\n",
   "description": "Pod turns your Flipper into a calling card. Leave it running while you walk around, and it quietly broadcasts who you are over sub-GHz and listens for others doing the same. Cross paths with another Flipper running Pod and it logs the encounter. Stay near each other and you can battle.\n\n## What it needs\n\n**Pod is a game for two Flippers.** Encounters and battles need someone else running Pod nearby, on the same 433.92 MHz band. There is no server and no internet: the two devices talk straight to each other over the radio your Flipper already has.\n\nOn your own, **Practice** gives you the tap race against a simulated opponent, so you can learn the game before you meet anyone. The rest of it comes alive when there are two of you — at a meetup, a con, a hackerspace, or just a friend across the room.\n\n## How it works\n\n**Walk Mode** broadcasts your callsign, a random identity and your dolphin level every few seconds, and shows how many Flippers are currently in range.\n\n**An encounter** is logged whenever you catch someone's broadcast. A passing hello is just that: a line in your log, with their name, their level, and when you crossed paths. The log lives on your SD card.\n\n**A battle** happens only when both of you agree. One challenges, the other accepts, and then a three second countdown gives way to ten seconds of mashing OK. Most taps wins. Your tap counts are exchanged once, at the end, so neither of you can see the other's score while the race is on.\n\n**Winning earns XP**, and XP drives a rank: Minnow, Guppy, Tuna, Dolphin, Orca, Kraken.\n\n## Your dolphin is safe\n\nPod reads your real dolphin level to seed your calling card, and never changes it. Wins, losses and XP are Pod's own, kept separately from your Flipper's pet.\n\n## Controls\n\n- **Walk Mode** broadcasts and listens; OK opens the list of who is in range\n- Pick someone in range and press **OK** to challenge them\n- A challenge arriving shows up on screen: **OK** accepts, **Back** declines\n- In the race, **mash OK**\n- **Encounters** holds the log, and can be cleared\n- **Profile** lets you change your callsign\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "pod",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/pod/manifest.yml",
     "source_code": "https://github.com/thecoolguy2001/flipper-pod/tree/bc7fadc8abd9431216324ed5af806bcc479ea8f1"
   },
   "name": "Pod",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png"
+  ],
   "short_description": "Meet other Flippers over sub-GHz, log encounters and battle them.",
   "version": "1.0"
 }

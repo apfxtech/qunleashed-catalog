@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "nw_crawl",
+      "file": "nw_crawl.fap",
+      "icon": "assets/icon.png",
+      "name": "NW Crawl",
+      "version": "0.3"
+    }
+  ],
   "author": "rseufert",
+  "authors": [],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "v0.3:\n- Umbrella: Back then a direction shoves a neighbouring enemy back and stuns it\n- Slingshot: won from Sasquatch, fires pebbles in a straight line\n- Pebbles to collect on every street\n\nv0.2:\n- The walk is saved at each new street and can be continued from the title screen\n- Records: furthest street, wins and fastest win\n- Enemies behave differently: crows fly over walls, raccoons steal coffee, scooters charge, coyotes hunt in pairs\n- New landmarks: Powell's Books, the food carts and the streetcar\n- The streets change style on the way north\n- Hold OK for a street map and character sheet\n- The end screen says what got you\n\nv0.1:\nFirst release\n",
   "description": "# NW Crawl\n\nA tiny roguelike set on the alphabet streets of NW Portland. Start on Burnside and head north one street per floor (Couch, Davis, Everett ... Thurman) until you reach the Witch's Castle in Forest Park.\n\n## The game\n\n- **Floors:** 19 streets plus the castle, each a randomly generated maze of rooms, corridors and side alleys with fog of war\n- **Locals:** rats, crows, raccoons, rogue e-scooters and coyotes, tougher the further north you go\n- **Sasquatch:** often lurks by the exit on the northern streets and drops loot when beaten\n- **Pickups:** coffee heals, donuts raise max HP, IPAs raise attack, used books reveal the map\n- **Joe's Cellar:** a safe room on Pettygrove with one stiff pour (full HP and +1 attack)\n- **The Witch:** hexes you from range, summons crows and vanishes when hit\n- **Sound:** square-wave effects and a title-screen beat that follow the Flipper's volume and stealth settings\n\n## Controls\n\n- **D-pad:** move; walk into something to attack it\n- **OK:** drink a coffee, or wait a turn at full health\n- **Hold Back:** quit\n- **Title screen:** Up toggles dev mode, then Left/Right pick the starting street\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "nw_crawl",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/nw_crawl/manifest.yml",
     "source_code": "https://github.com/rseufert/nw_crawl/tree/7f53a53b3c94309f19112c94d04039a8ab0f3637"
   },
   "name": "NW Crawl",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Tiny roguelike: walk the alphabet streets of NW Portland to the Witch's Castle",
   "version": "0.3"
 }

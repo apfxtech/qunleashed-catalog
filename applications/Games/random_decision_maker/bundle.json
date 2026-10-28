@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "random_decision_maker",
+      "file": "random_decision_maker.fap",
+      "icon": "assets/icon.png",
+      "name": "Decision Maker",
+      "version": "1.0"
+    }
+  ],
   "author": "jacki",
+  "authors": [],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "v1.0 - Initial release",
   "description": "Spin a roulette to pick a random option for you.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "random_decision_maker",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/random_decision_maker/manifest.yml",
     "source_code": "https://github.com/Gerijacki/random_decision_maker/tree/828eae48324db81fd472594c3f78fee42a5d1ccd"
   },
   "name": "Decision Maker",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Spin a roulette to pick a random option for you.",
   "version": "1.0"
 }

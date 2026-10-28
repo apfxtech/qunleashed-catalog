@@ -1,15 +1,36 @@
 {
+  "apps": [
+    {
+      "appid": "jetpack_game",
+      "file": "jetpack_game.fap",
+      "icon": "assets/icon.png",
+      "name": "Jetpack Game",
+      "version": "1.1"
+    }
+  ],
   "author": "@timstrasser",
+  "authors": [
+    {
+      "id": "timstrasser",
+      "name": "timstrasser"
+    }
+  ],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "Initial release",
   "description": "Dive into the adventurous world of Jetpack Joyride on Flipper Zero! Navigate Barry through a high-tech lab filled with obstacles, collect coins, and fly in this thrilling remake of the classic game.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "jetpack_game",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/jetpack_game/manifest.yml",
     "source_code": "https://github.com/timstrasser/flipper-jetpack-game/tree/847f0f0b39df05df5f85836d0ee4d62d1ce3f330"
   },
   "name": "Jetpack Game",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Jetpack Game",
   "version": "1.1"
 }

@@ -1,15 +1,38 @@
 {
+  "apps": [
+    {
+      "appid": "game_connect_wires",
+      "file": "game_connect_wires.fap",
+      "icon": "assets/icon.png",
+      "name": "Connect Wires",
+      "version": "1.2"
+    }
+  ],
   "author": "@AlexTaran",
+  "authors": [
+    {
+      "id": "alextaran",
+      "name": "AlexTaran"
+    }
+  ],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "v1.0 - Initial release, v1.1 - Bug fixes, v1.2 - Memory leak fix",
   "description": "In this classic puzzle game, your objective is to connect all lamps to a single power source\nusing wires located between them.\n\nYou have a rectangular field of elements and your task is to turn each of them so wires connect lamps\nto the power source.\n\nThe game ends when all the wires are used and deliver power to all lamps.\nControls are intuitive. Use long press Ok to change default rotation direction.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "game_connect_wires",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/game_connect_wires/manifest.yml",
     "source_code": "https://github.com/AlexTaran/flipperzero/tree/02b332d686e0a9c3cfebe941a7b2a34afc27235b/games/connect_wires"
   },
   "name": "Connect Wires",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "A famous puzzle game",
   "version": "1.2"
 }

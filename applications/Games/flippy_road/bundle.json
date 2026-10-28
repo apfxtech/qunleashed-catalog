@@ -1,15 +1,37 @@
 {
+  "apps": [
+    {
+      "appid": "flippy_road",
+      "file": "flippy_road.fap",
+      "icon": "assets/icon.png",
+      "name": "Flippy Road",
+      "version": "1.1"
+    }
+  ],
   "author": "@rkilpadi",
+  "authors": [
+    {
+      "id": "rkilpadi",
+      "name": "rkilpadi"
+    }
+  ],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "v1.1:\n- Fix app on SDK 0.103 and later\n\nv1.0:\n- Initial release\n",
   "description": "Cross roads and rivers in a Frogger-inspired platformer",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flippy_road",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/flippy_road/manifest.yml",
     "source_code": "https://github.com/rkilpadi/flippy-road/tree/21a5b41b0a26a8d3dffa16ab74eb5dfda0e28a06"
   },
   "name": "Flippy Road",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "Flippy Road Game",
   "version": "1.1"
 }

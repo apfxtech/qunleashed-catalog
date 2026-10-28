@@ -1,15 +1,38 @@
 {
+  "apps": [
+    {
+      "appid": "questions",
+      "file": "questions.fap",
+      "icon": "assets/icon.png",
+      "name": "Questions",
+      "version": "1.1"
+    }
+  ],
   "author": "@nikilark",
+  "authors": [
+    {
+      "id": "nikilark",
+      "name": "nikilark"
+    }
+  ],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "v1.0 - Initial release, v1.1 - Adjusted build for API 58.0",
   "description": "Game contains questions to ask you friend, couple or someone new on party to get to know each other better.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "questions",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/questions/manifest.yml",
     "source_code": "https://github.com/nikilark/flipper_questions/tree/b701d55fca4d5fee85b241ba992754ac7a3695aa"
   },
   "name": "Questions",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Questions to better know each other",
   "version": "1.1"
 }
