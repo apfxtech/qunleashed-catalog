@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "digital_kaleidoscope",
+      "file": "digital_kaleidoscope.fap",
+      "icon": "assets/icon.png",
+      "name": "Digital Kaleidoscope",
+      "version": "0.1.0"
+    }
+  ],
   "author": "J. Randall jr3d.co.uk",
+  "authors": [],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "changelog.md",
   "description": "Digital Kaleidoscope is a lightweight app for Flipper Zero that transforms the device’s screen into a dynamic, ever-changing kaleidoscope. You get four unique visual styles, each with its own characteristics:\n\n- **Rotating Star**: A radiating starburst spins slowly around the center of the display, giving the impression of a celestial dance.\n- **Concentric Arcs**: Pixelated semi-circles expand and contract in rings from the middle of the screen, creating a fluid, ripple-like effect.\n- **Gradient Noise**: Random noise pixels appear brightest at the center and fade toward the edges. The pattern shifts subtly over time, producing a mesmerizing “shifting haze.”\n- **Mirrored Dots**: A static cloud of random dots is mirrored left-to-right. Unlike the other styles, this one does not animate automatically—you press an arrow key to regenerate the dot pattern whenever you like.\n\nYou can fine-tune how “busy” each style looks by adjusting the density (0–100%) with the Up/Down buttons. The Left/Right arrows switch between the four visualizers, and pressing Back returns to the main menu.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "digital_kaleidoscope",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/digital_kaleidoscope/manifest.yml",
     "source_code": "https://github.com/JamesR555/digital_kaleidoscope/tree/9e8a18e1f44855fe56674463fb22380024dc97be"
   },
   "name": "Digital Kaleidoscope",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png"
+  ],
   "short_description": "Digital Kaleidoscope turns your Flipper Zero into a pocket-sized animated visualizer. Choose from four distinct kaleidoscope styles and adjust the pattern density on the fly.",
   "version": "0.1.0"
 }

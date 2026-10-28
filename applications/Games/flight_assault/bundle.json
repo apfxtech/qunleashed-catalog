@@ -1,15 +1,38 @@
 {
+  "apps": [
+    {
+      "appid": "flight_assault",
+      "file": "flight_assault.fap",
+      "icon": "assets/icon.png",
+      "name": "Flight Assault",
+      "version": "0.4"
+    }
+  ],
   "author": "@evillero",
+  "authors": [
+    {
+      "id": "evillero",
+      "name": "evillero"
+    }
+  ],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "## 0.4\n- Bug fixes, added shield, enemy icon changed\n\n## 0.3\n- Added bonus lives feature to the game\n\n## 0.2\n- Added lives\n\n## 0.1\n - Initial release\n\n",
   "description": "# Flight Assault\n\nFlight Assault is a dynamic action game for flipperzero where players control a spacecraft engaged in combat against enemy ships approaching from different directions.\n\n## How to play\n\n1. Launch the game on your device.\n2. Use the control keys to maneuver the spacecraft.\n3. Destroy as many enemy ships as possible to score points.\n4. Avoid collisions with enemy ships.\n5. Play for as long as you can and try to achieve the highest score!\n\n## Version history\n- 0.4 - Bug fixes, added shield, enemy icon changed\n- 0.3 - Added bonus lives feature to the game\n- 0.2 - Added lives \n- 0.1 - Initial release by @evillero\n\n## Other\n\nThis game was made based on the dvd_bounce.\n\n## Author\n\nThis game was developed by @evillero\n\n## Contact\n\nFor any inquiries or feedback reporting bugs, you can contact the author via email or discord: \nldpm1402@gmail.com\nDiscord invite: https://discord.com/invite/NsjCvqwPAd\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flight_assault",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/flight_assault/manifest.yml",
     "source_code": "https://github.com/evillero/flight_assault/tree/fa2c6d4bcfb056cfe76daa3d4e4486ee2211dca9"
   },
   "name": "Flight Assault",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Flight Assault is a dynamic action game where players control a spacecraft engaged in combat against enemy ships approaching from different directions.",
   "version": "0.4"
 }

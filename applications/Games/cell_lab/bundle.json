@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "cell_lab",
+      "file": "cell_lab.fap",
+      "icon": "assets/icon.png",
+      "name": "Cell Lab",
+      "version": "0.4"
+    }
+  ],
   "author": "PilotOfAsuka",
+  "authors": [],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "v0.4:\n- Added stable food rendering so food no longer blinks.\n- Split settings into World Settings and App Settings.\n- Added app icon for the Flipper Apps Catalog.\n- Added explicit world irritants: temperature, radiation, toxins, and crowding.\n- Improved genetic behavior with stress resistance and stress-driven mutation.\n\nv0.3:\n- Split the codebase into structured modules.\n- Added configurable world settings.\n- Added smooth page transitions.\n- Added cannibalism gene with partial genome recombination.\n- Added automatic new generation when all life dies.\n\nv0.2:\n- Added genome-driven behavior.\n- Added light and temperature effects.\n- Added world state and about screens.\n\nv0.1:\n- Added initial pixel-world life simulation.\n",
   "description": "Cell Lab is a tiny evolving pixel-world life simulator for Flipper Zero.\n\nThe 128x64 screen becomes a living world where each pixel can be empty, food, or a living cell. Cells spend energy, move, eat, reproduce, mutate, die, and start a new epoch after extinction.\n\nEach living cell has a compact genome that affects temperature preference, light preference, behavior, metabolism, mutation chance, stress resistance, and cannibalism. The world adds pressure through temperature, radiation, toxins, and crowding.\n\nThe app includes a live world view, a compact world state page, world settings, app settings, smooth page scrolling, and qFlipper screenshots.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "cell_lab",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/cell_lab/manifest.yml",
     "source_code": "https://github.com/PilotOfAsuka/cell_lab_fliperzero/tree/d9151384c09a4ab6872c2fd4ca562a608c71195a"
   },
   "name": "Cell Lab",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "A tiny pixel-world life simulator for Flipper Zero.",
   "version": "0.4"
 }

@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "flipper_gurpil",
+      "file": "flipper_gurpil.fap",
+      "icon": "assets/icon.png",
+      "name": "Gurpil",
+      "version": "0.1.10"
+    }
+  ],
   "author": "Endika",
+  "authors": [],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "- v0.1.10: A best distance that cannot be read is kept instead of being overwritten.\n- v0.1.8: Incremental speed ramp — runs open gentle at x1 and build to x2 and x3 (full speed)\n  as you go, with the current tier shown beside the speed bar.\n- v0.1.7: Faster pace and a tighter time budget for a harder, twitchier run.\n- v0.1.0: Initial release — endless shape-vs-terrain side-scroller with four D-pad wheel\n  shapes, checkpoints for extra time, and your best distance saved to the SD card.\n",
   "description": "Gurpil is an endless side-scroller for the Flipper Zero. The ground scrolls by in zones —\nflat, rocky, uphill and obstacles — and the wheel SHAPE you mount decides how fast you roll\nover each one. Press the D-pad to switch shape on the fly: Up = circle, Right = line,\nDown = square, Left = triangle. Match the shape to the terrain ahead to keep your speed up;\nthe wrong shape stalls you.\n\nThe pace ramps as you go — a run opens gentle at x1 and builds to x2 and x3 (full speed) the\nfurther you get, shown next to the speed bar. Reach checkpoints to earn extra time; the run\nis endless and only ends when the clock runs out. Your best distance is saved to the SD card.\nFully offline — no network, no accounts.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flipper_gurpil",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/flipper_gurpil/manifest.yml",
     "source_code": "https://github.com/Endika/flipper-gurpil/tree/41f162670cd52cfec461f08db8cc8aa774f08642"
   },
   "name": "Gurpil",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Endless side-scroller: pick your wheel shape, the terrain decides your speed.",
   "version": "0.1.10"
 }
