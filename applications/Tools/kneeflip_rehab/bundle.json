@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "kneeflip_rehab",
+      "file": "kneeflip_rehab.fap",
+      "icon": "assets/icon.png",
+      "name": "KneeFlip Rehab",
+      "version": "0.1"
+    }
+  ],
   "author": "Darya Lok",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "# Changelog\n\n## 0.1.0\n\nInitial prototype.\n\n**Added**\n\n- Main menu\n- Ice timer\n- Elevation timer\n- Quad sets timer\n- Heel slides counter\n- About screen with safety disclaimer\n- GitHub and catalog metadata\n",
   "description": "KneeFlip Rehab is a Flipper Zero timer and counter app for knee rehabilitation routines prescribed by a clinician. It helps users follow timed sessions and pace simple user-configured routine blocks. KneeFlip Rehab is a timer and counter tool only. It does not provide medical advice, diagnosis, or treatment. Always follow the recovery plan provided by your doctor, surgeon, or physical therapist.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "kneeflip_rehab",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/kneeflip_rehab/manifest.yml",
     "source_code": "https://github.com/daryalok/KneeFlip-Rehab/tree/799478cd0adc8b51acf347f110908bf64b7507e8"
   },
   "name": "KneeFlip Rehab",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png"
+  ],
   "short_description": "Timer and counter for clinician-prescribed knee rehab routines",
   "version": "0.1"
 }

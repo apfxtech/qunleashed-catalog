@@ -1,15 +1,44 @@
 {
+  "apps": [
+    {
+      "appid": "morse_flipper",
+      "file": "morse_flipper.fap",
+      "icon": "assets/icon.png",
+      "name": "Morse Flipper",
+      "version": "0.1.76"
+    }
+  ],
   "author": "@yo3gnd",
+  "authors": [
+    {
+      "id": "yo3gnd",
+      "name": "yo3gnd"
+    }
+  ],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v0.1.76:\n- Add AZERTY and QWERTZ keyboard presets for PC keyer modes that pass through host OS keymaps correctly.\n\nv0.1.75:\n- Move custom character files and Ham Keyer logs into the app data folder expected by the Flipper app catalog.\n\nv0.1.72:\n- Help cards now support continuous reading across topics: Down and Right scroll the current card first, advance at the bottom, show an intermediate chapter title card before the next topic, then enter that topic's first card.\n- Up remains scroll-only, and Left remains previous-card-only within the current help topic.\n\nv0.1.70:\nfirst public release\n",
   "description": "# Morse Flipper\n\nMorse Flipper is a CW trainer, keyer, hardware adapter, portable ham helper, and Sub-GHz Morse experiment bench for the Flipper Zero.\n\nIt is built around learning Morse by sound rather than by staring at dots and dashes. You can practise copying, send with buttons or external keys, experiment with keyer timing, and use the Flipper as a small CW hardware adapter.\n\nMorse Flipper also includes a fairly extensive help manual on the Flipper itself, under Help. It covers how to learn and practise Morse Code, how to connect straight keys and paddles, what is worth practising, and which outside resources are worth your time. Please read it; there is more useful Morse guidance in there than fits comfortably in a README. You can find the complete Morse Flipper [user manual on GitHub](https://github.com/yo3gnd/morse-flipper/blob/master/manual/README.md).\n\n## Features\n\n- Flipper-to-Flipper Sub-GHz Morse TX/RX, plus receive and decode experiments for compatible OOK Morse signals inside supported Flipper bands.\n- Listening practice (LCWO/Koch progressions), straight-key timing practice, and five-character sending drills.\n- Free practice with a straight key, paddle, Flipper buttons, USB, MIDI, mouse, or keyboard input.\n- Iambic, Elekey-A/B, Ultimatic, bug, keyahead, and Vail-compatible keying modes.\n- Built-in help for setup, hardware, practice, portable operating, contests, and CW operating notes.\n- GPIO key and paddle input using a simple jack adapter, with configurable pins and startup checks for suspicious wiring.\n- Ham keyer mode with rig keying on P15 and PTT on P16.\n- High-quality sidetone on P2/A7, with internal buzzer and vibration fallback.\n- Field keyer/logger for portable operating and canned replies.\n- Saved settings, compact run history, custom training character files on SD, and a small CW decoder.\n\n## Hardware\n\nNo extra hardware is required. The app works with the Flipper buttons and internal buzzer.\n\nFor a real key or paddle, use a simple jack adapter wired to the GPIO header. The default wiring is P7 for dit or straight key, P5 for dah, and P3 as the software-controlled ground. A real GND pin can also be used.\n\nFor rig control, Ham Keyer mode uses P15 as the key output and P16 as PTT. Verify levels, polarity, and isolation before connecting to radio equipment.\n\n## A note on Morse transmissions\n\nSub-GHz TX remains as jurisdiction-dependent as any ordinary Flipper Zero transmission, which is the polite way of saying: know your band plan before pressing send. It is useful for experiments, practice, and keying a ham transceiver. Do not trust the Flipper's 100 mW for emergency Morse communications. Treat it as an entry-level teaser, or a very bad QRP rig, not a replacement for a proper radio.\n\n## More\n\nSource and full documentation: https://github.com/yo3gnd/morse-flipper\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "morse_flipper",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/morse_flipper/manifest.yml",
     "source_code": "https://github.com/yo3gnd/morse-flipper/tree/9526db7000dcab96d6e8c9ce48185f7a97f963e6"
   },
   "name": "Morse Flipper",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png",
+    "assets/screenshots/6.png",
+    "assets/screenshots/7.png",
+    "assets/screenshots/8.png"
+  ],
   "short_description": "Learn, practise, send, and experiment with Morse code on Flipper Zero.",
   "version": "0.1.76"
 }

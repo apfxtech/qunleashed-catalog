@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "flipper_prime_factors",
+      "file": "flipper_prime_factors.fap",
+      "icon": "assets/icon.png",
+      "name": "Prime Factorization",
+      "version": "1.0"
+    }
+  ],
   "author": "gbritoda",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v1.0:\nInitial release: prime factorization of an integer by trial division\n",
   "description": "# Prime Factorization\n\nA small educational utility that breaks an integer into its prime factors. It works using plain trial division, with the highest number possible being 2,147,483,647 due to flipper's limitation.\n\nWhat happens when you input 0 or 1? Only one way to find out.\n(It doesn't let you put 0)\n\n\n360 = 2 x 2 x 2 x 3 x 3 x 5\n100 = 2 x 2 x 5 x 5\n17  = 17\n\n\n## How it works\n\nPlain trial division:\n\n1. Start with divisor 2.\n2. While the divisor divides the number evenly, record it and divide the number by it.\n3. Increment the divisor and continue while divisor * divisor <= remaining number.\n4. If the remaining number is greater than 1, it is the last prime factor.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flipper_prime_factors",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/flipper_prime_factors/manifest.yml",
     "source_code": "https://github.com/gbritoda/flipper0-prime_factors/tree/c6382196a779c73f91e9afa26486d7ad541aa624"
   },
   "name": "Prime Factorization",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Prime factorization of an integer by trial division",
   "version": "1.0"
 }

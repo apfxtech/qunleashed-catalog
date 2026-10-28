@@ -1,15 +1,32 @@
 {
+  "apps": [
+    {
+      "appid": "moon_phases",
+      "file": "moon_phases.fap",
+      "icon": "assets/icon.png",
+      "name": "Moon Phases",
+      "version": "1.0"
+    }
+  ],
   "author": "Krzysztof Krystian Jankowski",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "V1.1:\n- Added date navigation with left/right arrows\n- Browse moon phases up to 7 days in the past and 7 days in the future\n- Press OK button to return to current date\n- Added visual indicators showing relative date offset\n- Added navigation arrows when browsing dates\n\nV1.0:\nInitial Release\n",
   "description": "A simple application to display the current phase of the moon along with additional lunar information.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "moon_phases",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/moon_phases/manifest.yml",
     "source_code": "https://github.com/w84death/moon-phases/tree/5d6380dccf5a7fa56abac6593a6d90c3e6777b95"
   },
   "name": "Moon Phases",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "A simple application to display the current phase of the moon",
   "version": "1.1"
 }

@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "guitar_chords",
+      "file": "guitar_chords.fap",
+      "icon": "assets/icon.png",
+      "name": "Guitar Chords",
+      "version": "1.0"
+    }
+  ],
   "author": "KingBoa / NoodleNugget.com",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v1.0:\nInitial release.\n\n- Browse 281 chord voicings across 99 chord names, covering all 12 root notes with major, minor, 7, m7, maj7, sus2, sus4 and power chord shapes.\n- Most chords carry two or three voicings. Left and Right cycle between them, Up and Down move to the next chord in the root's list.\n- Practice mode with 14 built-in progressions of two to four chords. Each chord lasts one bar, with a metronome click on every beat and a higher click plus vibro on the chord change.\n- Tempo adjustable from 40 to 200 bpm while practicing.\n- Both the chord library and the progression list are plain text files on the SD card, so you can add your own without rebuilding the app.\n",
   "description": "Guitar Chords turns your Flipper Zero into a chord reference and a practice metronome.\n\nBrowse by root note, pick a chord, and read the fretboard diagram: muted and open strings, finger numbers, and a solid bar where a barre is needed. Most chords ship with two or three ways to play them, so you can pick the open shape or the movable barre that fits where your hand already is.\n\n## Chord library\n\n- 281 voicings across 99 chord names.\n- All twelve root notes: C, C#, D, Eb, E, F, F#, G, Ab, A, Bb and B.\n- Major, minor, 7, m7, maj7, sus2, sus4 and power chord shapes for every root.\n- Left and Right cycle the voicings of the chord you are looking at.\n- Up and Down jump to the next chord in the same root's list.\n\n## Practice mode\n\nPick one of 14 built-in progressions and the Flipper becomes a metronome that shows you the chord to play. Progressions range from two-chord transition drills to four-chord standards like I-V-vi-IV, the 50s doo-wop turnaround, ii-V-I and a twelve bar blues.\n\nEach chord lasts one bar of four beats. There is a click on every beat and a higher click plus a vibration on the downbeat where the chord changes, so you can keep your eyes on your hands instead of the screen.\n\n- OK starts and pauses the metronome.\n- Up and Down set the tempo, anywhere from 40 to 200 bpm.\n- Left and Right step through the progression by hand.\n\n## Bring your own chords\n\nBoth the chord library and the progression list live on the SD card as plain text files, one chord or one progression per line. Add your own, reorder them, or delete the ones you never use. Restart the app and the changes are live. No rebuild required.\n\nThe files are written to the apps_data folder for Guitar Chords the first time you run the app, so there is always a working example to edit.\n\nMade by KingBoa at [NoodleNugget.com](https://noodlenugget.com).\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "guitar_chords",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/guitar_chords/manifest.yml",
     "source_code": "https://github.com/NoodleNugget-com/flipper-guitar-chords/tree/e98240c2a1049eb69016d8e09c42b55e5ac29035"
   },
   "name": "Guitar Chords",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png"
+  ],
   "short_description": "Browse guitar chord diagrams and practice chord progressions with a built-in metronome.",
   "version": "1.0"
 }

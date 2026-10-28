@@ -1,15 +1,35 @@
 {
+  "apps": [
+    {
+      "appid": "motion_lab",
+      "file": "motion_lab.fap",
+      "icon": "assets/icon.png",
+      "name": "Motion Lab",
+      "version": "1.0"
+    }
+  ],
   "author": "Monte Walker",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "## 1.0\n\n- First release.\n- Swing Meter: peak g-force, peak rotation rate, swing tempo, time to peak,\n  event duration, switchable force/rotation trace and session bests.\n- Motion Logger: 100 Hz CSV logging to the SD card with a live graph.\n- Detects a missing module and says so instead of failing.\n",
   "description": "Turn your Flipper Zero and Video Game Module into a motion measuring instrument.\n\nOther apps for the module use its motion sensor as a controller, so you tilt to steer or tilt to move a mouse. Motion Lab uses it as an instrument instead. It measures what your Flipper actually did and gives you the numbers.\n\n## Swing Meter\n\nArm it, then swing the Flipper or hit something with it. You get back:\n\n- Peak acceleration in g, with gravity removed\n- Peak rotation rate in degrees per second\n- Swing tempo, as the ratio of backswing to downswing. A 3 to 1 golf tempo reads as 3.00 to 1\n- Time to peak, and how long the whole event lasted\n- A graph of the event, switchable between force and rotation\n- Your best readings so far this session\n\nGood for a golf swing, a bat, a racket, a punch, a throw, or finding out how hard something got dropped.\n\n## Motion Logger\n\nRecords movement continuously to a CSV file on your SD card at 100 samples per second, with a live graph while it runs. Files are numbered and never overwrite an earlier recording, and they open in any spreadsheet.\n\nGood for measuring vibration, repeated impacts, or anything you want to look at properly afterwards.\n\n## What you need\n\nA Video Game Module running its normal firmware. There is nothing to reflash, and the module keeps working as usual for everything else.\n\nHold the Flipper still for about a second when the app opens. The rotation sensor measures its zero point then, and moving during it will throw off later readings.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "motion_lab",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/motion_lab/manifest.yml",
     "source_code": "https://github.com/thecoolguy2001/flipper-motion-lab/tree/c32e4b71c5cf1af9e2f66e01331d555fd26d32d9"
   },
   "name": "Motion Lab",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png"
+  ],
   "short_description": "Measure motion with the Video Game Module: peak g-force, rotation rate and swing tempo, plus a CSV logger",
   "version": "1.0"
 }
