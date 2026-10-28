@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "bc_scanner",
+      "file": "bc_scanner.fap",
+      "icon": "assets/icon.png",
+      "name": "BarCode ScannerE",
+      "version": "0.5"
+    }
+  ],
   "author": "Igor Danilov",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v0.5",
   "description": "Emulates a barcode scanner for testing cash registers. Why buy a scanner when you have a flipper?",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "bc_scanner",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/bc_scanner/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/bc_scanner_emulator"
   },
   "name": "BarCode ScannerE",
+  "screenshots": [],
   "short_description": "Emulates a barcode scanner for testing cash registers. Why buy a scanner when you have a flipper?",
   "version": "0.5"
 }

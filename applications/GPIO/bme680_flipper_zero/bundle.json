@@ -1,15 +1,38 @@
 {
+  "apps": [
+    {
+      "appid": "bme680_flipper_zero",
+      "file": "bme680_flipper_zero.fap",
+      "icon": "assets/icon.png",
+      "name": "BME680",
+      "version": "1.2"
+    }
+  ],
   "author": "@Dr.Mosfet",
+  "authors": [
+    {
+      "id": "dr.mosfet",
+      "name": "Dr.Mosfet"
+    }
+  ],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "docs/CHANGELOG.md",
   "description": "This is a comprehensive environmental monitoring application \ndesigned for the Flipper Zero that interfaces with the \nhigh-precision BME680 sensor via I2C. The BME680 is a \nsophisticated environmental sensor capable of measuring\n temperature, humidity, barometric pressure, and air quality (gas resistance).\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "bme680_flipper_zero",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/bme680_flipper_zero/manifest.yml",
     "source_code": "https://github.com/kamylwnb/bme680_flipper_zero/tree/0c62a0cf7d6f5f0649f02f63f6618dfd8cbf8565"
   },
   "name": "BME680",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "BME680 sensor via I2C",
   "version": "1.2"
 }

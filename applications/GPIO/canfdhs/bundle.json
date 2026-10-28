@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "canfdhs",
+      "file": "canfdhs.fap",
+      "icon": "assets/icon.png",
+      "name": "CAN-FD-HS",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v1.0: \nfirst version of Flipper zero CAN FD HS SW.",
   "description": "# Introduction\n\n\nThis software implements an USB to CAN bridge compatible with **Linux [can-utils](https://github.com/linux-can/can-utils) and slcan driver.** \nThis software application is designed to run on flipper zero device and needs SERMA CAN FD board to be plugged in GPIOs ports available [here](https://github.com/serma-safety-security/flipper-zero-can-fd-hs-module).\n\n\n# Usage\n\nWhen entering the application (by selecting can-fd-hs) from main menu or by selecting Apps/USB-CAN, a list appears with 3 choices which represent the 3 modes of the application detailled in next sections :\n- **USB-CAN Bridge :** This is the **main mode** which is used as a bridge between can-utils and a CAN device under test. \n- TEST USB LOOPBACK : This mode is used to test connectivity between host computer and flipper zero.\n- CAN TEST : This mode is used to test CAN connectivity. This send \"CANALIVE\" through CAN.\n\n## USB-CAN Bridge\n\nThis mode have to be entered before issuing any configuration command.\nThen you can :\n1. Create a CAN network interface through USB Virtual com port (VCP) :***sudo slcand -s\\<X\\> \\<options\\> ttyACM\\<Y\\> can\\<Z\\>***.\n2. enable your created network interface ***sudo ifconfig can\\<X\\> up***.\n3. operate normally your can interface by using ***cansend can\\<X\\> \\<iii\\>#\\<dddddddd\\>*** and ***candump can\\<X\\>*** commands.\n\nPlease refer to [can-utils](https://github.com/linux-can/can-utils) for more details.\nIf issues are encountered, you can get more informations by connecting directly to vcp with tool like putty :\n- serial mode\n- 8 data bits\n- no parity\n- no hardware control flow\n\n\n**This mode can also be used to configure connection in flexible datarate (\"S9\" command).**\n\n**NB1 : beware of command line termination. It must be a carriage return '\\r'. For more convenience newline '\\n' characters located after carriage returns are ignored.** \n**NB2 : for compatibility reason (with can-utils)  newline character is not appended after CAN RX frames.As a consequence display of these frames is impacted. To avoid this send \"d\" on VCP to enter in debug mode.** \n**NB3 : beware of usb cdc buffer length. Max size is 64. So command number that can be sent in one frame is limited.** \n\n## TEST USB LOOPBACK\n\nThis mode is used to test VCP (USB cdc) connectivity. To use this mode, you have to :\n1. connect to the VCP with any VCP tool like putty :\n    - serial mode\n    - 8 data bits\n    - no parity\n    - no hardware control flow\n2. Once the connection is established message USB loopback is displayed, the user can test connection by sending characters on serial line and checking the content sent is sent back on serial line by the flipper device.\n\n## TEST CAN\n\nThis mode is used to test CAN connection (to verify wiring between CAN device under test and flipper zero board).\nNo user action is required before using this mode (except the obvious wiring step).\nThe frame sent every 200 ms shall by the device shall be the following :\n- **007E5TCA:43414E4C49564500** : IIIIIIII:DDDDDDDDDDDDDDDD with \n    - **\\<III..\\>** the extended identifier (007E57CA = \"TESTCA\" in hexspeak) \n    - **\\<DDD..\\>** the data (43414E4C49564500 = \"CANLIVE\" in ascii).\n\n**note :** You can first check Tx LED blinks and transmitted byte counter (on flipper screen) increment by 8 every 200ms to diagnose problems.\n\n# Development\n\n## documentation\n\nDocumentation can be found [here](./Documentation/html/index.html).\nTo re-generate documentation you have to install ***doxygen*** before running ***Documentation/generate_doc.sh \\[--open\\]*** (--open is used to open documentation after the generation). \n\n\n## architecture overview\n\nThis application is based on:\n- XTREME firmware USB-UART bridge application : It has been modified to send data on CAN (via SPI) and not on UART.\n- Longan Labs [Longan_CANFD](https://github.com/Longan-Labs/Longan_CANFD) library : this is the driver for the MCP 2518 CAN transceiver.\n\n**More information on architecture is given in [docs](./Documentation/html/index.html) (cf. previous section).**\n\nApplication is built as an external app using standard fbt commands. Please refer to flipper documentation for more information.\n\n## Test status\nApplications has been tested with a MCP2515 evaluation board. As a consequence, only the following datarates are tested :\n- 125 Kbaud\n- 250 Kbaud\n- 500 Kbaud\n- 1 MBaud\n\n\n**Note: the flexible datarate is not tested yet.**\n\n## Known bugs\n\nMultiple exit and enters in application and its submode produce instable behaviour.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "canfdhs",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/canfdhs/manifest.yml",
     "source_code": "https://github.com/serma-safety-security/Flipper-Zero-CAN-FD-HS-SW/tree/5c050f4f825957c44e3cd54bd784b8dfec9cdcdf"
   },
   "name": "CAN-FD-HS",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "This software implements an USB to CAN bridge compatible with Linux can-utils and slcan driver.",
   "version": "0.1"
 }

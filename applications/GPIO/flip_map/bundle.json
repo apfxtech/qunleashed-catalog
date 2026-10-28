@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "flip_map",
+      "file": "flip_map.fap",
+      "icon": "assets/icon.png",
+      "name": "FlipMap",
+      "version": "0.2.2"
+    }
+  ],
   "author": "JBlanked",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "## v0.2.2\n- Updated to use the flipper_http folder as intended\n\n## v0.2.1\n- Updated the save/load functions to use a specific folder (\"flipper_http\") for storing Wi-Fi and user credentials. This simplifies management and avoids potential conflicts with other applications.\n\n## v0.2\n- Added debounce to menu navigation to prevent rapid input issues\n\n## v0.1\n- Initial release\n",
   "description": "# FlipMap\nA Flipper Zero app to find Flipper Zero Users.\n\n## Requirements\n- Wi-Fi Developer Board, BW16, Raspberry Pi, or ESP32 device flashed with FlipperHTTP v2.1 or higher: https://github.com/jblanked/FlipperHTTP\n- 2.4 GHz or 5 GHz Wi-Fi access point\n\n## Connect Online\n- Discord: https://discord.gg/5aN9qwkEc6\n- YouTube: https://www.youtube.com/@jblanked\n- Instagram: https://www.instagram.com/jblanked\n- Other: https://www.jblanked.com/social/\n\n## Features\n- User and password authentication\n- Optional location tracking\n- View other users by country and city",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flip_map",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flip_map/manifest.yml",
     "source_code": "https://github.com/jblanked/FlipMap/tree/a931e36bdfff56ea8b2c908e116036ec288f9b4a"
   },
   "name": "FlipMap",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Find Flipper Zero Users.",
   "version": "0.2.2"
 }

@@ -1,15 +1,32 @@
 {
+  "apps": [
+    {
+      "appid": "flip_gemini",
+      "file": "flip_gemini.fap",
+      "icon": "assets/icon.png",
+      "name": "FlipGemini",
+      "version": "1.0"
+    }
+  ],
   "author": "JBlanked",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "## v1.0\n- Initial release\n",
   "description": "# FlipGemini\nChat with Google's Gemini AI on your Flipper Zero! Original idea from https://github.com/d4rks1d33/Gemini-Flipper\n\n## Requirements\n- Wi-Fi Developer Board, BW16, Raspberry Pi, or ESP32 device flashed with FlipperHTTP v2.1.4 or higher: https://github.com/jblanked/FlipperHTTP\n- 2.4 GHz or 5 GHz Wi-Fi access point\n- Gemini API Key from Google: https://ai.google.dev/gemini-api/docs/api-key (free with a Gmail account)\n\n## Installation\n1. Flash FlipperHTTP to your Wi-Fi device if you haven't already and connect to your WiFi via the FlipperHTTP companion app.\n2. Grab your Gemini API key from Google.\n3. Download the FlipGemini app and enter your API key in the Settings (optionally you can create/edit \"/ext/apps_data/flip_gemini/data/api_key.txt\" on your Flipper's SD card).\n4. Start chatting with Gemini on your Flipper Zero!\n\n## Connect Online\n- Discord: https://discord.gg/5aN9qwkEc6\n- YouTube: https://www.youtube.com/@jblanked\n- Instagram: https://www.instagram.com/jblanked\n- Other: https://www.jblanked.com/social/\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flip_gemini",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flip_gemini/manifest.yml",
     "source_code": "https://github.com/jblanked/FlipGemini/tree/64ea22ca7321e1b895a7868f63ab6cf9491e76db"
   },
   "name": "FlipGemini",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "Chat with Google's Gemini AI on your Flipper Zero",
   "version": "1.0"
 }
