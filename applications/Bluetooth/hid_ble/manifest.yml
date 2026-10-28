@@ -1,4 +1,5 @@
 id: hid_ble
+apps: [hid_ble]  # its own app alone; the other app of the code has its own entry
 author: Momentum Team
 sourcecode:
     type: git
