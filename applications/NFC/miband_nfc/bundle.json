@@ -1,0 +1,15 @@
+{
+  "author": "Luca Tomei",
+  "category": "NFC",
+  "changelog": "## v1.0.0\n- Initial release\n- Quick UID Check\n- Write to Magic Card\n- Write to Original\n- Data verification\n- Auto backup",
+  "description": "# Mi Band NFC Writer\n\nNFC writer for Mi Band with 0xFF keys support and automatic verification.\n\n## Features\n- Quick UID check with disk scanning\n- Magic card emulation for Mi Band preparation\n- Write original data with automatic backup\n- Verify written data integrity\n- Save magic dumps for easy handling\n- Detailed progress tracking\n- Logging system with export capability\n\n## Usage\n\nQuick Start\n1. Load NFC dump from the nfc folder\n2. Emulate magic template for blank Mi Bands\n3. Write data with progress tracking\n4. Verify write results\n\nKey Operations\n- Quick UID Check: Read card UID and find matching files\n- Magic Emulation: Create blank template with 0xFF keys\n- Write Data: Write dump to Mi Band with backup option\n- Verify: Compare written data with original\n- Save Magic: Convert dumps to 0xFF key format\n\n## Settings\nConfigure auto-backup, verification, logging, and progress display options via Settings menu.\n\n## File Locations\n- Dumps: nfc folder\n- Backups: nfc/backups folder\n- Logs: apps_data/miband_nfc/logs folder\n- Settings: apps_data/miband_nfc/settings.bin\n\n## Troubleshooting\n- Ensure Mi Band is magic card type\n- Check card positioning during operations\n- Use Emulate Magic Card before first write\n- Enable logging for detailed error information\n\n## Support\nCheck Flipper Zero community forums for updates and support.\n\nVersion: 1.0\nCategory: NFC\nDeveloper: LucasMac",
+  "family": "application",
+  "id": "miband_nfc",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/miband_nfc/manifest.yml",
+    "source_code": "https://github.com/LucaTomei/flipper-miband-nfc-writer/tree/3b8129c32eaba9e851fa6c075ee079a8ba19e19c"
+  },
+  "name": "Mi Band NFC",
+  "short_description": "Read, write and emulate NFC data on Xiaomi Mi Band devices using Flipper Zero.",
+  "version": "1.0.0"
+}

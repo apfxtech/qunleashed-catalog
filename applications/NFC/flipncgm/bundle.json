@@ -1,0 +1,15 @@
+{
+  "author": "Daren Darrow",
+  "category": "NFC",
+  "changelog": "# Changelog\n\n## 1.1.0 — 2025\n\n- Move SD card storage from /ext/flipncgm/ to /ext/apps_data/flipncgm/\n  per Flipper App Catalog guidelines\n- Log file is now at /ext/apps_data/flipncgm/flipncgm.log\n- Settings file is now at /ext/apps_data/flipncgm/settings.ff\n\n## 1.0.0 — 2024\n\n- Read Abbott FreeStyle Libre 1/2/3 serial numbers via ISO 15693 NFC\n- Display decoded 9-character ASCII serial number and raw UID\n- Audio feedback: ascending two-note chime on successful Libre read,\n  single low beep for unrecognised ISO 15693 tags\n- SD card logging to /ext/flipncgm/flipncgm.log with four levels:\n  Off, Error, Info, Debug\n- ISO 8601 timestamps in log entries with configurable UTC offset\n- UTC offset adjustable in 30-minute steps (−12:00 to +14:00) via\n  LEFT/RIGHT buttons; persists in /ext/flipncgm/settings.ff\n- Log level cycles with UP button; shown on scanning screen\n- Long-press Back exits reliably even when NFC stack is busy\n- NFC poller debounce (scan_enabled flag) prevents re-processing the\n  same tag in range until the user presses OK to re-arm\n- Separate log mutex so file I/O never blocks the GUI draw callback\n- 25 ms draw-callback mutex timeout prevents GUI thread from hanging\n",
+  "description": "# flipnCGM\n\nA Flipper Zero application that reads Abbott FreeStyle Libre continuous glucose monitor (CGM) sensor serial numbers via NFC and optionally logs them to the SD card.\n\n## Features\n\n- Read FreeStyle Libre 1, 2, and 3 sensor serial numbers over NFC (ISO 15693)\n- Displays the decoded 9-character ASCII serial and raw 8-byte UID\n- Audio feedback on scan (short chime on success, low beep on unrecognised tag)\n- Configurable SD card logging with ISO 8601 timestamps and UTC offset\n- Four log levels: **Off**, **Error**, **Info**, **Debug**\n- UTC offset persists across app restarts\n\n## Usage\n\n1. Open **flipnCGM** from the NFC apps menu.\n2. Hold a FreeStyle Libre sensor to the **back** of the Flipper Zero.\n3. The decoded serial number and raw UID are displayed on screen.\n4. Press **OK** to dismiss the result and scan another sensor.\n5. Press **Back** to exit.\n\n## Logging Controls\n\n- **UP** — Cycle log level: Off → Error → Info → Debug → Off\n- **LEFT / RIGHT** — Adjust UTC offset in 30-minute steps\n\nLog file is written to /ext/apps_data/flipncgm/flipncgm.log. Log level and UTC offset are shown on the scanning screen and the UTC offset is saved automatically.\n\n## Compatibility\n\n- FreeStyle Libre 1 — tested\n- FreeStyle Libre 2 — tested\n- FreeStyle Libre 3 — tested (UID format identical)\n",
+  "family": "application",
+  "id": "flipncgm",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/flipncgm/manifest.yml",
+    "source_code": "https://github.com/darendarrow/flipnCGM/tree/4524fb0e6d679e20a185191851921352f2104f83"
+  },
+  "name": "flipnCGM",
+  "short_description": "Read Abbott FreeStyle Libre CGM serial numbers via NFC",
+  "version": "1.1"
+}

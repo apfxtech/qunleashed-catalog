@@ -1,0 +1,15 @@
+{
+  "author": "@RocketGod-git",
+  "category": "NFC",
+  "changelog": "## v1.1\n\n- App Catalog improvements by [RocketGod](@RocketGod-git)\n\n## v1.0\n\n- Initial release by [RocketGod](@RocketGod-git.)\n",
+  "description": "# Cyborg Detector\n\n## How it works\n\nRun the app and move the Flipper Zero over implants or other LED equipped NFC tags and the light will glow.\n\n## ToDo:\n\n- Feedback showing when a cyborg is detected.\n- Switch between NFC and RFID detection.\n- Possibly display dynamic chip data as found without stopping. Screen to update only when new data is found.\n\n## Developer:\n- **RocketGod** (@RocketGod-git)",
+  "family": "application",
+  "id": "cyborg_detector",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/cyborg_detector/manifest.yml",
+    "source_code": "https://github.com/RocketGod-git/Flipper-Zero-Cyborg-Detector/tree/62bf86337f15a4d9618af33f8445af6e98851b6d"
+  },
+  "name": "Cyborg Detector",
+  "short_description": "App generates a continous NFC field to make body mod implant LEDs glow. Tested on a Dangerous Things xSIID.",
+  "version": "1.1"
+}

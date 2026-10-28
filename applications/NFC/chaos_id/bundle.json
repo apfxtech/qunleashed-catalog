@@ -1,0 +1,15 @@
+{
+  "author": "cybersantana83 (Cristiano Santana, Cafe com Solda)",
+  "category": "NFC",
+  "changelog": "0.6 - Catalog submission, full English UI, ANATEL easter egg\n0.5 - MIFARE Classic dictionary attack with Investigate button\n0.4 - Scan persistence (CSV log) + History menu\n0.3 - Real UID/ATQA/SAK extraction via iso14443_3a_poller_sync\n0.2 - Real LF + HF protocol detection (lfrfid_worker + nfc_scanner)\n0.1 - Initial release with UI skeleton and card database\n",
+  "description": "ChaosID is a forensic card identifier for Flipper Zero. It does not aim to\nclone cards or break cryptography on the device itself, but to tell you\nexactly what a card is, how it has been broken (if it has been), and what\nlevel of risk it represents.\n\nFeatures:\n\n- Sequential automatic scan across both frequencies: LF (125 kHz) and\n  HF (13.56 MHz). No need to know in advance what kind of card you have.\n- Real protocol detection via lfrfid_worker (EM4100, HID Prox H10301,\n  Indala, AWID) and nfc_scanner (MIFARE Classic/Ultralight/DESFire/Plus,\n  NTAG, FeliCa, iCLASS, ISO15693).\n- UID, ATQA and SAK extracted via iso14443_3a_poller_sync.\n- Built-in database of 15+ card profiles documenting cryptography used,\n  public attack vectors, year of cryptographic break and risk\n  classification: Trivial, Broken or Hardened.\n- Persistent scan log saved to /ext/apps_data/chaos_id/scans.csv with\n  timestamp, frequency, protocol, UID, parsed data and risk level.\n  Built-in History menu for review on-device.\n- Investigate button: for MIFARE Classic cards, launches a dictionary\n  attack against 20 well-known default keys (FFFFFFFFFFFF,\n  A0A1A2A3A4A5, D3F7D3F7D3F7, MAD-A/B, etc.). Shows live progress\n  and final report of how many keys/sectors were recovered.\n\nIntended for security research, physical access control auditing and\neducational use.\n\nProject page: https://github.com/cybersantana83/ChaosID\n",
+  "family": "application",
+  "id": "chaos_id",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/chaos_id/manifest.yml",
+    "source_code": "https://github.com/cybersantana83/ChaosID/tree/c7d9b5c6ce1b683e93c9b5e541d9cd9384a8bcea"
+  },
+  "name": "ChaosID",
+  "short_description": "Card forensics + risk classification + MIFARE Classic dictionary attack",
+  "version": "0.6"
+}

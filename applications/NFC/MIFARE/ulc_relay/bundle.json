@@ -1,0 +1,15 @@
+{
+  "author": "noproto",
+  "category": "NFC/MIFARE",
+  "changelog": "v1.0",
+  "description": "Relay Ultralight C authentication",
+  "family": "application",
+  "id": "ulc_relay",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/MIFARE/ulc_relay/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/77338a5a2731b621730324952e7e5e8772dc98ac/non_catalog_apps/ulc_relay"
+  },
+  "name": "UL-C Relay",
+  "short_description": "Relay Ultralight C authentication",
+  "version": "1.0"
+}

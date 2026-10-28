@@ -1,0 +1,15 @@
+{
+  "author": "@noproto",
+  "category": "NFC",
+  "changelog": "## 4.1\n - Key recovery is 40% faster, improved memory efficiency\n## 4.0\n - Support new SEN dictionary for 10x faster recovery, dropped previous SEN dictionary format support\n## 3.1\n - Key recovery is 20% faster, new write buffering of Static Encrypted Nested key candidates performs recovery 70x faster\n## 3.0\n - Added Static Encrypted Nested key recovery, added NFC app support, dropped FlipperNested support\n## 2.7\n - Mfkey32 recovery is 30% faster, fix UI and slowdown bugs\n## 2.6\n - Version bump for catalog build system\n## 2.5\n - Plugin path fixed\n## 2.4\n - Update API for app rename\n## 2.3\n - Update API v65.0\n## 2.0\n - Added Nested key recovery, use new KeysDict API, fix crashes, more efficient RAM utilization, faster\n## 1.1\n - Rework application with new NFC API\n## 1.0\n - Initial release\n",
+  "description": "# Flipper Zero MFKey\n\nThis application allows you to calculate the keys of MIFARE Classic cards using the Mfkey32 and Nested algorithms directly on your Flipper Zero. After collecting the nonces using the Read (or Extract MF Keys) feature of the NFC app, they can be used to calculate the keys to the card in the MFKey app.\n\n## Usage\n\nAfter collecting nonces using the Read (or Extract MF Keys) option in the NFC app, press the Start button in the MFKey app and wait for it to finish. The calculation can take more than 10 minutes, so you'll have to be patient. After the calculation is complete, the keys will be saved to the user key dictionary.\n\n## Credits\n\nDevelopers: noproto, AG, Flipper Devices, WillyJL, CavallUwU, Ivisayan, dchristle\nThanks: AloneLiberty, Foxushka, bettse, Equip\n",
+  "family": "application",
+  "id": "mfkey",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/mfkey/manifest.yml",
+    "source_code": "https://github.com/flipperdevices/flipperzero-good-faps/tree/223db798266e8fcd1eedf772ecee675bf4db2f2c/mfkey"
+  },
+  "name": "MFKey",
+  "short_description": "MIFARE Classic key recovery tool",
+  "version": "4.1"
+}

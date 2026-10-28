@@ -1,0 +1,15 @@
+{
+  "author": "CinderSocket",
+  "category": "NFC",
+  "changelog": "## 1.1.1\n\n- Reset DESFire selection and authentication when the reader field turns off\n  or the ISO-DEP session ends. Each new activation starts at PICC level.\n\n## 1.1\n\n- Add the EV3 build profile with EV1 and EV2 commands, up to four\n  applications, 16 files, and 3 KiB of file data.\n- Keep human-readable .dfc credentials. Load the text codec only when\n  importing or saving; compiled .dfcb credentials remain supported.\n- Correct ATQA and ISO-DEP framing for PC/SC readers, including ACR1552.\n- Reduce RAM use by allocating transaction snapshots and incoming command\n  chains only when needed.\n- Add host credential compilation and protocol and memory probes. Update to\n  dfc-core 1.2.0 and the consolidated tiny-crypto-c backend.\n",
+  "description": "# DFC\n\nRead and emulate generic MIFARE DESFire-compatible NFC credentials on Flipper Zero.\n\n## Features\n\n- Legacy DES, ISO 3DES, and AES authentication\n- Standard, backup, value, and record files\n- Human-readable .dfc and compiled .dfcb credentials\n- Writable blank-card credentials that can be saved after emulation\n\n## Credentials\n\nPlace saved credentials in SD Card/apps_data/dfc/. DFC uses the all-zero\nfactory DES key at the PICC level when no saved credential is selected.\n\n## Disclaimer\n\nDFC is an independent, third-party implementation of the MIFARE DESFire\nnative command protocol. It is not developed, authorized, licensed, or\nendorsed by NXP Semiconductors. \"DESFire\" is used here solely to describe\nprotocol compatibility, not to claim affiliation.\n\nMIFARE and DESFire are trademarks of NXP B.V.\n",
+  "family": "application",
+  "id": "dfc",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/dfc/manifest.yml",
+    "source_code": "https://github.com/cindersocket/dfc-flipper/tree/c0fc24e66d843f6f7706ec544c61774cf764efb0"
+  },
+  "name": "tiny-crypto-c",
+  "short_description": "DFC: reader/emulator for compatible NFC credentials",
+  "version": "1.1.1"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "noproto",
+  "category": "NFC/MIFARE",
+  "changelog": "v1.0",
+  "description": "Crack counterfeit ULC cards",
+  "family": "application",
+  "id": "ulcfkey",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/MIFARE/ulcfkey/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/ulcfkey"
+  },
+  "name": "ULCFKey",
+  "short_description": "Crack counterfeit ULC cards",
+  "version": "1.0"
+}
