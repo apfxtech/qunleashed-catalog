@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Infrared",
+  "changelog": "## Changelog\n\nv0.2:\n- Added dual signal modes: high-frequency carrier and low-frequency pulse\n- Added burst and continuous transmit modes\n- Added a dedicated send/stop control with live TX animation\n- Added persisted settings across launches\n- Added fine pulse-frequency tuning down to 0.1 Hz steps\n- Reworked the UI into a scrollable menu for better readability\n\nv0.1:\n- Initial FlipIRFreq release\n- Raw IR carrier transmission with configurable frequency, duty cycle, burst length, and output selection\n",
+  "description": "## FlipIRFreq\n\nFlipIRFreq is a Flipper Zero external app for generating either a high-frequency IR carrier or a low-frequency IR pulse train.\n\nFeatures:\n\n- Carrier mode from 10 kHz to 1 MHz\n- Pulse mode from 10.0 Hz to 500.0 Hz\n- Burst and continuous transmit modes\n- Adjustable duty cycle and burst length\n- Output selection for Auto, Internal, or External (PA7)\n- Scrollable on-device UI with saved settings\n\nSource repository:\n\n- [jsammarco/FlipIRFreq](https://github.com/jsammarco/FlipIRFreq)\n",
+  "family": "application",
+  "id": "flipirfreq",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/flipirfreq/manifest.yml",
+    "source_code": "https://github.com/jsammarco/FlipIRFreq/tree/c1e72d3474bee801c49a357aa0586c9228a1946e"
+  },
+  "name": "FlipIRFreq",
+  "short_description": "Send IR in carrier or low-frequency pulse modes with adjustable frequency, duty cycle, and output.",
+  "version": "0.2"
+}

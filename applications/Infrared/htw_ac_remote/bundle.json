@@ -1,0 +1,15 @@
+{
+  "author": "sokogen",
+  "category": "Infrared",
+  "changelog": "# Changelog\n\n## 1.2\n- Mode/Fan: replaced cycle-on-OK carousel with a dropdown list overlay (browse freely, confirm to send, Back to cancel)\n- Setup screen: more compact layout, now shows app version at the bottom\n- Main screen: normalized +/- icon stroke weight, rebalanced vertical spacing\n- Removed unused state-cycling API and empty icon assets config\n\n## 1.1\n- Non-blocking IR transmission\n- Improved state serialization with last_active_mode\n- Fixed UI display and input handling\n- CI/CD workflow improvements\n\n## 1.0\n- Initial release\n- Full HTW AC IR protocol support\n- All AC modes, fan speeds, temperature control\n- Toggle functions (Swing, Turbo, Fresh, LED, Clean)\n- Timer scheduling (0.5h - 24h)\n- Settings persistence to SD card\n",
+  "description": "Infrared remote control application for HTW air conditioners.\n\n## Features\n- All AC modes: Cool, Auto, Dry, Heat, Fan\n- Fan speed: Auto, Low, Medium, High\n- Temperature: 17°C - 30°C\n- Toggle: Swing, Turbo, Fresh, LED, Clean\n- Timer scheduling: 0.5h - 24h\n- Settings saved to SD card\n\n## Usage\nNavigate with D-pad, press OK to activate. Back to exit.\n",
+  "family": "application",
+  "id": "htw_ac_remote",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/htw_ac_remote/manifest.yml",
+    "source_code": "https://github.com/sokogen/flipperzero-htw-ac-remote/tree/a4680f9967cbfd0a29142b64bab77a9c803e0584"
+  },
+  "name": "HTW AC Remote",
+  "short_description": "HTW air conditioner IR remote control",
+  "version": "1.2"
+}
