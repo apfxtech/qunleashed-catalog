@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "nfc_login",
+      "file": "nfc_login.fap",
+      "icon": "assets/icon.png",
+      "name": "NFC Login",
+      "version": "1.1.3"
+    }
+  ],
   "author": "Play2BReal",
+  "authors": [],
   "category": "NFC",
+  "category_id": "64971d10be1a76c06747de26",
   "changelog": "v1.1.3",
   "description": "NFC based desktop login using USB HID or BLE HID",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "nfc_login",
+  "install_path": "NFC",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/nfc_login/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/abc55bdf69c3b09f6d806a9c8e9dca6295f384bc/non_catalog_apps/nfc_login"
   },
   "name": "NFC Login",
+  "screenshots": [],
   "short_description": "NFC based desktop login using USB HID or BLE HID",
   "version": "1.1.3"
 }
