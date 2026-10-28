@@ -1,0 +1,15 @@
+{
+  "author": "@DrZlo13",
+  "category": "GPIO/Programmers",
+  "changelog": "v1.4",
+  "description": "Enables use of Flipper as a debug probe for ARM devices, implements the CMSIS-DAP protocol",
+  "family": "application",
+  "id": "dap_link",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Programmers/dap_link/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/bb3d8162ffb7daf7fa3ad6ef72420f51bcb770af/base_pack/dap_link"
+  },
+  "name": "free-dap",
+  "short_description": "Enables use of Flipper as a debug probe for ARM devices, implements the CMSIS-DAP protocol",
+  "version": "1.4"
+}

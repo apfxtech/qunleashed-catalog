@@ -1,0 +1,15 @@
+{
+  "author": "@Timmotools & @xMasterX",
+  "category": "GPIO/ESP8266",
+  "changelog": "v1.0",
+  "description": "Works with ESP8266 Deauther v2 by @SpacehuhnTech (github)",
+  "family": "application",
+  "id": "esp8266_wifi_deauther_v2",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/ESP8266/esp8266_wifi_deauther_v2/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/wifi_deauther"
+  },
+  "name": "Deauther v2",
+  "short_description": "Works with ESP8266 Deauther v2 by @SpacehuhnTech (github)",
+  "version": "1.0"
+}

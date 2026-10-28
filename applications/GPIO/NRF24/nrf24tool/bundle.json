@@ -1,0 +1,15 @@
+{
+  "author": "S. Terrier",
+  "category": "GPIO/NRF24",
+  "changelog": "v1.0",
+  "description": "Utility app for NRF24L01",
+  "family": "application",
+  "id": "nrf24tool",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/NRF24/nrf24tool/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/b3fa3a4f037fcf2185240b662ab9d29348cc7e79/non_catalog_apps/nrf24tool"
+  },
+  "name": "NRF24 Tool",
+  "short_description": "Utility app for NRF24L01",
+  "version": "1.0"
+}

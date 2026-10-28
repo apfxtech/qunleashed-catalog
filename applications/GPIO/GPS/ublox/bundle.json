@@ -1,0 +1,15 @@
+{
+  "author": "liamur",
+  "category": "GPIO/GPS",
+  "changelog": "0.5:\n- Add support for logging in GPX format\n0.4:\n- Fix code to work with firmware 0.99 and up\n0.3:\n- Bugfixes: logging and error modes are much less broken\n- New features: battery percentage on the data display and automatic\n  sync of the log file every 16 samples.\n0.1:\n- Initial release with data display, two view modes, time syncing, GPS\n  configuration, and KML logging.\n",
+  "description": "# u-blox GPS\nApp to display and log data from a u-blox GPS module connected over\nI2C to the Flipper. This app can also synchronize the Flipper's\ninternal clock to GPS time. See the main README for complete\ndocumentation:\n[https://github.com/liamhays/ublox/blob/main/README.md](https://github.com/liamhays/ublox/blob/main/README.md)\n",
+  "family": "application",
+  "id": "ublox",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/GPS/ublox/manifest.yml",
+    "source_code": "https://github.com/liamhays/ublox/tree/1f47a5a8badd74a1d079eb7f0d1b10fb701e5fac"
+  },
+  "name": "u-blox GPS",
+  "short_description": "App to display and log data from u-blox GPS modules over I2C",
+  "version": "0.5"
+}

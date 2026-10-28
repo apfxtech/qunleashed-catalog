@@ -1,0 +1,15 @@
+{
+  "author": "@mothball187 & @xMasterX",
+  "category": "GPIO/NRF24",
+  "changelog": "v1.2",
+  "description": "App works with NRF24 Sniffer app to perform mousejack attacks",
+  "family": "application",
+  "id": "nrf24_mouse_jacker",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/NRF24/nrf24_mouse_jacker/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/mousejacker"
+  },
+  "name": "nrf24",
+  "short_description": "App works with NRF24 Sniffer app to perform mousejack attacks",
+  "version": "1.2"
+}

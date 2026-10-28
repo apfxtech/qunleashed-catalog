@@ -1,0 +1,15 @@
+{
+  "author": "@htotoo",
+  "category": "GPIO/NRF24",
+  "changelog": "v1.3 - Added infinite scan option, and 5V auto on for some modules",
+  "description": "Application for scanning channels for usage data with NRF24 module and Flipper zero\n",
+  "family": "application",
+  "id": "nrf24channelscanner",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/NRF24/nrf24channelscanner/manifest.yml",
+    "source_code": "https://github.com/htotoo/NRF24ChannelScanner/tree/6bd1a9362a22d580a3ec1e2490cea4eab1103d6b/NRF24ChannelScanner"
+  },
+  "name": "nrf24",
+  "short_description": "Scanning channels for usage with NRF24 \n",
+  "version": "1.4"
+}

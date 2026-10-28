@@ -1,0 +1,15 @@
+{
+  "author": "xumbax",
+  "category": "GPIO/GPS",
+  "changelog": "v1.0",
+  "description": "GPS NMEA tracker with breadcrumb navigation",
+  "family": "application",
+  "id": "gps_track",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/GPS/gps_track/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/gps_track"
+  },
+  "name": "GPS Track",
+  "short_description": "GPS NMEA tracker with breadcrumb navigation",
+  "version": "1.0"
+}
