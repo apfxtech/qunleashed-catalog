@@ -1,6 +1,13 @@
 {
   "author": "@Kuronons",
+  "authors": [
+    {
+      "id": "kuronons",
+      "name": "Kuronons"
+    }
+  ],
   "category": "Kuronons/Monopoly_Cards",
+  "category_id": "kuronons-monopoly-cards",
   "changelog": "",
   "description": "",
   "dolphin": {
@@ -11,7 +18,25 @@
     "weight": 9
   },
   "family": "animation",
+  "files": [
+    "meta.txt",
+    "frame_0.bm",
+    "frame_1.bm",
+    "frame_10.bm",
+    "frame_11.bm",
+    "frame_12.bm",
+    "frame_13.bm",
+    "frame_2.bm",
+    "frame_3.bm",
+    "frame_4.bm",
+    "frame_5.bm",
+    "frame_6.bm",
+    "frame_7.bm",
+    "frame_8.bm",
+    "frame_9.bm"
+  ],
   "id": "Kuronons_Monopoly_DoctorFee_128x64",
+  "install_path": "/ext/dolphin/Kuronons_Monopoly_DoctorFee_128x64",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/animations/Kuronons/Monopoly_Cards/Kuronons_Monopoly_DoctorFee_128x64/manifest.yml",
     "source_code": "https://github.com/apfxtech/qunleashed-catalog/tree/6ddd00385e5ee87fe588f9fe380c01758c51b8ef/animations/Kuronons/Monopoly_Cards/Kuronons_Monopoly_DoctorFee_128x64"
