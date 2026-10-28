@@ -1,0 +1,15 @@
+{
+  "author": "siberianbot",
+  "category": "Tools",
+  "changelog": "v1.0 - Initial release",
+  "description": "# Smack My Dolphin Up!\n\nFor those whom won't bother yourself with dolphin emotional state\n",
+  "family": "application",
+  "id": "smack_my_dolphin_up",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/smack_my_dolphin_up/manifest.yml",
+    "source_code": "https://github.com/siberianbot/smack-my-dolphin-up/tree/71400765c08407d6a51072eab1d48359e2f0bafd"
+  },
+  "name": "Smack My Dolphin Up!",
+  "short_description": "For those whom won't bother yourself with dolphin emotional state",
+  "version": "1.0"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "Dr.Mosfet",
+  "category": "Tools",
+  "changelog": "# Changelog\n\nAll notable changes to this project will be documented in this file.\n\n## 0.1 - 2026-06-08\n\n**Added:**\n- Initial release of Smoke Free application for Flipper Zero.\n- Real-time time counter (days, hours, minutes, seconds).\n- Persistent storage for start timestamp on SD card.\n- Text logging system \"nie_pale_log.txt\" for tracking milestones and resets.\n- Multi-stage double-confirmation system to prevent accidental counter resets.\n- Milestone notifications for 1h, 12h, 1d, and 7d.\n",
+  "description": "Real-time progress tracker for Flipper Zero to help you stay smoke-free.\nFeatures a dynamic live counter displaying elapsed time formatted into days,\nhours, minutes, and seconds. Includes an automated milestone system with alerts\nat 1 hour, 12 hours, 1 day, and 7 days. Saves session data persistently to the\nSD card to survive reboots, maintains a text-based history log, and implements\na strict double-confirmation system to prevent accidental counter resets.\n",
+  "family": "application",
+  "id": "smoke_free",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/smoke_free/manifest.yml",
+    "source_code": "https://github.com/kamylwnb/smoke_free/tree/2a493e251a5d2787f7afb430a656d3e2091277a1"
+  },
+  "name": "Smoke Free",
+  "short_description": "Tracks time without smoking with persistent SD card logging",
+  "version": "0.1"
+}

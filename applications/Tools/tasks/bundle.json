@@ -1,0 +1,15 @@
+{
+  "author": "Stanislav Vasilev(Madman10K)",
+  "category": "Tools",
+  "changelog": "v1.0 - Initial release, v1.1 - Minor refactor, v1.2 - Bump framework version",
+  "description": "A simple to-do application.",
+  "family": "application",
+  "id": "tasks",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/tasks/manifest.yml",
+    "source_code": "https://github.com/MadLadSquad/FlipperTasks/tree/78d77f953757c23edbdf5c68ee8487e479610fcc"
+  },
+  "name": "Tasks",
+  "short_description": "A simple to-do application.",
+  "version": "1.2"
+}

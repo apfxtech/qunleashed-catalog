@@ -1,0 +1,15 @@
+{
+  "author": "TechArtDev",
+  "category": "Tools",
+  "changelog": "v1.0 - Initial Release, v1.1 - Framework update",
+  "description": "Simple Calendar App for Flipper Zero",
+  "family": "application",
+  "id": "techart_calendar",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/techart_calendar/manifest.yml",
+    "source_code": "https://github.com/techartdev/Calendar/tree/3f29994837002986dbf9afc117338d5ee633c1ee"
+  },
+  "name": "Calendar",
+  "short_description": "Calendar application",
+  "version": "1.1"
+}
