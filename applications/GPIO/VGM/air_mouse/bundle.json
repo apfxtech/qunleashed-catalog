@@ -1,0 +1,15 @@
+{
+  "author": "@ginkage",
+  "category": "GPIO/VGM",
+  "changelog": "v1.4",
+  "description": "Flipper Air Mouse using BMI160 module",
+  "family": "application",
+  "id": "air_mouse",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/VGM/air_mouse/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/774f509b1997668219398d3a69e13fdd646d219b/non_catalog_apps/airmouse"
+  },
+  "name": "lsm6dso-api",
+  "short_description": "Flipper Air Mouse using BMI160 module",
+  "version": "1.4"
+}

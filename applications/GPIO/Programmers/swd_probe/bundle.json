@@ -1,0 +1,15 @@
+{
+  "author": "@g3gg0 & (fixes by @xMasterX)",
+  "category": "GPIO/Programmers",
+  "changelog": "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Sync updates and latest API support, v1.3 - Latest API support, v1.4 - Sync with latest version",
+  "description": "ARM SWD (Single Wire Debug) Probe",
+  "family": "application",
+  "id": "swd_probe",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Programmers/swd_probe/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/swd_probe"
+  },
+  "name": "SWD Probe",
+  "short_description": "ARM SWD (Single Wire Debug) Probe",
+  "version": "1.4"
+}

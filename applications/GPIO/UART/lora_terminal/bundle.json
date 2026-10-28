@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "GPIO/UART",
+  "changelog": "v0.1",
+  "description": "LoRA_Terminal",
+  "family": "application",
+  "id": "lora_terminal",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/UART/lora_terminal/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/LORA_term"
+  },
+  "name": "LoRA_Terminal",
+  "short_description": "LoRA_Terminal",
+  "version": "0.1"
+}

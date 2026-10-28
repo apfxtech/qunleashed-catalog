@@ -1,0 +1,15 @@
+{
+  "author": "Vojtech Suk",
+  "category": "GPIO/Programmers",
+  "changelog": "v1.1 - Main app release",
+  "description": "Flipper Zero WCH SWIO Flasher and debugger",
+  "family": "application",
+  "id": "wch_swio_flasher",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Programmers/wch_swio_flasher/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/wch_swio_flasher"
+  },
+  "name": "WHC SWIO Flasher",
+  "short_description": "A WHC CH32V003 debugger/flasher tool",
+  "version": "1.1"
+}

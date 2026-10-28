@@ -1,0 +1,15 @@
+{
+  "author": "JBlanked",
+  "category": "GPIO/VGM",
+  "changelog": "## v1.0\n- Initial release\n",
+  "description": "# Video Game Module Console\nTurn your Flipper Zero into a console for the Video Game Module — handles display output and button input so developers can focus on their hardware.\n\n## How It Works\n1. Connects to the Video Game Module via UART (FlipperHTTP).\n2. Receives draw commands (BLIT, CHAR, TEXT, ROW, CLEAR) and renders them on the Flipper Zero screen.\n3. Forwards button presses back to the board (4 for Up, 5 for Down, 6 for Left, 7 for Right, 0 for A/Ok, 1 for B/BACK, and 3 for Start/Hold Ok)\n\n## Connect Online\n- Discord: https://discord.gg/5aN9qwkEc6\n- YouTube: https://www.youtube.com/@jblanked\n- Instagram: https://www.instagram.com/jblanked\n- Other: https://www.jblanked.com/social/",
+  "family": "application",
+  "id": "video_game_module_console",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/VGM/video_game_module_console/manifest.yml",
+    "source_code": "https://github.com/jblanked/Video-Game-Module-Console/tree/b066fa8b80e322f5f07d86773f7eb4975a7480b0"
+  },
+  "name": "Video Game Module Console",
+  "short_description": "Flipper Zero console, handling game display rendering and input forwarding",
+  "version": "1.0"
+}

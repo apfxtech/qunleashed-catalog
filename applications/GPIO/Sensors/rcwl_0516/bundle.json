@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "GPIO/Sensors",
+  "changelog": "v0.1",
+  "description": "[RCWL-0516] Motion Sensor",
+  "family": "application",
+  "id": "rcwl_0516",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Sensors/rcwl_0516/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/rcwl_0516"
+  },
+  "name": "[RCWL-0516] Motion Sensor",
+  "short_description": "[RCWL-0516] Motion Sensor",
+  "version": "0.1"
+}

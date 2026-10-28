@@ -1,0 +1,15 @@
+{
+  "author": "47lecoste a.k.a. grugnoymeme",
+  "category": "GPIO/Sensors",
+  "changelog": "v1.0 - Initial release",
+  "description": "./docs/README.md",
+  "family": "application",
+  "id": "stepcounter",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Sensors/stepcounter/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/step_counter"
+  },
+  "name": "[Mx2125] Step Counter",
+  "short_description": "Step Counter/Pedometer using Memsic2125 module.",
+  "version": "1.0"
+}

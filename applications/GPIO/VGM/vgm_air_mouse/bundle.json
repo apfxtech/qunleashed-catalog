@@ -1,0 +1,15 @@
+{
+  "author": "@nminaylov",
+  "category": "GPIO/VGM",
+  "changelog": "v1.4",
+  "description": "Turn Flipper Zero with the Video Game Module into an air mouse",
+  "family": "application",
+  "id": "vgm_air_mouse",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/VGM/vgm_air_mouse/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/bb3d8162ffb7daf7fa3ad6ef72420f51bcb770af/base_pack/air_mouse_ofw"
+  },
+  "name": "[VGM] Air Mouse",
+  "short_description": "Turn Flipper Zero with the Video Game Module into an air mouse",
+  "version": "1.4"
+}

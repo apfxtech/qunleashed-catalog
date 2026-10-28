@@ -1,0 +1,15 @@
+{
+  "author": "xumbax",
+  "category": "GPIO/Sensors",
+  "changelog": "v1.1",
+  "description": "Variometer for paragliding and hiking using BME280 pressure sensor",
+  "family": "application",
+  "id": "vario",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Sensors/vario/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/vario"
+  },
+  "name": "[BME280] Vario",
+  "short_description": "Variometer for paragliding and hiking using BME280 pressure sensor",
+  "version": "1.1"
+}
