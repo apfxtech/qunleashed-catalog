@@ -1,0 +1,15 @@
+{
+  "author": "coolerUA",
+  "category": "Sub-GHz",
+  "changelog": "v0.1",
+  "description": "App for creating or editing SubGhz playlists",
+  "family": "application",
+  "id": "subghz_playlist_creator",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/subghz_playlist_creator/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/subghz_playlist_creator"
+  },
+  "name": "Sub-GHz Playlist Creator",
+  "short_description": "App for creating or editing SubGhz playlists",
+  "version": "0.1"
+}

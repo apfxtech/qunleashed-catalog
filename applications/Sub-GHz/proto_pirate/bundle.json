@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Sub-GHz",
+  "changelog": "v4.1",
+  "description": "Decode car key fob signals from Sub-GHz",
+  "family": "application",
+  "id": "proto_pirate",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/proto_pirate/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/13edbe6303e99070957e3d18298635310fb87118/base_pack/protopirate"
+  },
+  "name": "ProtoPirate",
+  "short_description": "Decode car key fob signals from Sub-GHz",
+  "version": "4.1"
+}

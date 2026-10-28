@@ -1,0 +1,15 @@
+{
+  "author": "Denr01",
+  "category": "Sub-GHz",
+  "changelog": "v0.1",
+  "description": "Chief Cooker",
+  "family": "application",
+  "id": "chief_cooker",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/chief_cooker/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/chief_cooker"
+  },
+  "name": "Chief Cooker",
+  "short_description": "Chief Cooker",
+  "version": "0.1"
+}

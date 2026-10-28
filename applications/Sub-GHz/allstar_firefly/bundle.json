@@ -1,0 +1,15 @@
+{
+  "author": "jlaughter",
+  "category": "Sub-GHz",
+  "changelog": "v0.1",
+  "description": "Allstar Firefly 318ALD31K gate remote - 9-bit trinary OOK decoder/emulator",
+  "family": "application",
+  "id": "allstar_firefly",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/allstar_firefly/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/allstar_firefly"
+  },
+  "name": "Allstar Firefly",
+  "short_description": "Allstar Firefly 318ALD31K gate remote - 9-bit trinary OOK decoder/emulator",
+  "version": "0.1"
+}

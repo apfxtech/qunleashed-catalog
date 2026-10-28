@@ -1,0 +1,15 @@
+{
+  "author": "CodeAllNight (MrDerekJamison)",
+  "category": "Sub-GHz",
+  "changelog": "v1.2",
+  "description": "Converts Flipper music files (.FMF and .TXT) into Sub-GHz files (.SUB).",
+  "family": "application",
+  "id": "fmf_to_sub",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/fmf_to_sub/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/fmf_to_sub"
+  },
+  "name": "Music to Sub-GHz Radio",
+  "short_description": "Converts Flipper music files (.FMF and .TXT) into Sub-GHz files (.SUB).",
+  "version": "1.2"
+}

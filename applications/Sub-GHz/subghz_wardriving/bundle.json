@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Sub-GHz",
+  "changelog": "v0.1",
+  "description": "Sub-GHz WarDriving",
+  "family": "application",
+  "id": "subghz_wardriving",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/subghz_wardriving/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/1aa52e2a30efaf3f16d59abce9803d9b0f769972/base_pack/subghz_wardriving"
+  },
+  "name": "Sub-GHz WarDriving",
+  "short_description": "Sub-GHz WarDriving",
+  "version": "0.1"
+}

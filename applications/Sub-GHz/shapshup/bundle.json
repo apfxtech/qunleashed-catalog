@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Sub-GHz",
+  "changelog": "v0.1",
+  "description": "ShapShup",
+  "family": "application",
+  "id": "shapshup",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/shapshup/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/shapshup"
+  },
+  "name": "ShapShup",
+  "short_description": "ShapShup",
+  "version": "0.1"
+}

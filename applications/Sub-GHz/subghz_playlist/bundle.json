@@ -1,0 +1,15 @@
+{
+  "author": "@darmiel",
+  "category": "Sub-GHz",
+  "changelog": "v1.0",
+  "description": "App works with list of sub-ghz files from .txt file that contains paths to target files.",
+  "family": "application",
+  "id": "subghz_playlist",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/subghz_playlist/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/6a81d05018a09f4963982c52d63689e88d02b85a/base_pack/playlist"
+  },
+  "name": "Sub-GHz Playlist",
+  "short_description": "App works with list of sub-ghz files from .txt file that contains paths to target files.",
+  "version": "1.0"
+}

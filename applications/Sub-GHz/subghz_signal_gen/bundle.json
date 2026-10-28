@@ -1,0 +1,15 @@
+{
+  "author": "@RocketGod-git",
+  "category": "Sub-GHz",
+  "changelog": "v0.1",
+  "description": "SubGHz Signal Generator for Flipper Zero",
+  "family": "application",
+  "id": "subghz_signal_gen",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/subghz_signal_gen/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/subghz_signal_generator"
+  },
+  "name": "SubGHz Signal Generator",
+  "short_description": "SubGHz Signal Generator for Flipper Zero",
+  "version": "0.1"
+}
