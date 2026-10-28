@@ -1,0 +1,15 @@
+{
+  "author": "@SequoiaSan & @xMasterX",
+  "category": "GPIO/ESP32",
+  "changelog": "v1.1",
+  "description": "WiFi scanner module interface, based on ESP8266",
+  "family": "application",
+  "id": "wifi_scanner",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/ESP32/wifi_scanner/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/wifi_scanner"
+  },
+  "name": "[WiFi] Scanner",
+  "short_description": "WiFi scanner module interface, based on ESP8266",
+  "version": "1.1"
+}

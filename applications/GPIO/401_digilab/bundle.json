@@ -1,0 +1,15 @@
+{
+  "author": "Lab401 & tixlegeek",
+  "category": "GPIO",
+  "changelog": "v1.0:\nFirst release\n\nv1.1\n\nUpdate calibration steps\n\nBugfix\n",
+  "description": "Companion app for Lab401's Digilab accessory. The Digilab is hardware module that allows you to explore electronic circuits with a strong emphasis on sensory feedback. It allows you to quickly probe and understand signals, and get a feel about what it looks like.\nRequires a hardware component, which can be purchased at Lab401.com\nBuilt with <3 by Lab401 and tixlegeek.\n",
+  "family": "application",
+  "id": "401_digilab",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/401_digilab/manifest.yml",
+    "source_code": "https://github.com/lab-401/fzDigiLab/tree/0b48d832849d74b4e75cfcfca0ddf13a877b5b95/./401DigiLabApp"
+  },
+  "name": "401/DigiLab",
+  "short_description": "Companion app for the Lab401 DigiLab",
+  "version": "1.1.1"
+}

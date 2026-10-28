@@ -1,0 +1,15 @@
+{
+  "author": "Z4urce",
+  "category": "GPIO/ESP32",
+  "changelog": "v0.1",
+  "description": "ESP32-CAM live feed and photo capture",
+  "family": "application",
+  "id": "camera",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/ESP32/camera/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/flipperzero-camera"
+  },
+  "name": "Camera",
+  "short_description": "ESP32-CAM live feed and photo capture",
+  "version": "0.1"
+}

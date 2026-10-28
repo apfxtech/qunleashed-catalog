@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "GPIO/ESP8266",
+  "changelog": "v0.1",
+  "description": "IFTTT Btn",
+  "family": "application",
+  "id": "esp8266_ifttt_virtual_button",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/ESP8266/esp8266_ifttt_virtual_button/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/ifttt"
+  },
+  "name": "IFTTT Btn",
+  "short_description": "IFTTT Btn",
+  "version": "0.1"
+}

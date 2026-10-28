@@ -1,0 +1,15 @@
+{
+  "author": "@SequoiaSan & @xMasterX",
+  "category": "GPIO/ESP8266",
+  "changelog": "v1.1",
+  "description": "DSTIKE Deauther module interface, based on ESP8266",
+  "family": "application",
+  "id": "esp8266_deauther",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/ESP8266/esp8266_deauther/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/esp8266_deauth"
+  },
+  "name": "[ESP8266] Deauther",
+  "short_description": "DSTIKE Deauther module interface, based on ESP8266",
+  "version": "1.1"
+}
