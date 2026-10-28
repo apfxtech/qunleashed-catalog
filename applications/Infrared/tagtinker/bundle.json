@@ -1,0 +1,15 @@
+{
+  "author": "i12bp8",
+  "category": "Infrared",
+  "changelog": "v2.1",
+  "description": "Educational ESL study tool for owned hardware",
+  "family": "application",
+  "id": "tagtinker",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/tagtinker/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/TagTinker"
+  },
+  "name": "TagTinker",
+  "short_description": "Educational ESL study tool for owned hardware",
+  "version": "2.1"
+}

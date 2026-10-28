@@ -1,0 +1,15 @@
+{
+  "author": "@wh00hw & @xMasterX",
+  "category": "Media",
+  "changelog": "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
+  "description": "Simple Morse Code parser",
+  "family": "application",
+  "id": "morse_code",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/morse_code/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/morse_code"
+  },
+  "name": "Morse Code",
+  "short_description": "Simple Morse Code parser",
+  "version": "1.3"
+}

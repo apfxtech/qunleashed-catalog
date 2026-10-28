@@ -1,0 +1,15 @@
+{
+  "author": "dpshde",
+  "category": "Media",
+  "changelog": "v1.1:\n- Bundle the Berean Standard Bible chapter text inside the app\n- Read chapters from the app asset pack instead of a hand-copied folder\n\nv1.0:\n- Read the Berean Standard Bible offline by book, chapter, and verse\n- Save a passage on the SD card\n- Share a route.bible link over NFC\n",
+  "description": "# Bible BSB\n\nRead the Berean Standard Bible on Flipper Zero. The chapter text is bundled with the app, so reading works with no network connection and no extra download.\n\n## How to read\n\nOpen the app from Apps, then Media.\n\n- Up and Down move through books, chapters, verses, and reader lines\n- Left and Right move across the chapter grid and turn reader pages\n- OK opens the next screen. In the reader, a short press opens the menu and a long press saves the passage\n- Back returns to the previous screen\n\nSaved passages are stored at /ext/apps_data/bible_bsb/collection.json.\n\n## Sharing\n\nThe reader menu can share the open passage as a route.bible link over NFC.\n\n## License\n\nThis app is MIT licensed. The Berean Standard Bible text is in the public domain (dedicated April 30, 2023).\n\n## Support\n\n[Ko-fi](https://ko-fi.com/dpshade)\n",
+  "family": "application",
+  "id": "bible_bsb",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/bible_bsb/manifest.yml",
+    "source_code": "https://github.com/dpshde/bible-bsb/tree/ed6d70077d7dcfbf19e045ad7bdf4973e955b67c/bible_bsb"
+  },
+  "name": "Bible [BSB]",
+  "short_description": "Browse and save BSB scripture passages with route.bible NFC sharing",
+  "version": "1.1"
+}

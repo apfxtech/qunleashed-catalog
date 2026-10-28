@@ -1,0 +1,15 @@
+{
+  "author": "@armixz",
+  "category": "Media",
+  "changelog": "v0.1",
+  "description": "Cryptography Dictionary (Flipper Zero Edition)",
+  "family": "application",
+  "id": "crypto_dict",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/crypto_dict/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/crypto_dictionary_book"
+  },
+  "name": "Crypto Dictionary",
+  "short_description": "Cryptography Dictionary (Flipper Zero Edition)",
+  "version": "0.1"
+}

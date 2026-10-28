@@ -1,0 +1,15 @@
+{
+  "author": "@armixz",
+  "category": "Media",
+  "changelog": "v0.2",
+  "description": "The C Programming Language, Flipper Zero Edition (by Brian W. Kernighan, Dennis M. Ritchie)",
+  "family": "application",
+  "id": "c_book",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/c_book/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/the_c_programming_language_book"
+  },
+  "name": "The C Prog. Language",
+  "short_description": "The C Programming Language, Flipper Zero Edition (by Brian W. Kernighan, Dennis M. Ritchie)",
+  "version": "0.2"
+}

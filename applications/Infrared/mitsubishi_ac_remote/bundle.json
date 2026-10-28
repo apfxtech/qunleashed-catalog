@@ -1,0 +1,15 @@
+{
+  "author": "xMasterX",
+  "category": "Infrared",
+  "changelog": "v1.0",
+  "description": "Mitsubishi Electric Air Conditioner remote control",
+  "family": "application",
+  "id": "mitsubishi_ac_remote",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/mitsubishi_ac_remote/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/cdceac0137abd8d0695b269992ae52ac0117e355/non_catalog_apps/mitsubishi_ac_remote"
+  },
+  "name": "Mitsubishi (Full)",
+  "short_description": "Mitsubishi Electric Air Conditioner remote control",
+  "version": "1.0"
+}
