@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "memsic_2125",
+      "file": "memsic_2125.fap",
+      "icon": "assets/icon.png",
+      "name": "[Mx2125] Accelerometer",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "GPIO/Sensors",
+  "category_id": "gpio-sensors",
   "changelog": "v0.1",
   "description": "[Mx2125] Accelerometer",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "memsic_2125",
+  "install_path": "GPIO/Sensors",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Sensors/memsic_2125/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/memsic_2125"
   },
   "name": "[Mx2125] Accelerometer",
+  "screenshots": [],
   "short_description": "[Mx2125] Accelerometer",
   "version": "0.1"
 }

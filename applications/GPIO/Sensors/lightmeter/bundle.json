@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "lightmeter",
+      "file": "lightmeter.fap",
+      "icon": "assets/icon.png",
+      "name": "MAX44009",
+      "version": "1.3"
+    }
+  ],
   "author": "Oleksii Kutuzov",
+  "authors": [],
   "category": "GPIO/Sensors",
+  "category_id": "gpio-sensors",
   "changelog": "## v1.3\n\n* Update EV compute logic (thanks to @bogdumi)\n\n## v1.2\n\n* Lux only screen now has statistics\n* Settings are now stored on SD card\n* You can choose the resolution (BH1750 only) and address for sensor\n\n(thanks to @danielskowronski for contributing to this update)\n\n## v1.1\n\nAdded support for MAX44009 sensor (thanks to @wosk)\n\n## v1.0\n\nInitial release for Flipper Application Catalog\n",
   "description": "## Lightmeter app for photography\n\nAn application that suggests settings for your manual camera based on the reading of the ambient light sensor. Can also be used in a pure lux meter mode.\n\n## Supported sensors\n\n- BH1750\n- MAX44009\n\n## Wiring\n\n| Sensor | Flipper Zero |\n| ------ | ------------ |\n| VCC    | 3.3V         |\n| GND    | GND          |\n| SCL    | C0           |\n| SDA    | C1           |\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "lightmeter",
+  "install_path": "GPIO/Sensors",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Sensors/lightmeter/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/lightmeter"
   },
   "name": "MAX44009",
+  "screenshots": [],
   "short_description": "Lightmeter app for photography",
   "version": "1.3"
 }

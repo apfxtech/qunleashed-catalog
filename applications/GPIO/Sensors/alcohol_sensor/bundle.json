@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "alcohol_sensor",
+      "file": "alcohol_sensor.fap",
+      "icon": "assets/icon.png",
+      "name": "MQ-3 Alcometer",
+      "version": "1.0"
+    }
+  ],
   "author": "serjantlk",
+  "authors": [],
   "category": "GPIO/Sensors",
+  "category_id": "gpio-sensors",
   "changelog": "CHANGELOG.md",
   "description": "Breathalyzer application for Flipper Zero using MQ-3 alcohol sensor.\n\nFeatures:\n- Automatic zero calibration during warmup\n- 5-level intoxication scale (Sober → Light → Medium → Heavy → Critical)\n- Peak detection and sober time estimation\n- Measurement log saved to SD card with date/time\n- Log viewer with scroll\n- Heater auto-shutdown after 60s idle\n\nRequires MQ-3 sensor module connected to GPIO.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "alcohol_sensor",
+  "install_path": "GPIO/Sensors",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Sensors/alcohol_sensor/manifest.yml",
     "source_code": "https://github.com/serjantlk/MQ-3-Alcometer/tree/3bfc1cb93d619201d6ce24df5f836cc859ccfe50"
   },
   "name": "MQ-3 Alcometer",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Alcohol meter (breathalyzer) using MQ-3 sensor",
   "version": "1.0"
 }

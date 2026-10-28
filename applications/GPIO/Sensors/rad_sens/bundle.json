@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "rad_sens",
+      "file": "rad_sens.fap",
+      "icon": "assets/icon.png",
+      "name": "Radiation Sensor",
+      "version": "1.0"
+    }
+  ],
   "author": "@sionyx",
+  "authors": [
+    {
+      "id": "sionyx",
+      "name": "sionyx"
+    }
+  ],
   "category": "GPIO/Sensors",
+  "category_id": "gpio-sensors",
   "changelog": "v1.0",
   "description": "Works with RadSens external module",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "rad_sens",
+  "install_path": "GPIO/Sensors",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Sensors/rad_sens/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/flipper_radsens"
   },
   "name": "Radiation Sensor",
+  "screenshots": [],
   "short_description": "Works with RadSens external module",
   "version": "1.0"
 }

@@ -1,15 +1,38 @@
 {
+  "apps": [
+    {
+      "appid": "hc_sr04",
+      "file": "hc_sr04.fap",
+      "icon": "assets/icon.png",
+      "name": "[HC-SR] Dist. Sensor",
+      "version": "1.1"
+    }
+  ],
   "author": "@xMasterX (first implementation by @Sanqui)",
+  "authors": [
+    {
+      "id": "xmasterx",
+      "name": "xMasterX"
+    },
+    {
+      "id": "sanqui",
+      "name": "Sanqui"
+    }
+  ],
   "category": "GPIO/Sensors",
+  "category_id": "gpio-sensors",
   "changelog": "v1.1",
   "description": "HC-SR(04) Distance sensor reader",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "hc_sr04",
+  "install_path": "GPIO/Sensors",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Sensors/hc_sr04/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/hc_sr04"
   },
   "name": "[HC-SR] Dist. Sensor",
+  "screenshots": [],
   "short_description": "HC-SR(04) Distance sensor reader",
   "version": "1.1"
 }

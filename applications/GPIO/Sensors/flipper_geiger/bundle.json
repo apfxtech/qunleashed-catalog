@@ -1,15 +1,38 @@
 {
+  "apps": [
+    {
+      "appid": "flipper_geiger",
+      "file": "flipper_geiger.fap",
+      "icon": "assets/icon.png",
+      "name": "[J305] Geiger Counter",
+      "version": "1.5"
+    }
+  ],
   "author": "@nmrr",
+  "authors": [
+    {
+      "id": "nmrr",
+      "name": "nmrr"
+    }
+  ],
   "category": "GPIO/Sensors",
+  "category_id": "gpio-sensors",
   "changelog": "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for latest API, v1.3 - Fix icon, v1.4 - Sync updates and latest API support, v1.5 - Sync with latest version",
   "description": "Works with J305 Geiger tube on external board",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flipper_geiger",
+  "install_path": "GPIO/Sensors",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Sensors/flipper_geiger/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/b91bee2ae60b92a5b164fa7dc272dac5f620761e/apps_source_code/flipper_geiger"
   },
   "name": "[J305] Geiger Counter",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Works with J305 Geiger tube on external board",
   "version": "1.5"
 }
