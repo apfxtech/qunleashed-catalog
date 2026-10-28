@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "flip_tdi",
+      "file": "flip_tdi.fap",
+      "icon": "assets/icon.png",
+      "name": "FlipTDI",
+      "version": "1.1"
+    }
+  ],
   "author": "SkorP",
+  "authors": [],
   "category": "GPIO/Programmers",
+  "category_id": "gpio-programmers",
   "changelog": "## 1.1\n - Fixed a crash when connecting to a Linux system\n## 1.0\n - Initial release\n",
   "description": "# FlipTDI\n\nThis is a FT232H device emulation application\n\n## Usage\n\nСonnect Flipper to your computer and open the application, a new FT232H compatible device will appear in the system\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flip_tdi",
+  "install_path": "GPIO/Programmers",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Programmers/flip_tdi/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/bb3d8162ffb7daf7fa3ad6ef72420f51bcb770af/base_pack/flip_tdi"
   },
   "name": "FlipTDI",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Flipper FTDI232H emulator.",
   "version": "1.1"
 }

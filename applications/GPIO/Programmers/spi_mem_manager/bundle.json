@@ -1,15 +1,39 @@
 {
+  "apps": [
+    {
+      "appid": "spi_mem_manager",
+      "file": "spi_mem_manager.fap",
+      "icon": "assets/icon.png",
+      "name": "spi",
+      "version": "1.5"
+    }
+  ],
   "author": "@drunkbatya",
+  "authors": [
+    {
+      "id": "drunkbatya",
+      "name": "drunkbatya"
+    }
+  ],
   "category": "GPIO/Programmers",
+  "category_id": "gpio-programmers",
   "changelog": "## 1.5\n - Added support for the FM25Q16A flash chip\n - Fixed the missing SPIMemChips array terminator\n## 1.4\n - Fixed UI rendering bug related to line breaks\n - Removed call to legacy SDK API\n## 1.3\n   XM25QH64C and XM25QH128A flash chip support added\n## 1.2\n   Added support for the XT25F128B flash chip\n## 1.1\n - New random filename API\n## 1.0\n - Initial release\n",
   "description": "# SPI Memory Manager\n\nThis application allows you to read, erase, and flash SPI memory chips. It can be used to backup the contents of SPI memory chips, or to restore them to their original state.\n\n## Wiring\n\nThe SPI Memory Manager includes a wiring pinout diagram in the app. You can also find it here:\n\n| FLIPPER PIN | SPI PIN |\n|-------------|---------|\n| 1           | -       |\n| 2           | MOSI    |\n| 3           | MISO    |\n| 4           | CS      |\n| 5           | CLK     |\n| 6           | -       |\n| 7           | -       |\n| 8           | GND     |\n| 9           | 3.3V    |\n| 10          | -       |\n| 11          | GND     |\n| 12-17       | -       |\n| 18          | GND     |\n\n# Features\n\n## Read\n\nTo read the contents of an SPI memory chip, connect it to your Flipper Zero and press the Read button. The chip type will be detected automatically, and, if it is supported, the contents of the chip will be read and saved to a file on your Flipper Zero's SD card.\n\n## Erase\n\nTo erase the contents of an SPI memory chip, connect it to your Flipper Zero and press the Erase button. If the chip type is supported, the chip will be erased.\n\n## Flash\n\nTo flash the contents of a file on your Flipper Zero's SD card to an SPI memory chip, connect it to your Flipper Zero, select the Saved menu option in the app, and select the file you want to flash. If the chip type is supported, the file will be flashed to the chip.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "spi_mem_manager",
+  "install_path": "GPIO/Programmers",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/Programmers/spi_mem_manager/manifest.yml",
     "source_code": "https://github.com/flipperdevices/flipperzero-good-faps/tree/55328b486971e49078a955a7c086e4463fa6843b/spi_mem_manager"
   },
   "name": "spi",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png"
+  ],
   "short_description": "Application for reading and writing 25-series SPI memory chips",
   "version": "1.5"
 }

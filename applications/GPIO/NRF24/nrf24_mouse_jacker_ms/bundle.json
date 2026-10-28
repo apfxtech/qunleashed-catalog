@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "nrf24_mouse_jacker_ms",
+      "file": "nrf24_mouse_jacker_ms.fap",
+      "icon": "assets/icon.png",
+      "name": "nrf24",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "GPIO/NRF24",
+  "category_id": "gpio-nrf24",
   "changelog": "v0.1",
   "description": "nrf24",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "nrf24_mouse_jacker_ms",
+  "install_path": "GPIO/NRF24",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/NRF24/nrf24_mouse_jacker_ms/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/mousejacker_ms"
   },
   "name": "nrf24",
+  "screenshots": [],
   "short_description": "nrf24",
   "version": "0.1"
 }

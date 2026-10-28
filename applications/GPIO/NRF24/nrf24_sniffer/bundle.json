@@ -1,15 +1,38 @@
 {
+  "apps": [
+    {
+      "appid": "nrf24_sniffer",
+      "file": "nrf24_sniffer.fap",
+      "icon": "assets/icon.png",
+      "name": "nrf24",
+      "version": "1.1"
+    }
+  ],
   "author": "@mothball187 & @xMasterX",
+  "authors": [
+    {
+      "id": "mothball187",
+      "name": "mothball187"
+    },
+    {
+      "id": "xmasterx",
+      "name": "xMasterX"
+    }
+  ],
   "category": "GPIO/NRF24",
+  "category_id": "gpio-nrf24",
   "changelog": "v1.1",
   "description": "App captures addresses to use with NRF24 Mouse Jacker app to perform mousejack attacks",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "nrf24_sniffer",
+  "install_path": "GPIO/NRF24",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/NRF24/nrf24_sniffer/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/nrfsniff"
   },
   "name": "nrf24",
+  "screenshots": [],
   "short_description": "App captures addresses to use with NRF24 Mouse Jacker app to perform mousejack attacks",
   "version": "1.1"
 }
