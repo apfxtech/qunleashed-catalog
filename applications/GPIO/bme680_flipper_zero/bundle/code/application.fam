@@ -1,0 +1,33 @@
+App(
+    appid="bme680_flipper_zero",
+    name="BME680",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="bme680_app",
+    # C defines
+    cdefines=[
+        "APP_BME680",
+        "BME68X_FLOAT_POINT_COMPENSATION",
+    ],
+    requires=[
+        "gui",
+        "furi",
+        "furi_hal_i2c",
+        "bus",
+        "storage",
+        "notification",
+        "furi_hal_rtc",
+    ],
+    sources=[
+        # Main application file and BME680 driver
+        "bme680_app.cpp",
+        "bme68x.c",
+    ],
+    stack_size=2 * 1024,
+    order=20,
+    fap_icon="icons/bme680_icon.png",
+    fap_category="GPIO",
+    fap_author="Dr.Mosfet",
+    fap_weburl="",
+    fap_version="1.2",
+    fap_description="BME680 environmental sensor with gas leak detection, LED/sound alerts, and configurable safety thresholds.",
+)

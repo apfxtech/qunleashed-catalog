@@ -1,0 +1,15 @@
+{
+  "author": "@aarjaneiro",
+  "category": "GPIO",
+  "changelog": "## v0.1\n- Init repository\n",
+  "description": "A simple emulator of a fencing testbox for the Flipper Zero.",
+  "family": "application",
+  "id": "fencing_testbox",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/fencing_testbox/manifest.yml",
+    "source_code": "https://github.com/aarjaneiro/fencing_testbox/tree/58e4fad8796fc295ea9e7a8da72fa62db1d6b8fe"
+  },
+  "name": "Fencing Test Box",
+  "short_description": "Test box for assessment of fencing blades and body wires.",
+  "version": "0.1"
+}

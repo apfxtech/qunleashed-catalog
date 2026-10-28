@@ -1,0 +1,15 @@
+{
+  "author": "JBlanked",
+  "category": "GPIO",
+  "changelog": "## v1.0.1\n- Fixed parsing for private channels\n\n## v1.0\n- Initial release\n",
+  "description": "# FlipTelegram\nFlipper Zero Telegram Client\n\n## Requirements\n- WiFi Developer Board, Raspberry Pi, BW16, or ESP32 device flashed with FlipperHTTP v2.1 or higher: https://github.com/jblanked/FlipperHTTP\n- 2.4 GHz or 5 GHz WiFi access point\n- Telegram Bot Token and Chat ID: Create a bot using BotFather on Telegram and obtain the bot token. Next, add your bot to a chat. Then, get your chat ID by typing in https://api.telegram.org/bot{your_bot_token}/getUpdates in your web browser after sending a message in that chat. If you entered credentials using qFlipper, make sure to add a space after the bot token and chat ID to avoid parsing issues or open the Settings menu in the app and re-save them.\n\n## Connect Online\n- Discord: https://discord.gg/5aN9qwkEc6\n- YouTube: https://www.youtube.com/@jblanked\n- Instagram: https://www.instagram.com/jblanked\n- Other: https://www.jblanked.com/social/\n\n## Features\n- Send and receive messages via Telegram\n",
+  "family": "application",
+  "id": "flip_telegram",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flip_telegram/manifest.yml",
+    "source_code": "https://github.com/jblanked/FlipTelegram/tree/8a0a8a5672c33bd6cdf264b11da749696e35e342"
+  },
+  "name": "FlipTelegram",
+  "short_description": "Flipper Zero Telegram Client",
+  "version": "1.0.1"
+}

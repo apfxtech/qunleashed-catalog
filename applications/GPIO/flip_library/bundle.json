@@ -1,0 +1,15 @@
+{
+  "author": "JBlanked",
+  "category": "GPIO",
+  "changelog": "## v1.5\n- H4W9 new features: Added Fahrenheit, current weather, and wind speed/direction.\n\n## v1.4\n- Merged **FlipTrader**.  \n- Merged **FlipWeather** with added topography data.  \n- Added **Next Holiday** feature (contributed by Derek Jamison).  \n- Introduced **Predict Name, Age, and Ethnicity** functionality.  \n- Added new features: **Random Trivia**, **Advice**, **Tech Phrase**, **UUID**, **Address**, **Credit Card Info**, and **User Info**.  \n\n## v1.3  \nRefactored by Derek Jamison:  \n- Improved progress display.  \n- Added a connectivity check on startup.  \n- Integrated the **Wikipedia API**.  \n\n## v1.2  \n- Enhanced memory allocation.  \n- Added **Dog Facts**.  \n- Introduced **Random Quotes**.  \n\n## v1.1  \n- Updated for app catalog compatibility.  \n\n## v1.0  \n- Initial release.  ",
+  "description": "# FlipLibrary App for Flipper Zero  \n\nThe **FlipLibrary** app for Flipper Zero is a versatile and user-friendly application that offers a wide range of features to enhance your Flipper Zero experience.  \n\nThe app includes a **dictionary**, **random facts**, and numerous additional functionalities, all accessible directly from your Flipper Zero device. It is designed for easy navigation and quick access to information, making it a handy companion for on-the-go learning and entertainment. Big shout out to [Derek Jamison](https://github.com/jamisonderek) for his valuable contributions!  \n\nFlipLibrary leverages the FlipperHTTP flash for the WiFi Devboard, originally introduced in the WebCrawler app: https://github.com/jblanked/WebCrawler-FlipperZero/tree/main/assets/FlipperHTTP  \n\n## Requirements  \n- WiFi Developer Board, Raspberry Pi, or ESP32 Device with FlipperHTTP Flash: https://github.com/jblanked/FlipperHTTP  \n- WiFi Access Point  \n\n## Features  \n- **Random Cat Fact**  \n- **Random Dog Fact**  \n- **Random Quote**  \n- **Random Fact**  \n- **Wikipedia**  \n- **Dictionary**  \n- **Weather**  \n- **GPS**  \n- **Asset Price**  \n- **Next Holiday**  \n- **Predict Age**  \n- **Predict Ethnicity**  \n- **Predict Gender**  \n- **Random Advice**  \n- **Random Trivia Questions**  \n- **Random Tech Phrases**  \n- **Random UUID**  \n- **Random Address**  \n- **Random Credit Card Info**  \n- **Random User Info**  \n- **Topography**  \n\n## Video Tutorial  \n\nFor detailed setup and usage instructions, watch the video tutorial: https://www.youtube.com/watch?v=xR1ZbpOVTwE\n\n## Known Bugs  \nFor known issues and troubleshooting, visit: https://github.com/jblanked/FlipperHTTP/blob/main/HELP.md\n",
+  "family": "application",
+  "id": "flip_library",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flip_library/manifest.yml",
+    "source_code": "https://github.com/jblanked/FlipLibrary/tree/f2643329da52b4448ff6b05181d9f9350bb06a02"
+  },
+  "name": "FlipLibrary",
+  "short_description": "Utilize WiFi to retrieve data from 20 different APIs.",
+  "version": "1.5"
+}
