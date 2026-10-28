@@ -1,0 +1,15 @@
+{
+  "author": "@sanoobis",
+  "category": "Infrared",
+  "changelog": "# Changelog\n\n## Version 3.2\n\n- Added Open .ir for turning an existing standard remote into an editable IR Builder project.\n- Added automatic mapping for 16 Power, Volume, Channel, Mute, navigation, Menu, Back, and Input controls.\n- Added a third Other buttons screen for unmatched imported signals.\n- Increased the unmatched-button limit from 24 to 48 and retained duplicate signals with unique labels.\n- Moved finished standard remotes to the infrared/ir_builder folder.\n- Added format-4 project metadata while retaining project formats 1 through 3.\n\n## Version 3.1\n\n- Added a connected five-way navigation controller with dedicated Menu, Back, and Input icons.\n- Added high-contrast focus and configured-key indicators.\n- Added a bundled TV builder library with native OK, direction, Menu, Back, and Input candidate groups.\n- Added automatic first-launch library installation and a configurable library setting.\n- Added native navigation editing, scanning, saving, exporting, and repeat support.\n- Improved scan speed, signal caching, cancellation, file browsing, and project recovery.\n",
+  "description": "# IR Builder\n\nIR Builder creates a working TV remote when the original remote is unavailable. Enter signal positions found with Universal Remotes, or automatically scan candidates and pause when the TV responds.\n\n## Included controls\n\n- Power on and off\n- Volume and channel up or down\n- Mute and unmute\n- Up, down, left, right, and OK\n- Menu, Back, and Input\n\n## Workflow\n\n- New remotes use the bundled TV builder library automatically.\n- Auto scan supports pause, adjacent stepping, replay, resume, and selection.\n- Manual position entry accelerates while Left or Right is held.\n- Projects can be reopened and edited later.\n- Existing infrared remotes can be opened and mapped onto the designed controls.\n- Unmatched imported signals appear on a third Other buttons screen.\n- Finished remotes are saved under infrared/ir_builder in the standard Flipper format.\n- Up to 48 unmatched buttons can be imported from another infrared remote file.\n\nThe portrait interface keeps the infrared emitter pointed naturally toward the TV. The bundled library is private to IR Builder and does not modify the firmware's Universal Remotes data.\n",
+  "family": "application",
+  "id": "ir_builder",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/ir_builder/manifest.yml",
+    "source_code": "https://github.com/sanoobis/IR-Builder/tree/5b292b2656bc6966e6b87ff48116412c2d0de3c5"
+  },
+  "name": "IR Builder",
+  "short_description": "Create saved TV remotes from Universal Remote signal positions.",
+  "version": "3.2"
+}

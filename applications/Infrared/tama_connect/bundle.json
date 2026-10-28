@@ -1,0 +1,15 @@
+{
+  "author": "sp2013",
+  "category": "Infrared",
+  "changelog": "# Changelog\n\n## 1.0 - 2026-10-06\n\nInitial public release.\n\n## Added\n\n- Tamagotchi Connection 2024 infrared communication\n- Visit mode\n- Configurable character, name and gender\n- Persistent profile settings\n- Points game\n- Configurable GP wager\n- Selectable win, loss or random game result\n- Gift mode\n- Food gifts (IDs 0-35)\n- Snack gifts (IDs 36-77)\n- Item gifts (IDs 78-131)\n- Special gift effects (IDs 132-141)\n- Random Gift\n- Random Food\n- Random Snack\n- Random Item\n- Random Special\n\n## Tested\n\nVisit, Points Game and Gift communication have been physically tested with\na Tamagotchi Connection 2024 re-release.\n\n## Planned\n\n- Additional game modes\n- Marriage support\n",
+  "description": "# TamaConnect\n\nTamaConnect lets your Flipper Zero communicate with Tamagotchi Connection 2024 devices using infrared.\n\nUse your Flipper as a virtual Tamagotchi for supported Connection activities.\n\n## Features\n\n- Visit a real Tamagotchi\n- Choose the virtual Tamagotchi character\n- Set its name and gender\n- Play the Points Game\n- Choose a GP wager\n- Choose win, lose, or random game results\n- Send food, snacks, and items\n- Send special gift effects\n- Send random gifts\n- Save profile settings between sessions\n\n## Compatibility\n\nTamaConnect has been physically tested with the Tamagotchi Connection 2024 re-release.\n\nNo additional hardware is required. Communication uses the built-in infrared transceiver of the Flipper Zero.\n\n## Gift mode\n\nSelect a gift in TamaConnect.\n\nOn the Tamagotchi, open Connect, select Present, wait for STAND BY, and press the middle button to start the connection.\n\nPoint the Tamagotchi and Flipper Zero infrared ports toward each other during communication.\n\n## Credits\n\nTamaConnect is based in part on the Tamagometer project by Zach Resmer.\n\nTamagotchi is a trademark of Bandai. TamaConnect is an unofficial project and is not affiliated with or endorsed by Bandai.\n",
+  "family": "application",
+  "id": "tama_connect",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/tama_connect/manifest.yml",
+    "source_code": "https://github.com/s2013p/TamaConnect/tree/10da0030af78d6f4d5ba688a97f99ccb6e9ba8f0"
+  },
+  "name": "TamaConnect",
+  "short_description": "Infrared companion for virtual pet devices",
+  "version": "1.0"
+}

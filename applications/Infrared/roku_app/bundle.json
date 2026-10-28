@@ -1,0 +1,15 @@
+{
+  "author": "Sifi11",
+  "category": "Infrared",
+  "changelog": "   v1.0:\n   - Initial release\n",
+  "description": "# Flipper Roku App\n## A Flipper Zero app that makes navigating Roku TV's easier\nP.S. Sorry for the terrible app icon, commits are welcome.\n",
+  "family": "application",
+  "id": "roku_app",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/roku_app/manifest.yml",
+    "source_code": "https://github.com/sifi11/Flipper-Roku-App/tree/7f893ee8ed55f226682549c4940cc857ef6f1367/Roku-App"
+  },
+  "name": "Roku App",
+  "short_description": "Control your Roku TV from one interface",
+  "version": "1.0"
+}
