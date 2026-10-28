@@ -1,0 +1,16 @@
+{
+  "author": "@skizzophrenic",
+  "category": "Talking-Sasquach",
+  "changelog": "",
+  "description": "",
+  "dolphin": {},
+  "family": "animation",
+  "id": "Sasquach_Naruto",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/animations/Talking-Sasquach/Sasquach_Naruto/manifest.yml",
+    "source_code": "https://github.com/skizzophrenic/Talking-Sasquach/tree/1088fb0fab1a875517086085e2e44c7b1d331c7e/Finished Animations/Sasquach_Naruto"
+  },
+  "name": "Sasquach_Naruto",
+  "short_description": "",
+  "version": "719c0cc42ee7"
+}
