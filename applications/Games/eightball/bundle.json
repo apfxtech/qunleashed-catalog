@@ -1,0 +1,15 @@
+{
+  "author": "Steven Quinn",
+  "category": "Games",
+  "changelog": "## v0.1\n\n- Initial release\n",
+  "description": "# Magic 8 Ball\n\nThis is a simple implementation of the classic Magic 8-ball game for the flipper zero.\n\n## How to play\n\n1. Ask your Flipper a yes or no question.\n2. Press the center button to get an answer.\n\n## Version history\n\n- 0.1 - Initial release\n\n## Credits\n\nThis game was created after following the tutorials from the [Flipper Game Enging Example](https://github.com/flipperdevices/flipperzero-game-engine-example) and [Building an app for Flipper Zero](https://instantiator.dev/post/flipper-zero-app-tutorial-01/). Thank you to those authors for your work with the community!\n",
+  "family": "application",
+  "id": "eightball",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/eightball/manifest.yml",
+    "source_code": "https://github.com/stevenquinn/flipper-8-ball/tree/356af387c6889daf245856f314427102ecddb630"
+  },
+  "name": "Magic 8-ball",
+  "short_description": "A simple Magic 8-ball",
+  "version": "0.1"
+}

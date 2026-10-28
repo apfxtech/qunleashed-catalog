@@ -1,0 +1,15 @@
+{
+  "author": "Koray Er",
+  "category": "Games",
+  "changelog": "v0.3:\n- Improved accuracy meter\n- Added info screens\n\nv0.2:\n- Added accuracy percentage\n\nv0.1:\n- Initial release\n",
+  "description": "Haptic rhythm-matching game focusing on tactile feedback rather than visual cues.\n\n- The app generates a 5-step vibration sequence.\n- Gaps between vibrations are randomized between 200, 500, and 800ms.\n- Users must replicate the timing using the OK button.\n- Accuracy is calculated based on timing offsets; a >=50% threshold is required to progress.\n",
+  "family": "application",
+  "id": "bzzbzz",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/bzzbzz/manifest.yml",
+    "source_code": "https://github.com/ikiruneo/bzzbzz/tree/1ecda09b52e6171710a262f67d69c50be8e7548f"
+  },
+  "name": "BzzBzz",
+  "short_description": "Haptic rhythm-matching game",
+  "version": "0.3"
+}

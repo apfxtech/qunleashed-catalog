@@ -1,0 +1,31 @@
+# Host unit tests (make test) — the Makefile builds ten of these binaries at the root
+*.o
+tests/*.o
+/test_*
+
+# Per-machine Makefile overrides (FLIPPER_FIRMWARE_PATH)
+local.mk
+
+# ufbt / GitHub Actions release build
+dist/
+.ufbt/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / swap
+*.swp
+*~
+.idea/
+
+# Python
+tools/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Pipeline caches (regenerable, not committed)
+data/_cache/

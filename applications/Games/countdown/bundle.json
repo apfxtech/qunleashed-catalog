@@ -1,0 +1,15 @@
+{
+  "author": "Oscar Rodriguez",
+  "category": "Games",
+  "changelog": "## Version 1.0\n\n- Initial release",
+  "description": "# Countdown — Numbers Game for Flipper Zero\n\nA game inspired by the \"Countdown\" numbers round.\n\nSelect 6 numbers, choose a 3-digit target,\nand the solver will try to reach it using + − × ÷.\n\n## Controls\n\n- D-Pad → Move cursor\n- OK → Select number / digit / Solve / Restart\n- Back → Go back (or exit in phase 1)\n\n## Build\n\nufbt build\n\nufbt launch\n\n## License\n\nMIT",
+  "family": "application",
+  "id": "countdown",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/countdown/manifest.yml",
+    "source_code": "https://github.com/sistemasorp/flipper-countdown/tree/4f60ab4c9b973dcdd2adc5dc496fcc7f13ec1371"
+  },
+  "name": "CountDown",
+  "short_description": "Solve target number from 6 numbers like the CountDown TV Show",
+  "version": "1.0"
+}

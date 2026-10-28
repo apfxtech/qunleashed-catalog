@@ -1,0 +1,15 @@
+{
+  "author": "mrnullone",
+  "category": "Games",
+  "changelog": "## v1.0:\n - Initial Release\n",
+  "description": "# Flipper Poser\nThis is the flipper poser! It's your little flipper buddy, posed for photos with ***my*** bad art.\nUse the arrow buttons to switch between poses.\n\n(oh, and I made this entirely in vim because I hate myself)\n\nIf you want to see a feature added, feel free to open an issue on github.\n\nIf someone submits a PR with better images, I'll create a toggle with the OK button to switch between bad and good art.\n",
+  "family": "application",
+  "id": "flipperpose",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/flipperpose/manifest.yml",
+    "source_code": "https://github.com/MrNull1/flipperpose/tree/282bf9247d0b7bbf76d829b846b071e7065892fd"
+  },
+  "name": "Flipper Poser",
+  "short_description": "A simple app to pose your flipper buddy for photos!",
+  "version": "1.0"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "Endika",
+  "category": "Games",
+  "changelog": "**0.1.3** — Added initial catalog release for Impostor Game.\n",
+  "description": "## Impostor Game\n\nA social deduction party game for Flipper Zero inspired by Undercover/Spyfall flow. Most players (crew) see the same secret word, while impostors only see a hint tied to that word.\n\n## How to play\n\n- Add players and choose the number of impostors.\n- Pass the device around and reveal each role card one by one.\n- Crew players receive the shared secret word.\n- Impostors receive only a hint and must blend in.\n- The app picks a random first speaker to start discussion.\n",
+  "family": "application",
+  "id": "flipper_impostor_game",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/flipper_impostor_game/manifest.yml",
+    "source_code": "https://github.com/Endika/flipper-impostor-game/tree/94e7441c5c0b677a725f364ef25522dfdf950077"
+  },
+  "name": "Impostor Game",
+  "short_description": "Undercover-style party game: impostors get a hint, crew gets the secret word.",
+  "version": "0.1.3"
+}
