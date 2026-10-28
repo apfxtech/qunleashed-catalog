@@ -1,0 +1,8 @@
+App(
+    appid="menu_style_elrs",
+    name="ELRS",
+    apptype=FlipperAppType.PLUGIN,
+    entry_point="menu_style_elrs_ep",
+    requires=["loader"],
+    sources=["styles/theme/elrs.c"],
+)

@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Themes",
+  "changelog": "v0.1:\nfirst version\n",
+  "description": "Main menu in the style of the Wii channel menu.",
+  "family": "menustyle",
+  "id": "menu_style_wii",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/menustyles/Themes/menu_style_wii/manifest.yml",
+    "source_code": "https://github.com/apfxtech/all-menu-styles/tree/7836ccea89e775016d93823e3d761a5590d7acc1"
+  },
+  "name": "Wii",
+  "short_description": "Wii-like main menu.",
+  "version": "0.1"
+}

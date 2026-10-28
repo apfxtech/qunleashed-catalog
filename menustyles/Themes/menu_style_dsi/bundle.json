@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Themes",
+  "changelog": "v0.1:\nfirst version\n",
+  "description": "Main menu in the style of the Nintendo DSi home menu.",
+  "family": "menustyle",
+  "id": "menu_style_dsi",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/menustyles/Themes/menu_style_dsi/manifest.yml",
+    "source_code": "https://github.com/apfxtech/all-menu-styles/tree/7836ccea89e775016d93823e3d761a5590d7acc1"
+  },
+  "name": "DSi",
+  "short_description": "DSi-like main menu.",
+  "version": "0.1"
+}
