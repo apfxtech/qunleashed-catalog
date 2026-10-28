@@ -1,6 +1,8 @@
 {
   "author": "",
+  "authors": [],
   "category": "OFW",
+  "category_id": "ofw",
   "changelog": "",
   "description": "",
   "dolphin": {
@@ -11,7 +13,15 @@
     "weight": 3
   },
   "family": "animation",
+  "files": [
+    "meta.txt",
+    "frame_0.bm",
+    "frame_1.bm",
+    "frame_2.bm",
+    "frame_3.bm"
+  ],
   "id": "L1_Waves_128x50",
+  "install_path": "/ext/dolphin/L1_Waves_128x50",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/animations/OFW/L1_Waves_128x50/manifest.yml",
     "source_code": "https://github.com/apfxtech/qunleashed-catalog/tree/6ddd00385e5ee87fe588f9fe380c01758c51b8ef/animations/OFW/L1_Waves_128x50"
