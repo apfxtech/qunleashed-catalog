@@ -318,4 +318,18 @@ Four workflows, each with one task:
 3. **publish** runs on every push to `main`, a merged pull request and app-stream's commit alike. The manifests changed since the last commit the server took are assembled into `bundle/` and `bundle.json` next to the manifest and, when they differ from what this repository holds, sent in batches to every catalog server listed in [`servers.yml`](../servers.yml), a domain each; the CI then commits them. A deleted manifest takes its entry out of every server. The tag `published` marks the last commit all the servers took, so a run that could not reach one of them is caught up by the next one.
 4. **bootstrap** is started by hand by a code owner, with the address of a catalog server and a mode: `update` sends what the server does not hold or holds at another version, `force` sends every entry.
 
-The server builds every app in the latest Unleashed firmware with fbt, and keeps the last version of every entry; its history is this repository's. An app from a repository outside `trusted.yml` must also build with `ufbt`, as it does in the official catalog: that is what the pull request checks. The firmware's core contributors, listed in `trusted.yml`, may publish apps that need the whole firmware tree.
+The server builds every app in the latest Unleashed firmware with fbt, and keeps the last version of every entry; its history is this repository's. A new version of an app that works waits on the server until it is built and only then takes the old one's place; one that does not build leaves the old one as it was. An app from a repository outside `trusted.yml` must also build with `ufbt`, as it does in the official catalog: that is what the pull request checks. The firmware's core contributors, listed in `trusted.yml`, may publish apps that need the whole firmware tree.
+
+### bundle.json
+
+Everything the server knows of an entry is what its `bundle.json` says; the server works nothing out of the bundle folder. So a change to any of it is a change in this repository, not on the server:
+
+| Field | What it is |
+| --- | --- |
+| `family`, `id`, `version`, `name`, texts, `links` | as the manifest and `application.fam` give them |
+| `category_id` | the id of the category in [`categories.yml`](../categories.yml) |
+| `install_path` | an app: its category path; a menu style: `/ext/apps_data/loader/plugins`; an animation: `/ext/dolphin/<Name>` |
+| `authors` | every `@name` of `author`, once |
+| `icon`, `screenshots` | paths in `bundle/`: a 10x10 icon and 128x64 screenshots, 1-bit black on transparent PNGs, the screenshots in the manifest's order |
+| `apps` | apps and menu styles: the entry's own app first, then every other `EXTERNAL` app of `application.fam`, each with `appid`, `name`, `version`, `file` (`.fap`, or `.fal` for a plugin) and `icon`. A `PLUGIN` an app requires is built into it and not listed |
+| `files`, `dolphin` | animations: `meta.txt` and the frames, and the whole line for `dolphin/manifest.txt`, defaults filled in |

@@ -36,14 +36,14 @@ def trusted_origins() -> set[str]:
 
 
 @functools.cache
-def declared_categories() -> set[tuple[str, str]]:
-    """(family, "Root/Child") of every category categories.yml declares."""
-    out = set()
+def category_ids() -> dict[tuple[str, str], str]:
+    """The id of every category categories.yml declares, by (family, "Root/Child")."""
+    out = {}
 
     def walk(family: str, nodes, parent: str) -> None:
         for node in nodes or []:
             path = f"{parent}/{node['name']}" if parent else str(node["name"])
-            out.add((family, path))
+            out[(family, path)] = str(node["id"])
             walk(family, node.get("children"), path)
 
     for family, roots in (yaml.safe_load((ROOT / "categories.yml").read_text()) or {}).items():
@@ -111,7 +111,7 @@ class Entry:
         errors = []
         top = self.category.split("/")[0]
         errors += [f"bad category folder: {p}" for p in self.category.split("/") if not NAME_RE.match(p)]
-        if (self.family, self.category) not in declared_categories():
+        if (self.family, self.category) not in category_ids():
             errors.append(f"category {self.category} is not declared in categories.yml")
         if not (ANIMATION_NAME_RE if self.family == "animation" else NAME_RE).match(self.name):
             errors.append(f"bad id folder: {self.name}")

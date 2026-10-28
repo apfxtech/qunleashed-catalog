@@ -28,13 +28,21 @@ class FamApp:
 
     @property
     def version(self) -> str:
+        """fap_version as fbt embeds it: a string, or a tuple of integers
+        joined with dots; empty when absent."""
         string = VERSION_STRING_RE.search(self.block)
         if string:
             return string.group(1).strip()
         tuple_ = VERSION_TUPLE_RE.search(self.block)
         if tuple_:
-            return ".".join(p.strip() for p in tuple_.group(1).split(",") if p.strip())
+            parts = [p.strip() for p in tuple_.group(1).split(",") if p.strip()]
+            return ".".join(str(int(p)) if p.isdigit() else p for p in parts)
         return ""
+
+    @property
+    def file(self) -> str:
+        """The file fbt leaves for it: a plugin is a .fal."""
+        return f"{self.appid}.{'fal' if self.apptype == 'PLUGIN' else 'fap'}"
 
 
 def strip_comments(text: str) -> str:
