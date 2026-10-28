@@ -1,0 +1,15 @@
+{
+  "author": "Henry Gurney",
+  "category": "Games",
+  "changelog": "## v1.0.1: Improved introduction\n\n## v1.0.0: Initial release\n",
+  "description": "Giant mechs rule the wasteland; strategically attach modular plates to your WYRM and survive as long as you can!",
+  "family": "application",
+  "id": "ironwyrm",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/ironwyrm/manifest.yml",
+    "source_code": "https://github.com/Atompunk78/IRONWYRM/tree/3bd2386e40b0a34c50f900217d47d90f4eeffc32"
+  },
+  "name": "IRONWYRM",
+  "short_description": "A turn-based modular mech fighting game for the Flipper Zero",
+  "version": "1.0.1"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "@n-o-T-I-n-s-a-n-e",
+  "category": "Games",
+  "changelog": "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
+  "description": "A basic Paint app, Click Ok to draw dot, hold Ok to enable drawing continuously, hold Back to clear the screen",
+  "family": "application",
+  "id": "paint",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/paint/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/paint"
+  },
+  "name": "Paint",
+  "short_description": "A basic Paint app. Ok: toggle dot or lift the pen, hold Ok: cycle Move/Draw/Erase mode, hold Back: clear, Back: save and exit. The canvas is restored on the next start",
+  "version": "1.4"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "@ihatecsv",
+  "category": "Games",
+  "changelog": "v1.0",
+  "description": "A simple chess clock",
+  "family": "application",
+  "id": "chess_clock",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/chess_clock/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/chess_clock"
+  },
+  "name": "Chess Clock",
+  "short_description": "A simple chess clock",
+  "version": "1.0"
+}
