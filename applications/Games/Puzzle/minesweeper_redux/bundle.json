@@ -1,15 +1,35 @@
 {
+  "apps": [
+    {
+      "appid": "minesweeper_redux",
+      "file": "minesweeper_redux.fap",
+      "icon": "assets/icon.png",
+      "name": "Mine Sweeper",
+      "version": "1.6"
+    }
+  ],
   "author": "Alexander Rodriguez",
+  "authors": [],
   "category": "Games/Puzzle",
+  "category_id": "games-puzzle",
   "changelog": "## Version 1.6\nFix: respect global mute/volume by routing game sounds through notification system.\n\n## Version 1.5\nAdded setting to enable/disable wrapping around to the\nother side of the game board when the player moves\nacross the edge.\n\n## Version 1.4\nBug fixed when resetting game on win/loss.\nGain Flipper XP on game start and win.\nQOL Updates.\n",
   "description": "## Added features unique to this implementation:\n-\tEnable board verifier for board generation to ensure unambiguous boards!\n-\tSet board width and height\n-\tSet difficulty\n-\tA number of different button presses as shortcuts for game actions (see How To Play) \n\n## How To Play\n1. Up/Down/Left/Right Buttons to move around\n\t- These buttons can be held down to keep moving in a direction\n2. Center OK Button to attempt opening up a tile\n\t- Press OK on a tile to open it up\n\t- Hold OK on a cleared space with a number to clear all surrounding tiles (correct number of flags must be set around it)\n3. Hold Back Button on a tile to toggle marking it with a flag\n4. Hold Back Button on a cleared space to jump to one of the closest tiles (this can help find last tiles on a larger board)\n5. Press Back Button to access the settings menu where you can do the following:\n\t- Change board width\n\t- Change board height\n\t- Change difficulty\n\t- Ensure Solvable (**Important!**) : This option will enable the board verifier for board generation and can significantly increase wait times for generating a board. Currently this may lock up the view port on the loading animation, but it should eventually resolve and return to the game.\n    - Enable Feedback : This option toggles the haptic and sound feedback for the game.\n    - Enable Wrap : This option toggles wrapping movement to the other side of the board when you move across the edge boundary.\n\n## IMPORTANT NOTICE:\nThe way the board is set up leaves the corners as safe starting positions!\n\nIn addition to this, with the \"Ensure Solvable\" option set to true, the board will always be solvable from 0,0!\nWithout Ensure Solvable enabled in the settings there is no guarantee that the game will be solvable without any guesses.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "minesweeper_redux",
+  "install_path": "Games/Puzzle",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Puzzle/minesweeper_redux/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/base_pack/minesweeper"
   },
   "name": "Mine Sweeper",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png"
+  ],
   "short_description": "Flipper Zero Minesweeper Implementation",
   "version": "1.6"
 }

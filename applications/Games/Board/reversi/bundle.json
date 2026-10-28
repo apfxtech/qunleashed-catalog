@@ -1,15 +1,38 @@
 {
+  "apps": [
+    {
+      "appid": "reversi",
+      "file": "reversi.fap",
+      "icon": "assets/icon.png",
+      "name": "Reversi",
+      "version": "1.4"
+    }
+  ],
   "author": "@dimat",
+  "authors": [
+    {
+      "id": "dimat",
+      "name": "dimat"
+    }
+  ],
   "category": "Games/Board",
+  "category_id": "games-board",
   "changelog": "v1.0 - Initial release, v1.1 - Various fixes, v1.2 - Various important fixes, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version",
   "description": "Reversi game, the game controls should be intuitive. Longs press on OK opens the menu to start a new game.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "reversi",
+  "install_path": "Games/Board",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Board/reversi/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/reversi"
   },
   "name": "Reversi",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Reversi game, the game controls should be intuitive. Longs press on OK opens the menu to start a new game.",
   "version": "1.4"
 }
