@@ -1,0 +1,15 @@
+{
+  "author": "@MatthewKuKanich",
+  "category": "Bluetooth",
+  "changelog": "v3.0 - MAC Toggle on Menu Screen, bug fixes",
+  "description": "FindMyFlipper, use your FlipperZero as an Airtag! Track on Apple, Samsung, and Tile find networks. Instructions are on the GitHub page: https://github.com/MatthewKuKanich/FindMyFlipper",
+  "family": "application",
+  "id": "findmy",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Bluetooth/findmy/manifest.yml",
+    "source_code": "https://github.com/MatthewKuKanich/FindMyFlipper/tree/8bb3c3ee71cb2cb82a9625bb2cfd36701004e803/FindMyFlipper"
+  },
+  "name": "FindMy Flipper",
+  "short_description": "BLE FindMy Location Beacon",
+  "version": "3.0"
+}

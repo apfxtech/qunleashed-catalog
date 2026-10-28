@@ -1,0 +1,15 @@
+{
+  "author": "Alessandro Ghedini",
+  "category": "Bluetooth",
+  "changelog": "0.1\nInitial release\n",
+  "description": "This application turns the Flipper Zero into a [BTHome](https://bthome.io) beacon, and can be used to integrate the Flipper with home automation systems that support BTHome, such as Home Assistant.\n\nSee the [app's README](https://github.com/ghedo/flipper-playground/tree/master/bthome#readme) for more information.\n",
+  "family": "application",
+  "id": "bthome",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Bluetooth/bthome/manifest.yml",
+    "source_code": "https://github.com/ghedo/flipper-playground/tree/1c415ac282e3fbd2c19c1b6e2aa0dd7f574e8a0d/bthome"
+  },
+  "name": "BTHome",
+  "short_description": "BTHome implementation for the Flipper Zero",
+  "version": "0.1"
+}
