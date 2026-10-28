@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "rolling_flaws",
+      "file": "rolling_flaws.fap",
+      "icon": "assets/icon.png",
+      "name": "Subghz Rolling Flaws",
+      "version": "1.5"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "Sub-GHz",
+  "category_id": "64971d0f6617ba37a4bc79b3",
   "changelog": "v1.5",
   "description": "Rolling code receiver (version 1.5), used to learn about rolling code flaws.  Watch video at https://youtu.be/gMnGuDC9EQo",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "rolling_flaws",
+  "install_path": "Sub-GHz",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/rolling_flaws/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/base_pack/rolling_flaws"
   },
   "name": "Subghz Rolling Flaws",
+  "screenshots": [],
   "short_description": "Rolling code receiver (version 1.5), used to learn about rolling code flaws.  Watch video at https://youtu.be/gMnGuDC9EQo",
   "version": "1.5"
 }

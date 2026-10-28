@@ -1,15 +1,37 @@
 {
+  "apps": [
+    {
+      "appid": "morse_beacon",
+      "file": "morse_beacon.fap",
+      "icon": "assets/icon.png",
+      "name": "Morse Beacon",
+      "version": "1.0"
+    }
+  ],
   "author": "jdmills",
+  "authors": [],
   "category": "Sub-GHz",
+  "category_id": "64971d0f6617ba37a4bc79b3",
   "changelog": "## 1.0\n\nFirst Apps Catalog release.\n\n- MCW (FM tone), CW (OOK) and SSB (USB/LSB) keying modes\n- Repeater-style activity trigger, fixed-interval trigger, or both, with\n  start-of-TX / end-of-TX interval anchoring\n- Remote text over BLE serial or UART (pins 13/14)\n- PARIS-standard timing with ARRL Farnsworth spacing\n- Station ID log, capped at 256 KB with rotation\n",
   "description": "Keys Morse code out of the CC1101: a station ID beacon and a remote text keyer.\n\n## Beacon triggers\n- **On activity**: IDs after the first transmission that follows a configurable stretch of dead air, the way a repeater controller does.\n- **Interval**: keys the ID on a fixed schedule for fox hunts and plain beacons, with the period measured start-to-start or end-to-start.\n\n## Keying modes\n- **MCW**: an audible tone on an FM carrier - what an FM handheld hears\n- **CW (OOK)**: true carrier keying, for AM/CW detectors and BFO receivers\n- **SSB (USB/LSB)**: the carrier offset by the tone pitch, so an SSB receiver on the dial frequency hears the beat note\n\n## Remote text\nSend a line from a phone over BLE serial, or from anything wired to UART pins 13/14, and it is keyed on air. Speed 5-40 wpm with PARIS-standard timing and ARRL Farnsworth spacing.\n\nTransmit permission is decided by the firmware's region policy: the app asks before keying and logs a refusal instead of working around it. Every ID is written to a timestamped log, capped at 256 KB with rotation.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "morse_beacon",
+  "install_path": "Sub-GHz",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/morse_beacon/manifest.yml",
     "source_code": "https://github.com/jdmills-edu/flipper-morse-beacon/tree/9b8d05c280e926f56793ffa2d6b86be6295cc4aa"
   },
   "name": "Morse Beacon",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png",
+    "assets/screenshots/6.png"
+  ],
   "short_description": "Sub-GHz Morse station ID and text beacon",
   "version": "1.0"
 }

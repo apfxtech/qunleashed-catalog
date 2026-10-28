@@ -1,15 +1,35 @@
 {
+  "apps": [
+    {
+      "appid": "subhound",
+      "file": "subhound.fap",
+      "icon": "assets/icon.png",
+      "name": "Subhound",
+      "version": "1.2"
+    }
+  ],
   "author": "maxwalks",
+  "authors": [],
   "category": "Sub-GHz",
+  "category_id": "64971d0f6617ba37a4bc79b3",
   "changelog": "v1.2:\nrenamed app to Subhound\n\nv1.1:\nadded PT2262 and EV1527 fixed-code remote classifiers\n\nv1.0:\ninitial release\non-device BinRAW .sub classifier, 17-stage pipeline\nscrollable report + .report.txt / .bra sidecars\n",
   "description": "# Subhound\n\nAutomated classifier for Flipper Zero BinRAW '.sub' captures. Identifies 17 ISM-band signal types — garage remotes, TPMS, weather stations, utility meters, alarm sensors, and more — with a full reasoning chain, confidence scoring, and a sub-protocol hint.\n\n## What it does\n\n1. Browses '.sub' files on the SD card under '/ext/subghz/'.\n2. Parses the capture and extracts around 30 signal features — entropy, PWM parameters, Manchester decode, segment similarity, rolling-code detection, CRC scan.\n3. Runs a 17-stage classifier and picks the first matching label.\n4. Shows a scrollable on-screen report — summary, reasoning chain, key metrics, decoded payload, warnings, and the full text view.\n5. Saves two sidecar files next to the original capture — one human-readable, one machine-readable.\n\n## Usage\n\n1. Open Subhound from the Sub-GHz apps menu.\n2. Pick a '.sub' capture in the file browser.\n3. Press OK — the app parses and classifies immediately.\n4. Drill into any section from the menu, or open the full report.\n5. Press Back to analyze another capture.\n\n## Classifier coverage\n\n- NOISE\n- AMR_METER\n- TPMS\n- WMBUS_METER\n- HONEYWELL_5800\n- ALARM_SENSOR\n- SHUTTER_BLIND\n- ENOCEAN_SWITCH\n- PT2262_REMOTE\n- EV1527_REMOTE\n- DOORBELL\n- OUTLET_SWITCH\n- GARAGE_REMOTE\n- KEYFOB_REMOTE\n- WEATHER_STATION\n- LORA_BEACON\n- UNKNOWN_STRUCTURED (fallback)\n\n## Supported frequencies\n\n- 315 MHz\n- 433.42 MHz\n- 433.92 MHz\n- 434.42 MHz\n- 868.35 MHz\n- 915 MHz\n\n## Known limits\n\n- Maximum bits per segment: 8192.\n- Maximum total bits: 16384.\n- Maximum segments: 16.\n- Maximum decoded payload: 256 bits.\n- Captures exceeding these limits are **not rejected** — they are analyzed with a truncated subset, and the report notes the truncation.\n\n## Firmware compatibility\n\nBuilt against the Flipper Zero official SDK and compatible with Momentum firmware.\n\n## Source\n\nFull source code, sample captures, and the desktop Python reference implementation are at https://github.com/maxwalks/subhound.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "subhound",
+  "install_path": "Sub-GHz",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/subhound/manifest.yml",
     "source_code": "https://github.com/maxwalks/subhound/tree/ea0976a2e2bfac54a1e372e4df81497a5af8bd18/flipper-app"
   },
   "name": "Subhound",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png"
+  ],
   "short_description": "Classify Flipper SubGhz BinRAW captures on-device",
   "version": "1.2"
 }
