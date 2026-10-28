@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "pulse_bpm",
+      "file": "pulse_bpm.fap",
+      "icon": "assets/icon.png",
+      "name": "Pulse BPM",
+      "version": "1.0"
+    }
+  ],
   "author": "iz1poz",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v1.0:\nInitial English release: tap-to-beat heart rate, live BPM, 20-second lock\n",
   "description": "# Pulse BPM\n\nA tap-along heart-rate counter for coaches and clinicians. Feel the pulse at the wrist (or neck), press **OK** on every beat, and read a live BPM that **locks after 20 seconds**.\n\nBPM = (beats - 1) x 60 / elapsed_seconds\n\nThe first tap starts the window. Each later tap updates the average. Taps closer than 250 ms are ignored (debounce / double-press). When 20 seconds have elapsed from the first beat, the value freezes.\n\n## How to use\n\n1. Splash, then the ready screen.\n2. Find the pulse. Press **OK** on the first beat - the timer starts.\n3. Keep tapping **OK** on each beat. The large number is the running BPM; the bar fills toward 20 s.\n4. At 20 s the result **locks**. **OK** starts over, **Back** / **Left** exits.\n\nThis is a timing aid, **not a medical device**. It does not replace a pulse oximeter or ECG. Reaction time and a missed beat affect the reading.\n\n## Install\n\nCopy dist/pulse_bpm.fap to the microSD card under apps/Tools/. On the Flipper: **Apps → Tools → Pulse BPM**.\n\nBuild with ufbt. Firmware must match the API printed by APPCHK.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "pulse_bpm",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/pulse_bpm/manifest.yml",
     "source_code": "https://github.com/alaviation/flipper-pulse/tree/7beadfb5b562baeead03c0572cff7883b439879f"
   },
   "name": "Pulse BPM",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Tap along a pulse to measure heart rate; live BPM, locks after 20 seconds",
   "version": "1.0"
 }

@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "orgasmotron",
+      "file": "orgasmotron.fap",
+      "icon": "assets/icon.png",
+      "name": "Orgasmotron",
+      "version": "1.1"
+    }
+  ],
   "author": "Leedave",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "## v1.1\nAdded animations, because it is fun\n\n## v1.0\nFirst release to Application Catalog\n- Added UI with dolphin GFX\n\n## v0.9\nFixed deprecated Mutex \n\n## v0.8\nExtended with different vibro modes\n\n## v0.7\nOriginal release from qqmajikpp",
   "description": "## Orgasmotron\n\nAllows Flipper Zero to vibrate in different patterns",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "orgasmotron",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/orgasmotron/manifest.yml",
     "source_code": "https://github.com/leedave/Leeds-Flipper-Zero-Applications/tree/0876a7da9af1824cd3eed2bfb9954f333fa8a762/Misc/orgasmotron"
   },
   "name": "Orgasmotron",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Vibrate Flipper in different modes",
   "version": "1.1"
 }

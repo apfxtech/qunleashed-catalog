@@ -1,15 +1,40 @@
 {
+  "apps": [
+    {
+      "appid": "pocketlab",
+      "file": "pocketlab.fap",
+      "icon": "assets/icon.png",
+      "name": "PocketLab",
+      "version": "1.6"
+    }
+  ],
   "author": "PerfectoWeb",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "## 1.6\n\n- Refreshed the screenshots and store description.\n\n## 1.5\n\n- Russian language: the whole app plus all 36 labs and quizzes are translated.\n  Choose the language in Settings.\n- Every lab now has its own unique badge icon.\n- Quizzes reward XP now (per correct answer); total XP is capped at 9999.\n- Long lab and quiz titles scroll so you can read them in full.\n- The XP counter goes glitchy once you max it out.\n- Profile screen and several labels realigned for a cleaner fit; About screen\n  polish.\n\n## 1.4\n\n- Settings now has independent LED and Vibro toggles (both default on), next to\n  the Sound toggle - turn light or vibration off globally on their own.\n- The About screen shows the correct app version.\n\n## 1.3\n\n- 6 advanced labs with deeper per-subsystem topics and extra quizzes: MIFARE\n  Keys (MFKey32, nested attacks), T5577 cloning, IR protocols, iButton cloning,\n  advanced Bad USB payloads, and logic/bus sniffing. Now 36 labs.\n- Selected home tiles use a calm breathing cursor; Quiz and Labs navigation\n  clicks softly.\n- Fixed the Bluetooth glyph to match the real logo.\n\n## 1.2.1\n\n- Home screen scroll hints are back at the top and bottom as small chevrons.\n\n## 1.2\n\n- Level Up screen now rains confetti and lingers 50% longer to enjoy it.\n- Each achievement badge plays its own unique jingle when you press OK on it.\n- Scrolling the badge gallery clicks like flipping through metal coins.\n- Reworked About: a matrix-rain intro, a self-typing terminal with soft\n  printing clicks, and a coffee-break page with a donation QR code.\n- Home screen is now a 2x2 tile grid with icons instead of a plain list.\n- Level Up plays a richer, more triumphant fanfare.\n- About coffee page: a Pac-Man endlessly munching coffee cups above the QR.\n- Resetting progress now plays a short \"cleared\" flash with a wipe sound.\n- Wrong quiz answers shake the feedback; a lighter chime marks a finished step.\n- Home tiles click like coins as you move between them.\n- New Quiz mode: a random exam drawn from the quizzes of your completed labs,\n  with a score at the end. Home menu is now a 5-tile grid.\n\n## 1.1\n\n- About screen now links to github.com/PerfectoWeb.\n- Presentable README with a theme-aware banner and a screenshot gallery.\n\n## 1.0\n\nFirst public release: 11 labs across the popular Flipper features, randomized and\nshuffled quizzes, XP with levels and badges saved on the SD card, per-topic\nglyphs, sound and LED feedback, and a terminal-style About screen.\n",
   "description": "# PocketLab\n\nThe missing onboarding layer for Flipper Zero. Short, gamified, on-device labs\nteach your Flipper's own features step by step, then reward you with XP, levels\nand badges - a guided, legal and genuinely fun way to learn what your device can\ndo, one small lab at a time.\n\n## Features\n\n- **36 labs** across 11 tracks: IR, Sub-GHz, 125 kHz RFID, NFC, iButton, Bad USB,\n  GPIO/UART, Bluetooth, security, system and more - including advanced deep-dives\n  (MIFARE key recovery / MFKey32, T5577 cloning, IR protocols and more).\n- **English and Russian** - the full interface plus every lab and quiz, with a\n  language switch in Settings.\n- **Randomized quizzes** - a pool of distractors, shuffled every attempt, so you\n  learn the answer, not its position.\n- **Quiz mode** - a random exam drawn from the labs you've completed, scored at\n  the end and rewarding XP.\n- **Progression** - XP, levels, a daily streak and unlockable badges, saved on\n  the SD card.\n- **A unique badge icon for every lab**, so the subject reads at a glance.\n- **Custom animated UI** - a tile menu, a badge gallery, stat cards and an\n  animated About screen.\n- **Sound, LED and Vibro** feedback, each with its own toggle in Settings.\n- **No extra hardware** - pure software, runs on a stock Flipper Zero.\n\n## How to use\n\nOpen **Apps -> Tools -> PocketLab**, pick **Labs**, and work through one. Each lab\nends with a hands-on step that points you to the real built-in app, so you learn\nby doing. Test yourself any time with **Quiz**. Use it only on your own devices.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "pocketlab",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/pocketlab/manifest.yml",
     "source_code": "https://github.com/PerfectoWeb/flipper-pocketlab/tree/4286d1dbf946a4e05efaa9afc8fd9779f7b8af56"
   },
   "name": "PocketLab",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png",
+    "assets/screenshots/6.png",
+    "assets/screenshots/7.png",
+    "assets/screenshots/8.png",
+    "assets/screenshots/9.png"
+  ],
   "short_description": "Learn your Flipper with short, gamified hands-on labs.",
   "version": "1.6"
 }

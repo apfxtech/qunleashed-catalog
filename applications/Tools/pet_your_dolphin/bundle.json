@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "pet_your_dolphin",
+      "file": "pet_your_dolphin.fap",
+      "icon": "assets/icon.png",
+      "name": "Pet Your Dolphin",
+      "version": "1.0"
+    }
+  ],
   "author": "David White",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "1.0.0: \nCreated basic functionality",
   "description": "The Pet Your Dolphin app let's you check in on your little dolphin buddy! Stop by daily to give it some pets to improve its mood and earn XP!",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "pet_your_dolphin",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/pet_your_dolphin/manifest.yml",
     "source_code": "https://github.com/dwight9339/pet_your_dolphin/tree/517a2c279b2aad6de8ff6015aa836676ab0d6f19"
   },
   "name": "Pet Your Dolphin",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Pet your dolphin to keep it happy and earn XP",
   "version": "1.0"
 }

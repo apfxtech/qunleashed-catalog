@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "network_subnet",
+      "file": "network_subnet.fap",
+      "icon": "assets/icon.png",
+      "name": "Network Subnet Helper",
+      "version": "0.1"
+    }
+  ],
   "author": "aaumkar",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v0.1:\nInitial release — IP/CIDR subnet calculator with mask input",
   "description": "This started as my personl tool to view details of networks, subnets, CIDRs.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "network_subnet",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/network_subnet/manifest.yml",
     "source_code": "https://github.com/aaumkar/network_subnet/tree/7d0bd75bb58d14bf92987332b91c8722359a1f71"
   },
   "name": "Network Subnet Helper",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "A tool to view network subnets and other details.",
   "version": "0.1"
 }

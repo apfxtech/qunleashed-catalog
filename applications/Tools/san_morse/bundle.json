@@ -1,15 +1,36 @@
 {
+  "apps": [
+    {
+      "appid": "san_morse",
+      "file": "san_morse.fap",
+      "icon": "assets/icon.png",
+      "name": "San Morse",
+      "version": "1.0"
+    }
+  ],
   "author": "sanjorge",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "## 1.0\n\nInitial release:\n\n- Interactive Morse decision tree with OK as a telegraph key\n  (quick release = dot, hold = dash) and pause-based letter commit.\n- Numbers and signs on tree level 5, with automatic zoom.\n- Text to Morse: playback with sound, LED and vibration.\n- English interface by default, Spanish available in Settings.\n- Persistent settings: language, volume, tone, vibration, LED, WPM speed\n  and key timings.\n",
   "description": "Learn and write Morse code without memorizing the codes first.\n\n**Decision tree:** the screen shows the dichotomic Morse tree (E/T,\nI/A/N/M, ...) and the OK button works as a telegraph key: quick release\nis a dot, holding is a dash. You always see which node you are on and\nwhich character the next symbol would give you. A short pause commits\nthe letter and a longer pause adds a space, with a visible countdown.\nNumbers and signs live on level 5: the view zooms in to show them.\n\n**Text to Morse:** type a text and play it back with sound, LED and\nvibration, highlighting the current character and symbol, with live\nadjustable speed.\n\n**Persistent settings:** language (English by default, Spanish optional),\nvolume, tone, vibration, LED, WPM speed, dot/dash threshold and commit\ntimings.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "san_morse",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/san_morse/manifest.yml",
     "source_code": "https://github.com/sanjorgek/san-morse-flipper/tree/cbef9ffab5510ce51d86e87bc0617861cfb28a29"
   },
   "name": "San Morse",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png"
+  ],
   "short_description": "Morse code trainer with a decision-tree guide and text-to-Morse playback",
   "version": "1.0"
 }
