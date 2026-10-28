@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "smack_my_dolphin_up",
+      "file": "smack_my_dolphin_up.fap",
+      "icon": "assets/icon.png",
+      "name": "Smack My Dolphin Up!",
+      "version": "1.0"
+    }
+  ],
   "author": "siberianbot",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v1.0 - Initial release",
   "description": "# Smack My Dolphin Up!\n\nFor those whom won't bother yourself with dolphin emotional state\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "smack_my_dolphin_up",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/smack_my_dolphin_up/manifest.yml",
     "source_code": "https://github.com/siberianbot/smack-my-dolphin-up/tree/71400765c08407d6a51072eab1d48359e2f0bafd"
   },
   "name": "Smack My Dolphin Up!",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "For those whom won't bother yourself with dolphin emotional state",
   "version": "1.0"
 }

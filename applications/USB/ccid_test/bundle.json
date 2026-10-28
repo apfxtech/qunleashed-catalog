@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "ccid_test",
+      "file": "ccid_test.fap",
+      "icon": "assets/icon.png",
+      "name": "CCID",
+      "version": "1.0"
+    }
+  ],
   "author": "Filipe Rodrigues",
+  "authors": [],
   "category": "USB",
+  "category_id": "64971d11be1a76c06747de2c",
   "changelog": "## v1.0\n\nFirst release outside the Flipper Zero firmware repository, where this app\nshipped as a debug app.\n\n- Emulates a USB CCID smart card reader holding a virtual ISO7816 T=0 card\n- Simulates card insertion and removal from the app menu\n- Answers test APDUs on class 0x01, including an echo command for payloads of up\n  to 255 bytes\n- Carries its own USB CCID implementation, so it no longer depends on CCID\n  support being built into the firmware\n",
   "description": "# CCID\n\nTurns your Flipper Zero into a USB smart card reader. While the app is open, the\nFlipper enumerates on the host as a CCID class device holding a virtual ISO7816\ncard, and answers a small set of test APDUs.\n\nThis is a development and testing tool. It emulates a card that responds to\ncommands, it does not read or clone physical smart cards.\n\n## What it does\n\n- Enumerates as a standard USB CCID reader, so the host's stock smart card stack\n  picks it up with no extra drivers\n- Presents a virtual card with the minimum valid Answer To Reset, 3B 00\n- Answers a handful of test APDUs over protocol T=0\n- Simulates card insertion and removal from the app menu, so you can exercise how\n  host software reacts to a card appearing and disappearing\n\n## Usage\n\n1. Connect the Flipper to your computer with a USB-C cable\n2. Open the app. A new smart card reader appears on the host, and a card is\n  inserted automatically\n3. Talk to it with any PC/SC client, for example pcsc_scan, opensc-tool, or the\n  test client bundled in this repository\n4. Use **Insert smartcard** and **Remove smartcard** from the menu to simulate\n  card events\n5. Press Back to exit. The Flipper's previous USB mode is restored\n\nOn Linux you need pcscd running. On macOS and Windows the smart card service is\nalready part of the system.\n\n## Supported APDUs\n\nAll test commands use class 0x01. Every one of them returns status 90 00 on\nsuccess.\n\n- **INS 0x01** takes no data and returns none. Example: 01 01 00 00\n- **INS 0x02** takes no data and returns two bytes, 62 63. Example: 01 02 00 00 02\n- **INS 0x03** takes two bytes and returns none. Example: 01 03 00 00 02 CA FE\n- **INS 0x04** echoes back whatever you send it, up to 255 bytes. Example:\n  01 04 00 00 02 CA FE 02\n\nAn unknown instruction returns 6D 00. Any class other than 0x01 returns 6E 00.\nWrong parameters return 6A 00, and a bad length returns 67 00.\n\n## Test client\n\nThe client directory holds a PC/SC test script that runs through every supported\nAPDU and reports pass or fail for each. It needs pyscard, listed in\nclient/requirements.txt. Run it with the app open on the Flipper, and pick your\nFlipper from the list of readers it prints.\n\n## Notes\n\n- The reader reports vendor 0x076B and product 0x3A21, an OmniKey identifier, so\n  that stock CCID drivers bind to it without extra configuration. If your host\n  needs the pair added explicitly, on Linux it goes in the Info.plist inside\n  ifd-ccid.bundle\n- The app takes over USB while it runs, so the serial console is unavailable\n  until you exit\n- APDUs are limited to the short form, 255 bytes of payload\n\n## License\n\nReleased under the GNU General Public License v3.0, the license of the\nFlipper Zero firmware this app was originally developed in. See the LICENSE file.\n\nThe CCID class definitions in ccid_protocol.h are from the Lightweight USB device\nStack for STM32 microcontrollers and stay under the Apache License 2.0.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "ccid_test",
+  "install_path": "USB",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/USB/ccid_test/manifest.yml",
     "source_code": "https://github.com/kidbomb/flipper-ccid-app/tree/60cf9352f0e95c266cd065e1f5f7627851f27d19"
   },
   "name": "CCID",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Emulates a USB smart card reader (CCID) with an ISO7816 T=0 card",
   "version": "1.0"
 }

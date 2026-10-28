@@ -1,15 +1,39 @@
 {
+  "apps": [
+    {
+      "appid": "voltcalc_app",
+      "file": "voltcalc_app.fap",
+      "icon": "assets/icon.png",
+      "name": "Voltage Calculator",
+      "version": "1.0"
+    }
+  ],
   "author": "@HappyAmos",
+  "authors": [
+    {
+      "id": "happyamos",
+      "name": "HappyAmos"
+    }
+  ],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v1.0 - Initial release\n",
   "description": "Calculate V, R, I (Voltage, Resistance, Current) using this simple calculator.\n\nIt's assumed you know at least two values. Select voltage, resistance or current \nfrom the menu and enter in your value. The value not entered will be solved for.\n\nF0 does not include a decimal '.' symbol on the keyboard, use '_' instead.\nWhen you have entered in your values, select \"Calculate\" from the menu to\nsolve for the missing value.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "voltcalc_app",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/voltcalc_app/manifest.yml",
     "source_code": "https://github.com/HappyAmos/Flipper_FAPS/tree/258177423e97997a72c794d591613cc2c5b27330/voltcalc_app"
   },
   "name": "Voltage Calculator",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png"
+  ],
   "short_description": "A simple Ohms Law calculator",
   "version": "1.0"
 }

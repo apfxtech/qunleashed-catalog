@@ -1,15 +1,32 @@
 {
+  "apps": [
+    {
+      "appid": "telemetro",
+      "file": "telemetro.fap",
+      "icon": "assets/icon.png",
+      "name": "Telemeter",
+      "version": "1.1"
+    }
+  ],
   "author": "iz1poz",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v1.1:\nLeft D-pad now goes back (it matched the on-screen Back/Cancel hint; only the Back key was handled)\n\nv1.0:\nInitial English release: storm and cannon rangefinder, temperature-adjusted speed of sound, splash screen\n",
   "description": "# Telemeter\n\nMeasure how far a storm or a cannon is from the delay between **light** and **sound**.\n\nLight arrives almost instantly. Sound does not: at 20 °C it travels at about **343 m/s** (roughly 3 seconds per kilometre). The app times the gap between the two events and computes:\n\nv = 331.3 + 0.606 × T\n\nd = v × t\n\nT is air temperature in °C, adjustable in the menu.\n\n## How to use\n\n1. A splash screen appears, then the menu.\n2. **Up/Down**: Storm or Cannon.\n3. **Left/Right**: temperature from −10 to 40 °C.\n4. **OK**: start a measurement.\n5. On the **flash** (or **flame**) press OK: the timer starts.\n6. On the **thunder** (or **boom**) press OK: you get metres, kilometres, and seconds.\n7. **OK** starts another measurement, **Back** returns to the menu. **Back** on the menu exits.\n\n## Install\n\nCopy dist/telemetro.fap to the microSD card under apps/Tools/. On the Flipper: **Apps → Tools → Telemeter**.\n\nBuild with ufbt. Firmware must match the API printed by APPCHK.\n\n## Limits\n\nThis is an estimate, not a professional instrument. Humidity, wind, and obstacles are ignored. Your button reaction time is part of the measurement: fine for thunder (seconds), less so for very close blasts.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "telemetro",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/telemetro/manifest.yml",
     "source_code": "https://github.com/alaviation/flipper-telemeter/tree/5d8441a5e22338ea80ddd446181a6ad5b7c404c7"
   },
   "name": "Telemeter",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "Measure distance from lightning-to-thunder or muzzle-flash-to-boom delay",
   "version": "1.1"
 }

@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "techart_calendar",
+      "file": "techart_calendar.fap",
+      "icon": "assets/icon.png",
+      "name": "Calendar",
+      "version": "1.1"
+    }
+  ],
   "author": "TechArtDev",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v1.0 - Initial Release, v1.1 - Framework update",
   "description": "Simple Calendar App for Flipper Zero",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "techart_calendar",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/techart_calendar/manifest.yml",
     "source_code": "https://github.com/techartdev/Calendar/tree/3f29994837002986dbf9afc117338d5ee633c1ee"
   },
   "name": "Calendar",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Calendar application",
   "version": "1.1"
 }
