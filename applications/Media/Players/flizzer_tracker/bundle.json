@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "flizzer_tracker",
+      "file": "flizzer_tracker.fap",
+      "icon": "assets/icon.png",
+      "name": "Flizzer Tracker",
+      "version": "0.11"
+    }
+  ],
   "author": "LTVA",
+  "authors": [],
   "category": "Media/Players",
+  "category_id": "media-players",
   "changelog": "v0.11",
   "description": "An advanced Flipper Zero chiptune tracker with 4 channels",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flizzer_tracker",
+  "install_path": "Media/Players",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/Players/flizzer_tracker/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/flizzer_tracker"
   },
   "name": "Flizzer Tracker",
+  "screenshots": [],
   "short_description": "An advanced Flipper Zero chiptune tracker with 4 channels",
   "version": "0.11"
 }

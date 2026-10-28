@@ -1,15 +1,36 @@
 {
+  "apps": [
+    {
+      "appid": "bpm_tapper",
+      "file": "bpm_tapper.fap",
+      "icon": "assets/icon.png",
+      "name": "BPM Tapper",
+      "version": "1.3"
+    }
+  ],
   "author": "@panki27",
+  "authors": [
+    {
+      "id": "panki27",
+      "name": "panki27"
+    }
+  ],
   "category": "Media/Instruments",
+  "category_id": "media-instruments",
   "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
   "description": "Tap center button to measure BPM",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "bpm_tapper",
+  "install_path": "Media/Instruments",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/Instruments/bpm_tapper/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/bpmtapper"
   },
   "name": "BPM Tapper",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Tap center button to measure BPM",
   "version": "1.3"
 }

@@ -1,15 +1,38 @@
 {
+  "apps": [
+    {
+      "appid": "usb_midi",
+      "file": "usb_midi.fap",
+      "icon": "assets/icon.png",
+      "name": "USB Midi",
+      "version": "1.0"
+    }
+  ],
   "author": "@Kribesk (forked from @DrZlo13)",
+  "authors": [
+    {
+      "id": "kribesk",
+      "name": "Kribesk"
+    },
+    {
+      "id": "drzlo13",
+      "name": "DrZlo13"
+    }
+  ],
   "category": "Media/Instruments",
+  "category_id": "media-instruments",
   "changelog": "v1.0",
   "description": "This app makes Flipper Zero a USB MIDI device, plays notes via Flippers speaker.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "usb_midi",
+  "install_path": "Media/Instruments",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/Instruments/usb_midi/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/usb_midi"
   },
   "name": "USB Midi",
+  "screenshots": [],
   "short_description": "This app makes Flipper Zero a USB MIDI device, plays notes via Flippers speaker.",
   "version": "1.0"
 }

@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "tuning_fork",
+      "file": "tuning_fork.fap",
+      "icon": "assets/icon.png",
+      "name": "Tuning Fork",
+      "version": "2.1"
+    }
+  ],
   "author": "@besya",
+  "authors": [
+    {
+      "id": "besya",
+      "name": "besya"
+    }
+  ],
   "category": "Media/Instruments",
+  "category_id": "media-instruments",
   "changelog": "v2.1",
   "description": "Tuning fork for tuning musical instruments and more",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "tuning_fork",
+  "install_path": "Media/Instruments",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/Instruments/tuning_fork/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/flipperzero-tuning-fork"
   },
   "name": "Tuning Fork",
+  "screenshots": [],
   "short_description": "Tuning fork for tuning musical instruments and more",
   "version": "2.1"
 }
