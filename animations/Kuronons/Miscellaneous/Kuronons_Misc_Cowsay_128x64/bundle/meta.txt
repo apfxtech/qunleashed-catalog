@@ -1,0 +1,284 @@
+Filetype: Flipper Animation
+Version: 1
+
+Width: 128
+Height: 64
+Passive frames: 1
+Active frames: 12
+Frames order: 0 1 1 2 2 3 3 2 2 3 3 4 1
+Active cycles: 1
+Frame rate: 1
+Duration: 3600
+Active cooldown: 1
+
+Bubble slots: 10
+
+Slot: 0
+X: 0
+Y: 15
+Text: You cannot achieve
+AlignH: Center
+AlignV: Center
+StartFrame: 3
+EndFrame: 5
+
+Slot: 0
+X: 0
+Y: 15
+Text: the impossible without
+AlignH: Center
+AlignV: Center
+StartFrame: 6
+EndFrame: 8
+
+Slot: 0
+X: 0
+Y: 15
+Text: attempting the absurd.
+AlignH: Center
+AlignV: Center
+StartFrame: 9
+EndFrame: 11
+
+Slot: 1
+X: 0
+Y: 15
+Text: Assumption is
+AlignH: Center
+AlignV: Center
+StartFrame: 3
+EndFrame: 5
+
+Slot: 1
+X: 0
+Y: 15
+Text: the mother of
+AlignH: Center
+AlignV: Center
+StartFrame: 6
+EndFrame: 8
+
+Slot: 1
+X: 0
+Y: 15
+Text: all screw-ups.
+AlignH: Center
+AlignV: Center
+StartFrame: 9
+EndFrame: 11
+
+Slot: 2
+X: 0
+Y: 15
+Text: Thinking you know something
+AlignH: Center
+AlignV: Center
+StartFrame: 3
+EndFrame: 5
+
+Slot: 2
+X: 0
+Y: 15
+Text: is a sure way
+AlignH: Center
+AlignV: Center
+StartFrame: 6
+EndFrame: 8
+
+Slot: 2
+X: 0
+Y: 15
+Text: to blind yourself.
+AlignH: Center
+AlignV: Center
+StartFrame: 9
+EndFrame: 11
+
+Slot: 3
+X: 0
+Y: 15
+Text: Be kind,
+AlignH: Center
+AlignV: Center
+StartFrame: 3
+EndFrame: 5
+
+Slot: 3
+X: 0
+Y: 15
+Text: for everyone you meet
+AlignH: Center
+AlignV: Center
+StartFrame: 6
+EndFrame: 8
+
+Slot: 3
+X: 0
+Y: 15
+Text: is fighting a hard battle.
+AlignH: Center
+AlignV: Center
+StartFrame: 9
+EndFrame: 11
+
+Slot: 4
+X: 0
+Y: 15
+Text: I would rather have
+AlignH: Center
+AlignV: Center
+StartFrame: 3
+EndFrame: 5
+
+Slot: 4
+X: 0
+Y: 15
+Text: a mind opened by wonder
+AlignH: Center
+AlignV: Center
+StartFrame: 6
+EndFrame: 8
+
+Slot: 4
+X: 0
+Y: 15
+Text: than one closed by belief.
+AlignH: Center
+AlignV: Center
+StartFrame: 9
+EndFrame: 11
+
+Slot: 5
+X: 0
+Y: 15
+Text: When you doubt your power
+AlignH: Center
+AlignV: Center
+StartFrame: 3
+EndFrame: 5
+
+Slot: 5
+X: 0
+Y: 15
+Text: you give power
+AlignH: Center
+AlignV: Center
+StartFrame: 6
+EndFrame: 8
+
+Slot: 5
+X: 0
+Y: 15
+Text: to your doubt.
+AlignH: Center
+AlignV: Center
+StartFrame: 9
+EndFrame: 11
+
+Slot: 6
+X: 0
+Y: 15
+Text: We must accept
+AlignH: Center
+AlignV: Center
+StartFrame: 3
+EndFrame: 5
+
+Slot: 6
+X: 0
+Y: 15
+Text: finite disappointment
+AlignH: Center
+AlignV: Center
+StartFrame: 6
+EndFrame: 8
+
+Slot: 6
+X: 0
+Y: 15
+Text: but never lose infinite hope.
+AlignH: Center
+AlignV: Center
+StartFrame: 9
+EndFrame: 11
+
+Slot: 7
+X: 0
+Y: 15
+Text: Fear makes strangers
+AlignH: Center
+AlignV: Center
+StartFrame: 3
+EndFrame: 5
+
+Slot: 7
+X: 0
+Y: 15
+Text: of those who
+AlignH: Center
+AlignV: Center
+StartFrame: 6
+EndFrame: 8
+
+Slot: 7
+X: 0
+Y: 15
+Text: would be friends.
+AlignH: Center
+AlignV: Center
+StartFrame: 9
+EndFrame: 11
+
+Slot: 8
+X: 0
+Y: 15
+Text: What we see
+AlignH: Center
+AlignV: Center
+StartFrame: 3
+EndFrame: 5
+
+Slot: 8
+X: 0
+Y: 15
+Text: is mainly
+AlignH: Center
+AlignV: Center
+StartFrame: 6
+EndFrame: 8
+
+Slot: 8
+X: 0
+Y: 15
+Text: what we look for.
+AlignH: Center
+AlignV: Center
+StartFrame: 9
+EndFrame: 11
+
+Slot: 9
+X: 0
+Y: 15
+Text: What you are is what
+AlignH: Center
+AlignV: Center
+StartFrame: 3
+EndFrame: 5
+
+Slot: 9
+X: 0
+Y: 15
+Text: you have been. What you'll be
+AlignH: Center
+AlignV: Center
+StartFrame: 6
+EndFrame: 8
+
+Slot: 9
+X: 0
+Y: 15
+Text: is what you do now.
+AlignH: Center
+AlignV: Center
+StartFrame: 9
+EndFrame: 11
