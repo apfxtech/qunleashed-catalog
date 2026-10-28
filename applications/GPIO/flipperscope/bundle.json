@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "flipperscope",
+      "file": "flipperscope.fap",
+      "icon": "assets/icon.png",
+      "name": "Scope",
+      "version": "0.4"
+    }
+  ],
   "author": "anfractuosity",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v0.4",
   "description": "Oscilloscope application - apply signal to pin 16/PC0, with a voltage ranging from 0V to 2.5V and ground to pin 18/GND",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flipperscope",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flipperscope/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/1fc5c9fe43825de4cb5eb733630ce87647f60f1a/non_catalog_apps/flipperscope"
   },
   "name": "Scope",
+  "screenshots": [],
   "short_description": "Oscilloscope application - apply signal to pin 16/PC0, with a voltage ranging from 0V to 2.5V and ground to pin 18/GND",
   "version": "0.4"
 }

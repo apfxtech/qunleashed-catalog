@@ -1,15 +1,35 @@
 {
+  "apps": [
+    {
+      "appid": "flipboard_signal",
+      "file": "flipboard_signal.fap",
+      "icon": "assets/icon.png",
+      "name": "FlipBoard Signal",
+      "version": "3.12"
+    }
+  ],
   "author": "CodeAllNight (MrDerekJamison)",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "## 3.12\n - Map button combinations to sub files.\n## 3.11\n - Fix hanging issue on new FW. (Free popup on exit)\n## 3.10\n - Common code update.\n## 3.9\n - Show \"FlipSignal (IR/SUBGHZ)\".\n## 3.8\n - Common code update.\n## 3.7\n - Common code update.\n## 3.6\n - Allow building with uFBT tool.\n## 3.5\n - Default colors.\n## 3.4\n - Splash screen.\n## 3.3\n - Improved LED driver.\n## 3.2\n - Allow combo buttons\n## 3.1\n - Fix bug with second button not working.\n## 3.0\n - Renamed files AGAIN.  \"Flip1.sub\", \"Flip2.sub\", \"Flip4.sub\", \"Flip8.sub\" and the IR entries to \"Flip1\", \"Flip2\", \"Flip4\", \"Flip8\".\n## 2.0\n - Flipper keyboard doesn't have a dash, so renamed the files to \"Flip1.sub\", \"Flip2.sub\", \"Flip3.sub\", \"Flip4.sub\" and the IR entries to \"Flip1\", \"Flip2\", \"Flip3\", \"Flip4\".",
   "description": "# FlipSignal\n\n## Overview\nThe FlipSignal application turns your Flipper Zero and FlipBoard into an Infrared and Sub-GHz signal sender.  Turn on/off devices using the buttons on your FlipBoard, or send a sequence of IR signals. The application sends a Sub-GHz signal (RAW or Protocol) and then it sends any IR signals.  Configuration of signals is done by saving files using a specific file name.\n\nYou can order your FlipBoard from [@MakeItHackin](https://www.youtube.com/makeithackin) using [tindie](https://www.tindie.com/products/32844/) or [Etsy](https://www.etsy.com/listing/1601295558/).  Be sure to also join our [Discord server](https://discord.gg/KTThkQHj5B).\n\n## Running the app\nMake sure your FlipBoard is connected to your Flipper Zero. When you start the app, you should see startup splash screen for a few seconds reminding you to connect the FlipBoard and then the FlipBoard LEDs will do their start-up sequence.\n  - Start application : enables sending Sub-GHz/IR signals when FlipBoard buttons are pressed.\n  - Configuration application : change what notes are played and colors the buttons are.\n  - About : version and ordering information.\n  - Instructions QR code : links to GitHub for detailed instructions (including customizing app).\n\n## Configuration\n\nGo to \"Configure application\" in the app menu to setup how each action works. You’ll see all of the different button combos listed (for example \"Action 3\" is pressing button 1 and button 2 at the same time). Press 'Ok' to select the Action to configure.\n\n  - The \"Press color\" option changes the button color when it’s pressed. If you pick a combo button, all the buttons in that combo will change color.\n\n  - The \"Release color\" option changes the button color when it’s not pressed. This option doesn’t apply for combo buttons.\n\n  - The \"Music note\" option changes the sound to play when the button is pressed. You can pick \"Off\" if you don’t want any sound.\n\n## Sub-GHz files\nYou need to copy your Sub-GHz files into your \"SD Card/subghz\" folder.  Your files should be named 'Flip1.sub', 'Flip2.sub', 'Flip4.sub' and 'Flip8.sub' to correspond to the 4 buttons.  You can also create files for button combinations, for example, 'Flip3.sub' would be for when button 1 and button 2 are pressed at the same time.\n\n## Infrared files\nYou need to copy your 'flipboard.ir' file into your \"SD Card/infrared\" folder.  The 'name:' field should be 'Flip1', 'Flip2', 'Flip4' & 'Flip8' for the 4 actions!!!  The actions are case-sensitive; so they must start with a capital F and then lowercase the remaining letters.  You can have multiple entries named the same, and they will be replayed in order.\n\nIf the file is not created or no matching name exists, then a fallback file of \"SD Card/infrared/assets/tv.ir\" will be used along with default names (Power, Mute, Ch_prev and Ch_next).\n\n- Action 1 will run 'Flip1.sub' and then send IR signal 'Flip1'.  If IR signal does not exist, it will send IR TV signal \"Power\".\n- Action 2 will run 'Flip2.sub' and then send IR signal 'Flip2'.  If IR signal does not exist, it will send IR TV signal \"Mute\".\n- Action 4 will run 'Flip4.sub' and then send IR signal 'Flip4'.  If IR signal does not exist, it will send IR TV signal \"Ch_prev\".\n- Action 8 will run 'Flip8.sub' and then send IR signal 'Flip8'.  If IR signal does not exist, it will send IR TV signal \"Ch_next\".\n\n## Using the app\nMake sure your FlipBoard is connected to your Flipper Zero. Choose the \"Start application\" option to launch the app. Press the leftmost button and it should send the Flip1 signal.  If you did not configure any signals, then it will send the IR TV signal \"Power\".  The green status LED in the FlipBoard will blink as it sends the various signals that have a matching entry 'name:' field.  Once every signal has been sent, the green status LED will turn off.\n\n## Support\n\nIf you have need help, we are here for you.  Also, we would love your feedback on cool ideas for future FlipBoard applications!\n\nPlease visit my Flipper Zero Discord server [Flipper Zero Tutorials (Unofficial)](https://discord.gg/KTThkQHj5B) and ask your questions in the #flipboard or #general channel.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flipboard_signal",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flipboard_signal/manifest.yml",
     "source_code": "https://github.com/jamisonderek/flipboard/tree/a2b670ea3b6387f6aab1f33b5b9b57f92e1f13e8/flipsignal"
   },
   "name": "FlipBoard Signal",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png"
+  ],
   "short_description": "FlipBoard Signal turns your FlipBoard into a signal sender.",
   "version": "3.12"
 }

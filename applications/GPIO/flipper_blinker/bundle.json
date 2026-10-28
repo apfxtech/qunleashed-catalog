@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "flipper_blinker",
+      "file": "flipper_blinker.fap",
+      "icon": "assets/icon.png",
+      "name": "Flipper Blinker",
+      "version": "1.0"
+    }
+  ],
   "author": "T3chieJack",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v1.0:\ninitial release\nadded Morse text transmission\nadded PC3 external LED output\nadded setup blink test\nadded speed, repeat, and repeat delay settings\n",
   "description": "Transmit Morse code with an external LED connected to GPIO PC3.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flipper_blinker",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flipper_blinker/manifest.yml",
     "source_code": "https://github.com/T3chieJack/FlipperBlinker/tree/d8d89443cb2580daddf1a0802a396f1d6fb01a52"
   },
   "name": "Flipper Blinker",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Transmit Morse code with an external LED on GPIO PC3",
   "version": "1.0"
 }

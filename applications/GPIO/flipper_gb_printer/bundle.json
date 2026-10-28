@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "flipper_gb_printer",
+      "file": "flipper_gb_printer.fap",
+      "icon": "assets/icon.png",
+      "name": "flipper-gblink",
+      "version": "0.5"
+    }
+  ],
   "author": "Kris Bahnsen",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "# v0.5\n- Add printer protocol compression support\n\n# v0.4\n- Move pinout selection to main menu\n- Update to improved pinout configuration handling w/ auto-save and auto-load pinouts\n- Add fine grained save options\n- Shift to new naming scheme. Files still placed in dated folder, will have date in output file name(s), as well as a globally incrementing (as opposed to reset each day) 4 digit number. The number is automatically saved and loaded but there are limited protections in place to prevent file overwrite. e.g. if the file number fails to save for any reason, or the file on SD card used to track this number is removed, it is possible that saved photos may be overwritten. This issue is complicated in that, arbitrarily tall images are handled by opening and reopening an existing file; so reopening an existing image file is a valid behavior pattern. This will be dealt with in a future release to ensure there are no cases where files could get clobbered.\n\n# v0.2\n- Supports images of varying height\n- Saves multiple images printed without margins as a single stacked image\n- Selectable pinout for Link Cable interface\n\n# v0.1\nInitial release\n",
   "description": "# Flipper Game Boy Printer\n\nEmulate a Game Boy Printer with your Flipper, files printed to the Flipper are saved as PNGs. Additionally the raw binary of the image content is saved as well.\n\n## Connection: Flipper Zero GPIO - Game Boy\n\nSee the project's README on GitHub https://github.com/kbembedded/flipper-gb-printer/blob/main/README.md#hardware-interface for Link Cable interface adapters available on Tindie.\n\nThe pinout is as follows:\n\n| Cable Game Link (Socket) | Flipper Zero GPIO |\n| ------------------------ | ----------------- |\n| 6 (GND)                  | 8 (GND)           |\n| 5 (CLK)                  | 6 (B2)            |\n| 3 (SI)                   | 7 (C3)            |\n| 2 (SO)                   | 5 (B3)            |\n\nThis matches the Original pinout used on a number of other Flipper applications supporting Game Boy Link interface.\n\n\n## Tested to Support Game Boy models\n- Game Boy Color (GBC)\n- Game Boy Advance (GBA)\n- Game Boy Advance SP (GBA SP)\n- Analogue Pocket\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flipper_gb_printer",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flipper_gb_printer/manifest.yml",
     "source_code": "https://github.com/kbembedded/flipper-gb-printer/tree/26820ad58096ef916717a46f7206592ed058823d"
   },
   "name": "flipper-gblink",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png"
+  ],
   "short_description": "Print from a Game Boy to Flipper Zero saving as PNG",
   "version": "0.5"
 }

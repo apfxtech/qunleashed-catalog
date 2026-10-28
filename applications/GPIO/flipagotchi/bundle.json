@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "flipagotchi",
+      "file": "flipagotchi.fap",
+      "icon": "assets/icon.png",
+      "name": "Flipagotchi",
+      "version": "2.1.1"
+    }
+  ],
   "author": "Matt-London",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "All changes tracked on GitHub repository",
   "description": "Displays the screen of the Pwnagotchi on the Flipper's screen. Interfaces over UART with a Raspberry Pi Zero W running the Pwnagotchi program.\n\n# Setup instructions\nThis app requires additional setup on the Pwnagotchi as well as some hardware setup. See the README.md at the root of the GitHub repository linked below.\n\n## License\n[MIT](https://choosealicense.com/licenses/mit/)\n\n## Disclaimer\nThis program is meant for educational purposes ONLY. I disclaim any and all responsibility for the usage of this program by external parties (not me).\n\nSee GitHub repository for more detailed information and setup instructions.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flipagotchi",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flipagotchi/manifest.yml",
     "source_code": "https://github.com/Matt-London/pwnagotchi-flipper/tree/231029e185e15bd418feae77f9ab218531582e8c/flipagotchi"
   },
   "name": "Flipagotchi",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Flipagotchi",
   "version": "2.1.1"
 }

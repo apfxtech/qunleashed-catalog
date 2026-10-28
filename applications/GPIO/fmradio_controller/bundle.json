@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "fmradio_controller",
+      "file": "fmradio_controller.fap",
+      "icon": "assets/icon.png",
+      "name": "[TEA5767] FM Radio",
+      "version": "0.8"
+    }
+  ],
   "author": "coolshrimp",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v0.8",
   "description": "FM Radio App",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "fmradio_controller",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/fmradio_controller/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/fm_radio_controller"
   },
   "name": "[TEA5767] FM Radio",
+  "screenshots": [],
   "short_description": "FM Radio App",
   "version": "0.8"
 }

@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "flip_trader",
+      "file": "flip_trader.fap",
+      "icon": "assets/icon.png",
+      "name": "FlipTrader",
+      "version": "1.2"
+    }
+  ],
   "author": "JBlanked",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "## v1.2\nUpdates from Derek Jamison:\n- Improved progress display.\n- Added connectivity check on startup.\n\n## v1.1\n- Improved memory allocation\n- Added more assets \n\n## v1.0\n- Initial Release",
   "description": "# FlipTrader\nFlipTrader is an app for the Flipper Zero that uses WiFi to fetch the prices of stocks and currency pairs directly on your device. It utilizes the FlipperHTTP flash for the WiFi Devboard, originally introduced in the WebCrawler app: https://github.com/jblanked/WebCrawler-FlipperZero/tree/main/assets/FlipperHTTP\n\n## Requirements\n- WiFi Dev Board or Raspberry Pi Pico W for Flipper Zero with FlipperHTTP Flash: https://github.com/jblanked/FlipperHTTP\n- WiFi Access Point\n\n\n## Supported Assets\n- **Crypto pairs**:\n    - ETHUSD\n    - BTCUSD\n- **Stocks** (more will be added soon):\n    - AAPL\n    - AMZN\n    - GOOGL\n    - MSFT\n    - TSLA\n    - NFLX\n    - META\n    - NVDA\n    - AMD\n- **Forex pairs**:\n    - EURUSD\n    - GBPUSD\n    - AUDUSD\n    - NZDUSD\n    - XAUUSD\n    - USDJPY\n    - USDCHF\n    - USDCAD\n    - EURJPY\n    - EURGBP\n    - EURCHF\n    - EURCAD\n    - EURAUD\n    - EURNZD\n    - AUDJPY\n    - AUDCHF\n    - AUDCAD\n    - NZDJPY\n    - NZDCHF\n    - NZDCAD\n    - GBPJPY\n    - GBPCHF\n    - GBPCAD\n    - CHFJPY\n    - CADJPY\n    - CADCHF\n    - GBPAUD\n    - GBPNZD\n    - AUDNZD\n\n## Navigation\n- **Main Menu**: The central hub to access all of FlipTrader’s features:\n  - **Assets**: Displays a submenu of available assets.\n  - **About**: Provides details about the app, including version information.\n  - **WiFi Settings**: Allows you to view and configure saved WiFi settings.\n\n## Setup\nFlipTrader automatically allocates necessary resources and initializes settings upon launch. If WiFi settings have been previously configured, they are loaded automatically for convenience.\n\n## How to Use\n1. **Flash the WiFi Devboard**: Follow the instructions to flash the WiFi Devboard with FlipperHTTP:https://github.com/jblanked/FlipperHTTP\n2. **Install the App**: Download FlipTrader from the App Store.\n3. **Launch FlipTrader**: Open the app on your Flipper Zero.\n4. Click **Settings** to manage your network configurations.\n5. **Explore the Features**:\n   - Browse the **Assets** section and select an asset to fetch its current price.\n   - Visit **About** for app information and version history.\n\n## Known Issues\n1. **Asset Screen Delay**: Occasionally, the Asset Price screen may get stuck on \"Loading Data\".\n    - Update to version 1.2 (or higher)\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flip_trader",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flip_trader/manifest.yml",
     "source_code": "https://github.com/jblanked/FlipTrader/tree/1717a8ac7e916bd7a246b79971a5d602e018faf6"
   },
   "name": "FlipTrader",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png"
+  ],
   "short_description": "Use WiFi to get the price of stocks and currency pairs on your Flipper Zero.",
   "version": "1.2"
 }

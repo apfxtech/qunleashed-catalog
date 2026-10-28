@@ -1,15 +1,36 @@
 {
+  "apps": [
+    {
+      "appid": "flipboard_simon",
+      "file": "flipboard_simon.fap",
+      "icon": "assets/icon.png",
+      "name": "FlipBoard Simon",
+      "version": "1.10"
+    }
+  ],
   "author": "CodeAllNight (MrDerekJamison)",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "## 1.10\n - Fix hanging issue on new FW. (Free popup on exit)\n## 1.9\n - Common code update.\n## 1.8\n - Common code update.\n## 1.7\n - Common code update.\n## 1.6\n - Update default colors/sounds.\n## 1.5\n - Spash screen.\n## 1.4\n - Improved LED driver.\n## 1.3\n - Default colors/sounds\n## 1.2\n - Fix crash on exit",
   "description": "# FlipSimon\n\n## Overview\nThe FlipSimon application turns your Flipper Zero and FlipBoard into a memory game.  FlipSimon was originally written as a [step-by-step tutorial](https://github.com/jamisonderek/flipboard/tree/main/simon-tutorial#readme) to teach C, Flipper Zero Code, and FlipBoard common code - so you can create your own FlipBoard applications.  Based on community feedback, this version of the application was improved to make the application similar to the other released FlipBoard applications.\n\nYou can order your FlipBoard from [@MakeItHackin](https://www.youtube.com/makeithackin) using [tindie](https://www.tindie.com/products/32844/) or [Etsy](https://www.etsy.com/listing/1601295558/).  Be sure to also join our [Discord server](https://discord.gg/KTThkQHj5B).\n\n## Running the app\nMake sure your FlipBoard is connected to your Flipper Zero. When you start the app, you should see startup splash screen for a few seconds reminding you to connect the FlipBoard and then the FlipBoard LEDs will do their start-up sequence.\n  - Start application : starts playing the game\n  - Configuration application : change what notes are played and colors the buttons are.\n  - About : version and ordering information.\n  - Instructions QR code : links to GitHub for detailed instructions (including customizing app).\n\n## Configuration\nGo to \"Configure application\" in the app menu to setup how each action works. You’ll see all of the different buttons listed (for the Simon game, only a single button is used at a time). \n\n- The \"Press color\" option changes the button color when it’s pressed (or shown).  For the game, a less bright version of the press color is used when the button is not pressed.\n\n- The \"Music note\" option changes the sound to play when the button is pressed. You can pick \"Off\" if you don’t want any sound.\n\n## Using the app\nMake sure your FlipBoard is connected to your Flipper Zero. Choose the \"Start application\" option to launch the app. The game will show \"Press OK to play\".  \n- Press the 'Ok' button on the Flipper Zero to start the game.\n- The game will light up a sequence of buttons and play a sound for each color.  Pay attention to the order the buttons are lit up.\n- After the sequence is shown, the game will show \"Your turn\".  You **must** wait for your turn before pressing any buttons.  Press the buttons in the same order they were shown.  If you get the sequence right, the game will show \"Teaching Notes\" and then show the next sequence.\n- Keep repeating the sequence until you have completed all of the notes (or incorrectly pressed a note)!\n\n## Support\n\nIf you have need help, we are here for you.  Also, we would love your feedback on cool ideas for future FlipBoard applications!\n\nPlease visit my Flipper Zero Discord server [Flipper Zero Tutorials (Unofficial)](https://discord.gg/KTThkQHj5B) and ask your questions in the #flipboard or #general channel.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flipboard_simon",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/flipboard_simon/manifest.yml",
     "source_code": "https://github.com/jamisonderek/flipboard/tree/b2e0374a4c2b4451d9d39a5fbc4eb08bb0280b98/simon-tutorial/completed/step-16/flipsimon"
   },
   "name": "FlipBoard Simon",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png"
+  ],
   "short_description": "Simon memory game for the FlipBoard.",
   "version": "1.10"
 }
