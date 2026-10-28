@@ -1,0 +1,15 @@
+{
+  "author": "mbirth.uk",
+  "category": "NFC",
+  "changelog": "v1.0 - 2026-08-03:\n- Add: Reset usage counter (with AUTHLIM warning dialog)\n  Thanks to Michael Huber\n\nv0.9 - 2026-03-31:\nInitial Release\n",
+  "description": "This app reads the NFC chip in Sonicare brush heads\nand shows the amount of time this head has been used\nas well as the intended lifespan. It also generates\nthe NFC password from the UID and MFG code and allows\nto reset the usage counter.\n",
+  "family": "application",
+  "id": "uk_mbirth_sonicare",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/uk_mbirth_sonicare/manifest.yml",
+    "source_code": "https://git.mbirth.uk/flipper_zero/sonicare/tree/8efc64f61127c6ea699b10cfd932250b5a908eb1"
+  },
+  "name": "Sonicare Head ID",
+  "short_description": "Philips Sonicare brush head NFC reader and resetter",
+  "version": "1.0"
+}

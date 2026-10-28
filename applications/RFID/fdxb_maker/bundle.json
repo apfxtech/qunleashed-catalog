@@ -1,0 +1,15 @@
+{
+  "author": "Skye Gibbs",
+  "category": "RFID",
+  "changelog": "v1.0:\nInitial release",
+  "description": "# FDX-B Maker\nConstruct fully ISO-compliant FDX-B animal microchip data right on your Flipper Zero! The data gets stored as plain RFID files on the SD card, which you can then write to T5577 or EM4305 cards/chips as normal.\n\n# Fields\n## Country Code\n0 to 999. A 3-digit number corresponding to a country (specified by [ISO 3166](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes)) that handles the registration data for the animal. Codes 900-998 are reserved for specific manufacturers, and code 999 is reserved for test chips.\n\nNote: You can also enter values from 1000 to 1023, but these do not comply with the standard and may not get interpreted correctly in all places.\n\n## National Identification Code\n0 to 274877906943. A 12-digit number assigned by the authority of the country or manufacturer specified in the Country Code field.\n\n## Animal Bit\nYes/No. Whether or not the FDX-B transponder is being used for animal identification.\n\n## Retagging Counter\n0 to 7. Initially set to 0, if an animal needs to be assigned a new transponder the counter should be incremented by 1 each time.\n\n## User Information Field\n0 to 31. Can be anything, defined by the country or manufacturer specified in the Country Code field.\n\n## Visual Start Digit\n0 to 7. If an animal has a number printed on a visible tag, it will probably be shorter than 12 digits. In that case, you can use this field to indicate what or where the first digit of the visible number is within the National Identification Code.\n\n## RUDI Bit\nYes/No. Stands for \"Reference to User Data Inside\", and indicates whether or not the transponder is an FDX-ADV chip emulating FDX-B. Yours is not.\n\n## Data Block\n3 bytes. You can put whatever you want here, or choose to disable it entirely. You can also encode a temperature from 74ºF to 125ºF in this section by setting the Data Block setting to \"Temp\".\n\nNote: If you set the Data Block setting to \"Off\" but you still have data stored in the actual data block, you will be asked whether you'd like to clear the data  entirely or just stop advertising that it's present.\n\n# Special Thanks To\n- **Sergei Gavrilov** from the Flipper Team for creating FDX-B support to begin with\n- **anon3825968** on the DangerousThings forums for somehow figuring out how temperature data is encoded on Bio-Thermo chips\n- **My wonderful friends** for getting me interested in this sort of thing",
+  "family": "application",
+  "id": "fdxb_maker",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/RFID/fdxb_maker/manifest.yml",
+    "source_code": "https://github.com/snowsign/fdxb-maker/tree/506a5d58c2c2ba6d13a11608e520d8ddb57f6540"
+  },
+  "name": "FDX-B Maker",
+  "short_description": "FDX-B format file maker for animal microchips",
+  "version": "1.0"
+}

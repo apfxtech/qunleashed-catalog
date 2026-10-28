@@ -1,0 +1,15 @@
+{
+  "author": "Wakdev",
+  "category": "NFC",
+  "changelog": "## v1.0\nInitial Release\n\n## v1.1\nPreserve records write input buffers on write failure or user cancellation\nAutomatic retry in case of write failure\n\n## v1.2\nUpdated keyboard layouts and engine\n\n## v1.3\nUpdated keyboard layouts and engine\nRaised the input limit to 1024 characters\nRemoved the on-screen character counter for a cleaner input view",
+  "description": "# NFC Tools\n\nNFC Tools can read and write your NFC tags.\n\n## Read features\n- Automatic protocol detection and chip identification (UID, SAK, ATQA)\n- NDEF record reading and display\n- Scrollable record list with per-record detail view\n- QR Code display for any compatible record\n- Memory dump (sectors / pages analysis)\n- Detailed chip info (version, free memory, block count)\n\n## Write features\n- Text\n- URL / Custom URI\n- Unit.Link\n- Mail\n- Contact\n- Phone / SMS\n- Facetime + Facetime Audio\n- Social Networks\n- Search engines\n- Location\n- Bitcoin\n- Wi-Fi\n- Bluetooth\n- Custom Data\n\n## Other features\n- Erase Tag: Clears the NDEF content from the tag\n- Lock Tag: Permanently locks the tag as read-only (NTAG21x)\n- Format Memory: Write 0x00 on tag memory (NTAG, ICODE SLI/X, Mifare Classic 1K+4K)\n- Read Memory: Full memory dump with ASCII view\n- Set or remove Password: Password protection for NTAG21x\n- NFC Commands: Send raw APDU commands\n\n## Supported chips\n- NTAG: NTAG203, 210, 212, 213, 213 TT, 215, 216\n- MF Ultralight: Ultralight, Ultralight C, Ultralight EV1\n- Mifare Classic: 1K, 4K\n- ICODE: SLI, SLIX, SLIX2, SLIX-S, SLIX-L\n- DESFire EV1, EV2, EV3 (NDEF)\n- FeliCa: Sony FeliCa\n- ISO 14443-3A: Generic tags\n\n## Credits\nDeveloper: WAKDEV\nWebsite: https://www.wakdev.com\n",
+  "family": "application",
+  "id": "nfc_tools",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/nfc_tools/manifest.yml",
+    "source_code": "https://github.com/wakdev/nfctools-fz/tree/f0325d6761ebf8b20f03230463fac30d4d7a71bf"
+  },
+  "name": "NFC Tools",
+  "short_description": "NFC Tools can read and write your NFC tags",
+  "version": "1.3"
+}

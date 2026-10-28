@@ -1,0 +1,15 @@
+{
+  "author": "Yasper De Jong",
+  "category": "NFC",
+  "changelog": "## 1.0\n- Initial release\n",
+  "description": "A Flipper Zero application that generates and emulates NFC tags that point to URLs.\n\nFeatures:\n- Generate http(s), (s)ftp, mailto, etc. URLs\n- Save a list URLs for later use\n- Export to a Flipper NFC Tag file (.nfc)",
+  "family": "application",
+  "id": "nfcurl",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/nfcurl/manifest.yml",
+    "source_code": "https://github.com/y-dejong/nfcurl/tree/1e243e49e6c8f60f7094d52e5ed5914b4323d29a"
+  },
+  "name": "NFC URL",
+  "short_description": "Create NFC tags that direct you to a URL",
+  "version": "1.0"
+}

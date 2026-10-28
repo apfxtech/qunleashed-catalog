@@ -1,0 +1,15 @@
+{
+  "author": "Alexander Hahn (github.com/hahnworks)",
+  "category": "NFC",
+  "changelog": "v1.0.3:\n- Improve dictionary handling on standard firmware\n\nv1.0.2:\n- Add vibro feedback when card is read\n- Add Dolphin Deeds\n- Minor adjustments\n\nv1.0.1:\n- Improved display of parsing errors\n\nv1.0:\n- Initial Release\n",
+  "description": "# UDECard\n\nAn application for the analysis of student/employee ID cards from the University of Duisburg-Essen (Intercard).\nThis application is able to read the card's data and display it in a human-readable format.\nIt is also possible to load a previously saved card.\n\n\n## Features\n\nThe following fields are supported:\n\n- KS-Nr.\n- Member type (Student/Employee)\n- Student number (Matrikelnummer)\n- Balance\n- Transaction count",
+  "family": "application",
+  "id": "udecard",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/udecard/manifest.yml",
+    "source_code": "https://github.com/hahnworks/UDECard/tree/53bf53fd4b66d003da2e56a95de09893683ebbe3"
+  },
+  "name": "UDECard",
+  "short_description": "Analyse student ID cards from the University of Duisburg-Essen (Intercard).",
+  "version": "1.0.3"
+}
