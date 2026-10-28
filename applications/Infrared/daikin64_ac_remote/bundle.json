@@ -1,0 +1,15 @@
+{
+  "author": "mrcalifornium",
+  "category": "Infrared",
+  "changelog": "# Changelog\n\nv0.1:\n\n- Initial Daikin64 AC Remote release.\n- Added dynamic Daikin64 packet generation for power, mode, temperature, fan, swing, turbo, quiet, sleep, and timers.\n- Added five persistent favorite presets.\n- Added APGS02 validation captures and testing protocol.\n",
+  "description": "# Daikin64 AC Remote\n\nDaikin64 AC Remote is a Flipper Zero infrared remote for Daikin air conditioners that use the Daikin64 protocol, including APGS02-style remotes.\n\nThe app generates Daikin64 packets dynamically instead of replaying stored raw captures.\n\n## Features\n\n- Power toggle\n- Mode selection: Auto, Cool, Heat, Dry, Fan\n- Temperature control from 16 C to 30 C\n- Fan control: Auto, Low, Medium, High, Turbo, Quiet\n- Swing, Sleep, Turbo, Quiet, and timer controls\n- Five favorite presets\n- Saved last-used state and favorites on the SD card\n\n## Usage\n\nUse Left and Right to change pages, Up and Down to move between controls, and OK to activate the selected control.\n\nOn the Favorites page, press OK on a slot to send it. Long-press OK on a slot to save the current state into that slot.\n\nBefore listing an AC model as compatible, test the app with your indoor unit and original remote. Optional functions such as Sleep, Quiet, and Turbo may be ignored by some Daikin models even when the protocol frame is valid.\n",
+  "family": "application",
+  "id": "daikin64_ac_remote",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/daikin64_ac_remote/manifest.yml",
+    "source_code": "https://github.com/mrcalifornium/flipperzero-daikin64-ac-remote/tree/e5f0d882efdd4d8cc5f5cde26599dd2288158726/applications_user/daikin64_ac_remote"
+  },
+  "name": "Daikin64 AC Remote",
+  "short_description": "Daikin64 APGS02-compatible AC remote",
+  "version": "0.1"
+}

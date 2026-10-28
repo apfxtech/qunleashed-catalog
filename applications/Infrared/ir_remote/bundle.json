@@ -1,0 +1,15 @@
+{
+  "author": "@Hong5489 & @friebel & @d4ve10",
+  "category": "Infrared",
+  "changelog": "v1.0",
+  "description": "Bind any IR remote button to each button on flipper d-pad, provides another way to use flipper as IR remote.",
+  "family": "application",
+  "id": "ir_remote",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/ir_remote/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/de1539b0da6d53bb6303f819be0518a63c460b32/non_catalog_apps/ir_remote"
+  },
+  "name": "IR Remote",
+  "short_description": "Bind any IR remote button to each button on flipper d-pad, provides another way to use flipper as IR remote.",
+  "version": "1.0"
+}

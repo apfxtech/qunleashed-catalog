@@ -1,0 +1,15 @@
+{
+  "author": "@Nitepone",
+  "category": "Infrared",
+  "changelog": "v1.0 - Initial release, v1.2 - Additional camera support, v2.2 - Bugfix for New Flipper SDK",
+  "description": "Intervalometer for Canon, Nikon, and Sony cameras. Uses IR shutter release.",
+  "family": "application",
+  "id": "ir_intervalometer",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/ir_intervalometer/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/ir_intervalometer"
+  },
+  "name": "IR Intervalometer",
+  "short_description": "Intervalometer for Pentax, Canon, Nikon, and Sony cameras. Uses IR shutter release.",
+  "version": "2.2"
+}

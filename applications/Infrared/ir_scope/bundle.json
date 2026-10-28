@@ -1,0 +1,15 @@
+{
+  "author": "@kallanreed",
+  "category": "Infrared",
+  "changelog": "v1.0 - Initial release, v1.1 - Various fixes, v1.2 - Various important fixes, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version",
+  "description": "App allows to see incoming IR signals.",
+  "family": "application",
+  "id": "ir_scope",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/ir_scope/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/base_pack/ir_scope"
+  },
+  "name": "IR Scope",
+  "short_description": "App allows to see incoming IR signals.",
+  "version": "1.4"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "OrionW06",
+  "category": "Infrared",
+  "changelog": "v0.3",
+  "description": "An RNG intended for use with flames and other IR sources.",
+  "family": "application",
+  "id": "flame_rng",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/flame_rng/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/de1539b0da6d53bb6303f819be0518a63c460b32/non_catalog_apps/flame_rng"
+  },
+  "name": "Flame RNG",
+  "short_description": "An RNG intended for use with flames and other IR sources.",
+  "version": "0.3"
+}

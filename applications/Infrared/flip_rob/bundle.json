@@ -1,0 +1,15 @@
+{
+  "author": "John Riney III",
+  "category": "Infrared",
+  "changelog": "v0.1",
+  "description": "Control Nintendo R.O.B.",
+  "family": "application",
+  "id": "flip_rob",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/flip_rob/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/flip_rob"
+  },
+  "name": "R.O.B. Control",
+  "short_description": "Control Nintendo R.O.B.",
+  "version": "0.1"
+}
