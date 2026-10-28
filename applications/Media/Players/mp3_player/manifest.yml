@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 1be1d03d49183b26f179c38a197dc0e34102534e
     subdir: non_catalog_apps/flipperzero_mp3_player
 id: mp3_player
 category: Media/Players

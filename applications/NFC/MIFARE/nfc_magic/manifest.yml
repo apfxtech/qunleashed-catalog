@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 5d5dae772bbc160d839be60620d8b184919114c9
     subdir: base_pack/nfc_magic
 id: nfc_magic
 category: NFC/MIFARE

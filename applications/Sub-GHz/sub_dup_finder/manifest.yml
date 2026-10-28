@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 850e1368906c21248f013ab059935002255b41ed
     subdir: non_catalog_apps/flipper_sub_dup
 id: sub_dup_finder
 author: Endika

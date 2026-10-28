@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: de1539b0da6d53bb6303f819be0518a63c460b32
     subdir: non_catalog_apps/genie-recorder
 id: genie_record
 author: CodeAllNight (MrDerekJamison)

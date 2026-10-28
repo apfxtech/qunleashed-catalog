@@ -2,5 +2,6 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 1fc5c9fe43825de4cb5eb733630ce87647f60f1a
     subdir: non_catalog_apps/flipperscope
 id: flipperscope

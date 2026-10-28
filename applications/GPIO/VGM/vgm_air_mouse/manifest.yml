@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: bb3d8162ffb7daf7fa3ad6ef72420f51bcb770af
     subdir: base_pack/air_mouse_ofw
 id: vgm_air_mouse
 category: GPIO/VGM

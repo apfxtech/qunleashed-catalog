@@ -2,5 +2,6 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: bb9d4b90d28c1ecd76f31473a9f45b4824bb4083
     subdir: non_catalog_apps/flipper_tesla_mod
 id: tesla_mod

@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 56ab1d42ceed9818d8d4b966b271cc6e22252405
     subdir: apps_source_code/segment_clock
 id: segment_clock
 category: Tools/Clocks

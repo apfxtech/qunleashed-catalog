@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: a2004a3539c50ced20f6f24e61ba17c1dd86460b
+    commit_sha: f89697d89e0872dbfc1eaf502f2fe5c5c173b6a4
     subdir: apps_source_code/nfc_apdu_runner
 description: "@./catalog/docs/Readme.md"
 changelog: "@./catalog/docs/Changelog.md"

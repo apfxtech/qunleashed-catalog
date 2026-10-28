@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 82a2c95854601e932c2bad9bfc14a26611184d3a
     subdir: base_pack/flipper_share_nfc
 id: flipper_share_nfc
 description: '@README_catalog.md'

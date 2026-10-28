@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 619c27ba759eb75f662dd59f21c3f02e0a8d1b21
     subdir: non_catalog_apps/freq_analyzer_ext
 id: freq_analyzer_ext
 category: Sub-GHz/Analyzers

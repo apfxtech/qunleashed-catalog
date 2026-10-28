@@ -2,5 +2,6 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 6b33af2966bfc5efb9183d45d46a0a1c41aea196
     subdir: base_pack/nfc_maker
 id: nfc_maker

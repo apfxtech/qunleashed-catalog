@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 2d4ac2e713a5aa43bb591383bad626afcc077206
     subdir: non_catalog_apps/mitsubishi_heavy_ac_remote
 id: mitsubishi_heavy_ac_remote
 category: Infrared/ACs

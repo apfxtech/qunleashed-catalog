@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 61ee8f12b5fc78a2aee6b91cc1386f281ea10683
     subdir: apps_source_code/flipp_pomodoro
 id: flipp_pomodoro
 category: Tools/Timers

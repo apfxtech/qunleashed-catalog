@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: cdceac0137abd8d0695b269992ae52ac0117e355
     subdir: non_catalog_apps/samsung_ac_remote
 id: samsung_ac_remote
 short_description: Samsung Electric Air Conditioner remote control

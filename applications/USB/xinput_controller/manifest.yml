@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 77338a5a2731b621730324952e7e5e8772dc98ac
     subdir: non_catalog_apps/xinput
 id: xinput_controller
 short_description: An app that emulates XInput controllers

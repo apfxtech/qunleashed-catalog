@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: cbec11a129a8028fe3e6ccda2385587c89a2877f
     subdir: non_catalog_apps/neoclima_ac_remote
 id: neoclima_ac_remote
 category: Infrared/ACs

@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 64e54527446bc248f3b790e5ef02e67908b67a02
     subdir: non_catalog_apps/quadrastic
 id: quadrastic
 category: Games/Arcade

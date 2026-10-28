@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 6b33af2966bfc5efb9183d45d46a0a1c41aea196
     subdir: non_catalog_apps/pc_monitor
 id: pc_monitor
 author: Olejka

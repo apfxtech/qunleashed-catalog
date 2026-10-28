@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 6a81d05018a09f4963982c52d63689e88d02b85a
     subdir: base_pack/quac
 id: quac
 author: Roberto De Feo

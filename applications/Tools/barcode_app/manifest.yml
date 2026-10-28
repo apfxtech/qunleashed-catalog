@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 2c7b67ccb7783a3219d431c1d6f68a97a8a97403
     subdir: base_pack/barcode_gen
 id: barcode_app
 author: '@Kingal1337'

@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 962d382a74b3a7c98718b39179e85f690ebd8683
     subdir: base_pack/video_game_module_tool
 id: video_game_module_tool
 category: GPIO/VGM

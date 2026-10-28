@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 37a6334f1c89d9b25fc39f224154c76a9c8d49b3
     subdir: non_catalog_apps/passy
 id: passy
 author: bettse

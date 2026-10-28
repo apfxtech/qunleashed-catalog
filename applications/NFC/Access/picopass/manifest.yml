@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 774f509b1997668219398d3a69e13fdd646d219b
     subdir: base_pack/picopass
 id: picopass
 category: NFC/Access

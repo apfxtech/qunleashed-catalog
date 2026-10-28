@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 09a9587b481a93dbfe022382a0c0790f0e8aca94
     subdir: non_catalog_apps/specter
 id: specter
 short_description: Passively sense active 13.56 MHz NFC readers and skimmers with the onboard NFC chip. No extra hardware, never transmits.

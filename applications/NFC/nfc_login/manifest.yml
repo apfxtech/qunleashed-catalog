@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: abc55bdf69c3b09f6d806a9c8e9dca6295f384bc
     subdir: non_catalog_apps/nfc_login
 id: nfc_login
 short_description: NFC based desktop login using USB HID or BLE HID

@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a80f75c6705bd709d0c6f922e84eb940f99730fc
     subdir: non_catalog_apps/flipcrypt
 id: flip_crypt
 category: Tools/Crypto

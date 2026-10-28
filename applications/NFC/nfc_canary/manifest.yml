@@ -2,5 +2,6 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 643ba9d910ecd0ee797702ec282dbe2414a14bba
     subdir: non_catalog_apps/nfc_canary
 id: nfc_canary

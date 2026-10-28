@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: f760885012da59af1f35683b479c38858f4382ee
     subdir: non_catalog_apps/goodweather_ac_remote
 id: goodweather_ac_remote
 category: Infrared/ACs

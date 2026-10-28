@@ -2,5 +2,6 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 13edbe6303e99070957e3d18298635310fb87118
     subdir: base_pack/protopirate
 id: proto_pirate

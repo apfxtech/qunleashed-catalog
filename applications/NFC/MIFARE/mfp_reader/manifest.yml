@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a
     subdir: non_catalog_apps/nfc_mfp_reader
 id: mfp_reader
 category: NFC/MIFARE

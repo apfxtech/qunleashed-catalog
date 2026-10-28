@@ -2,5 +2,6 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 9a39f64129a6d2975fc95623517a00378debcc5a
     subdir: non_catalog_apps/marauder_gui
 id: marauder_gui

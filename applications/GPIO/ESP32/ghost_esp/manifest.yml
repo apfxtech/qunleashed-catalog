@@ -2,6 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: b3fa3a4f037fcf2185240b662ab9d29348cc7e79
     subdir: non_catalog_apps/ghost_esp_app
 id: ghost_esp
 category: GPIO/ESP32
