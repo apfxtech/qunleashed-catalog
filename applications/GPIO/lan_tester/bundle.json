@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "lan_tester",
+      "file": "lan_tester.fap",
+      "icon": "assets/icon.png",
+      "name": "ioLibrary_Driver",
+      "version": "2.10.0"
+    }
+  ],
   "author": "Dok2d",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v2.10.0",
   "description": "Use without qflipper!\n\nPortable LAN tester for Flipper Zero with W5500 Ethernet module.\nARP scan, ping, traceroute, DHCP analysis, LLDP/CDP discovery,\nport scan, mDNS/SSDP, STP/VLAN detection, DNS lookup, Wake-on-LAN,\npacket capture, USB-to-Ethernet bridge (CDC-ECM) with PCAP recording,\nPXE boot server, and web-based SD card file manager — 20+ network\ndiagnostic tools in a single FAP application.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "lan_tester",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/lan_tester/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/de1539b0da6d53bb6303f819be0518a63c460b32/non_catalog_apps/w5500_lan_analyse"
   },
   "name": "ioLibrary_Driver",
+  "screenshots": [],
   "short_description": "Portable LAN tester: ARP scan, ping, traceroute, DHCP, LLDP/CDP, port scan, packet capture via W5500",
   "version": "2.10.0"
 }

@@ -1,15 +1,36 @@
 {
+  "apps": [
+    {
+      "appid": "logic_analyzer",
+      "file": "logic_analyzer.fap",
+      "icon": "assets/icon.png",
+      "name": "Logic Analyzer",
+      "version": "1.0"
+    }
+  ],
   "author": "@g3gg0",
+  "authors": [
+    {
+      "id": "g3gg0",
+      "name": "g3gg0"
+    }
+  ],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "## v1.0\n\n**Initial implementation:**\n- First version",
   "description": "Use flipper as Openbench Logic Sniffer (ols) logic analyzer in PulseView\n\nInstall PulseView - https://www.sigrok.org/wiki/Downloads\nLaunch PulseView and connect to channels C0, C1, C3, B2, B3, A4, A6, A7  \nTry to start pulseview from the terminal\nif you encounter problems with the configuration pulseview via gui\n\npulseview -d ols:conn=/dev/ttyACM1\n\noriginal readme:\nThen start PulseView and add a new \"Openbench Logic Sniffer (ols)\" and select the second flipper serial port.\n\nWhen arming, you can now look at the trace in PulseView.\n\nChanges:\n- all 8 channels supported Channel 0 is C0, Channel 1 is C1, etc Channel 7 is A7\n- fixed sampling rate not supported (yet?)\n- if a trigger level is defined, no matter which one, the signals are captured as soon this signal changes\n- maximum capture rate unclear. didnt make any tests. guess in the 100kHz range\n- sample count capped to 16384 for now. didnt check what is possible using malloc()\n- only ONE SHOT currently supported. unknown reason. you have to close and reopen the capture window in PulseView (probably bug in PulseView?)\n\nSource: https://github.com/g3gg0/flipper-logic_analyzer",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "logic_analyzer",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/logic_analyzer/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/logic_analyzer"
   },
   "name": "Logic Analyzer",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Use flipper as Openbench Logic Sniffer (ols) logic analyzer in PulseView",
   "version": "1.0"
 }

@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "ghouls",
+      "file": "ghouls.fap",
+      "icon": "assets/icon.png",
+      "name": "Ghouls",
+      "version": "0.6"
+    }
+  ],
   "author": "JBlanked",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "## v0.6\n- Added 4 new apps (Maze, Forest, Tron, and Graveyard)\n- Added a map pack system (maps can be created externally and loaded into the game via a .ghoulsmap file)\n- Added a map selection screen before the game starts\n- Updated wall collision to affect the whole area of the wall\n\n## v0.5\n- Fixed the Loading class to center text\n- Updated ghouls to respect tree and house colliders (they now navigate around them instead of through them)\n- Added an on-collision projectile effect (displays an X on impact)\n- Randomized ghoul type on spawn\n- Added a weapon crosshair (a circle indicating where projectiles will land)\n- Fixed ghoul behavior to always target the player\n- Updated the held weapon position so the weapon sprite is more visible to the player\n- Lowered weapon strength round increase (now half the player's current strength instead of the full amount)\n- Updated weapon ammo to stack per round (instead of resetting to max, adds MAX to current)\n- Updated weapon drop to respect player rotation (always dropped behind the player)\n- Updated the player's health to regenerate per frame\n- Updated game logic so the round ends once all ghouls are killed \n\n## v0.4\n- Added an on-screen mini map\n- Fixed positioning of objects on mini map\n- Removed weapon fire cooldown \n- Updated non-held weapons to rotate\n- Added bullet effects (Rifle: Shoot through enemies, Shotgun: Burst/wide-shot, Crossbow: ricochet, Rocket Launcher: Mass burst/explosive)\n\n## v0.3\n- Updated the mini map to show weapons, houses, and trees.\n- Added health bars displayed above enemies.\n- Fixed many bugs and improved overall performance.\n\n## v0.2\n- Added depth sorting for environment rendering\n- Many bug fixes and performance improvements\n\n## v0.1\n- Initial release\n",
   "description": "# Ghouls\nA simple 3D action-adventure game built with the Pico Game Engine. This is the Flipper Zero's version of the game.\n\n## Requirements\n- WiFi Developer Board, BW16, Raspberry Pi, or ESP32 device flashed with FlipperHTTP v2.1.7 or higher: https://github.com/jblanked/FlipperHTTP\n- 2.4 GHz or 5 GHz Wi-Fi access point\n\n## Connect Online\n- Discord: https://discord.gg/5aN9qwkEc6\n- YouTube: https://www.youtube.com/@jblanked\n- Instagram: https://www.instagram.com/jblanked\n- Other: https://www.jblanked.com/social/\n\n## Features\n- Weapons: Find and use a variety of weapons (shooters and launchers) to fend off the ghouls.\n- Day/Night Cycle: Round-based survival gameplay with a day/night cycle. During the day, players can explore, gather resources, and prepare for the night. At night, players must defend themselves against waves of ghouls.\n- Online Multiplayer: Team up with friends or other players online to survive together. (Coming Soon)\n\n## Controls\n- Up/Down/Left/Right: Move\n- Center Button: Fire Weapon (if equipped)\n- Back Button: Open/Close Game Menu\n\n## Installation\n1. Ensure your WiFi Developer Board is flashed with FlipperHTTP v2.1.7 or higher\n2. Copy the contents of the \"Assets\" folder from \"Ghouls/src/assets\" to your SD card in \"SD Card/apps_data/ghouls/data/\"\n3. Add your WiFi and username/password credentials in the app settings\n4. Click \"Run\" from the app menu and enjoy!",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "ghouls",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/ghouls/manifest.yml",
     "source_code": "https://github.com/jblanked/Ghouls-Flipper/tree/35651d0c714c8648cec93abdb79c7522253992e5"
   },
   "name": "Ghouls",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "3D Round-based survival game",
   "version": "0.6"
 }

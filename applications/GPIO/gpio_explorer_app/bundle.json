@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "gpio_explorer_app",
+      "file": "gpio_explorer_app.fap",
+      "icon": "assets/icon.png",
+      "name": "GPIO Explorer",
+      "version": "1.0"
+    }
+  ],
   "author": "dun-crop",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "## 1.0\n - Official release\n## 0.9\n - application.fam updated\n## 0.1\n - Initial release\n",
   "description": "## Just run the app and start exploring. It has:\n- Digital rgb led, for which you must have digital rgb led and at least 3 100 Ohm resisters or greater or the led might brown out.\n- Digital led, for which you must have led diod and at least 100 Ohm resistor or the led might brown out.\n- Gpio reader to check if there is current on the current pin.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "gpio_explorer_app",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/gpio_explorer_app/manifest.yml",
     "source_code": "https://github.com/EvgeniGenchev07/gpio_explorer/tree/a1e00e3f97e5f3981e86f3e5701164eb4c78fd5c"
   },
   "name": "GPIO Explorer",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png"
+  ],
   "short_description": "The most complete app to start exploring the GPIO functionalities",
   "version": "1.0"
 }

@@ -1,15 +1,47 @@
 {
+  "apps": [
+    {
+      "appid": "i2c_tools_cli",
+      "file": "i2c_tools_cli.fap",
+      "icon": "assets/icon.png",
+      "name": "I2C Tools CLI",
+      "version": "1.0"
+    }
+  ],
   "author": "@Tristus1er (forked from @NaejEL)",
+  "authors": [
+    {
+      "id": "tristus1er",
+      "name": "Tristus1er"
+    },
+    {
+      "id": "naejel",
+      "name": "NaejEL"
+    }
+  ],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "# Changelog\n\nAll notable changes to **I2C Tools CLI** are documented here. Format inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions follow MAJOR.MINOR.\n\n## Version 1.0 — 2026-05-14\n\nFirst release prepared for the Flipper Application Catalog.\n\n**Added** (fork-specific, on top of upstream NaejEL/flipperzero-i2ctools)\n- **N-byte read** in the sender view (1..32 bytes) — Long Left / Long Right adjust *Len* when the sender is in READ mode.\n- **Write mode** toggle on the sender view — Long OK switches the sender between READ and WRITE; in WRITE mode, Long Left / Long Right adjust the byte value to send.\n- **HEX / ASCII** display toggle on read results — Long Back flips the format; once a result is shown, Long Up / Long Down page through the buffer.\n- **Serial CLI** registered as the *i2c* command (parallel-safe), with subcommands **scan**, **probe**, **read**, **write**, **help**.\n  - *i2c read* accepts an optional **hex** (default) or **ascii** format suffix.\n  - All arguments parsed as hex with optional **0x** prefix.\n- New 10×10 app icon featuring **\"I2C\"** above a **\">_\"** prompt to convey the dual GUI + CLI nature.\n\n\n**Changed**\n- *stack_size* raised from 2 KiB to 4 KiB (the CLI callback uses a 256-byte buffer on its stack).\n- App description and metadata updated for catalog submission.\n\n**Fixed**\n- Calls to the renamed *CliRegistry* API (current SDK) instead of the legacy *Cli* API.\n\n**Upstream attribution** — original GUI, scanner, sender, sniffer and infos views: © 2023 NaejEL — see [LICENSE](LICENSE).\n",
   "description": "# I2C Tools CLI\n\nA Flipper Zero external application that exposes I²C tools through both a **GUI** and a **serial CLI** (the *i2c* command over *ufbt cli* / VCP).\n\nForked from [NaejEL/flipperzero-i2ctools](https://github.com/NaejEL/flipperzero-i2ctools) (GPL-3.0). On top of the original scanner / sender / sniffer / infos views, this fork adds:\n\n- **N-byte read** in the sender view (1..32 bytes, adjusted via Long Left / Long Right);\n- **Write mode** toggle on the sender view (Long OK switches between READ and WRITE);\n- **HEX / ASCII** display toggle (Long Back), with scrollable result paging (Long Up / Long Down);\n- A **serial CLI** with subcommands **scan**, **probe**, **read**, **write**, **help**.\n\n**⚠ Warning:** the Flipper external GPIO is **3V3 only**. Connecting a 5 V bus directly to SCL/SDA can damage the device. Use a level shifter for 5 V peripherals.\n\n## Wiring\n\n| Flipper pin | I²C signal |\n|---|---|\n| C0 | SCL |\n| C1 | SDA |\n| GND | GND |\n\nInternal 10 kΩ pull-ups are enabled by the external I²C handle.\n\n## Install\n\n**From the Flipper Application Catalog** — search for **I2C Tools CLI** on the [Flipper catalog](https://catalog.flipperzero.one/) and install through qFlipper or the mobile app.\n\n**From source (development)** — requires [ufbt](https://github.com/flipperdevices/flipperzero-ufbt). Then run **ufbt** to build the FAP into dist/i2c_tools_cli.fap, **ufbt launch** to build + upload + start on a connected Flipper, or **ufbt cli** to open the serial CLI (then type *i2c help*).\n\n## CLI quick reference\n\n- **i2c scan** — list addresses that ACK.\n- **i2c probe** *addr* — report present / absent for one address.\n- **i2c read** *addr* *reg* *count* *{hex | ascii}* — write the register, then read N bytes (default format: hex).\n- **i2c write** *addr* *reg* *byte* *{byte...}* — up to 32 payload bytes.\n- **i2c help** — print usage.\n\nAll numeric arguments are hex (1A, 0x1A, 0X1a, …).\n\n## Documentation\n\n- [User guide](docs/USER_GUIDE.md) — every GUI key combination and every CLI subcommand, with examples.\n- [Publishing guide](docs/PUBLISHING.md) — how this app is published to the Flipper Application Catalog and listed in awesome-flipperzero.\n- [CHANGELOG](CHANGELOG.md)\n\n## License\n\nGPL-3.0 — inherited from upstream. See [LICENSE](LICENSE).\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "i2c_tools_cli",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/i2c_tools_cli/manifest.yml",
     "source_code": "https://github.com/Tristus1er/flipperzero-i2c-tools-cli/tree/b53daecaa8eb0628e60e9f1f285dab8285dd41ec"
   },
   "name": "I2C Tools CLI",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png",
+    "assets/screenshots/6.png",
+    "assets/screenshots/7.png"
+  ],
   "short_description": "I2C scanner / sender / sniffer with N-byte read, HEX/ASCII view, and a serial CLI (i2c scan/probe/read/write).",
   "version": "1.0"
 }
