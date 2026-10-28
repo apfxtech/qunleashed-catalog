@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "wiegand_reader",
+      "file": "wiegand_reader.fap",
+      "icon": "assets/icon.png",
+      "name": "Wiegand Reader",
+      "version": "1.4"
+    }
+  ],
   "author": "Derek Jamison (@CodeAllNight)",
+  "authors": [
+    {
+      "id": "codeallnight",
+      "name": "CodeAllNight"
+    }
+  ],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v1.4",
   "description": "Application for reading and sending Wiegand signals. Connect D0, D1, GND wires to Flipper Zero to read signals.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "wiegand_reader",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/wiegand_reader/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/de1539b0da6d53bb6303f819be0518a63c460b32/non_catalog_apps/wiegand"
   },
   "name": "Wiegand Reader",
+  "screenshots": [],
   "short_description": "Application for reading and sending Wiegand signals. Connect D0, D1, GND wires to Flipper Zero to read signals.",
   "version": "1.4"
 }

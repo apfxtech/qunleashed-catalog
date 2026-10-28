@@ -1,15 +1,43 @@
 {
+  "apps": [
+    {
+      "appid": "yrm100x_pro",
+      "file": "yrm100x_pro.fap",
+      "icon": "assets/icon.png",
+      "name": "YRM100X_PRO",
+      "version": "1.7"
+    }
+  ],
   "author": "@AlexeySmirnov74",
+  "authors": [
+    {
+      "id": "alexeysmirnov74",
+      "name": "AlexeySmirnov74"
+    }
+  ],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "# Changelog\n\n## v1.7 production candidate\n\n- Added a new catalog-compliant 10 x 10 pixel, 1-bit application icon combining\n  an RFID chip, radio waves, and a GPIO connector.\n- Expanded README documentation for every main-menu item, tag action, Clone\n  option, Configure setting, data file, compatibility rule, and safety warning.\n- Documented adaptive bank-size handling, rewritable-tag limitations,\n  model-aware UMI learning, and verified PC3000/PC3400 conversion.\n- Added an exact qFlipper screenshot plan, production acceptance checklist, and\n  Flipper Application Catalog manifest template.\n- Added eight original, unmodified qFlipper screenshots covering the main menu,\n  antenna information, reads, history, saved dumps, Clone, bank info, and settings.\n- Added an exact five-wire Flipper-to-YRM100X connection diagram, power guidance,\n  and three photographs of the tested antenna and protoboard assembly.\n- Kept production logging fully compiled out for minimum loader and runtime RAM.\n\n## v1.6 production candidate\n\n- Removed file logging, log rotation, logger buffers and mutexes, console\n  diagnostics, and the Configure **Log Level** option to reduce RAM use.\n- Kept the main-menu free-memory indicator using the direct system heap value.\n- Preserved v1.5 model-aware UMI discovery and PC3000/PC3400 cloning behavior.\n\n## v1.5 diagnostic build\n\n- Connected **Test UMI Auto** to Clone through a persistent eight-model marker\n  registry keyed by the first four TID model bytes.\n- Test UMI Auto now learns transitions in both directions, including tags that\n  already report PC3400/UMI=1, and stores both verified User-word states.\n- Clone PC3400/PC3000 now selects a compatible marker by target TID and refuses\n  unknown models before writing any data.\n- Added a safe unknown-model screen directing the user to Test UMI Auto and\n  automatic marker aliases when Clone rewrites the target TID.\n- Fixed a Delete/Deleted-screen timer race that could freeze the app after pressing Exit.\n- Made saved-tag deletion scrolling thread-safe and removed redraw-time heap allocations.\n- Added a PC3000/PC3400 mismatch warning before Clone writes EPC data.\n- Added user-confirmed conversion in both directions by changing only the\n  required User W0 marker, with final PC verification and rollback on failure.\n- Preserve the source PC3000/PC3400 mode after copying User data, preventing a\n  normal Clone from changing mode mid-operation before the EPC write.\n- Added a worker-side no-write guard in case the target tag changes after the\n  initial scan but before confirmation.\n- Added a live **Clone attempts: X/Y** retry indicator to the writing screen.\n- Made the Clone retry counter large and persistent, and retained the final\n  attempt count on the failure screen so fast retries cannot hide it.\n- Hardened User-bank fitting: exhausted transient 0x10 responses now narrow\n  the search instead of discarding an already proven writable prefix.\n- Synchronized diagnostic version 1.5 across FAP metadata, the About\n  screen, the log header, and the versioned release filename.\n- Added two visible antenna connection attempts at startup with a one-second\n  delay between failed attempts.\n- Restored persistent file logging for field testing, with selectable **Info**,\n  **Warn**, and **Debug** levels (**Info** by default).\n- Keeps at most 10 session logs and caps each file at 1 MiB.\n- Fixed intermittent normal Clone failures by leaving tag-managed StoredCRC\n  untouched and writing EPC memory from PC word 1.\n- Added persistent **Clone Attempts** configuration from 1 to 5, defaulting to 5,\n  for retryable Clone I/O failures.\n\n## v1.0\n\n- Prepared the first production release under the YRM100X_PRO name.\n- Added automatic reader detection and user-confirmed antenna information.\n- Added Multi, Full Multi, Forever, Single, and Full Single read modes.\n- Added complete tag dumps, saved-dump pagination, editing, and deletion.\n- Added selective cloning and dedicated diagnostics for PC 3400 tags.\n- Clarified the PC3400 User marker, added an on-demand explanation, and made\n  the clone start action visually distinct.\n- Moved the Read Forever history counter clear of the **More** button.\n- Added memory-bank size and rewritability diagnostics.\n- Added warnings for operations that write to or permanently modify tags.\n- Added connection-aware blocking of reader-dependent actions.\n- Added reader configuration, tag profiles, feedback options, and persistent settings.\n- Removed development logging from the production FAP to reduce loader RAM and\n  allow the application to run alongside qFlipper Remote Control.\n- Added an on-screen free-memory indicator and lazy view allocation to prevent\n  RAM exhaustion.\n- Hardened UART frame parsing, worker cancellation, retries, and write verification.\n",
   "description": "# YRM100X_PRO\n\nYRM100X_PRO turns Flipper Zero and a compatible YRM100/YRM100X UART module into\na practical UHF RFID toolkit for EPC Gen2 tags.\n\n## Highlights\n\n- Fast Multi inventory plus Full Multi, Forever, Single, and Full Single modes.\n- Separate EPC, TID, User, and Reserved bank data with per-bank status.\n- Persistent, paged Saved Dumps and standalone complete dump files.\n- Selectable-bank Write and Clone for compatible rewritable tags.\n- Adaptive target-bank probing that avoids assuming one fixed User or Reserved\n  size across different tag ICs.\n- Verified Clone retries with visible Attempt X / Y progress.\n- Model-aware Test UMI Auto and automatic PC3000/PC3400 conversion for supported\n  rewritable tags.\n- Generic and Impinj Monza 4QT interpretation profiles.\n- Bank-size and rewritability diagnostics.\n- Access/Kill password updates, lock controls, and permanent Kill operation.\n- Reader connection, antenna information, power, baud rate, region, Gen2 session\n  and target configuration.\n- Read Forever countdown and browsable scan history.\n- RAM-conscious lazy screens and a live free-memory indicator.\n\nThe application checks the target rather than assuming every tag has identical\nmemory. It can fit supported writes to verified bank capacity, while reporting\nread-only, locked, protected, missing, too-small, or unknown-model conditions\ninstead of silently claiming success.\n\n## Hardware\n\nUse the tested five-wire connection:\n\n- Reader VCC (pin 1) to Flipper 5V (pin 1).\n- Reader RXD (pin 2) to Flipper USART TX (pin 13).\n- Reader TXD (pin 3) to Flipper USART RX (pin 14).\n- Reader EN (pin 4) to Flipper 3.3V (pin 9).\n- Reader GND (pin 5) to Flipper GND (pin 8, 11, or 18).\n\nThe UART lines are crossed. If the reader needs an external regulated 5 V\nsupply, share ground with Flipper and leave Flipper 5V disconnected. Never join\ntwo 5 V sources. The repository contains a full wiring diagram, power notes,\nand photographs of the tested assembly.\n\n## Safety\n\nUse the application only with tags and systems you own or are authorized to\ntest. Writing, cloning, password changes, locking, Check TAG Rewritable, Test\nUMI Auto, and Kill can alter or permanently disable a tag. Keep exactly one\ntarget in range, retain a known-good dump, and read every confirmation screen.\n\nFull usage instructions, build steps, credits, and the MIT license are in the\n[YRM100X_PRO repository](https://github.com/AlexeySmirnov74/YRM100X_PRO).\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "yrm100x_pro",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/yrm100x_pro/manifest.yml",
     "source_code": "https://github.com/AlexeySmirnov74/YRM100X_PRO/tree/f737db720f1f0b9e84b82b45eeddbb67d3880e02"
   },
   "name": "YRM100X_PRO",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png",
+    "assets/screenshots/6.png",
+    "assets/screenshots/7.png"
+  ],
   "short_description": "UHF RFID reader, writer, clone and tag toolkit.",
   "version": "1.7"
 }

@@ -1,15 +1,37 @@
 {
+  "apps": [
+    {
+      "appid": "usping",
+      "file": "usping.fap",
+      "icon": "assets/icon.png",
+      "name": "[USPING] Dist. Sensor",
+      "version": "1.0"
+    }
+  ],
   "author": "@privet971",
+  "authors": [
+    {
+      "id": "privet971",
+      "name": "privet971"
+    }
+  ],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "## v1.0\n\n**Initial implementation:**\n- First version",
   "description": "Ultrasound measurments with **PING))) Parallax** sensor SKU 28015 (3 wires)\n\n**Use only GPIO 13 for TX & RX wired to SIG pin**\n\n\nOriginal app ported and modified by @xMasterX for FlipperZero\n\nModified by @privet971 using **PING)))** sensor from Parallax 3/23/2023",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "usping",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/usping/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/usping"
   },
   "name": "[USPING] Dist. Sensor",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "Ultrasound measurments with PING))) Parallax sensor SKU 28015 (3 wires)",
   "version": "1.0"
 }

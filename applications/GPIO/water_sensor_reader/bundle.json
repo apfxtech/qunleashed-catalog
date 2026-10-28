@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "water_sensor_reader",
+      "file": "water_sensor_reader.fap",
+      "icon": "assets/icon.png",
+      "name": "Water Sensor reader",
+      "version": "1.0"
+    }
+  ],
   "author": "Matvey Strelov",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "## 1.0\n\n- Initial release.\n- Reads an analog water sensor on GPIO pin C0.\n- Displays the raw ADC value, voltage in mV, and a level progress bar in real time.\n",
   "description": "# Water Sensor Reader for Flipper Zero\n\n**Water Sensor Reader** is a simple Flipper Zero application that reads an analog water sensor connected to a GPIO pin and displays its values in real time. The app shows both the raw ADC value and the corresponding voltage in millivolts, along with a visual progress bar.\n\n## Wiring\n\nConnect the analog output of the water sensor to pin **C0** of the Flipper Zero. The sensor is read on ADC channel 1.\n\n## Features\n\n- Reads analog input from a water sensor on GPIO pin C0.\n- Displays **RAW ADC values** (0 to 4095 for the 12-bit ADC).\n- Converts raw values to **millivolts** (mV).\n- Shows a **progress bar** to visualize the sensor level.\n- Updates in real time and exits with the Back button.\n- Simple GUI built on the Flipper Zero viewport.\n\n## Usage\n\n1. Connect the water sensor to pin C0 and ground.\n2. Launch **Water Sensor reader** from the GPIO apps menu.\n3. Read the live RAW value, voltage in mV, and the level bar.\n4. Press **Back** to exit.\n\n## Author\n\nMade by Matvey Strelov.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "water_sensor_reader",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/water_sensor_reader/manifest.yml",
     "source_code": "https://github.com/MatveyStrelov/flipper-water-sensor/tree/eb6dfd132ddb5b13cb30cb082d20acf5cd96dbf9"
   },
   "name": "Water Sensor reader",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Reads an analog water sensor on GPIO pin C0 and shows the raw ADC value, voltage in mV, and a progress bar in real time.",
   "version": "1.0"
 }

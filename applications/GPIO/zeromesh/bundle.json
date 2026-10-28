@@ -1,15 +1,37 @@
 {
+  "apps": [
+    {
+      "appid": "zeromesh",
+      "file": "zeromesh.fap",
+      "icon": "assets/icon.png",
+      "name": "carto",
+      "version": "3.0"
+    }
+  ],
   "author": "SAMS0N1TE",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v3.0:\nAdded a Bluetooth LE transport alongside the existing UART link, selectable from Settings. The Flipper radio can only act as a peripheral, so the mesh node connects to the Flipper rather than the other way around, which requires a Meshtastic build carrying the ZeroMesh link module; UART remains the default and works with stock node firmware. Added a Map page that renders Mapbox Vector Tiles from a PMTiles archive on the SD card. The view centres on a mesh node and overlays every roster node reporting a GPS position, with place and water labels, a scale bar, and range and bearing to the focused node. Up and Down step between nodes that have a position, OK cycles zoom, and holding OK enters a pan mode where the D-pad moves freely across tile boundaries; a dashed border marks where the archive runs out. Down opens a toolbar offering nearby place names to jump to, a label toggle, a reset to your own node, node cycling and zoom. Map archives must be built uncompressed because the Flipper firmware has no gzip. tools/fetch_tiles.py downloads a tile tree for a bounding box, and tools/build_pmtiles.py packs it, with --simplify to drop the layers and sub-pixel detail the renderer cannot draw and --leaf-size to split the directory so a statewide archive still opens in the available heap. Node names are now decoded from NodeInfo and shown throughout the roster, chat and map instead of raw node IDs. Position and node info can be requested from any node in the roster details view, and a node with a position can be opened straight onto the map. Sent messages report delivery or failure from routing acknowledgements. Added a Node Config page covering the connected radio LoRa region, modem preset and device role, GPS on and off, a fixed position taken from the map crosshair for a node with no fix, the primary channel public or private key, and whether position is shared on that channel. The channel and position settings are read back from the radio before being written, so an existing channel name, key and unrelated position fields are preserved. The node can also be rebooted from the same page.\n\nv2.1:\nFixed sender IDs overlapping the previous message bubble in the Messages feed (per-message row height now matches the drawn name+bubble in both scroll and wrap modes). Added a periodic phone-API heartbeat so the node keeps forwarding live messages over the serial link instead of only delivering the initial config/node-info burst and then going quiet. Encrypted packets that can't be decoded are now logged instead of silently dropped. Verified build and operation against the latest Momentum firmware (API 87.1).\n\nv2.0:\nAdded settings persistence to SD card (/ext/zeromesh/settings.cfg). Added multi-channel support with up to 8 channels, cycle with long-press OK on Messages page. Expanded ringtones from 7 to 19 (added Nokia, Descend, Bounce, Alert, Pulse, Siren, Beep3, Trill, Mario, LevelUp, Metric, Minimal). Added scroll speed and FPS controls. Added scroll/wrap toggle for long messages. Sender IDs now shown above message bubbles. Fixed message overlap and bubble rendering. Fixed strtok compilation error.\n\nv1.1:\nFixed broadcast messages staying in the main Messages feed. Fixed direct messages being isolated to per-node Chat view in Roster. Added unread DM indicator (!) next to node IDs in Roster. Notification flags clear automatically on entering chat view. Added echo protection to prevent sent messages re-appearing as incoming.\n\nv1.0:\nInitial release. Live node roster with automatic discovery. Direct messaging to individual nodes. Telemetry monitoring with SNR, RSSI, battery voltage. System log page for raw serial traffic. Haptic and LED notifications on incoming traffic.\n",
   "description": "# ZeroMesh\n\nA Meshtastic client for the Flipper Zero. Connect a mesh node and read the network from the Flipper screen: incoming messages, a live node roster, signal stats, device telemetry, and an offline vector map with your nodes drawn on it.\n\n## Connecting a node\n\nTwo transports are supported, selected in Settings.\n\n**Serial** works with stock Meshtastic firmware. Wire the node to the Flipper GPIO header: node TX to Flipper RX, node RX to Flipper TX, and a common ground. This is the default.\n\n**Bluetooth LE** is also available, but the Flipper radio can only act as a peripheral and never dials out. The node therefore has to connect to the Flipper, which requires a Meshtastic build carrying the ZeroMesh link module. With stock node firmware, use serial.\n\nDo not power the node from Flipper 5V while it is also on USB.\n\n## What it does\n\n- Read and send messages, with delivery reported from routing acknowledgements\n- Live node roster with names, signal quality, battery and telemetry\n- Private chat with any node on the mesh, and unread indicators\n- Offline vector map centred on a mesh node, with place and water labels, a scale bar, and range and bearing to the selected node\n- Pan across tile boundaries, cycle zoom levels, and jump to nearby towns from an on-map toolbar\n- Configure the connected radio: LoRa region, modem preset, device role, GPS, a fixed position for a node with no GPS fix, and the primary channel key\n- Haptic and LED notification on incoming traffic, with selectable ringtones\n\n## Map data\n\nThe map is optional. Without an archive the Map page still opens and says so, and everything else works normally.\n\nMap archives are built from OpenStreetMap vector tiles and stored on the SD card. The repository includes tooling that takes a place name and a radius, downloads the tiles, packs them, and copies the archive to the Flipper. There is a setup page at [terminalbay.com/zeromesh.html](https://terminalbay.com/zeromesh.html) that works out how big an area will be and writes the command for you.\n\nMap data comes from OpenStreetMap contributors and is licensed under the Open Database License.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "zeromesh",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/zeromesh/manifest.yml",
     "source_code": "https://github.com/SAMS0N1TE/ZeroMesh/tree/094dd0665540646e71298985a2c573c68a8b77d6"
   },
   "name": "carto",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png",
+    "assets/screenshots/6.png"
+  ],
   "short_description": "Meshtastic client with offline vector maps, over serial or Bluetooth",
   "version": "3.0"
 }

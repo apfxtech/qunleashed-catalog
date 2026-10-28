@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "vgm_game_remote",
+      "file": "vgm_game_remote.fap",
+      "icon": "assets/icon.png",
+      "name": "[VGM] Game Remote",
+      "version": "1.1"
+    }
+  ],
   "author": "JBlanked",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v1.0: Initial release v1.1: Fixed UART button input",
   "description": "This app allows you to use your Flipper Zero's d-pad as input in games created with the VGM Game Engine.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "vgm_game_remote",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/vgm_game_remote/manifest.yml",
     "source_code": "https://github.com/jblanked/pico-game-engine/tree/7b13e1d2724b7c4fcb22ab0a77313fe5bdc1d2e4/src/FlipperZeroApp"
   },
   "name": "[VGM] Game Remote",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Companion app for the VGM Game Engine",
   "version": "1.1"
 }

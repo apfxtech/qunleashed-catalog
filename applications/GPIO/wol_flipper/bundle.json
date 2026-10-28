@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "wol_flipper",
+      "file": "wol_flipper.fap",
+      "icon": "assets/icon.png",
+      "name": "esp-serial-flasher",
+      "version": "1.1"
+    }
+  ],
   "author": "keetsta",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "# Changelog\n\n## 1.1\n\n* Up to 8 Wi-Fi networks can be saved instead of one. When several are saved, each wake\n  asks the board what is on the air and uses the strongest match, so the same Flipper\n  works at home and at the office without editing anything. An association that is\n  already up gets reused, which skips the scan.\n* Picking a network from the scan list opens it for editing, and adding an SSID that is\n  already saved edits that entry rather than making a duplicate.\n* An existing single network from an older version is carried over on first launch.\n\n## 1.0\n\nFirst release.\n\n* Wake a machine by sending the magic packet as a UDP broadcast through the ESP32-S2\n  WiFi dev board, which the Flipper drives over UART.\n* Up to 16 saved targets, each with a name, MAC, broadcast address and port. The MAC is\n  entered as six hex bytes, so there is nothing to mistype.\n* The packet also goes to the subnet directed broadcast of the board's own network, not\n  only to the configured address. Access points differ in which of the two they bridge\n  onto the wired segment.\n* Wi-Fi setup scans for networks and fills the SSID in from the list. Failures report\n  what actually went wrong: network not on the air, key refused, or no answer at all.\n* Built in ESP flasher. Dumps the current 4 MB of the board to the SD card, writes the\n  companion firmware that ships inside the app, and puts the old image back on request.\n  All writes are MD5 verified against the target.\n* Bootloader entry and reset are automatic on the official dev board, which routes those\n  lines to header pins 7 and 6. Boards that leave them unconnected still need the manual\n  BOOT and RESET sequence, and the app says so when it gets no answer.\n* The board's LED reports what it is doing: a colour self test at boot, a green blip\n  while idle, pulsing blue during a command, green or red on the result.\n",
   "description": "Wake a computer from your Flipper.\n\nThe Flipper has no network of its own, so this app uses the official ESP32-S2 WiFi dev\nboard as its network adapter. Pick a saved target, and the board joins your Wi-Fi and\nputs a Wake-on-LAN magic packet on the wire.\n\nThe board needs a small companion firmware for that, and the app writes it itself. No\ncomputer, no esptool, no cables. Before overwriting anything it can dump the whole 4 MB\nof the board's flash to your SD card, so whatever was there before, Marauder or anything\nelse, goes back exactly as it was whenever you want it.\n\n**What it does**\n\n* Saves up to 16 targets, each with a name, MAC address, broadcast address and port.\n  The MAC is entered as six hex bytes, so there is nothing to mistype.\n* Scans for Wi-Fi networks and fills the SSID in from the list. Up to 8 networks can be\n  saved, and each wake picks whichever of them is actually in range, so the same Flipper\n  works at home and at the office.\n* Sends the packet to the subnet broadcast as well as the address you set, because\n  access points differ in which of the two they pass to the wired side.\n* Says what actually failed when something does: network not on the air, key refused, no\n  answer from the board, or the Flipper's 5V rail giving out.\n* Flashes, backs up and restores the ESP over the same header, with every write verified\n  by MD5 against the target.\n\n**What you need**\n\nThe official Flipper WiFi dev board on the GPIO header. Bootloader entry is automatic on\nit. Third party boards work too, but need BOOT and RESET pressed by hand before flashing.\n\nWake-on-LAN also has to be enabled on the target machine: in the BIOS or UEFI, and in the\nnetwork adapter's power settings. On Windows, turn Fast Startup off as well, it leaves\nthe adapter in a state that ignores magic packets. Wi-Fi adapters generally do not\nsupport this at all, so use the wired MAC address.\n\nSource, protocol notes and licensing: https://github.com/keetsta/wol-flipper\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "wol_flipper",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/wol_flipper/manifest.yml",
     "source_code": "https://github.com/keetsta/wol-flipper/tree/d93e9a6f11245745a97957487a51bcbdcc0f5921"
   },
   "name": "esp-serial-flasher",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Wake-on-LAN over the ESP32-S2 WiFi dev board, with a built in flasher",
   "version": "1.1"
 }
