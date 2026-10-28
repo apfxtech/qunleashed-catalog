@@ -1,0 +1,15 @@
+{
+  "author": "@wosk",
+  "category": "Sub-GHz",
+  "changelog": "## v1.0\n\n**Initial implementation:**\n- First version",
+  "description": "Use SubGHz and RFID to read or activate TPMS sensors\n\n## Features\n- Read **TPMS** sensors\n- Relearn by 125kHz signal\n\n## Supported sensors\n* Schrader GG4\n* Abarth 124 (soon)\n\n## How to use\nIn some circumstances TPMS sensors should transmit message periodically (car moving) or by event (emergency pressure reduction or temperature increase), so it can be caught.\n\nWhile the car is stationary or sensor is not mounted into tire, Relearn mode can be enabled by emitting 125kHz signal. Keep sensor housing or valve near Flipper Zero's back, like RFID card and push Right button to activate relearn signal for 1 second.\n\nWhen sensor transmit message, you will see jumps of RSSI meter.\nIf sensor is supported and correct frequency and modulation was set, an item with Model and ID will be added for each sensor.\n\nPressing OK displays temperature and pressure.\n\n\nCode based on **weather station** app",
+  "family": "application",
+  "id": "tpms",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/tpms/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/tpms_receiver"
+  },
+  "name": "TPMS Reader",
+  "short_description": "Use SubGHz and RFID to read or activate TPMS sensors",
+  "version": "1.0"
+}
