@@ -1,15 +1,37 @@
 {
+  "apps": [
+    {
+      "appid": "rubiks_cube_scrambler",
+      "file": "rubiks_cube_scrambler.fap",
+      "icon": "assets/icon.png",
+      "name": "Rubik's Cube Scrambler",
+      "version": "1.4"
+    }
+  ],
   "author": "@RaZeSloth",
+  "authors": [
+    {
+      "id": "razesloth",
+      "name": "RaZeSloth"
+    }
+  ],
   "category": "Games/Puzzle",
+  "category_id": "games-puzzle",
   "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Fixes for new API, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version",
   "description": "App generates random moves to scramble a Rubik's cube.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "rubiks_cube_scrambler",
+  "install_path": "Games/Puzzle",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Puzzle/rubiks_cube_scrambler/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/apps_source_code/rubiks_cube_scrambler"
   },
   "name": "Rubik's Cube Scrambler",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "App generates random moves to scramble a Rubik's cube.",
   "version": "1.4"
 }

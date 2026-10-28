@@ -1,15 +1,40 @@
 {
+  "apps": [
+    {
+      "appid": "gameoflife",
+      "file": "gameoflife.fap",
+      "icon": "assets/icon.png",
+      "name": "Game of Life",
+      "version": "1.3"
+    }
+  ],
   "author": "@tgxn (original by @itsyourbedtime)",
+  "authors": [
+    {
+      "id": "tgxn",
+      "name": "tgxn"
+    },
+    {
+      "id": "itsyourbedtime",
+      "name": "itsyourbedtime"
+    }
+  ],
   "category": "Games/Simulation",
+  "category_id": "games-simulation",
   "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
   "description": "Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "gameoflife",
+  "install_path": "Games/Simulation",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Simulation/gameoflife/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/game_of_life"
   },
   "name": "Game of Life",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970.",
   "version": "1.3"
 }

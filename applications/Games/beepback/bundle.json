@@ -1,15 +1,35 @@
 {
+  "apps": [
+    {
+      "appid": "beepback",
+      "file": "beepback.fap",
+      "icon": "assets/icon.png",
+      "name": "BEEPBACK",
+      "version": "1.0"
+    }
+  ],
   "author": "Tijnv50",
+  "authors": [],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "## v1.0\n\nFirst release.\n\n- Five modes: CLASSIC, RULES, REFLEX, CHALLENGE and a seeded DAILY run every\n  Flipper plays the same\n- Seven rules that change what you press, announced before each round\n- Four assists — ears, LED, shapes, arrows — each keeping its own records\n- Haptic feedback that traces every note of every pattern, usable as an assist\n  on its own with the sound off\n- Ten points a note, a hundred a round, and no hidden multiplier\n- Records per mode, time, speed and assist, with stats kept separately\n",
   "description": "# BEEPBACK\n\nA memory game for Flipper Zero. Five buttons, five tones. The Flipper plays\na sequence and you play it back, one step longer every time.\n\nThen it starts changing the rules on you.\n\n## Modes\n\n- **CLASSIC** — the sequence grows a step at a time. Clear a round and a\n  longer one begins. Three lives.\n- **RULES** — the same game, except every round hands you a rule to obey.\n  SKIP DOWN means the sequence plays DOWN and you do not press it. SWAP,\n  BACKWARDS, NO DOUBLES, EVERY OTHER, DOUBLE, LAST TWICE. The rule holds for\n  the whole round and changes when the round clears.\n- **REFLEX** — one cue at a time. Hit the matching button before the bar\n  empties. The window shrinks with every hit and one miss ends the run.\n- **CHALLENGE** — pick a rule and keep it. No rounds, no reset: one sequence\n  that never stops growing.\n- **DAILY** — one rule, one seeded sequence, one attempt a day. Every Flipper\n  in the world gets the same run, so a score means something. It resets at\n  midnight.\n\n## Assists\n\nPlay it however you can. The assist setting decides what the game gives you\nbesides the sound:\n\n- **EARS** — tone only. The hardest way, and the one the game was built for.\n- **LED** — each button lights its own colour.\n- **SHAPES** — a shape per button on screen.\n- **ARROWS** — the button itself, drawn.\n\nRecords are kept separately for each one, so playing by ear competes against\nplaying by ear.\n\n**HAPTIC** is separate and works alongside any of them: the motor traces every\nnote of every pattern, so you can feel a sequence as well as hear it. With the\nvolume at zero it becomes an assist in its own right.\n\n## Scoring\n\nTen points a note, a hundred for clearing a round. That is the whole system.\nTIME and SPEED change how hard a run is, not what it pays, so the number on\nscreen is always one you could have worked out yourself.\n\nEvery combination of mode, time, speed and assist keeps its own record, and\nNEW BEST is judged against the one you actually played.\n\n## Controls\n\n- **UP, DOWN, LEFT, RIGHT, OK** — the five game buttons\n- **BACK** — pause during a run, and the way back everywhere else\n- From the menu, **RIGHT** walks along to your stats, your records and the\n  credits, and **LEFT** walks back\n\n## Records and stats\n\nSTATS counts what you have done: runs, playtime, rounds cleared, notes played\nback right, your longest sequence and the mode and assist you reach for most.\n\nRECORDS is a table per mode. For CLASSIC, RULES and REFLEX it shows every TIME\nagainst every SPEED at once, and OK turns it to the next assist.\n\n## Source\n\nBuilt with uFBT against the release firmware. The game logic is separate from\nthe Flipper API and runs on a host machine under a test suite of over 250 checks,\nincluding a fake canvas that fails the build if any screen draws outside\n128x64 or one string lands on another.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "beepback",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/beepback/manifest.yml",
     "source_code": "https://github.com/h4sw5q2wr9-byte/BEEPBACK/tree/9adcaa1361405e444fb9988b131b19daa2d6d870"
   },
   "name": "BEEPBACK",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png"
+  ],
   "short_description": "Simon-style memory game: five modes, changing rules, and a daily run every Flipper in the world plays the same.",
   "version": "1.0"
 }

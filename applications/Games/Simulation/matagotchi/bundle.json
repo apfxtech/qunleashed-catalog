@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "matagotchi",
+      "file": "matagotchi.fap",
+      "icon": "assets/icon.png",
+      "name": "Matagotchi",
+      "version": "1.0"
+    }
+  ],
   "author": "MrModd",
+  "authors": [],
   "category": "Games/Simulation",
+  "category_id": "games-simulation",
   "changelog": "v1.0",
   "description": "Matagotchi: a Tamagotchi(R) like game for Flipper Zero",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "matagotchi",
+  "install_path": "Games/Simulation",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Simulation/matagotchi/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/Matagotchi"
   },
   "name": "Matagotchi",
+  "screenshots": [],
   "short_description": "Tamagotchi like game",
   "version": "1.0"
 }

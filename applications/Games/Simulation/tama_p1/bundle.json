@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "tama_p1",
+      "file": "tama_p1.fap",
+      "icon": "assets/icon.png",
+      "name": "TAMA P1",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "Games/Simulation",
+  "category_id": "games-simulation",
   "changelog": "v0.1",
   "description": "TAMA P1",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "tama_p1",
+  "install_path": "Games/Simulation",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Simulation/tama_p1/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/tama_p1"
   },
   "name": "TAMA P1",
+  "screenshots": [],
   "short_description": "TAMA P1",
   "version": "0.1"
 }

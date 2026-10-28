@@ -1,15 +1,46 @@
 {
+  "apps": [
+    {
+      "appid": "flipcraft",
+      "file": "flipcraft.fap",
+      "icon": "assets/icon.png",
+      "name": "Flipcraft",
+      "version": "2.8"
+    }
+  ],
   "author": "@apfxtech",
+  "authors": [
+    {
+      "id": "apfxtech",
+      "name": "apfxtech"
+    }
+  ],
   "category": "Games/Simulation",
+  "category_id": "games-simulation",
   "changelog": "v2.8:\nSeas and rivers with Minecraft-style flowing water, swimming and an underwater view, terrain presets on the world creation screen (normal, flat, superflat, dense woods), chain-detonating dynamite with blast knockback, explosions no longer destroy water, baked sun shadows removed, removed Herobrine\n\nv2.6:\nWorld creation form with per-world gamemode/mobs/shaders/draw distance, traced sun shadows drawn as outlines, glass frame inverts the view behind it, centered crosshair with precise block and mob aiming, bedrock jump/placement fixes, shadow bakes carried across rebuilds with faster sun rays, chunk streaming in file order with idle flushes, smaller RAM image\n\nv2.4:\nReworked world menu (create/rename/delete, seed and size selection, world info), persistent loading splash\n\nv2.3:\nSeed-based world generator with worlds up to 1024x1024, app split into on-demand menu/game/worldgen plugins\n\nv2.2:\nCached chunk meshes, DDA raycasting, table-driven block properties, smooth per-tick SD streaming\n\nv2.1:\nOptimization FPU\n\nv2.0:\nBig world\n\nv1.0:\napp release\n",
   "description": "# Flipcraft\n\nA real first-person voxel survival sandbox, rendered in true 3D on the 128x64 one-bit screen. Walk through a procedurally generated world, chop trees, dig for coal and iron, smelt ingots and glass, craft tools at a crafting table, build with placed blocks, stash loot in chests, tame a wolf and try to outlive creepers and your own dynamite.\n\nFlipcraft is an independent project by ApertureFox Technology. It is written from scratch for the Flipper Zero: a software rasterizer with a depth buffer, cached chunk meshes and an SD-card streaming world that never has to fit in memory at once.\n\n## Worlds\n\nEvery world grows from a text seed in four sizes, from 128x128 up to 1024x1024 blocks: forests, deserts, ravines, ore veins and one house with a stocked chest somewhere on the map. The same seed produces the same terrain at any size. The world, your inventory, health and the contents of every chest and furnace are saved on the SD card as a single .fcw file, and any number of worlds can be created, renamed, inspected and deleted from the menu.\n\nEach world carries its own settings, chosen at creation and editable later:\n\n- **Gamemode** - Survival, Hardmode (death deletes the world) or Creative (infinite blocks from a picker, no damage, no drops).\n- **Terrain** - Normal (hills, forests, deserts, ravines), Flat (a level plain five courses deep, with trees and a house), Superflat (the same plain, completely bare) or Woods (normal relief, no deserts, twice the trees). Chosen at creation.\n- **Mobs** - on or off.\n- **Draw distance** - Far renders the whole chunk ring around you, Near renders only the chunk you stand in and is the lightest mode in both RAM and time.\n\n## Gameplay\n\n- 17 block types, 3x3 crafting, a furnace fueled by coal or wood, chests that keep their contents.\n- Pickaxes, axes, shovels and swords in wood, stone and iron tiers, plus shears and dynamite.\n- Sheep, wolves, creepers and bees. Wolves hunt sheep and creepers on their own and can be tamed with two apples; a tamed wolf guards you and never bites. A creeper stalks you, swells for two seconds and blows a 3x3x3 crater. Bees drop saplings.\n- Dynamite is placed like a block and lit with a short press; adjacent charges chain-react.\n- Eight hearts, fall damage, apples to heal. In Survival you respawn where you died; in Hardmode you do not.\n\n## Controls\n\nIn the world:\n\n- **Up / Down** - walk forward / backward\n- **Left / Right** - turn\n- **OK + Up / Down** - look up / down\n- **OK + Left / Right** - previous / next hotbar slot (in Creative: scroll the block palette)\n- **OK short** - place a block, use the crafting table, furnace or chest, light dynamite, or hit the creature in front of you\n- **OK long** - mine or break the targeted block; on a wild wolf, tame it (costs two apples)\n- **Back short** - jump\n- **Back long** - open the inventory (in Creative: the block picker)\n- **OK + Back** - save and quit to the menu\n\nCreatures are forgiving to aim at: anything near the crosshair counts. Blocks need the crosshair itself.\n\nIn the inventory, crafting, furnace and chest screens:\n\n- **Arrows** - move the cursor\n- **OK** - pick up a stack, put it down, or take the crafted or smelted output\n- **OK + arrow** - drop one item from the held stack into each slot you cross\n- **Back** - close\n\nIn the menu the arrows move, OK confirms and Back returns.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flipcraft",
+  "install_path": "Games/Simulation",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Simulation/flipcraft/manifest.yml",
     "source_code": "https://github.com/apfxtech/Flipcraft/tree/bc4ca1e775062e5b3e2bd41a4cbf513a73ad19ac"
   },
   "name": "Flipcraft",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png",
+    "assets/screenshots/6.png",
+    "assets/screenshots/7.png",
+    "assets/screenshots/8.png",
+    "assets/screenshots/9.png",
+    "assets/screenshots/10.png"
+  ],
   "short_description": "Flipcraft is a real voxel survival sandbox for Flipper Zero",
   "version": "2.8"
 }

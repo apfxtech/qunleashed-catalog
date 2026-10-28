@@ -1,15 +1,38 @@
 {
+  "apps": [
+    {
+      "appid": "roots_of_life",
+      "file": "roots_of_life.fap",
+      "icon": "assets/icon.png",
+      "name": "Roots of Life",
+      "version": "1.4"
+    }
+  ],
   "author": "@Xorboo",
+  "authors": [
+    {
+      "id": "xorboo",
+      "name": "Xorboo"
+    }
+  ],
   "category": "Games/Simulation",
+  "category_id": "games-simulation",
   "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support, v1.3 - Latest API fix, v1.4 - Sync with latest version",
   "description": "A zen-puzzle game for FlipperZero, puzzle made on GlobalGameJam23 (theme: Roots)",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "roots_of_life",
+  "install_path": "Games/Simulation",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Simulation/roots_of_life/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/rootoflife"
   },
   "name": "Roots of Life",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "A zen-puzzle game for FlipperZero, puzzle made on GlobalGameJam23 (theme: Roots)",
   "version": "1.4"
 }

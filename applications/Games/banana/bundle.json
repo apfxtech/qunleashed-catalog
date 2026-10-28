@@ -1,15 +1,37 @@
 {
+  "apps": [
+    {
+      "appid": "banana",
+      "file": "banana.fap",
+      "icon": "assets/icon.png",
+      "name": "Banana",
+      "version": "0.4"
+    }
+  ],
   "author": "Marcin Sokołowski (@DrEverr)",
+  "authors": [
+    {
+      "id": "dreverr",
+      "name": "DrEverr"
+    }
+  ],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "CHANGELOG.md",
   "description": "README.md",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "banana",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/banana/manifest.yml",
     "source_code": "https://github.com/DrEverr/FlipperApps/tree/d8c17e5000a31c3088c6c0b85680f1748168d379/banana"
   },
   "name": "Banana",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "Banana. Everyone loves banana.",
   "version": "0.4"
 }
