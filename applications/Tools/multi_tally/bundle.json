@@ -1,0 +1,15 @@
+{
+  "author": "ziper",
+  "category": "Tools",
+  "changelog": "# Changelog\n\n## 1.0\n\nInitial release:\n\n- Six independent counters, one per hardware button\n- Short press +step, long press -step\n- Hold OK for menu, hold Back to exit (configurable hold time)\n- Rename groups, set step, enable/disable, zero per group\n- Vibro / sound / LED feedback, always-on backlight option\n- Autosave to SD card\n",
+  "description": "# Multi Tally\n\nSix independent tally counters on one screen — one for each hardware button of your Flipper Zero.\n\nCount several things at once: people entering two doors, score of a board game, reps of different exercises, anything that needs more than one counter in your pocket.\n\n## How it works\n\nThe screen is split into six cells matching the buttons: Left, Up, Right on top; OK, Down, Back below. Each cell shows a tiny button pictogram, the group name and its count.\n\n- **Short press** any button: +step to its group\n- **Long press**: -step (OK and Back subtract when released)\n- **Hold OK** (~2 s): open the menu\n- **Hold Back** (~2 s): exit the app\n\n## Menu\n\n- **How to use** — built-in instructions\n- **Groups** — per-group settings: rename with the on-screen keyboard, counting step (1/2/5/10/20/50/100), enable/disable, zero the count\n- **Settings** — vibro, sound and LED blink on each count, always-on backlight, hold time for menu/exit (1–3 s)\n- **Reset all counters** — zero everything, names and settings stay\n- **Reset to defaults** — full factory reset\n\nCounts, names and settings are saved to the SD card automatically, so you can continue right where you left off.\n\n## Building\n\nBuilt with [ufbt](https://github.com/flipperdevices/flipperzero-ufbt): run **python -m ufbt** in the repo root to build, or **python -m ufbt launch** to build, install and run on a connected Flipper.\n",
+  "family": "application",
+  "id": "multi_tally",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/multi_tally/manifest.yml",
+    "source_code": "https://github.com/aseypalich1/flipper-multi-counter/tree/19b5c8031a7621d1dd17ace246f934f18c0ba7fe"
+  },
+  "name": "Multi Tally",
+  "short_description": "Six independent tally counters, one per hardware button",
+  "version": "1.0"
+}

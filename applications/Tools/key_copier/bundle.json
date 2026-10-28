@@ -1,0 +1,15 @@
+{
+  "author": "Torron",
+  "category": "Tools",
+  "changelog": "## 1.5 \n* Added Suzuki SUZ18 key format support by @RIcePatrol\n\n## 1.4\n* Added Weiser WR3 key format support by @lightos\n\n## 1.3\n* A new UI/workflow for key format selection by @Offreds's PR\n* Added QR code directing user to @TalkingSasquach's awesome video from decoding keys to 3D-printing copies.\n\n## 1.2 \nBug fixes\n\n## 1.1\n* Support for double sided key and multiple new key formats by @HonestLocksmith\n* New formats:\nManufacturer-Format Name-Data Sheet(if applicable)\nArrow-AR4-C2\nMaster Lock-M1-C35\nAmerican-AM7-C80\nYale-Y2-.025\nYale-Y11-CX55\nSargent-S22-C44\nNational-NA25-C40\nCorbin-CO88-C14\nLockwood-LW4\nLockwood-LW5\nNational-NA12-C39\nRusswin-RU45-CX6\nFord-H75-CX101\nChevrolet-B102\nDodge-Y159-CX102\nKawasaki-KA14-CMC50\nYamaha-YM63-CMC71\nBest (A2)-SFIC-C3\nRV (FIC,GL,Bauer)-RV\n\nThank you @HonestLocksmith!\n\n## 1.0\n- Initial release.\n- Supports measuring, saving, and loading keys with .keycopy extension.\n- Supports Kwikset KW1 and Schalge SC4 formats as of this version.\n",
+  "description": "To measure your key:\n\n1. Place it on top of the screen.\n\n2. Use the contour to align your key.\n\n3. Adjust each pin's depth until they match. It's easier if you look with one eye closed.",
+  "family": "application",
+  "id": "key_copier",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/key_copier/manifest.yml",
+    "source_code": "https://github.com/zinongli/KeyCopier/tree/ec2c7b46b8be8e1e667055421c543f1380b32d9a"
+  },
+  "name": "Key Copier",
+  "short_description": "@README.md",
+  "version": "1.5"
+}
