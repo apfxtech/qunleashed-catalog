@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "seader",
+      "file": "seader.fap",
+      "icon": "assets/icon.png",
+      "name": "loclass",
+      "version": "4.2"
+    }
+  ],
   "author": "bettse",
+  "authors": [],
   "category": "NFC/Access",
+  "category_id": "nfc-access",
   "changelog": "v4.2",
   "description": "Allows for reading credential from HID iClass, iClass SE, MFC SE, Desfire EV1/EV2, and Seos. Credentials can be saved in an agnostic format, or as various Flipper formats (Prox, MFC, iClass, iClass SR), depending on the original type.\nRequires addon: UART to mini-SIM adapter and HID SAM. \nSee full readme for wiring and more information: https://github.com/bettse/seader/blob/main/readme.md\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "seader",
+  "install_path": "NFC/Access",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/Access/seader/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/seader"
   },
   "name": "loclass",
+  "screenshots": [],
   "short_description": "Allows for reading credential from HID iClass, iClass SE, Desfire EV1/EV2, and Seos",
   "version": "4.2"
 }

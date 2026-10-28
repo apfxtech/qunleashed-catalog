@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "handpan_chords",
+      "file": "handpan_chords.fap",
+      "icon": "assets/icon.png",
+      "name": "Handpan Chords",
+      "version": "1.0"
+    }
+  ],
   "author": "KingBoa (NoodleNugget.com)",
+  "authors": [],
   "category": "Media",
+  "category_id": "64971d116617ba37a4bc79bc",
   "changelog": "## v1.0\n\nInitial release.\n\n- Chord reference for nine 9-note handpans, showing which pads to strike on a\n  diagram of the shell.\n- Chords derived at runtime from each drum's tuning rather than hardcoded, so\n  every playable chord appears automatically (41 on D Kurd 9).\n- Chord depth filter: triads, plus sixths and sevenths, or everything.\n- Practice mode with 14 melodic phrases, played back one strike at a time with\n  the next pad marked ahead. Includes phrases using the ding as a bass voice\n  and two-pad strikes.\n- Three practice speeds; step through phrases by hand at your own pace.\n- Favorites saved to the SD card.\n",
   "description": "Handpan Chords turns your Flipper into a chord reference and practice tool for\nhandpans.\n\nPick your drum, scroll through every chord it can actually play, and see exactly\nwhich pads to strike on a diagram of the shell. Practice mode plays melodic\nphrases back one strike at a time so you can follow along and learn them.\n\n## Drums\n\nNine 9-note handpans are built in: D Kurd 9, D Celtic Minor 9, D Sabye 9,\nC# Amara 9, E La Sirena 9, B Kurd 9, A Kurd 9, F Low Pygmy 9 and C Major 9.\n\n## Chords\n\nNothing is hardcoded per drum. Every chord is worked out at runtime from the\ndrum's tuning, so only chords the instrument can genuinely play are offered:\n41 of them on D Kurd 9, 12 on F Low Pygmy 9.\n\nA filled pad on the diagram means strike it, an outline means leave it. When a\nnote sits on two pads, both light up, so you can pick whichever voicing falls\nunder your hands.\n\nSet the chord depth to taste: triads only, plus sixths and sevenths, or\neverything including ninths and elevenths.\n\n## Practice\n\nFourteen phrases, from a simple walk up to the fifth through to arpeggiated\nchord progressions. Each one is transposed and voiced for whichever drum you\nhave selected, and a phrase that needs a note your drum lacks is simply not\noffered.\n\nThe pad to strike is filled and the one coming next is marked with a dot. Play\nit back at Slow, Medium or Fast, or step through it a note at a time at your own\npace. Some phrases use the ding as a bass voice, and some ask for two pads to be\nstruck together.\n\n## Favorites\n\nStar any chord and it is saved to the SD card, ready the next time you open the\napp.\n\n## Controls\n\nIn the chord view, Up and Down move through the chords, Left and Right change\ndrum, and OK saves a favorite.\n\nIn practice mode, Up and Down set the speed, Left and Right step through the\nphrase by hand, and OK plays it back.\n\nBack always returns to where you came from.\n\n## Adding your own drum\n\nThe app is open source. Because chords and phrases are derived rather than\nlisted, adding a handpan takes one array of note numbers and one row in the\nscale table, and every chord and compatible practice phrase appears for it\nautomatically. See the project page for a worked example.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "handpan_chords",
+  "install_path": "Media",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/handpan_chords/manifest.yml",
     "source_code": "https://github.com/NoodleNugget-com/handpan_chords/tree/42be5d572eb12a2d18e885c517837a564ee6c0e8"
   },
   "name": "Handpan Chords",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png"
+  ],
   "short_description": "See which pads to strike for any chord on your handpan",
   "version": "1.0"
 }

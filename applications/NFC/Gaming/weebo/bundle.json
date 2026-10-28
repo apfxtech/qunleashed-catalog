@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "weebo",
+      "file": "weebo.fap",
+      "icon": "assets/icon.png",
+      "name": "amiitool",
+      "version": "0.5"
+    }
+  ],
   "author": "bettse",
+  "authors": [],
   "category": "NFC/Gaming",
+  "category_id": "nfc-gaming",
   "changelog": "v0.5",
   "description": "An NTAG215 parser, writer, emulator, remixer, duplicator",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "weebo",
+  "install_path": "NFC/Gaming",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/Gaming/weebo/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/weebo"
   },
   "name": "amiitool",
+  "screenshots": [],
   "short_description": "An NTAG215 parser, writer, emulator, remixer, duplicator",
   "version": "0.5"
 }

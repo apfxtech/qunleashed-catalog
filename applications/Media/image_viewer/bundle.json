@@ -1,15 +1,36 @@
 {
+  "apps": [
+    {
+      "appid": "image_viewer",
+      "file": "image_viewer.fap",
+      "icon": "assets/icon.png",
+      "name": "Image viewer",
+      "version": "0.1"
+    }
+  ],
   "author": "@polioan",
+  "authors": [
+    {
+      "id": "polioan",
+      "name": "polioan"
+    }
+  ],
   "category": "Media",
+  "category_id": "64971d116617ba37a4bc79bc",
   "changelog": "## v0.1\n\n- Initial release\n",
   "description": "# Image viewer\n\nImage viewer for flipper zero!\n\n# How to use:\n\n1. Create image with [img2fbm](https://github.com/atomofiron/img2fbm)\n2. Drop image to SD card\n3. Run image viewer app\n4. Select image\n5. Done! :)\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "image_viewer",
+  "install_path": "Media",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/image_viewer/manifest.yml",
     "source_code": "https://github.com/polioan/flipper-zero-image-viewer/tree/82fbcb5d669bd3e6cbf7af7593ad8efe0f19f1bd"
   },
   "name": "Image viewer",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Image viewer for flipper zero!",
   "version": "0.1"
 }
