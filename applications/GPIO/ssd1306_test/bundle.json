@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "ssd1306_test",
+      "file": "ssd1306_test.fap",
+      "icon": "assets/icon.png",
+      "name": "SSD1306 Test",
+      "version": "1.1"
+    }
+  ],
   "author": "martin bogomolni",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v1.0:\nInitial release. Clock + Status Board, test patterns, brightness control,\ndisplay commands, hardware scrolling, display info. Supports mono and\nyellow-bar SSD1306 variants. Auto-detects I2C address (0x3C/0x3D).\n",
   "description": "# SSD1306 Test\n\nTest and diagnose external SSD1306 128x64 I2C OLED displays. Supports monochrome and yellow-bar (dual-color) variants.\n\n## Features\n\n- Clock and status board with battery, date, and device name\n- Test patterns: solid fills, checkerboard, lines, border, color zones, page fill, gradient, shapes, text\n- Adjustable contrast (0 to 255)\n- Invert, flip, all-pixels-on, power on/off, variant toggle\n- Hardware horizontal and diagonal scrolling\n- Auto-detects I2C address (0x3C and 0x3D)\n\n## Wiring\n\n- GND to GND (pin 18)\n- VCC to 3.3V (pin 9)\n- SCL to C0 (pin 16)\n- SDA to C1 (pin 15)\n\n**Note:** Use 3.3V, not 5V. The Flipper GPIO is 3.3V logic. Most modules run fine at 3.3V. If your module needs 5V for power, use the 5V pin (pin 1) for VCC only; SCL and SDA must stay 3.3V-tolerant.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "ssd1306_test",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/ssd1306_test/manifest.yml",
     "source_code": "https://github.com/martinbogo/ssd1306_test/tree/c6ae307116e06bb1019fe175214a4ccb3c08d4f1"
   },
   "name": "SSD1306 Test",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Diagnostic tool for SSD1306 I2C OLED displays (128x64, yellow-bar and mono variants)",
   "version": "1.1"
 }

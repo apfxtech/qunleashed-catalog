@@ -1,15 +1,37 @@
 {
+  "apps": [
+    {
+      "appid": "radsens",
+      "file": "radsens.fap",
+      "icon": "assets/icon.png",
+      "name": "RadSens",
+      "version": "1.0"
+    }
+  ],
   "author": "@sionyx",
+  "authors": [
+    {
+      "id": "sionyx",
+      "name": "sionyx"
+    }
+  ],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v1.0: First release",
   "description": "App for RadSense radiation measurement module by ClimateGuard",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "radsens",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/radsens/manifest.yml",
     "source_code": "https://github.com/sionyx/flipper_radsens/tree/23f7b6ea46d6e670195db1bc40a63da4e5be54ef"
   },
   "name": "RadSens",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "App for RadSens module",
   "version": "1.0"
 }

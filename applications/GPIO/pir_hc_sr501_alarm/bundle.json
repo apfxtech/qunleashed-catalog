@@ -1,15 +1,32 @@
 {
+  "apps": [
+    {
+      "appid": "pir_hc_sr501_alarm",
+      "file": "pir_hc_sr501_alarm.fap",
+      "icon": "assets/icon.png",
+      "name": "PIR HC-SR501 Alarm",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v0.1:\ninitial version\n",
   "description": "# Flipper Zero HC-SR501 PIR Proximity Alarm App\n\nSimple proximity alarm app for Flipper Zero using HC-SR501 PIR sensor.  \nTriggers vibration, LED alerts, and screen notifications. Features 3-second alarm duration with blinking feedback.\n\n## Wiring Diagram\n\n| HC-SR501 Pin | Flipper Zero Pin | Description |\n|--------------|-----------------|-------------|\n| **SIG (OUT)** | **GPIO C0 (Pin 16)** | Motion detection signal |\n| **VCC**       | **5V (Pin 1)**       | Power supply (5V) |\n| **GND**       | **GND (Pin 8)**      | Ground |\n\n## Features\n\n- **Motion Detection**: HC-SR501 PIR sensor detects human motion within ~7m range\n- **Multi-Alert System**: Vibration motor + LED blinking + screen notification\n- **Auto-Reset**: Returns to idle state after alarm duration\n\n## App States\n\n**Idle State**  \n- No motion detected  \n- *(Idle state, no motion visual representation removed due to Markdown restrictions)*\n\n**Alarm State (Active)**  \n- Motion detected, triggers vibration, LED, and screen notification  \n- *(Alarm state visual representation removed due to Markdown restrictions)*\n\n## Implementation Guide\n\n**Required Components:**\n\n- Flipper Zero (firmware supporting GPIO input)\n- HC-SR501 PIR Motion Sensor\n- Jumper wires (female-to-male recommended)\n- Optional: 100nF capacitor across VCC-GND for sensor stability\n\n**Pin Configuration:**\n\n```lua\n-- GPIO Pin Definitions\nlocal PIR_PIN  = gpio.c0     -- Pin 16 / GPIO C0 (PIR Input)\nlocal POWER_SUPPLY  = gpio.gpioa7 -- Pin 1  / GPIO 5V \nlocal GND  = gpio.gpiob3 -- Pin 8/18 / GPIO  GND\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "pir_hc_sr501_alarm",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/pir_hc_sr501_alarm/manifest.yml",
     "source_code": "https://github.com/ku6a-cj/-PIR-HC-SR501-Proximity-alarm-Flipper-zero/tree/af64061f09441f16b8bba3b4abb96048492c073f"
   },
   "name": "PIR HC-SR501 Alarm",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "Simple proximity alarm app for Flipper Zero using HC-SR501 PIR sensor.",
   "version": "0.1"
 }

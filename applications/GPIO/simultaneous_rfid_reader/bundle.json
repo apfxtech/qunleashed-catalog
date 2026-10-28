@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "simultaneous_rfid_reader",
+      "file": "simultaneous_rfid_reader.fap",
+      "icon": "assets/icon.png",
+      "name": "Simultaneous UHF RFID Reader",
+      "version": "1.1.2"
+    }
+  ],
   "author": "@Haffnerriley",
+  "authors": [
+    {
+      "id": "haffnerriley",
+      "name": "Haffnerriley"
+    }
+  ],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v1.1.2",
   "description": "This app is designed to \nwork with the M6e Nano, \nM7E Hecto, or YRM100 \nUHF RFID Readers and the \nFlipper Zero. \nThis app supports reading\nup to 150 tags per second,\nwriting to tags (EPC, TID, \nReserved, and User Memory \nBanks), viewing all tag \ninformation, saving tags, \nand more!\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "simultaneous_rfid_reader",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/simultaneous_rfid_reader/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/simultaneous_rfid_reader"
   },
   "name": "Simultaneous UHF RFID Reader",
+  "screenshots": [],
   "short_description": "Simultaneous UHF RFID Reader that supports the M6E Nano, M7E Hecto, and YRM1000 series Readers. Read up to 150 UHF tags per second [Using ThingMagic Readers]!",
   "version": "1.1.2"
 }
