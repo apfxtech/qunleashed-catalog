@@ -1,8 +1,0 @@
-App(
-    appid="menu_style_wii",
-    name="Wii",
-    apptype=FlipperAppType.PLUGIN,
-    entry_point="menu_style_wii_ep",
-    requires=["loader"],
-    sources=["styles/theme/wii.c"],
-)

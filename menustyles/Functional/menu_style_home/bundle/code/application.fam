@@ -1,8 +1,0 @@
-App(
-    appid="menu_style_home",
-    name="Home",
-    apptype=FlipperAppType.PLUGIN,
-    entry_point="menu_style_home_ep",
-    requires=["loader"],
-    sources=["styles/functional/home.c"],
-)

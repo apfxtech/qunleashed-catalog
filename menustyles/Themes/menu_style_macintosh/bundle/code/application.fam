@@ -1,8 +1,0 @@
-App(
-    appid="menu_style_macintosh",
-    name="Macintosh",
-    apptype=FlipperAppType.PLUGIN,
-    entry_point="menu_style_macintosh_ep",
-    requires=["loader"],
-    sources=["styles/theme/macintosh.c"],
-)

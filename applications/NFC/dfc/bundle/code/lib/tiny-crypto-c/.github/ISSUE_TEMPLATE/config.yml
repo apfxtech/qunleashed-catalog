@@ -1,7 +1,0 @@
-# SPDX-FileCopyrightText: Mistial Dev
-# SPDX-License-Identifier: GPL-2.0-or-later
-blank_issues_enabled: false
-contact_links:
-  - name: Bounded Contribution Policy
-    url: https://github.com/mistial-dev/tiny-crypto-c/blob/master/CODE_OF_CONDUCT.md
-    about: Project scope and contribution evaluation criteria

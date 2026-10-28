@@ -1,6 +1,0 @@
-# Object files
-*.o
-*.h.gch
-dist
-venv
-.vscode

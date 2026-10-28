@@ -1,5 +1,0 @@
-ADD_SCENE(flipcheckers, startscreen, Startscreen)
-ADD_SCENE(flipcheckers, menu, Menu)
-ADD_SCENE(flipcheckers, scene_1, Scene_1)
-ADD_SCENE(flipcheckers, settings, Settings)
-ADD_SCENE(flipcheckers, about, About)

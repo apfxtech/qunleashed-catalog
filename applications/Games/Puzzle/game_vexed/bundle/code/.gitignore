@@ -1,4 +1,0 @@
-# ufbt build artifacts / SDK-deployed files
-dist/
-.vscode/
-.clang-format

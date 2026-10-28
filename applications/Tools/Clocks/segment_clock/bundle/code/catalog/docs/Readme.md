@@ -1,1 +1,0 @@
-Display a simple segment clock on the Flipper screen. Press the up button to toggle between 12 and 24 hour mode.
