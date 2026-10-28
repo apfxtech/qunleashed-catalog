@@ -1,0 +1,15 @@
+{
+  "author": "Aku",
+  "category": "GPIO",
+  "changelog": "- 0.2 - Update for use with new serial API\n- 0.1 - Initial version",
+  "description": "# About\n\nMH-Z19 sensor app for flipper zero. Uses UART protocol to receive data.\n\n# Pinout\n\nFlipper | Sensor\n--------|-------\n1       |  5V\n15      | TX\n16      | RX\n18      | GND\n",
+  "family": "application",
+  "id": "mhz19_uart",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/mhz19_uart/manifest.yml",
+    "source_code": "https://github.com/skotopes/flipperzero_mhz19_uart/tree/6c1addcda1fb0f33b01c7f574e35e7b3d6ea824b"
+  },
+  "name": "MH-Z19 UART",
+  "short_description": "MH-Z19 UART",
+  "version": "0.2"
+}

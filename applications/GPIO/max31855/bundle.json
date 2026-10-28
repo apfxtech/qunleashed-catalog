@@ -1,0 +1,15 @@
+{
+  "author": "Aku",
+  "category": "GPIO",
+  "changelog": "- 0.1 - Initial version",
+  "description": "# About\n\nMAX31855 (K, J, N, T, S, R, and E)-thermocouple sensor app for flipper zero.\n\nShows following data:\n\n- Thermocouple temperature\n- Internal temperature\n- Fault status and flags\n\n# Pinout\n\nThis application will work with any chip/thermocouple type, but ensure that you have appropriate combo.\nMost common one is MAX31855K and K-type thermocouple.\n\nAlso check if your sensor board got it's own LDO for power supply. If there are no LDO on your board then connect sensor to 3.3V.\nBoards with LDO are recommended.\n\nFlipper | Sensor\n--------|-------\n1       | 5V (If your sensor board have LDO)\n3       | DO(MISO)\n4       | CS\n5       | CLK\n8       | GND\n9       | 3.3V (If your sensor board do not have LDO)\n",
+  "family": "application",
+  "id": "max31855",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/max31855/manifest.yml",
+    "source_code": "https://github.com/skotopes/flipperzero_max31855/tree/ff01fa5da25b06cb5394be710e3ffb0bad4c7ef7"
+  },
+  "name": "MAX31855",
+  "short_description": "MAX31855 Thermocouple Sensor App",
+  "version": "0.1"
+}

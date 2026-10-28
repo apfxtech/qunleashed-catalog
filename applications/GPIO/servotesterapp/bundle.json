@@ -1,0 +1,15 @@
+{
+  "author": "M. Hasbini",
+  "category": "GPIO",
+  "changelog": "v0.2:\nImproved compatibility with updated Flipper zero firmware\n\nv0.1:\nInitial version of RC servo tester\n",
+  "description": "# Servo tester app for Flipper Zero\n\nhttps://user-images.githubusercontent.com/8887221/228034391-aa9df44c-dcf7-4999-9d22-590cc7ac0392.mp4\n\nThis app aims to replicate the behavior of a standard [RC servo](https://en.wikipedia.org/wiki/Servo_(radio_control)) tester, by replicating a [PWM RC servo signal](https://en.wikipedia.org/wiki/Servo_control). You can read more about it in [this blog](https://mhasbini.com/blog/servo-tester-flipper-zero.html)!\n\n## Usage\n\n- Connect the Servo PWM input to **A7** Flipper Zero in.\n- Enable 5V output in the GPIO menu or plug-in USB-C charging cable. (If you're supplying power from an external power source, make sure it has common ground with the flipper GND)\n- Start the ServoTester app\n- Test different servo positions\n\n## Controls\n\n- Left/Right: change angle in manual mode.\n- Up/Down: change mode\n\nThe app has three modes:\n\n- Manual: left increase 10°, right decrease 10°.\n- Center: move to 90°.\n- Sweep: move between 0° & 180° every 1 second.\n\nThe indicated angle range is: 0° to 180°, but the actual servo angle may differ, because not every servo has a 180° range. \n\n\n## Building\n\nInstall [uFBT - micro Flipper Build Tool](https://github.com/flipperdevices/flipperzero-ufbt) to get a toolkit for building flipper zero applications. \n\n- Clone this git repository\n- cd to *ServoTesterApp* content.\n- run *ufbt && ufbt launch* with flipper connected. It automatically installs the compiled application into Flipper Zero.\n\n## Installing\n\nDrop the compiled *servotesterapp.fap* from *./dist* into */ext/apps/GPIO/* on the flipper. \n\n",
+  "family": "application",
+  "id": "servotesterapp",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/servotesterapp/manifest.yml",
+    "source_code": "https://github.com/kaklik/ServoTesterApp/tree/7f3eb5fe339f30c72b893c39d5de1374dbb44625"
+  },
+  "name": "Servo Tester",
+  "short_description": "RC Servo PWM generator for hardware tests.",
+  "version": "0.2"
+}

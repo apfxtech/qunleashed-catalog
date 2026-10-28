@@ -1,0 +1,15 @@
+{
+  "author": "Gl1tchub",
+  "category": "GPIO",
+  "changelog": "latest API support",
+  "description": "Lock and Unlock SD card / Micro SD card through SPI protocol.",
+  "family": "application",
+  "id": "sd_spi_app",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/sd_spi_app/manifest.yml",
+    "source_code": "https://github.com/Gl1tchub/Flipperzero-SD-SPI/tree/afed9816e5c1fae868e7267c9ad5c665d2372ab8/sd_spi"
+  },
+  "name": "SD SPI",
+  "short_description": "SD SPI Lock Management",
+  "version": "0.5"
+}
