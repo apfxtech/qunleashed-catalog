@@ -1,15 +1,41 @@
 {
+  "apps": [
+    {
+      "appid": "arkanoid",
+      "file": "arkanoid.fap",
+      "icon": "assets/icon.png",
+      "name": "Arkanoid",
+      "version": "1.3"
+    }
+  ],
   "author": "@xMasterX & @gotnull",
+  "authors": [
+    {
+      "id": "xmasterx",
+      "name": "xMasterX"
+    },
+    {
+      "id": "gotnull",
+      "name": "gotnull"
+    }
+  ],
   "category": "Games/Arcade",
+  "category_id": "games-arcade",
   "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
   "description": "Arkanoid Game",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "arkanoid",
+  "install_path": "Games/Arcade",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/arkanoid/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/arkanoid"
   },
   "name": "Arkanoid",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "Arkanoid Game",
   "version": "1.3"
 }

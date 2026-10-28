@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "dvd_bounce",
+      "file": "dvd_bounce.fap",
+      "icon": "assets/icon.png",
+      "name": "DVD Bouncer",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "Games/Arcade",
+  "category_id": "games-arcade",
   "changelog": "v0.1",
   "description": "DVD Bouncer",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "dvd_bounce",
+  "install_path": "Games/Arcade",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/dvd_bounce/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/de1539b0da6d53bb6303f819be0518a63c460b32/non_catalog_apps/DVD-Bounce"
   },
   "name": "DVD Bouncer",
+  "screenshots": [],
   "short_description": "DVD Bouncer",
   "version": "0.1"
 }

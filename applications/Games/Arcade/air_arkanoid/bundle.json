@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "air_arkanoid",
+      "file": "air_arkanoid.fap",
+      "icon": "assets/icon.png",
+      "name": "Air Arkanoid",
+      "version": "1.1"
+    }
+  ],
   "author": "@DrZlo13",
+  "authors": [
+    {
+      "id": "drzlo13",
+      "name": "DrZlo13"
+    }
+  ],
   "category": "Games/Arcade",
+  "category_id": "games-arcade",
   "changelog": "v1.1",
   "description": "Arkanoid game that supports the Video Game Module motion sensor",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "air_arkanoid",
+  "install_path": "Games/Arcade",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/air_arkanoid/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/base_pack/air_arkanoid"
   },
   "name": "Air Arkanoid",
+  "screenshots": [],
   "short_description": "Arkanoid game that supports the Video Game Module motion sensor",
   "version": "1.1"
 }
