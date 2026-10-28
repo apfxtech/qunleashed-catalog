@@ -1,0 +1,16 @@
+{
+  "author": "@DoobTheGoober",
+  "category": "DoobTheGoober",
+  "changelog": "",
+  "description": "",
+  "dolphin": {},
+  "family": "animation",
+  "id": "Wazzap_128x64",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/animations/DoobTheGoober/Wazzap_128x64/manifest.yml",
+    "source_code": "https://github.com/DoobTheGoober/FlipperZeroAnimation/tree/27835e886eca44dfee2546b4026c9a388ffb733f/ScaryMovie/Wazzap_128x64"
+  },
+  "name": "Wazzap_128x64",
+  "short_description": "",
+  "version": "ae9c28b8a878"
+}
