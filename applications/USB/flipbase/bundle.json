@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "USB",
+  "changelog": "v0.1:\nInitial release. Emulates a Disney Infinity base over USB: characters, play sets and power discs. Tested on Disney Infinity 1.0, 2.0 and 3.0.\nNew figures are generated blank in memory (nothing is written to the SD card), browsable by series and by characters, play sets and discs.\n",
+  "description": "# FlipBase\n\nA Flipper Zero app that acts as a **Disney Infinity base** over USB, so the game sees characters, play sets and power discs without a physical base.\n\nTested working on Disney Infinity 1.0, 2.0 and 3.0. Unofficial, not affiliated with or endorsed by Disney. Not tested with Xbox and highly unlikely to work there.\n\n## Use\n\n- Open **Apps → USB → FlipBase**, plug the Flipper into the console, then start the game.\n- Pick a row (Player 1/2, Play set, Disc slots) and press **OK** on an empty row to choose **File**, **Fav** or **New**.\n- **File** loads a 320-byte .bin from SD:/apps_data/flipbase/. **Fav** opens your favorites list. **New** creates a blank figure from the built-in list for Infinity 1.0, 2.0 and 3.0 (**Left/Right** switches between them).\n- **Left/Right** swaps through favorites, **hold OK** stars the figure, **hold Right** saves debug.txt.\n- The top line shows the connection state and buzzes when a working connection drops.\n\n## Notes\n\n- **New** figures are blank, kept in memory only and **not saved** to the SD card, so progress is lost when you remove them or close the app. To keep progress, load a .bin with **File**.\n- Figures you create contain no game data. Do not upload figure files or logs.\n- Keep your own backups of apps_data/flipbase.\n- The USB protocol, figure format and figure list follow RPCS3's Disney Infinity emulation. License: GPL-2.0-only.\n",
+  "family": "application",
+  "id": "flipbase",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/USB/flipbase/manifest.yml",
+    "source_code": "https://github.com/Space-Raler/FlipBase/tree/7ed9399ba5cfe7766c9b39a501788f18f07704a8"
+  },
+  "name": "FlipBase",
+  "short_description": "USB toy-to-life base emulator (Disney Infinity portal)",
+  "version": "0.1"
+}

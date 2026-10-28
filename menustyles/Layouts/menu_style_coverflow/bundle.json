@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Layouts",
+  "changelog": "v0.1:\nfirst version\n",
+  "description": "Main menu as a cover flow you scroll sideways.",
+  "family": "menustyle",
+  "id": "menu_style_coverflow",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/menustyles/Layouts/menu_style_coverflow/manifest.yml",
+    "source_code": "https://github.com/apfxtech/all-menu-styles/tree/7836ccea89e775016d93823e3d761a5590d7acc1"
+  },
+  "name": "CoverFlow",
+  "short_description": "Cover flow menu.",
+  "version": "0.1"
+}

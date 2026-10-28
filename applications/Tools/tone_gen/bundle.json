@@ -1,0 +1,15 @@
+{
+  "author": "@gemisis",
+  "category": "Tools",
+  "changelog": "v1.0 - Initial release",
+  "description": "Generate simple tones on your Flipper Zero",
+  "family": "application",
+  "id": "tone_gen",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/tone_gen/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/tone_gen"
+  },
+  "name": "Tone Generator",
+  "short_description": "A simple app to generate sound tones.",
+  "version": "1.0"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "sergo",
+  "category": "Tools",
+  "changelog": "v0.1",
+  "description": "The application shows information about the SD card",
+  "family": "application",
+  "id": "sd_info",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/sd_info/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/sd_info"
+  },
+  "name": "SD Info",
+  "short_description": "The application shows information about the SD card",
+  "version": "0.1"
+}

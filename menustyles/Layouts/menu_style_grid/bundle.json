@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Layouts",
+  "changelog": "v0.1:\nfirst version\n",
+  "description": "Main menu as a grid of apps with a page counter.",
+  "family": "menustyle",
+  "id": "menu_style_grid",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/menustyles/Layouts/menu_style_grid/manifest.yml",
+    "source_code": "https://github.com/apfxtech/all-menu-styles/tree/7836ccea89e775016d93823e3d761a5590d7acc1"
+  },
+  "name": "Grid",
+  "short_description": "Grid menu.",
+  "version": "0.1"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Functional",
+  "changelog": "v0.1:\nfirst version\n",
+  "description": "Main menu of your favorite apps, added from the Archive.",
+  "family": "menustyle",
+  "id": "menu_style_favorites",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/menustyles/Functional/menu_style_favorites/manifest.yml",
+    "source_code": "https://github.com/apfxtech/all-menu-styles/tree/7836ccea89e775016d93823e3d761a5590d7acc1"
+  },
+  "name": "Favorites",
+  "short_description": "Favorites menu.",
+  "version": "0.1"
+}

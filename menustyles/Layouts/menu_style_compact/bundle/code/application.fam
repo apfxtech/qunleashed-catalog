@@ -1,0 +1,8 @@
+App(
+    appid="menu_style_compact",
+    name="Compact",
+    apptype=FlipperAppType.PLUGIN,
+    entry_point="menu_style_compact_ep",
+    requires=["loader"],
+    sources=["styles/layouts/compact.c"],
+)

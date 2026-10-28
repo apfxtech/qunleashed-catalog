@@ -1,0 +1,8 @@
+App(
+    appid="menu_style_favorites",
+    name="Favorites",
+    apptype=FlipperAppType.PLUGIN,
+    entry_point="menu_style_favorites_ep",
+    requires=["loader"],
+    sources=["styles/functional/favorites.c"],
+)

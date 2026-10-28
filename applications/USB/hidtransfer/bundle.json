@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "USB",
+  "changelog": "v0.1",
+  "description": "HID File Transfer",
+  "family": "application",
+  "id": "hidtransfer",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/USB/hidtransfer/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/hid_file_transfer"
+  },
+  "name": "HID File Transfer",
+  "short_description": "HID File Transfer",
+  "version": "0.1"
+}
