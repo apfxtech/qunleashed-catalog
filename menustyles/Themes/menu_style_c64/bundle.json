@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "menu_style_c64",
+      "file": "menu_style_c64.fal",
+      "icon": null,
+      "name": "C64",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "Themes",
+  "category_id": "theme",
   "changelog": "v0.1:\nfirst version\n",
   "description": "Main menu drawn as a Commodore 64 BASIC screen.",
   "family": "menustyle",
+  "icon": null,
   "id": "menu_style_c64",
+  "install_path": "/ext/apps_data/loader/plugins",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/menustyles/Themes/menu_style_c64/manifest.yml",
     "source_code": "https://github.com/apfxtech/all-menu-styles/tree/7836ccea89e775016d93823e3d761a5590d7acc1"
   },
   "name": "C64",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Commodore 64 main menu.",
   "version": "0.1"
 }
