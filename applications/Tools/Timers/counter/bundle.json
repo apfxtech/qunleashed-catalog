@@ -1,0 +1,15 @@
+{
+  "author": "@Krulknul",
+  "category": "Tools/Timers",
+  "changelog": "v1.0 - Initial release, v1.1 - Icon fixes, v1.2 - Sync Updates, v1.3 - Various fixes, v1.4 - Sync updates and latest API support, v1.5 - Sync with latest version",
+  "description": "Simple counter",
+  "family": "application",
+  "id": "counter",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Timers/counter/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/apps_source_code/counter"
+  },
+  "name": "Counter",
+  "short_description": "Simple counter",
+  "version": "1.5"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "Roberto De Feo",
+  "category": "Tools/Editors",
+  "changelog": "v0.7.1",
+  "description": "Icon editor",
+  "family": "application",
+  "id": "iconedit",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Editors/iconedit/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/774f509b1997668219398d3a69e13fdd646d219b/non_catalog_apps/iconedit"
+  },
+  "name": "IconEdit",
+  "short_description": "Icon editor",
+  "version": "0.7.1"
+}

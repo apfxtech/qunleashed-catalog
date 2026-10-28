@@ -1,0 +1,15 @@
+{
+  "author": "@Willy-JL (Original by @kowalski7cc & @kyhwana)",
+  "category": "Tools/Editors",
+  "changelog": "v1.0 - New Initial release, v1.5 - Sync Updates, v1.6 - Sync updates and latest API support, v1.7 - Sync with latest version",
+  "description": "Text viewer application (Update!)",
+  "family": "application",
+  "id": "text_viewer",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Editors/text_viewer/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/text_viewer"
+  },
+  "name": "Text Viewer",
+  "short_description": "Text viewer application",
+  "version": "1.7"
+}

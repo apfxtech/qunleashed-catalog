@@ -1,0 +1,15 @@
+{
+  "author": "@Th3Un1q3",
+  "category": "Tools/Timers",
+  "changelog": "v1.0 - Initial release, v1.1 - Updated from main repo, v1.2 - Updated from main repo, v1.3 - Sync Updates, v1.4 - Sync updates and latest API support, v1.5 - Sync with latest version",
+  "description": "Boost Your Productivity with the Pomodoro Timer",
+  "family": "application",
+  "id": "flipp_pomodoro",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Timers/flipp_pomodoro/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/61ee8f12b5fc78a2aee6b91cc1386f281ea10683/apps_source_code/flipp_pomodoro"
+  },
+  "name": "Flipp Pomodoro",
+  "short_description": "Boost Your Productivity with the Pomodoro Timer",
+  "version": "1.7"
+}

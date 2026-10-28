@@ -1,0 +1,15 @@
+{
+  "author": "CK42X",
+  "category": "Tools",
+  "changelog": "# Changelog\n\n## v0.4\n\n- Added master PIN setup/unlock gate before vault access.\n- Replaced plaintext active vault storage with AES-GCM encrypted vault.pv1.\n- Migrates legacy plaintext vault.tsv once after PIN setup, then removes it after encrypted save succeeds.\n\n## v0.3\n\n- Generated passwords are checked against saved vault entries before saving, so the app avoids duplicate generated passwords already in the vault.\n- Updated wording to describe PassVault plainly as a password storage, generation, and USB HID typing tool.\n\n## v0.2\n\n- Added About menu with ck42x.com link\n- Added CK42X.com branding and Flipper-compatible crowned bee icon\n- Added first app catalog screenshot\n- Prepared the app for Flipper Apps catalog review\n\n## v0.1\n\n- First public build\n- Local plaintext TSV vault in app data\n- Password preset generation\n- Opt-in USB HID password typing after confirmation\n",
+  "description": "# CK42X PassVault\n\nCK42X PassVault is a Flipper Zero app for storing, generating, and typing passwords from the device.\n\nIt lets you save a small list of account entries, generate passwords from readable presets, and type a selected password over USB HID after explicit confirmation on the Flipper.\n\nGenerated passwords use the Flipper RNG. Before saving a generated password, the app checks it against the passwords already saved in the vault and changes it if needed so the generated password is unique within the current vault.\n\n## Security note\n\nv0.4 stores the active vault as AES-GCM encrypted app data and requires a master PIN to unlock. On first setup it migrates legacy plaintext vault.tsv once, then removes it after the encrypted save succeeds.\n\nThis is a small Flipper utility, not a hardened audited password manager: device compromise, weak PINs, shoulder surfing, or modified firmware can still expose vault contents.\n",
+  "family": "application",
+  "id": "ck42x_passvault",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/ck42x_passvault/manifest.yml",
+    "source_code": "https://github.com/lordbuffcloud/flipper-ck42x-passvault/tree/b51e3a71316b0e3d4fa3e52018c41113b805ef7b"
+  },
+  "name": "CK42X PassVault",
+  "short_description": "CK42X.com PIN-gated encrypted password vault with RNG generation and opt-in HID password typing.",
+  "version": "0.4"
+}

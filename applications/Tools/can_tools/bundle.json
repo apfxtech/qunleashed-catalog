@@ -1,0 +1,15 @@
+{
+  "author": "@MatthewKuKanich",
+  "category": "Tools",
+  "changelog": "./changelog.md",
+  "description": "./README.md",
+  "family": "application",
+  "id": "can_tools",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/can_tools/manifest.yml",
+    "source_code": "https://github.com/MatthewKuKanich/FlipperCANTools/tree/8fa1fcf043c308921be4818f7e4e80bfe062a438/can_tools"
+  },
+  "name": "CAN Tools",
+  "short_description": "CAN Tools, DBC management, Data decoding",
+  "version": "1.1"
+}

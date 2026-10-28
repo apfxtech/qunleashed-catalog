@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Tools/Timers",
+  "changelog": "v0.1",
+  "description": "Chronometer",
+  "family": "application",
+  "id": "flipper_chronometer",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Timers/flipper_chronometer/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/flipper_chronometer"
+  },
+  "name": "Chronometer",
+  "short_description": "Chronometer",
+  "version": "0.1"
+}

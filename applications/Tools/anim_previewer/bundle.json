@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Tools",
+  "changelog": "## 1.0\n- Initial release\n",
+  "description": "# Anim Previewer\n\nBrowse and preview Flipper Zero dolphin animations directly on the device. Opens at \"/ext/dolphin\" by default — navigate anywhere on the SD card to find animations.\n\n# Controls\n\n## Browser\n| Button | Action |\n|--------|--------|\n| ↑ / ↓ | Scroll |\n| OK | Enter folder / play animation |\n| Back | Go up / exit app |\n\n## Player\n| Button | Action |\n|--------|--------|\n| OK | Play / Pause |\n| ↑ / ↓ | Faster / Slower |\n| ← / → | Step one frame *(paused only)* |\n| Back (short) | Return to browser |\n| Back (long) | Exit app |\n\n# How it works\n\nUses the Flipper's built-in file browser. Navigate into an animation folder and tap \"meta.txt\" to play it. Back from the player returns to the same location in the browser.\n\nSupports both compressed and uncompressed \".bm\" frame files. Loads up to 128 frames per animation (~120 KB cap).\n\n",
+  "family": "application",
+  "id": "anim_previewer",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/anim_previewer/manifest.yml",
+    "source_code": "https://github.com/H4W9/AnimationPreviewerFlipperApp/tree/f052c08af5a10ae3c60a82a2f2da4fbdbe27bb34"
+  },
+  "name": "Anim Previewer",
+  "short_description": "Browse and preview Flipper Zero dolphin animations directly on the device.",
+  "version": "1.0"
+}
