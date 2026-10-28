@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "polk_magnifimini_remote",
+      "file": "polk_magnifimini_remote.fap",
+      "icon": "assets/icon.png",
+      "name": "Polk MagnifiMini Remote",
+      "version": "1.0"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "Infrared",
+  "category_id": "64971d106617ba37a4bc79b6",
   "changelog": "## Version 1.0\n\n- Initial release\n- Power, Mute, Night mode\n- Volume Up / Down\n- Playback controls (Previous, Play/Pause, Next)\n- Voice level Up / Down\n- Bass level Up / Down\n- Source selection: AUX, Optical, HDMI ARC\n- EQ Preset selection: Cinema, Sports, Music\n",
   "description": "A Flipper Zero IR remote for the **Polk MagnifiMini soundbar**.\n\n## Features\n\n- Power, Mute, Night mode\n- Volume Up / Down\n- Playback controls (Previous, Play/Pause, Next)\n- Voice level Up / Down\n- Bass level Up / Down\n- Source selection: AUX, Optical, HDMI ARC\n- EQ Preset selection: Cinema, Sports, Music\n\n## Controls\n\nUse **Up/Down** to move between rows. Use **Left/Right** to trigger the action on that side. Press **OK** for the centre action.\n\n| Row | Left | OK | Right |\n|---|---|---|---|\n| POWER | Night mode | Power on/off | Mute |\n| VOL | Volume Down | — | Volume Up |\n| PLAYBACK | Previous | Play/Pause | Next |\n| VOICE | Voice Down | — | Voice Up |\n| BASS | Bass Down | — | Bass Up |\n| SOURCE | — | Open source menu | — |\n| EQ PRESET | — | Open EQ menu | — |\n\nFor **SOURCE** and **EQ PRESET**, press OK to open the selection menu, then Up/Down to choose and OK to confirm. Press Back to return.\n\n## Compatibility\n\nTested with the **Polk MagnifiMini** soundbar. May work with other Polk MagnifiMini variants that share the same IR protocol (NECext, address 0xC8 0x91).\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "polk_magnifimini_remote",
+  "install_path": "Infrared",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/polk_magnifimini_remote/manifest.yml",
     "source_code": "https://github.com/varunyellina/flipper-ir-remote-polkmagnifi/tree/9018164e83b0df7fd3e9a02162d5cd329bde3703"
   },
   "name": "Polk MagnifiMini Remote",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "IR remote for the Polk MagnifiMini soundbar",
   "version": "1.0"
 }

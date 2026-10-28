@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "timed_remote",
+      "file": "timed_remote.fap",
+      "icon": "assets/icon.png",
+      "name": "Timed Remote",
+      "version": "0.1"
+    }
+  ],
   "author": "A. Damsgaard",
+  "authors": [],
   "category": "Infrared",
+  "category_id": "64971d106617ba37a4bc79b6",
   "changelog": "v0.1",
   "description": "Send IR commands after a configurable time delay.\n- Browse and select IR signals from existing .ir files\n- **Countdown Mode**: Set a timer (HH:MM:SS) and send the signal when it completes\n- **Scheduled Mode**: Send the signal at a specific time of day\n- **Repeat Options**: Off, Unlimited, or 1-99 repeats (countdown mode only)\n- Live countdown display with repeat progress tracking, press Back to cancel\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "timed_remote",
+  "install_path": "Infrared",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/timed_remote/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/de1539b0da6d53bb6303f819be0518a63c460b32/non_catalog_apps/timed-remote"
   },
   "name": "Timed Remote",
+  "screenshots": [],
   "short_description": "Send IR commands after timed duration.",
   "version": "0.1"
 }

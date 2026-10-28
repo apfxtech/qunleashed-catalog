@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "mitsubishi_ac_remote_new_protocol",
+      "file": "mitsubishi_ac_remote_new_protocol.fap",
+      "icon": "assets/icon.png",
+      "name": "hvac_mitsubishi",
+      "version": "1.0"
+    }
+  ],
   "author": "Str4ch",
+  "authors": [],
   "category": "Infrared",
+  "category_id": "64971d106617ba37a4bc79b6",
   "changelog": "v1.0",
   "description": "Mitsubishi AC Remote for newer models",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "mitsubishi_ac_remote_new_protocol",
+  "install_path": "Infrared",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/mitsubishi_ac_remote_new_protocol/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/mitsubishi_ac_remote_new_protocol"
   },
   "name": "hvac_mitsubishi",
+  "screenshots": [],
   "short_description": "Mitsubishi AC Remote for newer models",
   "version": "1.0"
 }

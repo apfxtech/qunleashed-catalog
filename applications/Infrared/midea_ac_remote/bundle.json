@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "midea_ac_remote",
+      "file": "midea_ac_remote.fap",
+      "icon": "assets/icon.png",
+      "name": "Midea",
+      "version": "1.0"
+    }
+  ],
   "author": "xMasterX",
+  "authors": [],
   "category": "Infrared",
+  "category_id": "64971d106617ba37a4bc79b6",
   "changelog": "v1.0",
   "description": "Midea Electric Air Conditioner remote control",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "midea_ac_remote",
+  "install_path": "Infrared",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/midea_ac_remote/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/cbec11a129a8028fe3e6ccda2385587c89a2877f/non_catalog_apps/midea_ac_remote"
   },
   "name": "Midea",
+  "screenshots": [],
   "short_description": "Midea Electric Air Conditioner remote control",
   "version": "1.0"
 }
