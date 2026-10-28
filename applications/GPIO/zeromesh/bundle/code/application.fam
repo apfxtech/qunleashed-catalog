@@ -1,0 +1,25 @@
+App(
+    appid="zeromesh",
+    name="ZeroMesh",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="zeromesh_serial_app",
+    requires=["gui", "bt"],
+    stack_size=8 * 1024,
+    fap_version=(3, 0),
+    fap_category="GPIO",
+    fap_icon="icon.png",
+    fap_author="SAMS0N1TE",
+    fap_weburl="https://github.com/SAMS0N1TE/ZeroMesh",
+    fap_description="Meshtastic client with offline vector maps, over serial or Bluetooth",
+    fap_libs=["nanopb"],
+    fap_private_libs=[
+        Lib(
+            name="meshtastic_api",
+            sources=["meshtastic/*.pb.c"],
+        ),
+        Lib(
+            name="carto",
+            sources=["*.c"],
+        ),
+    ],
+)

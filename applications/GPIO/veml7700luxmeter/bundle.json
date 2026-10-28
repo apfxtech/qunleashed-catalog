@@ -1,0 +1,15 @@
+{
+  "author": "@Dr.Mosfet",
+  "category": "GPIO",
+  "changelog": "docs/CHANGELOG.md",
+  "description": "The VEML7700 Lux Meter app measures ambient light in lux using the VEML7700 sensor via I2C and displays the value on the Flipper Zero screen.\nRequires a VEML7700 sensor connected via I2C to the Flipper Zero GPIO pins.\n",
+  "family": "application",
+  "id": "veml7700luxmeter",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/veml7700luxmeter/manifest.yml",
+    "source_code": "https://github.com/kamylwnb/Flipper-zero-app-VEML7700/tree/f6de3e24b0fc9c21f0db008b457b82b3d45b5a59"
+  },
+  "name": "VEML7700 Lux Meter",
+  "short_description": "Lux meter app using VEML7700 sensor for Flipper Zero",
+  "version": "1.1"
+}

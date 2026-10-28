@@ -1,0 +1,15 @@
+{
+  "author": "Pavel Druzhinin",
+  "category": "GPIO",
+  "changelog": "v1.2:\n- Added a settings menu with editable ping IP and internet check timer\n- Added reset behavior that restores the default IP and timer and clears remembered Wi-Fi networks\n- Added return from the monitoring screen back to Wi-Fi scanning with the Back button\n- Updated LED behavior: steady green when internet is online, 1-second red blinking while offline\n- Polished the settings screen header and selection visuals\n- Added validation for saved ping IP settings with fallback to the default target\n\nv1.1:\n- Added persistent storage for up to 16 Wi-Fi credentials\n- Added one-button connection to saved networks\n- Added password editing and saved-network deletion\n- Added a full lowercase, uppercase, numeric, and symbol keyboard\n- Added waiting, reconnect, and recovery notifications for internet monitoring\n- Added 1.1.1.1 as the default ping target\n\nv1.0:\n- Added ESP-AT Wi-Fi scanning and network selection\n- Added internet availability checks every 60 seconds\n- Added visual status and notification when connectivity returns\n",
+  "description": "WiFi Internet Watch connects an official Flipper Zero Wi-Fi Developer Board\nrunning ESP-AT to a selected wireless network and checks internet availability\nevery 60 seconds.\n\n**Features**\n\n- Scans and selects nearby Wi-Fi networks\n- Full lowercase, uppercase, numeric, and symbol password keyboard\n- Saves, updates, and forgets up to 16 network credentials\n- Shows online, offline, and Wi-Fi connection states\n- Plays a notification when internet connectivity returns\n\nThe ESP32-S2 board must run ESP-AT configured for GPIO17 and GPIO18 at 115200\nbaud with hardware flow control disabled. Setup instructions are available in\nthe source repository.\n",
+  "family": "application",
+  "id": "wifi_internet_watch",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/wifi_internet_watch/manifest.yml",
+    "source_code": "https://github.com/DruzhininPavel/wifi-internet-watch-flipper/tree/e562527607bf7a53bddf3e21a6f4042e24cc7e36"
+  },
+  "name": "WiFi Internet Watch",
+  "short_description": "Select a WiFi network and monitor internet availability through ESP-AT",
+  "version": "1.2"
+}
