@@ -1,6 +1,6 @@
 # Manifest
 
-Each entry submitted to this catalog is defined by a manifest file called `manifest.yml`. The CI uses it to fetch the code, check it and assemble the entry's bundle: `bundle/` and `bundle.json` next to the manifest. The bundle is sent to the qUnleashed catalog server, which builds it in the latest Unleashed firmware with fbt and publishes it.
+Each entry submitted to this catalog is defined by a manifest file called `manifest.yml`. The CI uses it to fetch the code, check it and assemble the entry's bundle, `bundle/` and `bundle.json`, in a scratch folder: this repository keeps the manifests, never the bundles. The bundle is sent to the qUnleashed catalog server, which builds it in the latest Unleashed firmware with fbt and publishes it.
 
 The full path of a manifest tells what the entry is, where it belongs and how it is called:
 
@@ -105,6 +105,7 @@ A manifest is a YAML file that points to the source code repository and provides
 | `version` | Yes | Version, in format "major.minor". | `fap_version` |
 | `author` | No | Author, as one or more `@name`. | `fap_author` |
 | `icon` | Apps only | Icon. Must be 10x10px 1-bit .png file. | `fap_icon` |
+| `apps` | No | The apps the entry offers, its own `id` first. See [The first App()](#the-first-app). | None |
 | `targets` | No | A list of targets this entry supports. See [documentation on FAM App Manifests](https://developer.flipper.net/flipperzero/doxygen/app_manifests.html) for more. By default - includes all targets. | `targets` |
 
 **It is recommended to specify as many fields as possible in `application.fam` and not in `manifest.yml`, to avoid duplication and keep the manifest file short.**
@@ -112,6 +113,15 @@ A manifest is a YAML file that points to the source code repository and provides
 ### The first App()
 
 **The first `App()` in `application.fam` is the entry's app.** Every later `EXTERNAL` app is another build of it, offered beside it (ProtoPirate Extra beside ProtoPirate); a `PLUGIN` is built into the app that requires it. If your `application.fam` defines several apps, the one this manifest is for, its `id`, must come first.
+
+`apps` in the manifest says which of them the entry offers, without touching the code. The first name is the entry's own app, its `id`. One name is that app alone: use it when one repository holds separate apps, each with a manifest of its own, so that none of them offers the others (Multi_Fuzzer's `fuzzer_ibtn` and `fuzzer_rfid`). More names are variants of one app, offered in that order. Every other name must be an `EXTERNAL` `App()` of `application.fam`. With no `apps`, or an empty list, the entry offers every `EXTERNAL` app as above.
+
+```yaml
+id: proto_pirate
+apps: [proto_pirate, proto_pirate_extra]
+```
+
+An app belongs to one entry: the server refuses an entry that offers an app another entry already offers.
 
 Menu styles kept together in one repository are the exception: each style gets its own manifest with its `id`, and its bundle gets an `application.fam` with that style alone.
 
@@ -315,14 +325,14 @@ Four workflows, each with one task:
 
 1. **pull-request** runs `tools/publish.py check --build` for every changed manifest: every rule above, the apps `application.fam` gives the server, and a `ufbt` build against the development SDK of Unleashed, within 60 seconds, for an app from a repository outside `trusted.yml`. The result is a comment on the pull request and the summary of the run. Nothing is published.
 2. **app-stream** runs once a day. It adds the official catalog's manifests we have none of, updates our unchanged copies of the others, and pins the entries of trusted repositories to their latest commit. It writes manifests only.
-3. **publish** runs on every push to `main`, a merged pull request and app-stream's commit alike. The manifests changed since the last commit the server took are assembled into `bundle/` and `bundle.json` next to the manifest and, when they differ from what this repository holds, sent in batches to every catalog server listed in [`servers.yml`](../servers.yml), a domain each; the CI then commits them. A deleted manifest takes its entry out of every server. The tag `published` marks the last commit all the servers took, so a run that could not reach one of them is caught up by the next one.
-4. **bootstrap** is started by hand by a code owner, with the address of a catalog server and a mode: `update` sends what the server does not hold or holds at another version, `force` sends every entry.
+3. **publish** runs on every push to `main`, a merged pull request and app-stream's commit alike. The manifests changed since the last commit the server took are assembled and sent in batches to every catalog server listed in [`servers.yml`](../servers.yml), a domain each; nothing assembled is committed. A deleted manifest takes its entry out of every server. The tag `published` marks the last commit all the servers took, so a run that could not reach one of them is caught up by the next one.
+4. **bootstrap** is started by hand by a code owner, with the address of a catalog server and a mode: `update` sends what the server does not hold, `force` sends every entry.
 
 The server builds every app in the latest Unleashed firmware with fbt, and keeps the last version of every entry; its history is this repository's. A new version of an app that works waits on the server until it is built and only then takes the old one's place; one that does not build leaves the old one as it was. An app from a repository outside `trusted.yml` must also build with `ufbt`, as it does in the official catalog: that is what the pull request checks. The firmware's core contributors, listed in `trusted.yml`, may publish apps that need the whole firmware tree.
 
 ### bundle.json
 
-Everything the server knows of an entry is what its `bundle.json` says; the server works nothing out of the bundle folder. So a change to any of it is a change in this repository, not on the server:
+Everything the server knows of an entry is what its `bundle.json` says; the server works nothing out of the bundle folder. The CI writes it from the manifest and `application.fam`, so a change to any of it is a change to those in this repository, not on the server:
 
 | Field | What it is |
 | --- | --- |
@@ -331,5 +341,5 @@ Everything the server knows of an entry is what its `bundle.json` says; the serv
 | `install_path` | an app: its category path; a menu style: `/ext/apps_data/loader/plugins`; an animation: `/ext/dolphin/<Name>` |
 | `authors` | every `@name` of `author`, once |
 | `icon`, `screenshots` | paths in `bundle/`: a 10x10 icon and 128x64 screenshots, 1-bit black on transparent PNGs, the screenshots in the manifest's order |
-| `apps` | apps and menu styles: the entry's own app first, then every other `EXTERNAL` app of `application.fam`, each with `appid`, `name`, `version`, `file` (`.fap`, or `.fal` for a plugin) and `icon`. A `PLUGIN` an app requires is built into it and not listed |
+| `apps` | apps and menu styles: the entry's own app first, then the ones the manifest's `apps` lists, or without it every other `EXTERNAL` app of `application.fam`, each with `appid`, `name`, `version`, `file` (`.fap`, or `.fal` for a plugin) and `icon`. A `PLUGIN` an app requires is built into it and not listed |
 | `files`, `dolphin` | animations: `meta.txt` and the frames, and the whole line for `dolphin/manifest.txt`, defaults filled in |

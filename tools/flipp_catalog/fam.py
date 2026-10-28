@@ -92,6 +92,31 @@ def _closing(text: str, start: int) -> int | None:
     return None
 
 
+def _own_arguments(block: str) -> str:
+    """The App()'s own arguments: whatever is nested in them, a Lib() of
+    fap_private_libs above all, blanked out so that its name is not taken
+    for the app's."""
+    out, depth, quote, escaped = [], 0, None, False
+    for ch in block:
+        if quote:
+            if escaped:
+                escaped = False
+            elif ch == "\\":
+                escaped = True
+            elif ch == quote:
+                quote = None
+        elif ch in "\"'":
+            quote = ch
+        elif ch in "([{":
+            depth += 1
+        elif ch in ")]}":
+            out.append(ch if depth <= 1 else " ")
+            depth -= 1
+            continue
+        out.append(ch if depth <= 1 else " ")
+    return "".join(out)
+
+
 def fam_apps(code: Path) -> list[FamApp]:
     """Every App() with an appid, in file order."""
     try:
@@ -105,8 +130,9 @@ def fam_apps(code: Path) -> list[FamApp]:
             break
         block = clean[match.start():end]
         position = end
-        fields = dict(FIELD_RE.findall(block))
-        kind = APPTYPE_RE.search(block)
+        own = _own_arguments(block)
+        fields = dict(FIELD_RE.findall(own))
+        kind = APPTYPE_RE.search(own)
         if fields.get("appid"):
             out.append(FamApp(fields["appid"], kind.group(1) if kind else "", fields, block))
     return out

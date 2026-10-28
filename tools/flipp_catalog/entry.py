@@ -86,15 +86,6 @@ class Entry:
         return self.dir.relative_to(ROOT).as_posix()
 
     @property
-    def bundle_dir(self) -> Path:
-        """What was last published of the entry, next to its manifest."""
-        return self.dir / "bundle"
-
-    @property
-    def meta_path(self) -> Path:
-        return self.dir / "bundle.json"
-
-    @property
     def local(self) -> bool:
         """An animation whose files lie next to its manifest."""
         return not self.origin
@@ -116,7 +107,8 @@ class Entry:
         if not (ANIMATION_NAME_RE if self.family == "animation" else NAME_RE).match(self.name):
             errors.append(f"bad id folder: {self.name}")
         if "bundle" in self.rel.split("/")[1:-1]:
-            errors.append("bundle is the folder a publish writes; no folder of the path may take that name")
+            errors.append("bundle is the folder bundles were once kept in, and a path under it is skipped; "
+                          "no folder of the path may take that name")
         if self.type != "git":
             errors.append("sourcecode.type must be git")
         if self.local:

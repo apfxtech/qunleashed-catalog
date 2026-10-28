@@ -1,8 +1,8 @@
 name: Bootstrap
 
 # By hand, by a code owner: brings a catalog server to what this repository
-# holds. update sends the entries the server does not hold or holds at a
-# version other than the one in bundle.json; force sends every entry.
+# holds. update sends the entries the server does not hold; force sends every
+# entry. Nothing assembled is committed.
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ on:
         type: string
         required: true
       mode:
-        description: "update: what the server lacks or holds at another version; force: every entry"
+        description: "update: what the server lacks; force: every entry"
         type: choice
         options:
           - update
@@ -98,8 +98,6 @@ jobs:
     needs: plan
     if: needs.plan.outputs.batches != '[]'
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     strategy:
       fail-fast: false
       max-parallel: 4
@@ -128,12 +126,7 @@ jobs:
           REPORT: ${{ runner.temp }}/reports/report-${{ strategy.job-index }}.json
         run: |
           mapfile -t list < <( jq -r '.[]' <<< "$MANIFESTS" )
-          python3 tools/publish.py publish --force --report "$REPORT" "${list[@]}"
-
-      - name: Commit the bundles
-        if: always()
-        run: |
-          .github/scripts/commit.sh "Bundles: bootstrap" ':(glob)**/bundle/**' ':(glob)**/bundle.json'
+          python3 tools/publish.py publish --report "$REPORT" "${list[@]}"
 
       - name: Keep the report
         if: always()

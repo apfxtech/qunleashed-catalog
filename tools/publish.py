@@ -2,7 +2,7 @@
 
   pull-request  changed, check, report
   app-stream    sync-ofw, pin
-  publish       categories, changed, publish, withdraw, prune, report, settled
+  publish       categories, changed, publish, withdraw, report, settled
   bootstrap     categories, stale, publish, report
 
 check is also what an author runs before sending a pull request. Each
@@ -33,7 +33,7 @@ def cmd_check(args) -> int:
 def cmd_publish(args) -> int:
     from flipp_catalog.publishing import publish
     from flipp_catalog.report import Report
-    return 1 if publish(args.manifests, Report(args.report), force=args.force) else 0
+    return 1 if publish(args.manifests, Report(args.report)) else 0
 
 
 def cmd_categories(args) -> int:
@@ -53,13 +53,6 @@ def cmd_withdraw(args) -> int:
     from flipp_catalog.publishing import withdraw
     from flipp_catalog.report import Report
     return 1 if withdraw(args.manifests, Report(args.report)) else 0
-
-
-def cmd_prune(args) -> int:
-    from flipp_catalog.publishing import prune
-    for folder in prune():
-        print(f"pruned {folder}")
-    return 0
 
 
 def cmd_sync_ofw(args) -> int:
@@ -113,7 +106,6 @@ def main() -> int:
     p.add_argument("manifests", nargs="+")
     p.set_defaults(func=cmd_check)
     p = sub.add_parser("publish", help="assemble and send to the catalog server")
-    p.add_argument("--force", action="store_true", help="send even what this repository already holds")
     p.add_argument("--report")
     p.add_argument("manifests", nargs="*")
     p.set_defaults(func=cmd_publish)
@@ -123,8 +115,6 @@ def main() -> int:
     p.add_argument("--report")
     p.add_argument("manifests", nargs="+")
     p.set_defaults(func=cmd_withdraw)
-    p = sub.add_parser("prune", help="remove bundles left without a manifest")
-    p.set_defaults(func=cmd_prune)
     p = sub.add_parser("sync-ofw", help="take in the official catalog's manifests we have none of or hold an older copy of")
     p.add_argument("upstream", help="a checkout of flipper-application-catalog")
     p.set_defaults(func=cmd_sync_ofw)

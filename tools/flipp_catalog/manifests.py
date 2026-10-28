@@ -28,7 +28,9 @@ def entries(trees=FAMILIES) -> list[Entry]:
 
 
 def in_bundle(path: str) -> bool:
-    """A file a publish wrote, not one an author did."""
+    """A file of a bundle this repository once kept, not one an author wrote.
+    The history still names them, the commit that removed them first of all:
+    a manifest.yml of the code a bundle carried is not a deleted manifest."""
     parts = path.split("/")
     return "bundle" in parts[:-1] or parts[-1] == "bundle.json"
 

@@ -29,7 +29,7 @@ If you want to report abuse or violation of your rights, please open an issue in
 - `example` - sample manifests for each kind of entry
 - `tools` - CI/CD tools: checking manifests and their code, assembling bundles, publishing them to the server
 
-Next to every published manifest the CI keeps the entry's bundle as the server received it: `bundle/` and `bundle.json`.
+The CI assembles an entry's bundle, `bundle/` and `bundle.json`, in a scratch folder and sends it to the servers; this repository keeps only the manifests.
 
 ## Differences from the Flipper Apps Catalog
 

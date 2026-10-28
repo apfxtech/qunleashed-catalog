@@ -1,6 +1,6 @@
 """The bundle folder of an entry and the meta that goes with it: exactly what
-the catalog server receives and keeps. Written next to the manifest as
-bundle/ and bundle.json, so this repository records what was published.
+the catalog server receives and keeps. Written to a scratch folder and sent;
+this repository keeps the manifests, not what is made of them.
 
 The meta names everything the server needs: the category's id, the install
 path, the authors, the apps with their files and icons, the screenshots in
@@ -33,9 +33,9 @@ DOLPHIN_DEFAULTS = {"min_butthurt": 0, "max_butthurt": 14, "min_level": 1, "max_
 
 
 def assemble(entry: Entry, code: Path, sha: str, origin: str, out: Path, meta_file: Path) -> list[str]:
-    """Writes the bundle folder to out and its meta to meta_file, replacing
-    what was there: the entry's bundle_dir and meta_path for a publish, a scratch
-    folder for a check. Returns what is not right with the entry."""
+    """Writes the bundle folder to out and its meta to meta_file, both in a
+    scratch folder of a publish or a check. Returns what is not right with
+    the entry."""
     shutil.rmtree(out, ignore_errors=True)
     out.mkdir(parents=True)
     if entry.family == "animation":
@@ -81,9 +81,7 @@ def _app(entry: Entry, code: Path, out: Path) -> tuple[dict, list[str]]:
     icon_rel = _picture(images.icon, code, str(icon), out, "assets/icon.png", problems) if icon else None
     if not icon and entry.family == "application":
         problems.append("no icon: fap_icon in application.fam")
-    # The first App() and every later EXTERNAL one: a PLUGIN is built into
-    # the app that requires it and is not offered on its own.
-    offered = [apps[0], *(app for app in apps[1:] if app.apptype == "EXTERNAL")]
+    offered = _offered(entry, apps, main, problems)
     meta_apps = []
     for position, app in enumerate(offered):
         own = None
@@ -105,6 +103,33 @@ def _app(entry: Entry, code: Path, out: Path) -> tuple[dict, list[str]]:
         "description": description or short or name, "changelog": changelog or f"v{version}",
         "icon": icon_rel, "screenshots": screenshots, "apps": meta_apps,
     }, problems
+
+
+def _offered(entry: Entry, apps: list, main, problems: list[str]) -> list:
+    """The apps the entry offers. The manifest's apps list names them, the
+    entry's own first: one name is that app alone, more are its variants. With
+    no list, the first App() and every later EXTERNAL one; a PLUGIN is built
+    into the app that requires it and is not offered on its own."""
+    listed = entry.data.get("apps") or []
+    if not isinstance(listed, list):
+        problems.append("apps must be a list of appids")
+        listed = []
+    if not listed:
+        return [apps[0], *(app for app in apps[1:] if app.apptype == "EXTERNAL")]
+    listed = list(dict.fromkeys(str(appid) for appid in listed))
+    if listed[0] != main.appid:
+        problems.append(f"apps must start with {main.appid}, the entry's own app")
+    by_id = {app.appid: app for app in apps}
+    offered = [main]
+    for appid in listed:
+        app = by_id.get(appid)
+        if appid == main.appid:
+            continue
+        if app is None or app.apptype != "EXTERNAL":
+            problems.append(f"apps: {appid} is not an EXTERNAL App() of application.fam")
+        else:
+            offered.append(app)
+    return offered
 
 
 def _animation(entry: Entry, code: Path, out: Path) -> tuple[dict, list[str]]:
