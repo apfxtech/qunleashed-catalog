@@ -1,0 +1,15 @@
+{
+  "author": "@panki27 & @xMasterX",
+  "category": "Media/Instruments",
+  "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Various fixes, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version",
+  "description": "Metronome app",
+  "family": "application",
+  "id": "metronome",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/Instruments/metronome/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/metronome"
+  },
+  "name": "Metronome",
+  "short_description": "Metronome app",
+  "version": "1.4"
+}

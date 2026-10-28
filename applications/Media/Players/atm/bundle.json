@@ -1,0 +1,15 @@
+{
+  "author": "@apfxtech",
+  "category": "Media/Players",
+  "changelog": "v1.0",
+  "description": "ATM player",
+  "family": "application",
+  "id": "atm",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/Players/atm/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/de1539b0da6d53bb6303f819be0518a63c460b32/non_catalog_apps/FlipperATM"
+  },
+  "name": "ATM player",
+  "short_description": "ATM player",
+  "version": "1.0"
+}

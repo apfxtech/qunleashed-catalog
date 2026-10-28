@@ -1,0 +1,15 @@
+{
+  "author": "@gebeto",
+  "category": "Infrared",
+  "changelog": "## v1.5\n\n- Add Media control view by @teohumeau\n\n## v1.4\n\nSDK version bump\n\n- Add long press for all the buttons\n\n## v1.3\n\nSDK version bump\n\n- Fix build for latest firmware\n\n## v1.2\n\nSDK version bump\n\n- Fix build for latest firmware\n\n## v1.1\n\nRelease\n\n- Stable release\n",
+  "description": "# flipper-xbox-controller\n\nInfrared remote control for Xbox One",
+  "family": "application",
+  "id": "xbox_controller",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/xbox_controller/manifest.yml",
+    "source_code": "https://github.com/gebeto/flipper-xbox-controller/tree/6b429c5b853c348470d5b6019c37b2ec5067a397"
+  },
+  "name": "Xbox Controller",
+  "short_description": "Infrared remote control for Xbox One",
+  "version": "1.5"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "Coolshrimp",
+  "category": "Media/Players",
+  "changelog": "v3.5",
+  "description": "Play any MP3 from the SD card through the internal speaker, a MAX98357A amplifier, or a filtered PAM8403 board.",
+  "family": "application",
+  "id": "mp3_player",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/Players/mp3_player/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/1be1d03d49183b26f179c38a197dc0e34102534e/non_catalog_apps/flipperzero_mp3_player"
+  },
+  "name": "MP3 Player",
+  "short_description": "Play any MP3 from the SD card through the internal speaker, a MAX98357A amplifier, or a filtered PAM8403 board.",
+  "version": "3.5"
+}

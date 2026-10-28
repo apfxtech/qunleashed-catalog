@@ -1,0 +1,15 @@
+{
+  "author": "@invalidna-me",
+  "category": "Media/Instruments",
+  "changelog": "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
+  "description": "A basic Ocarina (of Time), Controls are the same as the N64 version of the Ocarina of Time",
+  "family": "application",
+  "id": "ocarina",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/Instruments/ocarina/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/ocarina"
+  },
+  "name": "Ocarina",
+  "short_description": "A basic Ocarina (of Time), Controls are the same as the N64 version of the Ocarina of Time",
+  "version": "1.3"
+}

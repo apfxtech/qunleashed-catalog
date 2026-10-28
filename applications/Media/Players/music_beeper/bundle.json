@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Media/Players",
+  "changelog": "v0.1",
+  "description": "Music Beeper",
+  "family": "application",
+  "id": "music_beeper",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/Players/music_beeper/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/music_beeper"
+  },
+  "name": "Music Beeper",
+  "short_description": "Music Beeper",
+  "version": "0.1"
+}

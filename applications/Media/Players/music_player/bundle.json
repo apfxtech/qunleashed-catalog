@@ -1,0 +1,15 @@
+{
+  "author": "@DrZlo13",
+  "category": "Media/Players",
+  "changelog": "## 1.4\n - Added LEFT/RIGHT buttons to decrease/increase playback speed (±10 BPM, range 10–500 BPM)\n - Added OK button to play and pause the current song\n - Current BPM is displayed on-screen while playing\n## 1.3\n - Replacing the icon with black and white\n## 1.2\n - Update API v65.0\n## 1.1\n - An example file moved to app assets\n## 1.0\n - Initial release\n",
+  "description": "# Music Player\n\nThis is a simple music player that can play music using the Flipper Zero's speaker.\n\nThe music player supports the Flipper Music Format (FMF), which is similar to RTTL. You can find a sample song in the /apps_data/music_player folder on your SD card. It is a text file that you can open using any text editor on your computer. You can also find more songs on our [Community Forum](https://forum.flipper.net/t/music-player-songs/2715/35).\n\nThe volume can be adjusted using the UP and DOWN buttons on the D-pad.\nThe BPM (Beats per minute) can be adjusted using the LEFT and RIGHT buttons on the D-pad.\nPlay/Pause(Stop) via OK button.\n",
+  "family": "application",
+  "id": "music_player",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/Players/music_player/manifest.yml",
+    "source_code": "https://github.com/flipperdevices/flipperzero-good-faps/tree/55328b486971e49078a955a7c086e4463fa6843b/music_player"
+  },
+  "name": "Music Player",
+  "short_description": "An app to play RTTL music files",
+  "version": "1.4"
+}
