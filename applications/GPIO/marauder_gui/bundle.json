@@ -1,0 +1,15 @@
+{
+  "author": "mel4mi",
+  "category": "GPIO",
+  "changelog": "v1.1",
+  "description": "ESP32 Marauder companion app - WiFi/BT attacks, detectors and network tools over UART",
+  "family": "application",
+  "id": "marauder_gui",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/marauder_gui/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/9a39f64129a6d2975fc95623517a00378debcc5a/non_catalog_apps/marauder_gui"
+  },
+  "name": "Marauder GUI",
+  "short_description": "ESP32 Marauder companion app - WiFi/BT attacks, detectors and network tools over UART",
+  "version": "1.1"
+}

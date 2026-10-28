@@ -1,0 +1,15 @@
+{
+  "author": "@jamisonderek",
+  "category": "GPIO",
+  "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
+  "description": "Control a 7-segment display with GPIO pins",
+  "family": "application",
+  "id": "gpio_7segment_output",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/gpio_7segment_output/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/apps_source_code/gpio_7segment"
+  },
+  "name": "7-Segment Output",
+  "short_description": "Control a 7-segment display with GPIO pins",
+  "version": "1.3"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "GPIO",
+  "changelog": "v0.1",
+  "description": "Input Reader 2",
+  "family": "application",
+  "id": "gpioreader2",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/gpioreader2/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/flipperzero_gpioreader"
+  },
+  "name": "Input Reader 2",
+  "short_description": "Input Reader 2",
+  "version": "0.1"
+}

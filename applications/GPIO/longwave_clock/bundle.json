@@ -1,0 +1,15 @@
+{
+  "author": "@m7i-org",
+  "category": "GPIO",
+  "changelog": "v0.1",
+  "description": "Receive long wave time signals through inexpensive GPIO modules, or simulate receipt if you don't own any.\nSupports DCF77 as well as MSF, with more protocols to be implemented in the future.\n",
+  "family": "application",
+  "id": "longwave_clock",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/longwave_clock/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/77338a5a2731b621730324952e7e5e8772dc98ac/non_catalog_apps/flipper_longwave_clock"
+  },
+  "name": "Longwave Clock",
+  "short_description": "Decode or demonstrate long wave time signals",
+  "version": "0.1"
+}

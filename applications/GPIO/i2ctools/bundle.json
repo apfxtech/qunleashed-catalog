@@ -1,0 +1,15 @@
+{
+  "author": "@NaejEL",
+  "category": "GPIO",
+  "changelog": "v1.1",
+  "description": "Set of i2c tools",
+  "family": "application",
+  "id": "i2ctools",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/i2ctools/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/flipper_i2ctools"
+  },
+  "name": "[GPIO] i2c Tools",
+  "short_description": "Set of i2c tools",
+  "version": "1.1"
+}

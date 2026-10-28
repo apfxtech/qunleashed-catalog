@@ -1,0 +1,15 @@
+{
+  "author": "Aurelius Rosenbaum",
+  "category": "GPIO",
+  "changelog": "v1.2",
+  "description": "Simple intervalometer app, works via GPIO pins.",
+  "family": "application",
+  "id": "gpio_timelapse",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/gpio_timelapse/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/timelapse"
+  },
+  "name": "[GPIO] Timelapse",
+  "short_description": "Simple intervalometer app, works via GPIO pins.",
+  "version": "1.2"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "Zachary Weiss",
+  "category": "GPIO",
+  "changelog": "All version control & changes annotated on GitHub",
+  "description": "Port of Samy Kamkar's MagSpoof project to the Flipper Zero. Emulates magstripe data wirelessly using an external electromagnet.\n\nReading & internal TX are works-in-progress; for more information, confer GitHub.\n",
+  "family": "application",
+  "id": "magspoof",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/magspoof/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/magspoof_flipper"
+  },
+  "name": "MagSpoof",
+  "short_description": "Enables wireless transmission of magstripe data",
+  "version": "0.10"
+}

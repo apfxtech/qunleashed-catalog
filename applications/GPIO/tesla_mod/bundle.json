@@ -1,0 +1,15 @@
+{
+  "author": "hypery11",
+  "category": "GPIO",
+  "changelog": "v2.16.1",
+  "description": "Tesla CAN bus toolkit — FSD region-gate bypass, nag killer, BMS dashboard, and more. Requires CAN Add-On.",
+  "family": "application",
+  "id": "tesla_mod",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/tesla_mod/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/bb9d4b90d28c1ecd76f31473a9f45b4824bb4083/non_catalog_apps/flipper_tesla_mod"
+  },
+  "name": "Tesla Mod",
+  "short_description": "Tesla CAN bus toolkit — FSD region-gate bypass, nag killer, BMS dashboard, and more. Requires CAN Add-On.",
+  "version": "2.16.1"
+}

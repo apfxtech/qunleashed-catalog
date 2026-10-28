@@ -1,0 +1,15 @@
+{
+  "author": "Kris Bahnsen, Esteban Fuentealba, ProteanReverie, Darryn Cull",
+  "category": "GPIO",
+  "changelog": "v2.3",
+  "description": "Pokemon exchange from Flipper Zero to Game Boy, supports Generation I & II non-Japanese games",
+  "family": "application",
+  "id": "pokemon",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/pokemon/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/77338a5a2731b621730324952e7e5e8772dc98ac/non_catalog_apps/gb-pokemon-trading"
+  },
+  "name": "flipper-gblink",
+  "short_description": "Pokemon exchange from Flipper Zero to Game Boy, supports Generation I & II non-Japanese games",
+  "version": "2.3"
+}

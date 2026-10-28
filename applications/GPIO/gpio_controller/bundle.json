@@ -1,0 +1,15 @@
+{
+  "author": "@Lokno",
+  "category": "GPIO",
+  "changelog": "## v1.0\n\n**Initial implementation:**\n- First version",
+  "description": "A visual tool to control the general purpose pins of the Flipper Zero",
+  "family": "application",
+  "id": "gpio_controller",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/gpio_controller/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/apps_source_code/gpio_controller"
+  },
+  "name": "GPIO Controller",
+  "short_description": "A visual tool to control the general purpose pins of the Flipper Zero",
+  "version": "1.0"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "coolshrimp",
+  "category": "GPIO",
+  "changelog": "v0.8",
+  "description": "FM Radio App",
+  "family": "application",
+  "id": "fmradio_controller",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/fmradio_controller/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/fm_radio_controller"
+  },
+  "name": "[TEA5767] FM Radio",
+  "short_description": "FM Radio App",
+  "version": "0.8"
+}
