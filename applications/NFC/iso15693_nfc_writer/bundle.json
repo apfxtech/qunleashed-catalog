@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "iso15693_nfc_writer",
+      "file": "iso15693_nfc_writer.fap",
+      "icon": "assets/icon.png",
+      "name": "ISO 15693-3 NFC Writer",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "NFC",
+  "category_id": "64971d10be1a76c06747de26",
   "changelog": "v0.1",
   "description": "ISO 15693-3 NFC Writer",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "iso15693_nfc_writer",
+  "install_path": "NFC",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/iso15693_nfc_writer/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/iso15693_nfc_writer"
   },
   "name": "ISO 15693-3 NFC Writer",
+  "screenshots": [],
   "short_description": "ISO 15693-3 NFC Writer",
   "version": "0.1"
 }

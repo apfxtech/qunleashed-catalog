@@ -1,15 +1,38 @@
 {
+  "apps": [
+    {
+      "appid": "biovault",
+      "file": "biovault.fap",
+      "icon": "assets/icon.png",
+      "name": "BioVault",
+      "version": "0.1"
+    }
+  ],
   "author": "Shain Lakin",
+  "authors": [],
   "category": "NFC",
+  "category_id": "64971d10be1a76c06747de26",
   "changelog": "# Changelog\n\n## v0.1\n\nInitial release.\n\n- Read, write, and browse an enclave-encrypted vault stored in Sector 1 of an\n  NTAG I2C Plus 2K implant (Dangerous Things xSIID).\n- Secrets and notes up to 255 characters — enough for a 24-word BIP39 seed\n  phrase.\n- Vault plaintext is heatshrink-compressed before encryption to stretch the\n  tag's fixed 1024-byte Sector 1.\n- Optional 6-digit vault PIN: stretched (PBKDF2 + enclave-iterated AES) into\n  key material that wraps the vault key. No verifier by design — a stolen\n  Flipper alone offers nothing to brute-force against.\n- AES-256-GCM vault sealed with a device-unique key held in the STM32WB secure\n  enclave; nothing is recoverable off-device.\n- On-screen vault browser with add / view / edit / remove and an extended\n  keyboard for symbols.\n- Send a username, password, or note to a host over USB-HID.\n- Optional tag password protection (opt-in): device-bound, UID-diversified\n  PWD/PACK, selectable read-protect and auth-limit, reversible unprotect.\n- A biovault USB CLI mirroring every on-device command.\n- Key failures are explained on screen instead of only in the serial log: a\n  missing device key, a PIN that has not been entered, an unreadable keystore,\n  and a vault written by a different Flipper each get their own message and a\n  short \"what to do\", on the device and over the CLI.\n",
   "description": "BioVault keeps a password vault **encrypted on an NFC implant**, unlockable\nonly by the Flipper that owns it.\n\nThe encrypted vault lives on the implant (Dangerous Things xSIID, or any NTAG\nI2C Plus 2K). The key that decrypts it lives only in the Flipper's secure\nenclave and never leaves it. You need **both** the implant and its Flipper to\nread anything; either one on its own reveals nothing. Load the vault from the\nimplant, browse and edit it on-device, and type credentials straight into a\ncomputer over USB. No external tooling, everything in RAM.\n\n## Features\n\n- Read, write, and browse an encrypted credential vault on the implant.\n- Add, view, edit, and remove credentials and notes on-device, with an\n  extended keyboard for symbols.\n- Secrets and notes up to 255 characters per entry, enough for a 24-word seed\n  phrase, with the vault compressed before encryption.\n- Send a username, password, or note to a computer over USB-HID, as if typed\n  on a keyboard.\n- Optional implant password protection: the implant itself refuses reads\n  without a device-bound, per-implant password, with a configurable\n  failed-attempt lockout.\n- Optional 6-digit vault PIN, stretched through the secure enclave into key\n  material that wraps the vault key. Not a check that can be patched out, and\n  brute-forcing it requires this Flipper, one multi-second guess at a time.\n- A USB serial CLI (run biovault) that mirrors every on-device command.\n\n## Security\n\nThe vault is sealed with AES-256-GCM. The data key is wrapped by a\ndevice-unique key generated inside the STM32WB55 secure enclave and never\nleaves the chip. A lost Flipper exposes nothing, since the data is only on the\nimplant. A scanned implant yields only ciphertext. With a PIN set, even the\nFlipper alone gives an attacker nothing to test guesses against.\n\nFull documentation, security model, and source:\n[github.com/flamebarke/biovault-flipper](https://github.com/flamebarke/biovault-flipper)\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "biovault",
+  "install_path": "NFC",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/biovault/manifest.yml",
     "source_code": "https://github.com/flamebarke/biovault-flipper/tree/98be332a51f6fd4e321db84199767193ec0d2c42"
   },
   "name": "BioVault",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png",
+    "assets/screenshots/6.png",
+    "assets/screenshots/7.png"
+  ],
   "short_description": "Read/write an enclave-encrypted vault on an NTAG I2C Plus 2K NFC implant (xSIID), Sector 1.",
   "version": "0.1"
 }

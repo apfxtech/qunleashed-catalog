@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "ulc_relay",
+      "file": "ulc_relay.fap",
+      "icon": "assets/icon.png",
+      "name": "UL-C Relay",
+      "version": "1.0"
+    }
+  ],
   "author": "noproto",
+  "authors": [],
   "category": "NFC/MIFARE",
+  "category_id": "nfc-mifare",
   "changelog": "v1.0",
   "description": "Relay Ultralight C authentication",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "ulc_relay",
+  "install_path": "NFC/MIFARE",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/MIFARE/ulc_relay/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/77338a5a2731b621730324952e7e5e8772dc98ac/non_catalog_apps/ulc_relay"
   },
   "name": "UL-C Relay",
+  "screenshots": [],
   "short_description": "Relay Ultralight C authentication",
   "version": "1.0"
 }

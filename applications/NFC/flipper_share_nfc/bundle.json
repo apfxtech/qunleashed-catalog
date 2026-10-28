@@ -1,15 +1,42 @@
 {
+  "apps": [
+    {
+      "appid": "flipper_share_nfc",
+      "file": "flipper_share_nfc.fap",
+      "icon": "assets/icon.png",
+      "name": "Flipper Share NFC",
+      "version": "1.5"
+    }
+  ],
   "author": "@lomalkin",
+  "authors": [
+    {
+      "id": "lomalkin",
+      "name": "lomalkin"
+    }
+  ],
   "category": "NFC",
+  "category_id": "64971d10be1a76c06747de26",
   "changelog": "v1.5: Flipper Share NFC — file transfer over the NFC channel\n- New app derived from Flipper Share: the transport is now NFC (onboard 13.56 MHz\n  antenna, ISO14443-3A) instead of Sub-GHz / IR.\n- Role mapping: the sender emulates a card (NFC listener), the receiver acts as the\n  reader (NFC poller) and drives a command/response exchange loop; each exchange\n  carries one flipper-share packet per direction (or an empty keep-alive poll).\n- DATA block size raised to 240 bytes to fill one ISO14443 frame (256-byte buffer),\n  for much higher throughput than the IR build.\n- Per-packet CRC16 kept (on top of the per-frame ISO14443 CRC-A); MD5 verification\n  of the whole file after reception is kept.\n- Automatic retransmission of lost/corrupted packets and resume after field loss:\n  the poller re-activates the card and the block bitmap re-requests only the\n  missing blocks.\n- Reliable (re)connection: the poller cycles its RF field off on every failed\n  activation attempt, resetting an emulator left stranded mid-anticollision (in\n  that state the emulated card ignores polling and only a field-off recovers\n  it — previously the link could stay dead until the devices were pulled far\n  apart and re-touched).\n- Control traffic (ANNOUNCE / REQUEST) now has priority over DATA in the transport\n  mailbox (a separate latest-wins slot), so a DATA stream can no longer starve it;\n  and the sender adopts the receiver's latest REQUEST even while mid-serving. Fixes\n  a rare stuck transfer where the receiver could never (re)lock because ANNOUNCE\n  packets were being dropped from a DATA-saturated queue.\n- Power/field management on the receiver: while no peer is linked (waiting for a\n  sender, or a transfer separated for longer than a 5 s grace window) the RF field\n  is duty-cycled — one ~6 ms detect probe every 500 ms (~1% duty) instead of a\n  free-running poller (~50%), so the antenna stays cold and the battery lasts;\n  the transfer still resumes automatically on re-touch. The field is switched off\n  entirely once reception completes (result screen). The field is turned off from\n  the scene thread that owns the NFC HAL (a flag hands the actual teardown to the\n  scheduler), avoiding a cross-thread furi_hal_nfc ownership crash.\n- Sender-side card-emulation watchdog: the emulated card can rarely wedge (stop\n  answering activation) after many field on/off cycles, becoming invisible to any\n  reader while still \"announcing\". A watchdog now restarts the emulation whenever\n  no frame has completed for 5 s — it never fires during an active transfer (frames\n  flow continuously) and clears a stuck emulation otherwise, so the sender recovers\n  on its own instead of needing an app restart.\n- Builds with ufbt against the official firmware (no firmware modification); all\n  NFC access goes through the official external app API.\n- Transport parameters (emulated card identity, poll pacing, frame wait time,\n  mailbox depth) live in nfc_transport_config.h; DATA packet size in nfc_share.h.\n",
   "description": "# Flipper Share NFC — direct file transfer between Flippers over NFC\n\n## Overview\n\n**Flipper Share NFC** transfers any file directly from one Flipper Zero to another over the **NFC** channel (13.56 MHz, ISO14443-3A) — using only the onboard NFC antenna. No extra hardware, cables, phones, computers, internet or radio is needed.\n\nActual file transfer speed via **Flipper Share NFC** is around 7 KB/s — the fastest Flipper Share transport — but the two Flippers must be held together, back to back.\n\nFile size tested is 32 MB (~1 h 16 min), transfer time matches the ETA estimate. The protocol itself supports up to 4 GB (uint32_t file size). Maximum file size is limited by the Flipper Zero's free RAM on the receiver side (block map + progress state).\n\nOther Flipper Share transports (Sub-GHz, IR & more): [github.com/lomalkin/flipper-zero-apps](https://github.com/lomalkin/flipper-zero-apps)\n\nFeatures:\n\n- Works out of the box on any Flipper Zero — the NFC hardware is built in.\n- Integrity check with an MD5 hash after reception; per-packet CRC16 (on top of the ISO14443 CRC-A per frame).\n- Automatic retransmission of lost/corrupted packets — the transfer continues \"until success\" (or until you restart it manually). Separating and re-touching the devices mid-transfer resumes where it left off.\n- Torrent-like progress bar on the receiver; filename/size and ETA on the sender.\n- The RF field is duty-cycled while idle and switched off after reception — cold antenna, negligible battery drain.\n\nNFC is near-field: hold the two Flippers with their NFC antennas back to back aligned and touching for best results. The working gap is only a few centimeters. Received files are saved to **/ext/inbox/**.\n\n# Notes\n\nSee the full [README.md](https://github.com/lomalkin/flipper-zero-apps/blob/-/flipper_share_nfc/README.md) for the NFC transport and protocol description.\n\nSource code of the latest version is [here](https://github.com/lomalkin/flipper-zero-apps/blob/-/flipper_share_nfc). Please feel free to open issues and PRs.\n\n# Credits\n\nDerived from Flipper Share. NFC transport built on the Flipper firmware NFC stack (ISO14443-3A poller/listener), all through the official external app API.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flipper_share_nfc",
+  "install_path": "NFC",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/flipper_share_nfc/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/82a2c95854601e932c2bad9bfc14a26611184d3a/base_pack/flipper_share_nfc"
   },
   "name": "Flipper Share NFC",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png",
+    "assets/screenshots/6.png"
+  ],
   "short_description": "Direct file transfer between flippers via NFC",
   "version": "1.5"
 }
