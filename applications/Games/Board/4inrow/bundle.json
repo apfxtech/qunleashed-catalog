@@ -1,0 +1,15 @@
+{
+  "author": "leo-need-more-coffee",
+  "category": "Games/Board",
+  "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
+  "description": "4 in row Game",
+  "family": "application",
+  "id": "4inrow",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Board/4inrow/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/4inrow_game"
+  },
+  "name": "4 in row",
+  "short_description": "4 in row Game",
+  "version": "1.3"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "@teeebor",
+  "category": "Games/Board",
+  "changelog": "v1.1",
+  "description": "Blackjack Game",
+  "family": "application",
+  "id": "blackjack",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Board/blackjack/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/blackjack"
+  },
+  "name": "Blackjack",
+  "short_description": "Blackjack Game",
+  "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "@bolknote",
+  "category": "Games/Puzzle",
+  "changelog": "v1.4 - Spanish and Tatar languages were added, fixed several bugs",
+  "description": "Hangman is a guessing game. Flipper thinks of a word and the gamer tries to guess it by suggesting letters within a certain number of guesses.",
+  "family": "application",
+  "id": "hangman",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Puzzle/hangman/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/hangman_game"
+  },
+  "name": "Hangman",
+  "short_description": "Hangman for Flipper",
+  "version": "1.5"
+}

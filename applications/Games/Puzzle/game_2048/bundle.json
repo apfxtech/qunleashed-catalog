@@ -1,0 +1,15 @@
+{
+  "author": "@eugene-kirzhanov",
+  "category": "Games/Puzzle",
+  "changelog": "v1.0 - Initial release, v1.1 - Description update, v1.2 - Various important fixes, v1.3 - Fixes for latest API, v1.4 - Fixes for latest API, v1.5 - Sync updates and latest API support, v1.6 - Sync with latest version",
+  "description": "In this classic game, your objective is to collect the highest number of points by connecting identical numbers on the playing field.\n\nYou can control the game using the Up, Down, Right, and Left buttons, which allow you to move all cells on the playing field simultaneously.\n\nWhenever you merge two identical numbers, their value doubles. For instance, combining 2 and 2 results in 4.\n\nThe game ends when no further moves are possible. Exiting the game will save the current state of the game board.\n",
+  "family": "application",
+  "id": "game_2048",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Puzzle/game_2048/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/game_2048"
+  },
+  "name": "2048",
+  "short_description": "Play the port of the 2048 game on Flipper Zero.",
+  "version": "1.6"
+}

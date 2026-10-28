@@ -1,0 +1,15 @@
+{
+  "author": "Dominik Dzienia",
+  "category": "Games/Puzzle",
+  "changelog": "# Changelog\n\nAll notable changes to this project will be documented in this file.\n\nThe format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),\nand this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).\n\n# 1.1 - 2026-09-04\n\n## Fixed\n\n- Build against current Flipper Zero firmware SDK (API 88.x): replaced a non-standard integer type no longer provided by the current toolchain headers\n\n# 1.0.1 - 2024-01-04\n\n## Fixed\n\n- Crash on game continue when no extra levels were added to SD Card\n\n# 1.0.0 - 2024-01-04\n\n## Added\n\n- Initial release of the game\n- Base gameplay extended for Flipper Zero: smart bricks selection and navigation\n- 9 level packs from original Palm-OS Vexed 2.2 game by James A. McCombe, Steve Haynal and Vexed Development Team\n- Support for built-in and user-provided levels\n- Golf-style par based scoring\n- One step back undo\n- Showing pre-recorded solution\n- Bricks counter (histogram)",
+  "description": "Vexed is puzzle game, where your goal is to clear level from bricks in in smallest possible count of moves. Easy to learn, **hard to master**\n\nOriginally developed for Palm.OS by James McCombe, and later extended by The Vexed Project, was abandonware since 2006. After 18 years, this full remake shares same level sets, but is written from scratch to fit on Flipper Zero 128x64 B&W screen and be controlled without touch screen.\n\nMore instructions: [Flipper Zero Vexed github pages](https://github.com/dlvoy/flipper-zero-vexed)",
+  "family": "application",
+  "id": "game_vexed",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Puzzle/game_vexed/manifest.yml",
+    "source_code": "https://github.com/dlvoy/flipper-zero-vexed/tree/2e06b39e03967c629608e2895f96f8a6f1a08387"
+  },
+  "name": "Vexed",
+  "short_description": "Vexed - classic Palm.OS puzzle game",
+  "version": "1.1"
+}

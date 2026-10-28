@@ -1,0 +1,15 @@
+{
+  "author": "@x27",
+  "category": "Games/Puzzle",
+  "changelog": "v1.0 - Initial release, v1.1 - Various important fixe, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
+  "description": "Logic Game",
+  "family": "application",
+  "id": "game15",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Puzzle/game15/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/game15"
+  },
+  "name": "Game 15",
+  "short_description": "Logic Game",
+  "version": "1.3"
+}

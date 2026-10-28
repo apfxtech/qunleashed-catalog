@@ -1,0 +1,15 @@
+{
+  "author": "@xtruan",
+  "category": "Games/Board",
+  "changelog": "v1.12 - Update to fix illegal move bug",
+  "description": "How about a nice game of chess?",
+  "family": "application",
+  "id": "chess",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Board/chess/manifest.yml",
+    "source_code": "https://github.com/xtruan/flipper-chess/tree/f850ffbc6d8ca9c9e12c3a2bab16d5cbb009365e"
+  },
+  "name": "Chess",
+  "short_description": "Chess for Flipper",
+  "version": "1.12"
+}
