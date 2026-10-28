@@ -1,15 +1,45 @@
 {
+  "apps": [
+    {
+      "appid": "mouse_click_recorder",
+      "file": "mouse_click_recorder.fap",
+      "icon": null,
+      "name": "Click Recorder",
+      "version": "1.2"
+    }
+  ],
   "author": "undeƒined (@0x78f1935)",
+  "authors": [
+    {
+      "id": "0x78f1935",
+      "name": "0x78f1935"
+    }
+  ],
   "category": "USB",
+  "category_id": "64971d11be1a76c06747de2c",
   "changelog": "# Changelog\n\nAll notable changes to this project will be documented in this file.\n\n# 1.2 - 2026-06-11\n## Update catalog images\n- See https://github.com/flipperdevices/flipper-application-catalog/pull/1016#issuecomment-4658689300\n\n# 1.1 - 2026-04-10\n## Catalog ready\n- Add screenshots for catalog\n- Add changelog to src folder\n- Copy readme into src folder\n- Removed icon.png in favor of the **images** folder\n- Fixed a bug which happend when QFlipper would open Click Recorder causing QFlipper to lose connection through USB\n- Add visual studio code debug environment\n\n# 1.0 - 2026-04-10\n## Initial release\n- Release of Click Recorder\n",
   "description": "# Click Recorder for Flipper Zero\n\nTurn your Flipper Zero into a powerful mouse automation tool. Record, replay, randomize, or spam mouse clicks over USB or Bluetooth. No software needed on the target computer just connect your flipper zero.\n\n# Modes\n\n## Record Clicks\n\nCapture the exact timing of your mouse clicks, then replay them perfectly on the dot.\n\n1. Choose a recording duration (1–60 seconds)\n2. A 3-second countdown gives you time to get ready\n3. Press **OK** for left clicks, **Back** for right clicks - both at the same moment records a dual click (up to 128 clicks)\n4. **Tune the track** - stretch or compress the timing after recording and watch keyframes shift in real time\n5. Position your cursor, pick **Play Once** or **Loop Forever**, and go\n\n## Shuffle Clicks\n\nGenerate random click patterns within a time window. Each playback produces a brand new distribution - great for randomized stress testing or making automation look human.\n\n1. Set a time window (1–60 seconds)\n2. Choose how many clicks (1–128, default 25)\n3. Position your cursor, then pick **Shuffle Once** or **Shuffle Forever**\n\n## Spam Click\n\nRapid-fire a burst of clicks at 100ms intervals.\n\n1. Set a time window (1–60 seconds)\n2. Choose how many clicks (1–255) and which button - **Left**, **Middle**, or **Right**\n3. Position your cursor, then pick **Spam Once** or **Spam Forever**\n4. Press **OK** to pause/resume mid-spam, **Back** to stop\n\n## Computer Mouse\n\nUse your Flipper as a full wireless or wired mouse.\n\n- **Arrow keys** move the cursor (tap = 5px, hold = 20px)\n- **OK** = left click (hold for drag)\n- **Back** = right click (hold for drag)\n- On-screen indicators show which buttons are currently pressed\n\n# Highlights\n\n- **USB + Bluetooth** - switch between wired and wireless from the main menu with Left/Right\n- **BLE auto-discovery** - advertises as \"ClickRec\" or as the Flipper name configured with a blue LED when a device connects\n- **Track tuning** - after recording, adjust the duration and all your clicks scale proportionally\n- **Pause / resume** - pause playback or spam clicking at any time with OK\n- **Loop modes** - play once, loop forever, shuffle forever, or spam forever\n- **Works on any OS** - standard HID mouse protocol, no drivers or software required\n- **In-app menu** - long-press Back from any screen to access Resume, Menu, About, or Quit\n\n# Controls\n\n| Screen | Key | Action |\n|---|---|---|\n| **Main Menu** | Up / Down | Navigate modes |\n| | Left / Right | Toggle USB / BLE |\n| | OK | Select mode |\n| | Long Back | Exit the app |\n| **Duration** | Up / Down | Adjust seconds (1–60) |\n| | OK | Continue |\n| | Back | Go back |\n| **Recording** | OK | Record left click |\n| | Back | Record right click |\n| **Tune Track** | Left / Right | Shrink / expand duration |\n| | OK | Continue to positioning |\n| **Spam Config** | Up / Down | Adjust click count (1–255) |\n| | Left / Right | Choose button (L / M / R) |\n| **Positioning** | Arrows | Move cursor |\n| | OK | Continue to play mode |\n| **Play Mode** | Up / Down | Toggle between once / forever |\n| | OK | Start |\n| **Playback** | OK / Back | Pause |\n| | Left / Right | Toggle loop mode |\n| **Spamming** | OK | Pause / resume |\n| | Back | Stop |\n| **Computer Mouse** | Arrows | Move cursor |\n| | OK (hold) | Left click |\n| | Back (hold) | Right click |\n| **Any screen** | Long Back | Open menu |\n\n# Troubleshooting\n\n| Problem | Solution |\n|---|---|\n| No mouse movement | Check that USB HID is connected (look at the Flipper's notification bar) |\n| BLE not connecting | Make sure Bluetooth is enabled on both devices - look for \"ClickRec\" or the flipper name configured in your device's Bluetooth settings |\n| App not showing on Flipper | Verify the .fap file is at apps/USB/mouse_click_recorder.fap on the SD card |\n| Build errors | Run ufbt update to fetch the latest SDK |\n\n## Author\n\nCreated by **0x78f1935** aka **undeƒined**\n",
   "family": "application",
+  "icon": null,
   "id": "mouse_click_recorder",
+  "install_path": "USB",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/USB/mouse_click_recorder/manifest.yml",
     "source_code": "https://github.com/0x78f1935/Click-Recorder/tree/e39b3b323de927a18ad47c0a597b1ce85af6680f/click_recorder"
   },
   "name": "Click Recorder",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png",
+    "assets/screenshots/6.png",
+    "assets/screenshots/7.png",
+    "assets/screenshots/8.png",
+    "assets/screenshots/9.png"
+  ],
   "short_description": "Turn your Flipper Zero into a powerful mouse automation tool. Record, replay, randomize, or spam mouse clicks over USB or Bluetooth. No software needed on the target computer thanks to HID, just connect your flipper zero.\n",
   "version": "1.2"
 }

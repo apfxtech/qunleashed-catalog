@@ -1,15 +1,50 @@
 {
+  "apps": [
+    {
+      "appid": "hid_usb",
+      "file": "hid_usb.fap",
+      "icon": "assets/icon.png",
+      "name": "USB Remote",
+      "version": "1.1"
+    },
+    {
+      "appid": "hid_ble",
+      "file": "hid_ble.fap",
+      "icon": "assets/apps/hid_ble.png",
+      "name": "Bluetooth Remote",
+      "version": "1.1"
+    }
+  ],
   "author": "Momentum Team",
+  "authors": [],
   "category": "USB",
+  "category_id": "64971d11be1a76c06747de2c",
   "changelog": "v1.1:\nFirst version copied from Momentum.\n",
   "description": "# HID App\n\nThis is a standalone version of the HID app Momentum. Thankfully, that project is GPL, so this one is as well.\n\n## Functionality\n\n* Keynote - Remote for presentations\n* Keynote Vertical - Alternate remote for presentations\n* Keyboard - A functional keyboard, including modifier keys\n* Numpad - Number pad\n* Media - Media controls\n* Apple Music macOS - Alternate music controls\n* Movie - Media controls for watching a movie\n* Mouse - Move the cursor and send clicks\n* TikTok / YT Shorts - Specialized controls for short-form videos\n* Mouse Clicker - Repeatedly click the mouse after a delay\n* Mouse Jiggler - Moves the mouse every few seconds\n* Mouse Jiggler Stealth - Moves the mouse a random direction and distance after a random time period\n* PushToTalk - Controls to unmute your microphone with various services\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "hid_usb",
+  "install_path": "USB",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/USB/hid_usb/manifest.yml",
     "source_code": "https://github.com/fidian/flipper-hid-app/tree/f4a4c3e663838a2f1363f638b3366d4e03b78d79"
   },
   "name": "USB Remote",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png",
+    "assets/screenshots/5.png",
+    "assets/screenshots/6.png",
+    "assets/screenshots/7.png",
+    "assets/screenshots/8.png",
+    "assets/screenshots/9.png",
+    "assets/screenshots/10.png",
+    "assets/screenshots/11.png",
+    "assets/screenshots/12.png"
+  ],
   "short_description": "Use Flipper as a HID remote control over USB",
   "version": "1.1"
 }

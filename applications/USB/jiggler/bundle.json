@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "jiggler",
+      "file": "jiggler.fap",
+      "icon": "assets/icon.png",
+      "name": "Jiggler",
+      "version": "0.1"
+    }
+  ],
   "author": "rseufert",
+  "authors": [],
   "category": "USB",
+  "category_id": "64971d11be1a76c06747de2c",
   "changelog": "v0.1:\nFirst release\n",
   "description": "# Jiggler\n\nA mouse jiggler that keeps a computer awake without getting in your way.\n\n## Features\n\n- **Invisible moves:** each move is a 1 px nudge and an immediate nudge back, so the computer sees mouse input but the pointer never visibly leaves its spot. Other patterns: a random-direction wiggle, a tiny square, or a tap of the F15 or Shift key\n- **Random timing:** set a shortest and a longest wait, from 5 seconds to 10 minutes, and each move comes at a random moment in between\n- **Pauses while you work:** with the desktop helper running, the Flipper knows how long ago you last touched the real mouse or keyboard and holds off until you have been idle for a while. It also knows when the screen is locked\n- **Run timers:** stop after a set time, or at a time of day from the Flipper's clock\n- **Status at a glance:** what the jiggler is doing, when the next move is due, moves made, time running, and what the helper reports\n- **Settings are saved** to the SD card\n\nWithout the helper the jiggler still works, it just cannot tell when you are busy.\n\n## Controls\n\n- OK: start or stop\n- Right or Up: settings\n- Back: quit, which also gives the USB serial port back\n\nIn settings, Up and Down pick a line, Left and Right change it, Back returns.\n\n## The desktop helper\n\nA small Python script, helper/jiggler_helper.py in the repository. Once a second it tells the Flipper how long the computer has been idle and whether the screen is locked, and shows the Flipper's status on one line. It needs the hidapi package and works on macOS, Windows and Linux with X11. It talks to the Flipper over a separate USB HID interface, so it needs no special permissions.\n\n## Notes\n\nWhile the app is open, the Flipper's USB serial port is replaced by the mouse, so qFlipper and the mobile app cannot talk to it. Quit the app to get the port back.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "jiggler",
+  "install_path": "USB",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/USB/jiggler/manifest.yml",
     "source_code": "https://github.com/rseufert/jiggler/tree/f3bfffe259317b2155385957b8966efe1a2da61c"
   },
   "name": "Jiggler",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Mouse jiggler with invisible net-zero moves, random timing, and a desktop helper that pauses it while you work",
   "version": "0.1"
 }

@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "menu_style_3d",
+      "file": "menu_style_3d.fal",
+      "icon": null,
+      "name": "3D",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "Animated",
+  "category_id": "animated",
   "changelog": "v0.1:\nfirst version\n",
   "description": "Main menu as an animated 3D scene.",
   "family": "menustyle",
+  "icon": null,
   "id": "menu_style_3d",
+  "install_path": "/ext/apps_data/loader/plugins",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/menustyles/Animated/menu_style_3d/manifest.yml",
     "source_code": "https://github.com/apfxtech/all-menu-styles/tree/7836ccea89e775016d93823e3d761a5590d7acc1"
   },
   "name": "3D",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Animated 3D menu.",
   "version": "0.1"
 }
