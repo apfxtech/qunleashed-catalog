@@ -1,0 +1,15 @@
+{
+  "author": "Mentoster",
+  "category": "Games/Arcade",
+  "changelog": "v1.4",
+  "description": "Arrow Speed Game",
+  "family": "application",
+  "id": "flipper_hero",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/flipper_hero/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/flipper_hero"
+  },
+  "name": "Flipper Hero",
+  "short_description": "Arrow Speed Game",
+  "version": "1.4"
+}

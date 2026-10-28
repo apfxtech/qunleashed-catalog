@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Games/Arcade",
+  "changelog": "v0.1",
+  "description": "DVD Bouncer",
+  "family": "application",
+  "id": "dvd_bounce",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/dvd_bounce/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/de1539b0da6d53bb6303f819be0518a63c460b32/non_catalog_apps/DVD-Bounce"
+  },
+  "name": "DVD Bouncer",
+  "short_description": "DVD Bouncer",
+  "version": "0.1"
+}

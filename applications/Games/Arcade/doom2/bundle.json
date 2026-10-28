@@ -1,0 +1,15 @@
+{
+  "author": "@apfxtech",
+  "category": "Games/Arcade",
+  "changelog": "v2.2",
+  "description": "Play the port of the arduboy3d game on your Flipper Zero.",
+  "family": "application",
+  "id": "doom2",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/doom2/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/mazeofdoom"
+  },
+  "name": "Maze of doom",
+  "short_description": "Play the port of the arduboy3d game on your Flipper Zero.",
+  "version": "2.2"
+}

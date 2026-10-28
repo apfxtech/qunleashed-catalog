@@ -1,0 +1,15 @@
+{
+  "author": "milk_cool",
+  "category": "Games/Arcade",
+  "changelog": "v1.0 - First version",
+  "description": "# fz-citybloxx\nCity Bloxx for the Flipper Zero!\n",
+  "family": "application",
+  "id": "citybloxx",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/citybloxx/manifest.yml",
+    "source_code": "https://github.com/Milk-Cool/fz-citybloxx/tree/2efc2ed6a9b461fb94f94d43ebd1f37ff3c2aabd"
+  },
+  "name": "City Bloxx",
+  "short_description": "A game based on City Bloxx",
+  "version": "1.0"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "@apfxtech",
+  "category": "Games/Arcade",
+  "changelog": "v1.0",
+  "description": "3D mini-golf game ported to Flipper Zero.",
+  "family": "application",
+  "id": "ardugolf",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/ardugolf/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/FlipperGolf"
+  },
+  "name": "ArduGolf",
+  "short_description": "3D mini-golf game ported to Flipper Zero.",
+  "version": "1.0"
+}

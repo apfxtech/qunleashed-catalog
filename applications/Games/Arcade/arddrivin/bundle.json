@@ -1,0 +1,15 @@
+{
+  "author": "@apfxtech",
+  "category": "Games/Arcade",
+  "changelog": "v1.0",
+  "description": "Race game ported to Flipper Zero.",
+  "family": "application",
+  "id": "arddrivin",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/arddrivin/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/774f509b1997668219398d3a69e13fdd646d219b/non_catalog_apps/FlipperDrivin"
+  },
+  "name": "Ardudrivin",
+  "short_description": "Race game ported to Flipper Zero.",
+  "version": "1.0"
+}

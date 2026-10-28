@@ -1,0 +1,15 @@
+{
+  "author": "@SimplyMinimal",
+  "category": "Games/Arcade",
+  "changelog": "v3.4.0 - Enhanced version with auto rapid fire, power up system, high score system, haptic feedback, LED effects, pause functionality, and reverse thrusters",
+  "description": "Classic Asteroids game with enhanced features including power-ups, high score system, auto-fire, haptic feedback, and LED effects",
+  "family": "application",
+  "id": "asteroids",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/asteroids/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/flipper-asteroids"
+  },
+  "name": "Asteroids",
+  "short_description": "Asteroids game",
+  "version": "1.3"
+}

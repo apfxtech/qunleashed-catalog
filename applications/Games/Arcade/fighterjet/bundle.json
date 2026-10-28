@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Games/Arcade",
+  "changelog": "v0.1.1\nadds screenshot and changelog\n\nv0.1.0\ninitial releare\n",
+  "description": "Game about flying a fighter jet anf hunting down enemies.",
+  "family": "application",
+  "id": "fighterjet",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/fighterjet/manifest.yml",
+    "source_code": "https://github.com/Erbonator3000/flipper-fighter-jet/tree/50b8213eb48271ee5944db90a126aa818e3b3388"
+  },
+  "name": "Fighter Jet",
+  "short_description": "Fighter Jet",
+  "version": "0.1"
+}

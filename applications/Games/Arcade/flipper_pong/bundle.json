@@ -1,0 +1,15 @@
+{
+  "author": "@nmrr & @SimplyMinimal",
+  "category": "Games/Arcade",
+  "changelog": "v1.0 - Initial release, v1.1 - Icon fixes, v1.2 - Sync Updates, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version",
+  "description": "Simple pong game",
+  "family": "application",
+  "id": "flipper_pong",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/flipper_pong/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/apps_source_code/flipper_pong"
+  },
+  "name": "Pong",
+  "short_description": "Simple pong game",
+  "version": "1.4"
+}

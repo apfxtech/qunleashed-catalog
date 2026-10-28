@@ -1,0 +1,15 @@
+App(
+    appid="catacombs",
+    name="Catacombs Of The Damned!",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="arduboy3d_app",
+    requires=["gui", "notification"],
+    sources=["game/*.cpp"],
+    stack_size=4 * 1024,
+    fap_category="Games",
+    fap_icon=".catalog/icon_10px.png",
+    fap_icon_assets="assets",
+    fap_author="@apfxtech",
+    fap_weburl="https://github.com/apfxtech/FlipperCatacombs",
+    fap_version="4.0",
+)

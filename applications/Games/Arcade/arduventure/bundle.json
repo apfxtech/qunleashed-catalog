@@ -1,0 +1,15 @@
+{
+  "author": "@apfxtech",
+  "category": "Games/Arcade",
+  "changelog": "v2.0",
+  "description": "A top-down action adventure ported to Flipper Zero.",
+  "family": "application",
+  "id": "arduventure",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/arduventure/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/FlipperArduventure"
+  },
+  "name": "Arduventure",
+  "short_description": "A top-down action adventure ported to Flipper Zero.",
+  "version": "2.0"
+}

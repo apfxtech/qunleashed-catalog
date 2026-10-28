@@ -1,0 +1,15 @@
+{
+  "author": "Jed Lejosne",
+  "category": "Games/Arcade",
+  "changelog": "v0.2",
+  "description": "A boat game",
+  "family": "application",
+  "id": "drifter",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/drifter/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/drifter"
+  },
+  "name": "Drifter",
+  "short_description": "A boat game",
+  "version": "0.2"
+}

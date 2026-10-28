@@ -1,0 +1,15 @@
+{
+  "author": "@CodeAllNight (MrDerekJamison)",
+  "category": "Games/Arcade",
+  "changelog": "v0.1",
+  "description": "Labyrinth game v0.1 that supports the Video Game Module motion sensor.  Written by @CodeAllNight (https://youtube.com/MrDerekJamison/about)",
+  "family": "application",
+  "id": "air_labyrinth",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/air_labyrinth/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/64e54527446bc248f3b790e5ef02e67908b67a02/non_catalog_apps/air_labyrinth"
+  },
+  "name": "Air Labyrinth",
+  "short_description": "Labyrinth game v0.1 that supports the Video Game Module motion sensor.  Written by @CodeAllNight (https://youtube.com/MrDerekJamison/about)",
+  "version": "0.1"
+}

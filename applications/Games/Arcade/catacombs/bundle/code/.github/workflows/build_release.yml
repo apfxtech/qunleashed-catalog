@@ -1,0 +1,100 @@
+name: FAP Build & Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag to build and release (e.g. v4.0)'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - id: tag
+        shell: bash
+        run: |
+          set -euo pipefail
+          TAG="${{ github.event.inputs.tag || github.ref_name }}"
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+          VERSION="${TAG#v}"
+          echo "version=${VERSION%%-*}" >> "$GITHUB_OUTPUT"
+          if [[ "${TAG}" == *-* ]]; then
+            echo "prerelease=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "prerelease=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.tag.outputs.tag }}
+
+      - name: Check application.fam version matches tag
+        shell: bash
+        run: |
+          set -euo pipefail
+          FAM_VERSION="$(sed -n 's/.*fap_version="\([^"]*\)".*/\1/p' application.fam)"
+          TAG_VERSION="${{ steps.tag.outputs.version }}"
+          if [[ "${FAM_VERSION}" != "${TAG_VERSION}" ]]; then
+            echo "::error::fap_version in application.fam is '${FAM_VERSION}' but the tag is '${{ steps.tag.outputs.tag }}'. Bump application.fam, then re-tag."
+            exit 1
+          fi
+
+      - uses: flipperdevices/flipperzero-ufbt-action@v0.1
+        id: build-app
+        with:
+          sdk-channel: dev
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ github.event.repository.name }}-${{ steps.tag.outputs.tag }}-${{ steps.build-app.outputs.suffix }}
+          path: ${{ steps.build-app.outputs.fap-artifacts }}
+
+      - name: Build release notes
+        shell: bash
+        run: |
+          set -euo pipefail
+          TAG="${{ steps.tag.outputs.tag }}"
+          awk -v tag="${TAG}:" '
+            $0 == tag { grab = 1; next }
+            grab && /^v[0-9]/ { exit }
+            grab { print }
+          ' .catalog/CHANGELOG.md | sed '/^[[:space:]]*$/d' > release_notes.md
+          if [[ ! -s release_notes.md ]]; then
+            echo "::warning::No ${TAG} section found in .catalog/CHANGELOG.md"
+            echo "Release ${TAG}" > release_notes.md
+          fi
+          printf '\nBuilt from %s\n' "${GITHUB_SHA}" >> release_notes.md
+          cat release_notes.md
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          TAG="${{ steps.tag.outputs.tag }}"
+          PRERELEASE=""
+          if [[ "${{ steps.tag.outputs.prerelease }}" == "true" ]]; then
+            PRERELEASE="--prerelease"
+          fi
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release edit "$TAG" --title "$TAG" --notes-file release_notes.md $PRERELEASE
+            gh release upload "$TAG" ${{ steps.build-app.outputs.fap-artifacts }} --clobber
+          else
+            gh release create "$TAG" \
+              --title "$TAG" \
+              --notes-file release_notes.md \
+              $PRERELEASE \
+              ${{ steps.build-app.outputs.fap-artifacts }}
+          fi
