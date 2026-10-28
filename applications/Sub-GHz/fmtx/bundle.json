@@ -1,0 +1,15 @@
+{
+  "author": "@yo3gnd",
+  "category": "Sub-GHz",
+  "changelog": "v0.0.10:\n- Transmits FM, lets you pick the file and frequency.\n",
+  "description": "# FM TX\n\nPick an MP3 and a frequency, then listen to it on a handheld radio or walkie-talkie.\n\nTested on LPD433 walkie-talkie channels. PMR446 and GMRS may also work, but I have not tested either.\n\nDefaults to LPD433 ch 1 - 433.075MHz\n",
+  "family": "application",
+  "id": "fmtx",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/fmtx/manifest.yml",
+    "source_code": "https://github.com/yo3gnd/fmtx/tree/12fd39a84e5d2f97f76653fa223befb182207498"
+  },
+  "name": "fmtx_vfo",
+  "short_description": "Experimental MP3 audio over CC1101 FM.",
+  "version": "0.0.10"
+}

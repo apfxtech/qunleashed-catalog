@@ -1,0 +1,15 @@
+{
+  "author": "RocketGod",
+  "category": "Sub-GHz/Analyzers",
+  "changelog": "## v1.0\n\n**Initial implementation:**\n- First version",
+  "description": "Extract as much signal data from a Flipper Zero .sub file as possible\n\n## Features\n- Complete .sub analysis\n- Protocol decoding\n- RAW timing analysis\n- Accurate calculations\n- Pattern detection\n- Link budget\n- Entropy analysis\n\n[Source](https://github.com/RocketGod-git/Flipper-Zero-SUB-Analyzer)",
+  "family": "application",
+  "id": "sub_analyzer",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/Analyzers/sub_analyzer/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/apps_source_code/sub_analyzer"
+  },
+  "name": "Sub Analyzer",
+  "short_description": "Analyze SubGhz .sub files to extract all signal properties",
+  "version": "1.0"
+}

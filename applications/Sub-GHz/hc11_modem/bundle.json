@@ -1,0 +1,15 @@
+{
+  "author": "Giraut",
+  "category": "Sub-GHz",
+  "changelog": "## Version 1.2 - 12/04/2025\n\n- Made passthru.c work with cli_vcp_disable() / clip_vcp_enable() when applicable\n\n## Version 1.1 - 02/10/2024\n\n- Removed call to view_dispatcher_enable_queue() which has been deprecated\n\n## Version 1.0 - 04/06/2024\n\nInitial release\n",
+  "description": "HC-11 wireless modem emulator for the Flipper Zero",
+  "family": "application",
+  "id": "hc11_modem",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/hc11_modem/manifest.yml",
+    "source_code": "https://github.com/Giraut/flipper_zero_hc11_wireless_modem/tree/043c1454c69c101162789576cd689a1325f3f970"
+  },
+  "name": "HC-11 modem",
+  "short_description": "HC-11 wireless modem",
+  "version": "1.2"
+}

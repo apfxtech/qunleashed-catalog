@@ -1,0 +1,15 @@
+{
+  "author": "@xMasterX & @theY4Kman & @ALEEF02 (original by @jolcese)",
+  "category": "Sub-GHz/Analyzers",
+  "changelog": "v1.0 - Initial release, v1.1 - Fixes, v1.2 - Sync Updates, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version",
+  "description": "This application allows you to plot a chart showing the relationship between amplitude and frequency, detecting nearby signal sources. If there is a nearby source broadcasting a signal at the observed frequency, the graph will go up sharply.\n\nThe app has the following controls:\n\n- The OK button adjusts the width of the spectrum.\n- A long press of the OK button toggles modulation (default/narrow).\n- The Up and Down buttons zoom in and out.\n- The Left and Right buttons switch between different frequency bands.\n\nThe last detected peak stays on screen (prefixed \"Last:\" once the signal is gone) until a new peak is found, so short bursts are easy to read after the fact.\n\nThe app saves the current view (frequency, spectrum width, modulation and zoom) on exit and restores it on the next launch.\n",
+  "family": "application",
+  "id": "spectrum_analyzer",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Sub-GHz/Analyzers/spectrum_analyzer/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/spectrum_analyzer"
+  },
+  "name": "Spectrum Analyzer",
+  "short_description": "Displays a spectrogram chart to visually represent RF signals around you.",
+  "version": "1.5"
+}
