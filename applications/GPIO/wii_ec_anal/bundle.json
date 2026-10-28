@@ -1,0 +1,15 @@
+{
+  "author": "@csBlueChip",
+  "category": "GPIO",
+  "changelog": "v1.0",
+  "description": "Application to test Wii Extension Controllers.",
+  "family": "application",
+  "id": "wii_ec_anal",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/wii_ec_anal/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/wii_ec_anal"
+  },
+  "name": "Wii EC Analyser",
+  "short_description": "Application to test Wii Extension Controllers.",
+  "version": "1.0"
+}

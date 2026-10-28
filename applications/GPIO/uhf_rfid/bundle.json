@@ -1,0 +1,15 @@
+{
+  "author": "@frux-c",
+  "category": "GPIO",
+  "changelog": "## v1.0\n\n**Initial implementation:**\n- First version",
+  "description": "The app leverages the **YRM100** module to enable UHF RFID functionality.\n\n## What's Ongoing\n\nAdding features to the app to make it more usable and stable. Currently, also addressing the issue page to fix bugs and improve the app. And also add the planned and requested features. For example, UI Change to show all info from initial scan; feature to identify the tag type and show the info accordingly; and more.\n\n## What's Changed\n\n- Added a settings page to allow for changing of the module's settings.\n- Added options like baud rate, rf power, region; more to come.\n- Tx communication is much more stable and faster now; more improvements to come.\n- Bug fixes and improvements.\n\n## Usage\n\n1. Power on your FlipperZero device.\n2. Connect the uhf module to the flipper via gpio (UART).\n3. Navigate to the UHF RFID app on FlipperZero's menu.\n4. Currently Read for EPC, TID, USER Banks are supported, as well as saving and Writing EPC, USER Banks\n   ... will further update this page as it development goes\n\n## Contributions\n\nAs this app is still in the development stage, I welcome contributions to this project. If you find any issues or want to enhance the application, feel free to create a pull request.\n\n## Disclaimer\n\n- This application is provided as-is and may contain bugs or issues.\n- Use it at your own risk.\n- I am not responsible for any damage or loss caused by the usage of this app.\n",
+  "family": "application",
+  "id": "uhf_rfid",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/uhf_rfid/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/uhf_rfid"
+  },
+  "name": "[YRM100] UHF RFID",
+  "short_description": "The app leverages the YRM100 module to enable UHF RFID functionality",
+  "version": "1.0"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "@unixispower",
+  "category": "GPIO",
+  "changelog": "## v1.0\n\n**Initial implementation:**\n- Beep and LED indication",
+  "description": "This is a simple Flipper Zero app that beeps if a wire is continuous.\n# How to use\nTest a wire by connecting it to pins 6 and 8. If the wire is continuous, you will see the LED turn green and the flipper will beep.\n",
+  "family": "application",
+  "id": "wire_tester",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/wire_tester/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/apps_source_code/wire_tester"
+  },
+  "name": "[GPIO] Wire Tester",
+  "short_description": "Beeps if a wire is continuous",
+  "version": "1.0"
+}
