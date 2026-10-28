@@ -1,15 +1,37 @@
 {
+  "apps": [
+    {
+      "appid": "t_rex_runner",
+      "file": "t_rex_runner.fap",
+      "icon": "assets/icon.png",
+      "name": "T-Rex runner",
+      "version": "1.5"
+    }
+  ],
   "author": "@Rrycbarm",
+  "authors": [
+    {
+      "id": "rrycbarm",
+      "name": "Rrycbarm"
+    }
+  ],
   "category": "Games/Arcade",
+  "category_id": "games-arcade",
   "changelog": "v1.0 - Initial release, v1.1 - Description update, v1.2 - Various fixes, v1.3 - Various updates, v1.4 - Sync updates and latest API support, v1.5 - Sync with latest version",
   "description": "Your objective is to achieve the highest score possible by pressing the OK button at the precise moment. Be careful not to touch cactuses with the dinosaur, as doing so will result in losing the game.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "t_rex_runner",
+  "install_path": "Games/Arcade",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/t_rex_runner/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/t-rex-runner"
   },
   "name": "T-Rex runner",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "Play the port of the Chrome browser T-Rex game on your Flipper Zero.",
   "version": "1.5"
 }

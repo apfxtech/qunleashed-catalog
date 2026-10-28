@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "race_game",
+      "file": "race_game.fap",
+      "icon": "assets/icon.png",
+      "name": "Race Game",
+      "version": "1.0"
+    }
+  ],
   "author": "mrc19056",
+  "authors": [],
   "category": "Games/Arcade",
+  "category_id": "games-arcade",
   "changelog": "v1.0:\n- 3-lane vertical scrolling racing game\n- Multiple obstacle types: motorcycle, sedan, boss truck\n- Power-ups: shield, magnet, fuel\n- Coin collection with combo multiplier\n- 3 lives system with invincibility frames\n- High score saved to SD card\n- Night mode (inverted colors)\n- Sound effects with toggle\n- Vibration feedback on crash\n- Difficulty selection (Easy/Normal/Hard)\n- Crash particle animation\n- Roadside scenery (trees and poles)\n- Pause functionality\n",
   "description": "# 🏎️ Race Game for Flipper Zero\n\nA fast-paced 3-lane vertical scrolling car racing game for Flipper Zero.\n\n## Features\n\n- **3 Lane Racing** — Dodge incoming vehicles on a scrolling road\n- **Multiple Obstacle Types** — Motorcycles (fast), sedans (normal), boss trucks (2-lane wide!)\n- **Power-Ups** — Collect shields (invincibility), magnets (auto-collect coins), and fuel (+1 life)\n- **Coin Collection & Combo System** — Collect coins for bonus points with increasing multiplier\n- **3 Lives System** — Don't worry about one crash, you have 3 chances\n- **High Score** — Your best score is saved to SD card\n- **Night Mode** — Toggle dark theme from the menu\n- **Sound Effects** — Lane change beeps, crash sounds, level up chimes (toggleable)\n- **Vibration Feedback** — Feel the crash!\n- **Difficulty Selection** — Easy, Normal, or Hard\n- **Crash Animation** — Pixel particle explosion on collision\n- **Roadside Scenery** — Trees and poles for speed immersion\n- **Pause** — Press Back during gameplay to return to menu\n\n## Controls\n\n| Button | Action |\n|--------|--------|\n| **◀ / ▶** | Change lane (gameplay) / Navigate menu |\n| **▲ / ▼** | Navigate menu options |\n| **OK** | Select menu option / Restart |\n| **Back** | Pause (gameplay) / Exit (menu) |\n\n## Menu Options\n\n- **START** — Begin the race\n- **SOUND: ON/OFF** — Toggle sound effects\n- **NIGHT: ON/OFF** — Toggle night mode (inverted colors)\n- **EASY / NORMAL / HARD** — Select difficulty\n\n## Building\n\nRequires ufbt (https://pypi.org/project/ufbt/):\n\nufbt build\n\n## Installation\n\nCopy race_game.fap to your Flipper Zero SD card:\n\nSD Card/apps/Games/race_game.fap\n\nOr install from the **Flipper Apps Catalog** (coming soon).\n\n## Author\n\n**Mehmet Miraç ARIK** ([@mrc19056](https://github.com/mrc19056))\n\n## License\n\nMIT License\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "race_game",
+  "install_path": "Games/Arcade",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/race_game/manifest.yml",
     "source_code": "https://github.com/mrc19056/flipper-race-game/tree/794197bedd786c35db1801895743f53dfb2c9a39"
   },
   "name": "Race Game",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "3-lane racing game with power-ups, combos, and night mode",
   "version": "1.0"
 }

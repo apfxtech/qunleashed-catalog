@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "quadrastic",
+      "file": "quadrastic.fap",
+      "icon": "assets/icon.png",
+      "name": "Quadrastic",
+      "version": "1.0"
+    }
+  ],
   "author": "@ivanbarsukov",
+  "authors": [
+    {
+      "id": "ivanbarsukov",
+      "name": "ivanbarsukov"
+    }
+  ],
   "category": "Games/Arcade",
+  "category_id": "games-arcade",
   "changelog": "v1.0",
   "description": "Quadrastic is a simple addicting game inspired by the Arduboy game of the same name. This, in turn, was based on a popular PSP homebrew game called Squarez. Squarez itself drew inspiration from Ball, a game created by Nicolay Edin and Axel Hammarback, which was originally inspired by Eskiv, a game developed by Jean-François Geyelin.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "quadrastic",
+  "install_path": "Games/Arcade",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/quadrastic/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/64e54527446bc248f3b790e5ef02e67908b67a02/non_catalog_apps/quadrastic"
   },
   "name": "Quadrastic",
+  "screenshots": [],
   "short_description": "Quadrastic is a simple addicting game inspired by the Arduboy game of the same name",
   "version": "1.0"
 }

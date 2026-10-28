@@ -1,15 +1,38 @@
 {
+  "apps": [
+    {
+      "appid": "laser_tag",
+      "file": "laser_tag.fap",
+      "icon": "assets/icon.png",
+      "name": "Laser Tag",
+      "version": "2.3"
+    }
+  ],
   "author": "@RocketGod-git & @jamisonderek",
+  "authors": [
+    {
+      "id": "rocketgod-git",
+      "name": "RocketGod-git"
+    },
+    {
+      "id": "jamisonderek",
+      "name": "jamisonderek"
+    }
+  ],
   "category": "Games/Arcade",
+  "category_id": "games-arcade",
   "changelog": "v2.3",
   "description": "Laser Tag game for Flipper Zero",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "laser_tag",
+  "install_path": "Games/Arcade",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/laser_tag/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/laser_tag_game"
   },
   "name": "Laser Tag",
+  "screenshots": [],
   "short_description": "Laser Tag game for Flipper Zero",
   "version": "2.3"
 }
