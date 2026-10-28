@@ -1,11 +1,52 @@
 {
   "author": "@DoobTheGoober",
+  "authors": [
+    {
+      "id": "doobthegoober",
+      "name": "DoobTheGoober"
+    }
+  ],
   "category": "DoobTheGoober",
+  "category_id": "doobthegoober",
   "changelog": "",
   "description": "",
-  "dolphin": {},
+  "dolphin": {
+    "max_butthurt": 14,
+    "max_level": 30,
+    "min_butthurt": 0,
+    "min_level": 1,
+    "weight": 8
+  },
   "family": "animation",
+  "files": [
+    "meta.txt",
+    "frame_0.bm",
+    "frame_1.bm",
+    "frame_10.bm",
+    "frame_11.bm",
+    "frame_12.bm",
+    "frame_13.bm",
+    "frame_14.bm",
+    "frame_15.bm",
+    "frame_16.bm",
+    "frame_17.bm",
+    "frame_18.bm",
+    "frame_19.bm",
+    "frame_2.bm",
+    "frame_20.bm",
+    "frame_21.bm",
+    "frame_22.bm",
+    "frame_23.bm",
+    "frame_3.bm",
+    "frame_4.bm",
+    "frame_5.bm",
+    "frame_6.bm",
+    "frame_7.bm",
+    "frame_8.bm",
+    "frame_9.bm"
+  ],
   "id": "PipBoy_128x64",
+  "install_path": "/ext/dolphin/PipBoy_128x64",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/animations/DoobTheGoober/PipBoy_128x64/manifest.yml",
     "source_code": "https://github.com/DoobTheGoober/FlipperZeroAnimation/tree/27835e886eca44dfee2546b4026c9a388ffb733f/Pipboy/PipBoy_128x64"
