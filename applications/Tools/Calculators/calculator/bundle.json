@@ -1,15 +1,36 @@
 {
+  "apps": [
+    {
+      "appid": "calculator",
+      "file": "calculator.fap",
+      "icon": "assets/icon.png",
+      "name": "Calculator",
+      "version": "1.4"
+    }
+  ],
   "author": "@n-o-T-I-n-s-a-n-e",
+  "authors": [
+    {
+      "id": "n-o-t-i-n-s-a-n-e",
+      "name": "n-o-T-I-n-s-a-n-e"
+    }
+  ],
   "category": "Tools/Calculators",
+  "category_id": "tools-calculators",
   "changelog": "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
   "description": "Calculator, that can calculate simple expressions",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "calculator",
+  "install_path": "Tools/Calculators",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Calculators/calculator/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/calculator"
   },
   "name": "Calculator",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Calculator for simple expressions, powers and roots. Long-press X for ^ (power), / for sqrt(, ( for ).",
   "version": "1.4"
 }

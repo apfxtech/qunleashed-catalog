@@ -1,15 +1,37 @@
 {
+  "apps": [
+    {
+      "appid": "hex_viewer",
+      "file": "hex_viewer.fap",
+      "icon": "assets/icon.png",
+      "name": "HEX Viewer",
+      "version": "2.0"
+    }
+  ],
   "author": "@QtRoS",
+  "authors": [
+    {
+      "id": "qtros",
+      "name": "QtRoS"
+    }
+  ],
   "category": "Tools/Editors",
+  "category_id": "tools-editors",
   "changelog": "v2.0 - Scrolling to any % and interal refactoring, v1.1 - Various important fixes, v1.0 - Initial release",
   "description": "App allows to view various files as HEX.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "hex_viewer",
+  "install_path": "Tools/Editors",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Editors/hex_viewer/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/base_pack/hex_viewer"
   },
   "name": "HEX Viewer",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "App allows to view various files as HEX",
   "version": "2.0"
 }

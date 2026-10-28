@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "totp",
+      "file": "totp.fap",
+      "icon": "assets/icon.png",
+      "name": "wolfssl",
+      "version": "5.190"
+    }
+  ],
   "author": "Alexander Kopachov (@akopachov)",
+  "authors": [
+    {
+      "id": "akopachov",
+      "name": "akopachov"
+    }
+  ],
   "category": "Tools/Crypto",
+  "category_id": "tools-crypto",
   "changelog": "v5.190",
   "description": "Software-based TOTP/HOTP authenticator for Flipper Zero device",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "totp",
+  "install_path": "Tools/Crypto",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Crypto/totp/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/totp"
   },
   "name": "wolfssl",
+  "screenshots": [],
   "short_description": "Software-based TOTP/HOTP authenticator for Flipper Zero device",
   "version": "5.190"
 }

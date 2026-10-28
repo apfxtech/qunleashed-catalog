@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "dcf77",
+      "file": "dcf77.fap",
+      "icon": "assets/icon.png",
+      "name": "DCF77 Transmitter",
+      "version": "2.0"
+    }
+  ],
   "author": "@arha",
+  "authors": [
+    {
+      "id": "arha",
+      "name": "arha"
+    }
+  ],
   "category": "Tools/Clocks",
+  "category_id": "tools-clocks",
   "changelog": "v2.0",
   "description": "Radio clock emulator lab with DCF77, MSF, WWVB, JJY and others, plus many debugging features",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "dcf77",
+  "install_path": "Tools/Clocks",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Clocks/dcf77/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/flipper-dcf77"
   },
   "name": "DCF77 Transmitter",
+  "screenshots": [],
   "short_description": "Radio clock emulator lab with DCF77, MSF, WWVB, JJY and others, plus many debugging features",
   "version": "2.0"
 }

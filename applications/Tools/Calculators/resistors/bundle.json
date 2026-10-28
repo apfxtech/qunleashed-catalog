@@ -1,15 +1,32 @@
 {
+  "apps": [
+    {
+      "appid": "resistors",
+      "file": "resistors.fap",
+      "icon": "assets/icon.png",
+      "name": "Resistance calculator",
+      "version": "1.4"
+    }
+  ],
   "author": "Lewis Westbury",
+  "authors": [],
   "category": "Tools/Calculators",
+  "category_id": "tools-calculators",
   "changelog": "v1.1 - Initial release, v1.2 - Sync Updates, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version",
   "description": "Resistor calculations",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "resistors",
+  "install_path": "Tools/Calculators",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Calculators/resistors/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/apps_source_code/resistors"
   },
   "name": "Resistance calculator",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png"
+  ],
   "short_description": "Resistor calculations",
   "version": "1.4"
 }
