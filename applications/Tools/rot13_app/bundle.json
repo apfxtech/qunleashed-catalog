@@ -1,0 +1,15 @@
+{
+  "author": "nothingbutlucas",
+  "category": "Tools",
+  "changelog": "## V0.1\n\n- Initial release.\n",
+  "description": "# ROT13\n\n## ROT13 application\n\nThis simple app will take a text an convert that text using rot13.\n\n## Thanks <3\n\nThanks to jamisonderek for all his tutorials, videos and specially for the\n[Basic scenes tutorial](https://github.com/jamisonderek/flipper-zero-tutorials/tree/main/ui/basic_scenes)\nBecause its basically this entire app with a few tweaks\n\nThanks to instantiator.dev for his\n[tutorial](https://instantiator.dev/post/flipper-zero-app-tutorial-01/) to\ncreate applications for the flipper zero\n\nThanks to Ztuu for the [rot13 code](https://gist.github.com/Ztuu/e9106e9095422a7d7266653f1e156366)\n",
+  "family": "application",
+  "id": "rot13_app",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/rot13_app/manifest.yml",
+    "source_code": "https://github.com/nothingbutlucas/flipperzero_rot13/tree/ec52397333d61d4f35fe53801731e0dd832d5db5"
+  },
+  "name": "ROT13",
+  "short_description": "Cipher text with ROT13",
+  "version": "0.1"
+}

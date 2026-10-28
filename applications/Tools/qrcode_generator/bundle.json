@@ -1,0 +1,15 @@
+{
+  "author": "Thomas Schwarz (aka qw3rtty)",
+  "category": "Tools",
+  "changelog": "## v0.1:\n- Initial commit \n- First release \n",
+  "description": "# Flipper Zero: QRCode Generator\nGenerates and displays QRCodes on the flipper zero.\n\n## Download\nGrab the **qrcode_generator.fap** from the latest release. \n\n## Installation \nAfter the download copy the **.fap** file onto your flipper in the folder \n**apps/Tools**. Then create in the **apps_data** folder the subfolder \n**qrcode_generator** to open existing QRCodes or to save it on the sdcard.\n\n## Features\n- Generating QRCodes based on the entered input\n- Open QRCodes which are saved on the sdcard\n\n## Data format\nTo generate newly QRCodes, you can just enter the data you want to stored \nin the QRCode.\n\nTo open saved QRCodes you need on a regular basis, just create a **.txt** file \nin the **apps_data/qrcode_generator/** folder on the sdcard with just the \ndata in it. The app reads the content of the file and creates an QRCode with \nit. You need no further specific format or something else. \n\n## Examples:\n**Open new mail:**\nmailto:example@example.com\n\n**Open link:**\nhttps://github.com/qw3rtty\n\n## Using the App\nThe app is acutally straightforward. If you start it, you have three menu\noptions. One to generate a new QRCode, one to open existing ones from the \nsdcard and one to get the basic information about this app.\n\n## qrcode library\nThe application uses the awesome C library from **nayuki**\nto generate and display the QRCodes. \n\n",
+  "family": "application",
+  "id": "qrcode_generator",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/qrcode_generator/manifest.yml",
+    "source_code": "https://github.com/qw3rtty/flipperzero-qrcode-generator/tree/c1d2591ef69e93eef5dc681ac3b5c1370c70a5d4"
+  },
+  "name": "QRCode Generator",
+  "short_description": "Generates and displays QRCodes on flipper zero.",
+  "version": "0.1"
+}

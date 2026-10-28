@@ -1,0 +1,15 @@
+{
+  "author": "Rrycbarm",
+  "category": "Tools",
+  "changelog": "## 1.1.2\n- Feature: if the username is not set, it will only write **password + \\n**\n- Feature: added minimal parser per special character in the credentials file: \"\\\"  -> \"\\\\\\\\\" and \",\"  -> \"\\\\,\"\n\n## 1.1\n- Bugfix: disabled InputKeyOk in \"Delete Password\" if there are no password stored\n\n## 1.0\n- Initial release",
+  "description": "# Password Manager\n\nUse you flipper zero as a password manager and authenticator!      \nThe flipper stores your usernames and password and can write them on your PC acting as a keyboard!\n\n## How does it work\n- Add new credentials:\n    - The flipper asks you to insert the website name, the username and the password\n    - Credentials are stored into a file in the flipper\n- See saved credentials:\n    - The flipper shows a lists of website names\n    - If OK is clicked, the flipper will write on the PC **username + /t + password + /n**\n        - *Perfect for web forms!!!*\n        - (If the username is not set, it will write only **password + /n**)\n- Delete credentials:\n    - The flipper shows a lists of website names\n    - If OK is clicked, the flipper will remove the selected line from the credentials file\n\n## Storage\nCredentials are stored as **service,username,password** in a .txt file.    \n**\\\\** and **,** needs to be escaped as **\\\\** and **\\,** if you handle the file manually.",
+  "family": "application",
+  "id": "password_manager",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/password_manager/manifest.yml",
+    "source_code": "https://github.com/Rrycbarm/flipperZeroPasswordManager/tree/8d02154358a2ba583268353a24cedabe9485c43f"
+  },
+  "name": "Password Manager",
+  "short_description": "This app stores your usernames and password and can write them on your PC acting as a keyboard",
+  "version": "1.2"
+}

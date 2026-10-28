@@ -1,0 +1,15 @@
+{
+  "author": "Bob Matcuk",
+  "category": "Tools",
+  "changelog": "v2: Multi-line qrcodes, manual mode selection, may set mode, version, and ecc in file.\nv1: First release; may manually change qrcode version and ecc level.\n",
+  "description": "# qrcode\nDisplay qrcodes on the Flipper Zero\n\nSee the documentation in the qrcode repo: https://github.com/bmatcuk/flipperzero-qrcode\n",
+  "family": "application",
+  "id": "qrcode",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/qrcode/manifest.yml",
+    "source_code": "https://github.com/bmatcuk/flipperzero-qrcode/tree/64135f4d511be1b4acf633da08f2447758aa00a4"
+  },
+  "name": "QRCode",
+  "short_description": "Display qrcodes",
+  "version": "2.1"
+}

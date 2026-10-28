@@ -1,0 +1,15 @@
+{
+  "author": "@SkorP",
+  "category": "Tools",
+  "changelog": "## 1.4\n - Removed call to legacy SDK API\n## 1.3\n - Сhange GUI\n## 1.2\n - Rework application with new NFC API\n## 1.1\n - App rename, removed About screen\n## 1.0\n - Initial release\n",
+  "description": "# NFC&LFRFID Field Detector\n\nThis application allows you to detect the presence of NFC and LF RFID fields. It can be used to check what technology is used in a reader that you don't have documentation for, or to check whether a reader is working properly.\n\n## Usage\n\nOpen the app and bring your Flipper Zero up to the reader. The app will display the detected field type (NFC or LF RFID). For LF RFID, the app will also display the exact frequency of the field. If the reader is using both NFC and LF RFID, the app will display both.\n",
+  "family": "application",
+  "id": "nfc_rfid_detector",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/nfc_rfid_detector/manifest.yml",
+    "source_code": "https://github.com/flipperdevices/flipperzero-good-faps/tree/b791dea234f855155027bb46215dc60f3ddeb243/nfc_rfid_detector"
+  },
+  "name": "RFID detector",
+  "short_description": "Identify the reader type: NFC (13 MHz) and/or RFID (125 KHz).",
+  "version": "1.4"
+}

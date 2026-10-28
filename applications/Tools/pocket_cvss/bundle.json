@@ -1,0 +1,15 @@
+{
+  "author": "vavkamil",
+  "category": "Tools",
+  "changelog": "# Changelog\n\n## v0.3 - UI Polish\n\n- Switched custom info screen footer hints to native Flipper button elements.\n- Tightened result, vector, About, and severity screen layouts.\n- Simplified About and severity screens to reduce visual clutter.\n\n## v0.2 - CVSS Examples\n\n- Added built-in CVSS examples for common vulnerability classes.\n- Added a severity range reference for CVSS v3.1 learning and score checks.\n- Added regression coverage for CVSS scoring, real CVE vectors, and bundled examples.\n- Polished result, vector, navigation, and About screen layouts.\n- Refreshed README badges, screenshots, and feature summary.\n- Added GitHub Actions checks for host tests, formatting, and linting.\n\n## v0.1 - Initial Release\n\n- Initial Pocket CVSS release.\n",
+  "description": "# Pocket CVSS\n\nPocket CVSS is a native Flipper Zero app for offline CVSS v3.1 Base scoring and learning.\n\nCalculate CVE severity offline, browse example vectors, and check CVSS score ranges in a Flipper-friendly layout.\n\n## Features\n\n- Guided CVSS v3.1 Base scoring, fully offline\n- Instant score, severity, and canonical vector\n- Built-in examples for common vulnerability classes\n- Severity reference for quick checks\n- Compact screens designed for Flipper navigation\n",
+  "family": "application",
+  "id": "pocket_cvss",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/pocket_cvss/manifest.yml",
+    "source_code": "https://github.com/vavkamil/pocket-cvss/tree/c911a5f7aa41f2338d019443f4f48ecc448a33f2"
+  },
+  "name": "Pocket CVSS",
+  "short_description": "Offline CVSS v3.1 base calculator",
+  "version": "0.3"
+}

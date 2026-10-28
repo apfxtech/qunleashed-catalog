@@ -1,0 +1,15 @@
+{
+  "author": "David White",
+  "category": "Tools",
+  "changelog": "1.0.0: \nCreated basic functionality",
+  "description": "The Pet Your Dolphin app let's you check in on your little dolphin buddy! Stop by daily to give it some pets to improve its mood and earn XP!",
+  "family": "application",
+  "id": "pet_your_dolphin",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/pet_your_dolphin/manifest.yml",
+    "source_code": "https://github.com/dwight9339/pet_your_dolphin/tree/517a2c279b2aad6de8ff6015aa836676ab0d6f19"
+  },
+  "name": "Pet Your Dolphin",
+  "short_description": "Pet your dolphin to keep it happy and earn XP",
+  "version": "1.0"
+}

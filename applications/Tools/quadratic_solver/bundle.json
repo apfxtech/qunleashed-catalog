@@ -1,0 +1,15 @@
+{
+  "author": "@paul-sopin",
+  "category": "Tools",
+  "changelog": "## v0.1:\n- app release",
+  "description": "# What does this app do?\n\nThis app takes a, b, and c values from a quadratic equation in form \"ax^2 + bx + c = 0\" \n\n# How to use?\n\nSelect a number when hovering over a, b, or c with **LEFT** to decrease number, and **RIGHT** to increase. Press **OK** when selected values to solve the equation. Hover over \"About\" and press **RIGHT** to view additional information.\n",
+  "family": "application",
+  "id": "quadratic_solver",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/quadratic_solver/manifest.yml",
+    "source_code": "https://github.com/paul-sopin/flipper-quadratic-solver/tree/6bb4b232bdaaa5a4ad0e3ec775b418b5a4cb7291"
+  },
+  "name": "Quadratic Solver",
+  "short_description": "A simple quadratic equation solver app",
+  "version": "0.1"
+}
