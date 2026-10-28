@@ -1,0 +1,23 @@
+# For details & more options, see documentation/AppManifests.md in firmware repo
+#
+# Stock firmware / official App Catalog build target:
+#   claude_remote_usb — works on stock firmware (submitted to App Catalog)
+#
+# The BLE variant (claude_remote_ble) for Momentum/Unleashed lives on the
+# `ble` branch of this repo to keep the catalog CI from trying to build it.
+
+App(
+    appid="claude_remote_usb",
+    name="Agentic Remote USB",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="claude_remote_usb_app",
+    requires=["gui"],
+    stack_size=4 * 1024,
+    fap_category="USB",
+    fap_version="0.28",
+    fap_icon="claude_remote.png",
+    fap_description="One-handed USB remote for AI coding agents (Claude Code). 5-button D-pad control, macros, offline manual + quiz.",
+    fap_author="Kasen Sansonetti",
+    fap_icon_assets="images",
+    cdefines=["HID_TRANSPORT_USB"],
+)

@@ -1,0 +1,15 @@
+{
+  "author": "Momentum Team",
+  "category": "USB",
+  "changelog": "v1.1:\nFirst version copied from Momentum.\n",
+  "description": "# HID App\n\nThis is a standalone version of the HID app Momentum. Thankfully, that project is GPL, so this one is as well.\n\n## Functionality\n\n* Keynote - Remote for presentations\n* Keynote Vertical - Alternate remote for presentations\n* Keyboard - A functional keyboard, including modifier keys\n* Numpad - Number pad\n* Media - Media controls\n* Apple Music macOS - Alternate music controls\n* Movie - Media controls for watching a movie\n* Mouse - Move the cursor and send clicks\n* TikTok / YT Shorts - Specialized controls for short-form videos\n* Mouse Clicker - Repeatedly click the mouse after a delay\n* Mouse Jiggler - Moves the mouse every few seconds\n* Mouse Jiggler Stealth - Moves the mouse a random direction and distance after a random time period\n* PushToTalk - Controls to unmute your microphone with various services\n",
+  "family": "application",
+  "id": "hid_usb",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/USB/hid_usb/manifest.yml",
+    "source_code": "https://github.com/fidian/flipper-hid-app/tree/f4a4c3e663838a2f1363f638b3366d4e03b78d79"
+  },
+  "name": "USB Remote",
+  "short_description": "Use Flipper as a HID remote control over USB",
+  "version": "1.1"
+}

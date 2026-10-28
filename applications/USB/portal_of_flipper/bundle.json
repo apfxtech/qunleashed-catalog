@@ -1,0 +1,15 @@
+{
+  "author": "sanjay900",
+  "category": "USB",
+  "changelog": "## 1.3\n - Implement auth for the xbox 360\n## 1.2\n - Several bug fixes and changes to make the portal emulation closer to the real portals\n - Use the flippers speaker to emulate the portals speaker\n## 1.1\n - Support for emulating xbox 360 portals\n - Use the backlight and RGB led to emulate the portals LEDs\n## 1.0\n - Public release\n",
+  "description": "# Portal of Flipper\n\nUSB Emulator\n\nOriginal App by bettse\n\nApp Icon by mikeonut\n\nAdditional protocol reverse engineering and testing by norto\n\n## Requirements\n\nNFC files must:\n\n- be Mifare Classic 1k\n- have complete data\n- have the correct sector 0 Key A\n\n## How to use\n\n- Be sure you don't have qFlipper or lab.flipper.net connected to the flipper when you launch (this will cause the USB emulation to fail to start).\n- Use 'Load figure' to select a .nfc file to load\n- Figure, if loaded successfully, will appear in list\n- Press center when figure highlighted to remove\n\n## TODO:\n\n- Hardware add-on with RGB LEDs to emulate portal and 'jail' lights: https://github.com/flyandi/flipper_zero_rgb_led/blob/master/led_ll.c\n",
+  "family": "application",
+  "id": "portal_of_flipper",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/USB/portal_of_flipper/manifest.yml",
+    "source_code": "https://github.com/sanjay900/portal_of_flipper/tree/cfc775efe510e0a4e8b259c35514f0a584a4c005"
+  },
+  "name": "Portal Of Flipper",
+  "short_description": "USB emulator",
+  "version": "1.3"
+}

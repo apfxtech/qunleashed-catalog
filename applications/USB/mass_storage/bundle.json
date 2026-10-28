@@ -1,0 +1,15 @@
+{
+  "author": "@nminaylov @kevinwallace",
+  "category": "USB",
+  "changelog": "## v.1.5\n\nFixed a crash when the USB bus reports an error, connection loss is now shown in the UI\n\n## v.1.4\nRemoved call to legacy SDK API\n\n## v.1.3\n\nMinimal changes for recent API updates\n\n## v.1.2\n\n * Fix deadlock on disk eject\n * Locked USB notification\n\n## v.1.1\n\n * Faster image creation\n * Speed and transfer size in UI\n\n## v.1.0\n\nInitial release.\n",
+  "description": "# USB Mass Storage emulator\n\nThis application allows you to use your Flipper Zero as a (very slow) USB mass storage device. You can create a disk image of up to 64MB, and then format and mount it on your computer via USB. All the images are stored on the SD card, which allows you to have multiple images and switch between them.",
+  "family": "application",
+  "id": "mass_storage",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/USB/mass_storage/manifest.yml",
+    "source_code": "https://github.com/flipperdevices/flipperzero-good-faps/tree/55328b486971e49078a955a7c086e4463fa6843b/mass_storage"
+  },
+  "name": "Mass Storage",
+  "short_description": "Implements a mass storage device over USB for disk images",
+  "version": "1.5"
+}
