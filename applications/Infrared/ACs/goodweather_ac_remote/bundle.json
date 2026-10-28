@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "goodweather_ac_remote",
+      "file": "goodweather_ac_remote.fap",
+      "icon": "assets/icon.png",
+      "name": "Goodweather",
+      "version": "1.0"
+    }
+  ],
   "author": "xMasterX",
+  "authors": [],
   "category": "Infrared/ACs",
+  "category_id": "infrared-acs",
   "changelog": "v1.0",
   "description": "IR remote for Goodweather-protocol air conditioners",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "goodweather_ac_remote",
+  "install_path": "Infrared/ACs",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Infrared/ACs/goodweather_ac_remote/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/f760885012da59af1f35683b479c38858f4382ee/non_catalog_apps/goodweather_ac_remote"
   },
   "name": "Goodweather",
+  "screenshots": [],
   "short_description": "IR remote for Goodweather-protocol air conditioners",
   "version": "1.0"
 }

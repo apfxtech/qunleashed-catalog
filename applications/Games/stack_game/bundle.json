@@ -1,15 +1,33 @@
 {
+  "apps": [
+    {
+      "appid": "stack_game",
+      "file": "stack_game.fap",
+      "icon": "assets/icon.png",
+      "name": "Stack",
+      "version": "1.0"
+    }
+  ],
   "author": "bergr22",
+  "authors": [],
   "category": "Games",
+  "category_id": "64971d11be1a76c06747de2f",
   "changelog": "v1.0 - Initial release",
   "description": "# Stack\nA classic skill and timing game for Flipper Zero. Precision is key as you stack moving blocks layer by layer.\n\n## Features\n\n- Addictive tower-building gameplay driven by precise timing\n- Smooth animation optimized for the Flipper Zero display\n- On-screen score tracker to push your personal high scores\n- The gaming experience has been enhanced with vibration, dynamic sound effects, and LED lighting during gameplay\n\n## Controls\n\n- OK: Drop the moving block onto the stack\n- BACK: Exit the application\n- Up / Down: Navigate through the menu options\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "stack_game",
+  "install_path": "Games",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/stack_game/manifest.yml",
     "source_code": "https://github.com/bergr22/Stack/tree/ddf0280eb22a050d7545be6aa1eac0d01b39bd89"
   },
   "name": "Stack",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "Classic skill and timing game where you layer falling blocks to build the highest tower.",
   "version": "1.0"
 }
