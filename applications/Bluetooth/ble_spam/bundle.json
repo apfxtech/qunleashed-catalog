@@ -1,0 +1,15 @@
+{
+  "author": "@WillyJL @ECTO-1A @Spooks4576",
+  "category": "Bluetooth",
+  "changelog": "v6.6",
+  "description": "Flood BLE advertisements to cause spammy and annoying popups/notifications",
+  "family": "application",
+  "id": "ble_spam",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Bluetooth/ble_spam/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/6b33af2966bfc5efb9183d45d46a0a1c41aea196/base_pack/ble_spam"
+  },
+  "name": "BLE Spam",
+  "short_description": "Flood BLE advertisements to cause spammy and annoying popups/notifications",
+  "version": "6.6"
+}

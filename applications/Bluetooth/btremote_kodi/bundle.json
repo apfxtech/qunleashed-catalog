@@ -1,0 +1,15 @@
+{
+  "author": "coded-with-claws",
+  "category": "Bluetooth",
+  "changelog": "v1.1",
+  "description": "Application Bluetooth remote Keynote for Kodi (original app + feature: long press on OK to switch between Space and Return (useful for Kodi to navigate the menus))",
+  "family": "application",
+  "id": "btremote_kodi",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Bluetooth/btremote_kodi/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/bt_hid_kodi"
+  },
+  "name": "BT Remote for Kodi",
+  "short_description": "Application Bluetooth remote Keynote for Kodi (original app + feature: long press on OK to switch between Space and Return (useful for Kodi to navigate the menus))",
+  "version": "1.1"
+}
