@@ -1,6 +1,8 @@
 {
   "author": "",
+  "authors": [],
   "category": "Momentum",
+  "category_id": "momentum",
   "changelog": "",
   "description": "",
   "dolphin": {
@@ -11,7 +13,19 @@
     "weight": 3
   },
   "family": "animation",
+  "files": [
+    "meta.txt",
+    "frame_0.bm",
+    "frame_1.bm",
+    "frame_2.bm",
+    "frame_3.bm",
+    "frame_4.bm",
+    "frame_5.bm",
+    "frame_6.bm",
+    "frame_7.bm"
+  ],
   "id": "L1_Tv_128x47",
+  "install_path": "/ext/dolphin/L1_Tv_128x47",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/animations/Momentum/L1_Tv_128x47/manifest.yml",
     "source_code": "https://github.com/apfxtech/qunleashed-catalog/tree/6ddd00385e5ee87fe588f9fe380c01758c51b8ef/animations/Momentum/L1_Tv_128x47"
