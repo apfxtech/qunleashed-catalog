@@ -1,15 +1,36 @@
 {
+  "apps": [
+    {
+      "appid": "kota",
+      "file": "kota.fap",
+      "icon": "assets/icon.png",
+      "name": "Kota",
+      "version": "0.2"
+    }
+  ],
   "author": "@cobanov",
+  "authors": [
+    {
+      "id": "cobanov",
+      "name": "cobanov"
+    }
+  ],
   "category": "Bluetooth",
+  "category_id": "64a69817effe1f448a4053b4",
   "changelog": "v0.2:\nPress OK to refresh the numbers right away.\n\nv0.1:\nFirst release: session and weekly Claude usage meters with live reset countdowns, fed over Bluetooth by the companion script.\n",
   "description": "# Kota\n\nShows your Claude plan usage on the Flipper: the 5-hour session limit and the weekly limit, each with a live countdown to its reset.\n\nThe numbers come from a small companion script on your computer, sent over Bluetooth. No cable needed.\n\n## Setup\n\n1. On your Mac, with Claude Code logged in, run the companion script from https://github.com/cobanov/kota:\n   uv run host/kota.py\n2. Open Kota on the Flipper. It links within a few seconds.\n\n## Screen\n\n- Session / Weekly: used percentage and time until the window resets.\n- Top right: \"live\" when the last update is under a minute old, otherwise its age. The dot is filled while the computer is connected.\n\n## Controls\n\n- OK: refresh now\n- Back: exit\n\nWhile Kota is open, the Flipper's normal Bluetooth connection (mobile app) is paused. It returns when you exit.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "kota",
+  "install_path": "Bluetooth",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Bluetooth/kota/manifest.yml",
     "source_code": "https://github.com/cobanov/kota/tree/c8b0fd6bd0188d3d9eb5b5798e5daf7006be37b2/flipper"
   },
   "name": "Kota",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Claude plan usage (session and weekly limits) over Bluetooth",
   "version": "0.2"
 }

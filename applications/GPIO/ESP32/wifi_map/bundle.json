@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "wifi_map",
+      "file": "wifi_map.fap",
+      "icon": "assets/icon.png",
+      "name": "WIFI Mapping",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "GPIO/ESP32",
+  "category_id": "gpio-esp32",
   "changelog": "v0.1",
   "description": "WIFI Mapping",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "wifi_map",
+  "install_path": "GPIO/ESP32",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/ESP32/wifi_map/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/wifi-map"
   },
   "name": "WIFI Mapping",
+  "screenshots": [],
   "short_description": "WIFI Mapping",
   "version": "0.1"
 }

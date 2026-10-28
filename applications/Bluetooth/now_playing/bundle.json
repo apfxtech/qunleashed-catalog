@@ -1,15 +1,31 @@
 {
+  "apps": [
+    {
+      "appid": "now_playing",
+      "file": "now_playing.fap",
+      "icon": "assets/icon.png",
+      "name": "Now Playing",
+      "version": "1.2"
+    }
+  ],
   "author": "Now Playing contributors",
+  "authors": [],
   "category": "Bluetooth",
+  "category_id": "64a69817effe1f448a4053b4",
   "changelog": "# Changelog\n\n## 1.2\n\n- Show the active macOS Now Playing track, artist, album, time, and optional monochrome cover art over Bluetooth LE.\n- Control playback, track selection, and Mac system volume from Flipper Zero.\n- Reconnect automatically after a Bluetooth interruption.\n",
   "description": "# Now Playing for Mac\n\nShow the current macOS media session on Flipper Zero over Bluetooth LE: title, artist, album, progress, and available cover art. Use Flipper buttons to pause or resume, change tracks, and adjust Mac system volume.\n\n## Requirements\n\n- A Mac with Bluetooth running the [Mac Media Remote companion](https://github.com/Vchekryzhov/mac-media-remote). The Flipper Apps Catalog installs only the Flipper app.\n- [nowplaying-cli](https://github.com/kirtan-shah/nowplaying-cli) installed on the Mac. The companion uses it to read the system Now Playing session.\n- An app or browser tab that publishes playback information to macOS Now Playing.\n\n## Setup\n\n1. Install and launch Now Playing from the Bluetooth category on Flipper Zero.\n2. Follow the [Mac setup instructions](https://github.com/Vchekryzhov/mac-media-remote#установка) to build and start the companion.\n3. Enable Bluetooth and confirm pairing when prompted. USB is only needed for setup or recovery.\n\n## Controls\n\n- OK: play or pause.\n- Left and right: previous or next track.\n- Up and down: Mac system volume, when the selected audio output supports software volume control.\n- Hold Back: exit the app.\n\nCover art is optional. Playback information and controls require the Mac companion to be running.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "now_playing",
+  "install_path": "Bluetooth",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Bluetooth/now_playing/manifest.yml",
     "source_code": "https://github.com/Vchekryzhov/mac-media-remote/tree/af3f44e319c27b46b1fe058a6f5a96ec27239f22/flipper/now_playing"
   },
   "name": "Now Playing",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Mac Now Playing display and BLE remote",
   "version": "1.2"
 }

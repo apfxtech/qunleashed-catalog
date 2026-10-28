@@ -1,15 +1,42 @@
 {
+  "apps": [
+    {
+      "appid": "ghost_esp",
+      "file": "ghost_esp.fap",
+      "icon": "assets/icon.png",
+      "name": "Ghost ESP",
+      "version": "1.8.0"
+    }
+  ],
   "author": "@Spooks4567, @jaylikesbunda and @tototo31",
+  "authors": [
+    {
+      "id": "spooks4567",
+      "name": "Spooks4567"
+    },
+    {
+      "id": "jaylikesbunda",
+      "name": "jaylikesbunda"
+    },
+    {
+      "id": "tototo31",
+      "name": "tototo31"
+    }
+  ],
   "category": "GPIO/ESP32",
+  "category_id": "gpio-esp32",
   "changelog": "v1.8.0 - New commands from v2.0 of the GhostESP firmware",
   "description": "WiFi: Scan networks, beacon spam, deauth attacks, packet capture, evil portal, network connection, and printer control. Bluetooth: Flipper discovery, Pineapple Detection, AirTag scanning, and packet capture. GPS: Wardriving capabilities.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "ghost_esp",
+  "install_path": "GPIO/ESP32",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/ESP32/ghost_esp/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/b3fa3a4f037fcf2185240b662ab9d29348cc7e79/non_catalog_apps/ghost_esp_app"
   },
   "name": "Ghost ESP",
+  "screenshots": [],
   "short_description": "Companion app for Ghost ESP Firmware.",
   "version": "1.8.0"
 }

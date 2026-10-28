@@ -1,15 +1,35 @@
 {
+  "apps": [
+    {
+      "appid": "401_light_msg",
+      "file": "401_light_msg.fap",
+      "icon": "assets/icon.png",
+      "name": "Lab401/Light Messenger",
+      "version": "1.4.1"
+    }
+  ],
   "author": "Lab401 & tixlegeek",
+  "authors": [],
   "category": "GPIO",
+  "category_id": "64971d106617ba37a4bc79b9",
   "changelog": "v1.0:\nFirst release\n\nv1.1:\nUpdated manifest.yaml and application.fam\n\nv1.2:\nReworked config file's logic, merged pull requests and modifications from jamisonderek (Mirror, Accelerometer fix, word by word, sensitivity increase, letter width ), updated README and more stuff.\n\nv1.3\n- Bitmap editor enhancement\n- Fixes and enhancement in display model\n- Added authentic bitmaps 2000's operator logos as assets\n- Changed apps_data to apps_assetsfor storing datas and bitmaps\n\nv1.3.1\n- Workaround for allowing older core to compile while maintaining current core fixes.\n\nv1.4\n- Merge of the animation function from @jamisonderek\n\nv1.4.1\n- Enhance animation display\n",
   "description": "Companion app for Lab401's Light Messenger accessory. The Light Messenger is hardware module that allows you to draw, write and lightpaint in the air using a 16 RGB Led array and an accelerometer.\nMultiple colour sequences, and animations, built-in bitmap editor, completely hackable (..and you can even use it as a flashlight).\nRequires a hardware component, which can be purchased at Lab401.com\nBuilt with <3 by Lab401 and tixlegeek.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "401_light_msg",
+  "install_path": "GPIO",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/401_light_msg/manifest.yml",
     "source_code": "https://github.com/lab-401/fzLightMessenger/tree/469117c22037c15c57234ed771760edd2ae1b96b/./401lightMessengerApp"
   },
   "name": "Lab401/Light Messenger",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png",
+    "assets/screenshots/4.png"
+  ],
   "short_description": "Companion app for the Lab401 Light Messenger",
   "version": "1.4.1"
 }

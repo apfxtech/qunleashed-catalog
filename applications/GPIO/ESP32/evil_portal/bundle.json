@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "evil_portal",
+      "file": "evil_portal.fap",
+      "icon": "assets/icon.png",
+      "name": "Evil Portal",
+      "version": "0.1"
+    }
+  ],
   "author": "bigbrodude6119",
+  "authors": [],
   "category": "GPIO/ESP32",
+  "category_id": "gpio-esp32",
   "changelog": "v0.1",
   "description": "Create an evil captive portal Wi-Fi access point",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "evil_portal",
+  "install_path": "GPIO/ESP32",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/ESP32/evil_portal/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/flipper_evil_portal"
   },
   "name": "Evil Portal",
+  "screenshots": [],
   "short_description": "Create an evil captive portal Wi-Fi access point",
   "version": "0.1"
 }

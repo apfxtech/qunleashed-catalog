@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "esp_flasher",
+      "file": "esp_flasher.fap",
+      "icon": "assets/icon.png",
+      "name": "esp-serial-flasher",
+      "version": "1.9"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "GPIO/ESP32",
+  "category_id": "gpio-esp32",
   "changelog": "v1.9",
   "description": "Flipper Zero app to flash ESP chips from the device (no computer connection needed!)",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "esp_flasher",
+  "install_path": "GPIO/ESP32",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/GPIO/ESP32/esp_flasher/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/esp_flasher"
   },
   "name": "esp-serial-flasher",
+  "screenshots": [],
   "short_description": "Flipper Zero app to flash ESP chips from the device (no computer connection needed!)",
   "version": "1.9"
 }
