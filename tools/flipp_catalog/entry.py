@@ -1,6 +1,7 @@
 """One catalog entry: where its manifest lies, what the manifest says, and
 the sources it points at. The path tells the family, the category and the id."""
 
+import functools
 import os
 import re
 import subprocess
@@ -12,8 +13,6 @@ from . import BundlerException
 
 ROOT = Path(__file__).resolve().parents[2]
 FAMILIES = {"applications": "application", "menustyles": "menustyle", "animations": "animation"}
-APP_CATEGORIES = {"Sub-GHz", "RFID", "NFC", "Infrared", "GPIO", "iButton", "USB", "Games", "Media", "Tools", "Bluetooth"}
-MENUSTYLE_CATEGORIES = {"Layouts", "Themes", "Functional", "Animated"}
 DOLPHIN_KEYS = ("min_butthurt", "max_butthurt", "min_level", "max_level", "weight")
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
 NAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.-]*$")
@@ -34,6 +33,22 @@ def trusted_origins() -> set[str]:
     them with ufbt."""
     data = yaml.safe_load((ROOT / "trusted.yml").read_text()) or []
     return {str(url).strip().removesuffix(".git").lower() for url in data}
+
+
+@functools.cache
+def declared_categories() -> set[tuple[str, str]]:
+    """(family, "Root/Child") of every category categories.yml declares."""
+    out = set()
+
+    def walk(family: str, nodes, parent: str) -> None:
+        for node in nodes or []:
+            path = f"{parent}/{node['name']}" if parent else str(node["name"])
+            out.add((family, path))
+            walk(family, node.get("children"), path)
+
+    for family, roots in (yaml.safe_load((ROOT / "categories.yml").read_text()) or {}).items():
+        walk(family, roots, "")
+    return out
 
 
 def catalog_origin() -> str:
@@ -96,10 +111,8 @@ class Entry:
         errors = []
         top = self.category.split("/")[0]
         errors += [f"bad category folder: {p}" for p in self.category.split("/") if not NAME_RE.match(p)]
-        if self.family == "application" and top not in APP_CATEGORIES:
-            errors.append(f"unknown category: {top}")
-        if self.family == "menustyle" and top not in MENUSTYLE_CATEGORIES:
-            errors.append(f"unknown menu style category: {top}")
+        if (self.family, self.category) not in declared_categories():
+            errors.append(f"category {self.category} is not declared in categories.yml")
         if not (ANIMATION_NAME_RE if self.family == "animation" else NAME_RE).match(self.name):
             errors.append(f"bad id folder: {self.name}")
         if "bundle" in self.rel.split("/")[1:-1]:

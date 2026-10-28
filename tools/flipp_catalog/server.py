@@ -1,5 +1,6 @@
-"""The catalog servers as the CI talks to them: a bundle folder sent file by
-file with its meta, an entry taken out, and what a server holds."""
+"""The catalog servers as the CI talks to them: the category tree, a bundle
+folder sent file by file with its meta, an entry taken out, and what a
+server holds."""
 
 import json
 import os
@@ -46,21 +47,29 @@ def _request(base: str, method: str, path: str, body: bytes | None = None,
         return 0, f"server unreachable: {e}"
 
 
-def _multipart(meta: str, folder: Path) -> tuple[bytes, str]:
+def _multipart(meta: str | None, files: dict[str, Path]) -> tuple[bytes, str]:
     boundary = uuid.uuid4().hex
     body = bytearray()
-    body += f'--{boundary}\r\nContent-Disposition: form-data; name="meta"\r\n\r\n{meta}\r\n'.encode()
-    for path in sorted(p for p in folder.rglob("*") if p.is_file() and not p.is_symlink()):
-        rel = path.relative_to(folder).as_posix()
-        body += (f'--{boundary}\r\nContent-Disposition: form-data; name="{rel}"; filename="{path.name}"\r\n'
+    if meta is not None:
+        body += f'--{boundary}\r\nContent-Disposition: form-data; name="meta"\r\n\r\n{meta}\r\n'.encode()
+    for name, path in files.items():
+        body += (f'--{boundary}\r\nContent-Disposition: form-data; name="{name}"; filename="{path.name}"\r\n'
                  "Content-Type: application/octet-stream\r\n\r\n").encode()
         body += path.read_bytes() + b"\r\n"
     body += f"--{boundary}--\r\n".encode()
     return bytes(body), f"multipart/form-data; boundary={boundary}"
 
 
+def put_categories(base: str) -> tuple[int, str]:
+    """categories.yml as a whole: the server replaces its tree with it."""
+    body, content_type = _multipart(None, {"categories.yml": ROOT / "categories.yml"})
+    return _request(base, "POST", "/api/v1/categories", body, content_type)
+
+
 def put_bundle(base: str, meta_file: Path, folder: Path) -> tuple[int, str]:
-    body, content_type = _multipart(meta_file.read_text(), folder)
+    files = {path.relative_to(folder).as_posix(): path
+             for path in sorted(p for p in folder.rglob("*") if p.is_file() and not p.is_symlink())}
+    body, content_type = _multipart(meta_file.read_text(), files)
     return _request(base, "POST", "/api/v1/bundles", body, content_type)
 
 

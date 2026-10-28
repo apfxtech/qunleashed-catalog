@@ -2,8 +2,8 @@
 
   pull-request  changed, check, report
   app-stream    sync-ofw, pin
-  publish       changed, publish, withdraw, prune, report, settled
-  bootstrap     stale, publish, report
+  publish       categories, changed, publish, withdraw, prune, report, settled
+  bootstrap     categories, stale, publish, report
 
 check is also what an author runs before sending a pull request. Each
 command loads only what it needs, so a step that only reads the
@@ -34,6 +34,19 @@ def cmd_publish(args) -> int:
     from flipp_catalog.publishing import publish
     from flipp_catalog.report import Report
     return 1 if publish(args.manifests, Report(args.report), force=args.force) else 0
+
+
+def cmd_categories(args) -> int:
+    from flipp_catalog import server
+    refused = 0
+    for base in server.servers():
+        status, text = server.put_categories(base)
+        if status == 200:
+            print(f"categories sent to {server.host(base)}: {text}")
+        else:
+            print(f"::error::{server.host(base)} answered {status} to categories.yml: {text[:1000]}")
+            refused += 1
+    return 1 if refused else 0
 
 
 def cmd_withdraw(args) -> int:
@@ -104,6 +117,8 @@ def main() -> int:
     p.add_argument("--report")
     p.add_argument("manifests", nargs="*")
     p.set_defaults(func=cmd_publish)
+    p = sub.add_parser("categories", help="send categories.yml to every catalog server")
+    p.set_defaults(func=cmd_categories)
     p = sub.add_parser("withdraw", help="take the entries of deleted manifests out of the catalog")
     p.add_argument("--report")
     p.add_argument("manifests", nargs="+")

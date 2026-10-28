@@ -1,0 +1,94 @@
+# The category tree of every family, sent whole to every catalog server
+# before the bundles. A folder under applications/, menustyles/ or
+# animations/ is one of these names, and a manifest in a folder not declared
+# here does not pass the check. Order is priority. Application roots keep the
+# official catalog's ids, so the app's bundled icons keep matching; a child
+# takes its parent's color unless it names one.
+application:
+  - id: 64971d0f6617ba37a4bc79b3
+    name: Sub-GHz
+    color: A5F4BE
+    icon: subghz
+    children:
+      - { id: subghz-analyzers, name: Analyzers }
+  - { id: 64971d10577d519190ede5c2, name: RFID, color: FFF493, icon: rfid }
+  - id: 64971d10be1a76c06747de26
+    name: NFC
+    color: 98CEFE
+    icon: nfc
+    children:
+      - { id: nfc-access, name: Access }
+      - { id: nfc-gaming, name: Gaming }
+      - { id: nfc-mifare, name: MIFARE }
+  - id: 64971d106617ba37a4bc79b6
+    name: Infrared
+    color: FE938C
+    icon: infrared
+    children:
+      - { id: infrared-acs, name: ACs }
+  - id: 64971d106617ba37a4bc79b9
+    name: GPIO
+    color: A7F2EA
+    icon: gpio
+    children:
+      - { id: gpio-esp32, name: ESP32 }
+      - { id: gpio-esp8266, name: ESP8266 }
+      - { id: gpio-gps, name: GPS }
+      - { id: gpio-nrf24, name: NRF24 }
+      - { id: gpio-programmers, name: Programmers }
+      - { id: gpio-sensors, name: Sensors }
+      - { id: gpio-uart, name: UART }
+      - { id: gpio-vgm, name: VGM }
+  - { id: 64971d11be1a76c06747de29, name: iButton, color: E1BBA6, icon: ibutton }
+  - { id: 64971d11be1a76c06747de2c, name: USB, color: FFBEE9, icon: usb }
+  - id: 64971d11be1a76c06747de2f
+    name: Games
+    color: FFC486
+    icon: games
+    children:
+      - { id: games-arcade, name: Arcade }
+      - { id: games-board, name: Board }
+      - { id: games-puzzle, name: Puzzle }
+      - { id: games-simulation, name: Simulation }
+  - id: 64971d116617ba37a4bc79bc
+    name: Media
+    color: DFB5FF
+    icon: media
+    children:
+      - { id: media-instruments, name: Instruments }
+      - { id: media-players, name: Players }
+  - id: 64971d11577d519190ede5c5
+    name: Tools
+    color: DFF159
+    icon: tools
+    children:
+      - { id: tools-calculators, name: Calculators }
+      - { id: tools-clocks, name: Clocks }
+      - { id: tools-crypto, name: Crypto }
+      - { id: tools-editors, name: Editors }
+      - { id: tools-timers, name: Timers }
+  - { id: 64a69817effe1f448a4053b4, name: Bluetooth, color: 8BACFF, icon: bluetooth }
+menustyle:
+  - { id: layouts, name: Layouts, color: A7F2EA, icon: layouts }
+  - { id: theme, name: Themes, color: FFC486, icon: theme }
+  - { id: functional, name: Functional, color: DFF159, icon: functional }
+  - { id: animated, name: Animated, color: DFB5FF, icon: animated }
+animation:
+  - { id: ofw, name: OFW, color: FF8200 }
+  - { id: unleashed, name: Unleashed, color: CC241D }
+  - { id: momentum, name: Momentum }
+  - { id: doobthegoober, name: DoobTheGoober }
+  - id: kuronons
+    name: Kuronons
+    children:
+      - { id: kuronons-black-flags-collection, name: Black_Flags_Collection }
+      - { id: kuronons-cp77, name: CP77 }
+      - { id: kuronons-citizen-sleeper, name: Citizen_Sleeper }
+      - { id: kuronons-custom-firmwares, name: Custom_Firmwares }
+      - { id: kuronons-gits, name: GITS }
+      - { id: kuronons-miscellaneous, name: Miscellaneous }
+      - { id: kuronons-monopoly-cards, name: Monopoly_Cards }
+      - { id: kuronons-sf-corporations-logos, name: SF_Corporations_Logos }
+      - { id: kuronons-virus, name: Virus }
+  - { id: stopoxy, name: Stopoxy }
+  - { id: talking-sasquach, name: Talking-Sasquach }
