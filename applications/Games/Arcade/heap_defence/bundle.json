@@ -1,0 +1,15 @@
+{
+  "author": "@xMasterX (original implementation by @wquinoa & @Vedmein)",
+  "category": "Games/Arcade",
+  "changelog": "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for latest API, v1.3 - Sync updates and latest API suppor, v1.4 - Sync with latest version",
+  "description": "Heap Defence game from hackathon (aka Stack Attack)",
+  "family": "application",
+  "id": "heap_defence",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/heap_defence/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/base_pack/heap_defence_game"
+  },
+  "name": "Heap Defence",
+  "short_description": "Heap Defence game from hackathon (aka Stack Attack)",
+  "version": "1.4"
+}

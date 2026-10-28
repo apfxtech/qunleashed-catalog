@@ -1,0 +1,15 @@
+{
+  "author": "@Milk-Cool",
+  "category": "Games/Arcade",
+  "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
+  "description": "A simple reaction test game",
+  "family": "application",
+  "id": "reaction",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/reaction/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/f89697d89e0872dbfc1eaf502f2fe5c5c173b6a4/apps_source_code/fz-reaction-game"
+  },
+  "name": "Reaction test",
+  "short_description": "A simple reaction test game",
+  "version": "1.3"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "sergo",
+  "category": "Games/Arcade",
+  "changelog": "## v0.1:\n- added changelog\n\n## v0.2:\n- added menu with Russian language\n- added difficulty modes\n- added bonuses in game\n- updated score system\n- updated start and pause\n",
+  "description": "# What is this?\n\nThis game is almost entirely AI-generated through all circles of hell.\n\n## Gameplay\n\nThe logic is simple: the arrow falls down, and when you hold down the **OK** or **UP** button, you start flying up. Avoid obstacles on the way.There is also a pause in the game, during the game just press **BACK**. To switch the language, hold down the **UP** button in the main menu. To start the game again, you need to click **OK** and to exit the menu, you need to click the **BACK** button.\n\n## Credits\n\nInspired by *Geometry Dash* and also by [flipperzero-drifter](https://github.com/jean-edouard/flipperzero-drifter).  \nAfter looking at his code, I finally understood how to build level generation.\n",
+  "family": "application",
+  "id": "wave",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/wave/manifest.yml",
+    "source_code": "https://github.com/Sladkisnovraper/Wave-game-for-Flipper-Zero/tree/50bc424cb8c93ae45054b6ff7360578882a46f2a"
+  },
+  "name": "Wave",
+  "short_description": "AI generated game that replicates gameplay for a wave from Geometry Dash",
+  "version": "0.2"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Games/Arcade",
+  "changelog": "v0.1",
+  "description": "Tanks",
+  "family": "application",
+  "id": "tanks",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/tanks/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/tanksgame"
+  },
+  "name": "Tanks",
+  "short_description": "Tanks",
+  "version": "0.1"
+}

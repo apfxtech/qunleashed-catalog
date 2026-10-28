@@ -1,0 +1,15 @@
+{
+  "author": "@Willzvul",
+  "category": "Games/Arcade",
+  "changelog": "v2.2:\n1. Pause of game proccess.\n2. Possibility of speed Up by holding the arrows.\n3. Snake has a head.\n4. The target is an apple.\n5. Complete progress bar (%).\n\nv2.3:\n1. Saving progress when exiting and loading it when starting the game.\n2. Endless mode switch (If turned ON -> the game continues even if the snake collides with the tail or the frame, so the player gets a chance to win the game).\n3. Game timer.\n4. Breaking by holding the back-direction arrow.\n5. Brand-new system of the next random fruit positioning (it fixed the major bug when the fruit appeared in the left-upper corner of a screen despite the fact that the field (0,0) is already taken by the snake's body).\n\nv2.4:\n1. Bump version\n",
+  "description": "Advanced Snake Game (Remake of original Snake)",
+  "family": "application",
+  "id": "snake20",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/snake20/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/Snake_2"
+  },
+  "name": "Snake 2.0",
+  "short_description": "Advanced Snake Game (Remake of original Snake)",
+  "version": "2.4"
+}

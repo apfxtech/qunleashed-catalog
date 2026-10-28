@@ -1,0 +1,15 @@
+{
+  "author": "Roberto De Feo",
+  "category": "Games/Arcade",
+  "changelog": "## 0.5.2\n\n- Prevent tilt before ball is in play\n- Fixed Endless table by making bottom portal extend full width\n\n## 0.5.1\n\n- Stop scores when moving ball in debug mode\n- Reset dynamic objects during tilt\n\n## 0.5.0\n\n- Turbo boosts\n- Signals for improved gameplay\n\n## 0.4.0\n\n- Table Tilt!\n- Solid flipper rendering\n- Code refactor / cleanup\n\n## 0.3.0\n\n- Added Idle timeout of 2 minutes\n- Changed Manual mode to Debug mode\n\n## 0.2.0\n\n- User tables from /apps_data/pinball0 folder\n- Sounds, LED blinking, vibrations\n- Basic scores\n- Collision bug fixes\n- Mem leak fix\n\n## 0.1.0\n\n- BETA release\n",
+  "description": "# Pinball0 (Pinball Zero)\nPlay pinball on your Flipperzero!\n\n## Features\n* Realistic physics and collisions\n* User-defined tables via JSON files\n* Bumpers, flat surfaces, curved surfaces\n* Table bumps (Don't tilt the table!)\n* Portals!\n* Rollover items, Turbo boosts\n* Sounds! Blinky lights! Annoying vibrations!\n* Customizable notification settings: sound, LED, vibration\n* Idle timeout\n\n## Controls\n* **Ok** to release the ball\n* **Left** and **Right** to activate the left and right flippers\n* **Back** to return to the main menu or exit\n* **Up** to \"bump\" the table if the ball gets stuck\n\nI find it easiest to hold the flipper with both hands so I can hit left/right with my thumbs!\n\n## Tables\nPinball0 ships with several default tables. These tables are automatically deployed into the assets folder (/apps_assets/pinball0/tables). Tables are simple JSON which means you can define your own! Your tables should be stored in the data folder (/apps_data/pinball0/tables). \n\nView the github repo for the JSON format specification: https://github.com/rdefeo/pinball0\n\n**The default tables may change over time.**\n\n",
+  "family": "application",
+  "id": "pinball0",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/pinball0/manifest.yml",
+    "source_code": "https://github.com/rdefeo/pinball0/tree/26ed6d3b523428cc00df26fea5c1e9a5e14b85f3"
+  },
+  "name": "Pinball0",
+  "short_description": "Pinball game",
+  "version": "0.5.2"
+}

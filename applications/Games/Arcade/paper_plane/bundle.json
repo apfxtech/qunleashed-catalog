@@ -1,0 +1,15 @@
+{
+  "author": "@Larry-the-Pig",
+  "category": "Games/Arcade",
+  "changelog": "v1.3",
+  "description": "Guide a paper plane through obstacles to get the highest score.",
+  "family": "application",
+  "id": "paper_plane",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/paper_plane/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/flipper_plane"
+  },
+  "name": "Paper Plane",
+  "short_description": "Guide a paper plane through obstacles to get the highest score.",
+  "version": "1.3"
+}

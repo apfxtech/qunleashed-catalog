@@ -1,0 +1,15 @@
+{
+  "author": "@jasniec",
+  "category": "Games/Arcade",
+  "changelog": "v1.0 - Initial release, v1.1 - Icon fixes, v1.2 - Various fixes, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version",
+  "description": "A flipper zero game inspired by scorched earth.",
+  "family": "application",
+  "id": "scorched_tanks",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/scorched_tanks/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/scorched_tanks"
+  },
+  "name": "Scorched Tanks",
+  "short_description": "A Flipper Zero game inspired by scorched earth",
+  "version": "1.4"
+}

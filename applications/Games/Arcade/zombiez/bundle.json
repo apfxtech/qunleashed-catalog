@@ -1,0 +1,15 @@
+{
+  "author": "@DevMilanIan & @xMasterX, (original By @Dooskington)",
+  "category": "Games/Arcade",
+  "changelog": "v1.0 - Initial release, v1.1 - Various important fixes, v1.2 - Sync updates and latest API support, v1.3 - Sync with latest version",
+  "description": "Defend your walls from the zombies",
+  "family": "application",
+  "id": "zombiez",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/zombiez/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/base_pack/zombiez"
+  },
+  "name": "Zombiez",
+  "short_description": "Defend your walls from the zombies",
+  "version": "1.3"
+}

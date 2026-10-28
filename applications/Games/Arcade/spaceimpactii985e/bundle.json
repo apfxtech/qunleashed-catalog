@@ -1,0 +1,15 @@
+{
+  "author": "Eero Prittinen",
+  "category": "Games/Arcade",
+  "changelog": "v1.0.2",
+  "description": "Clone of classic mobile phone game Space Impact II\n",
+  "family": "application",
+  "id": "spaceimpactii985e",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/spaceimpactii985e/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/Flipper-Zero-Space-Impact-II"
+  },
+  "name": "Space Impact II",
+  "short_description": "Space Impact II clone",
+  "version": "1.0.2"
+}

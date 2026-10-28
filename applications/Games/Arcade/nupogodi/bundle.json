@@ -1,0 +1,15 @@
+{
+  "author": "@sionyx",
+  "category": "Games/Arcade",
+  "changelog": "v1.3: Async eggs; new Pause screen",
+  "description": "Elektronika IM-02 - Nu, Pogodi! / (Game & Watch - Egg) - Soviet retro game",
+  "family": "application",
+  "id": "nupogodi",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/Arcade/nupogodi/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/nupogodi_game"
+  },
+  "name": "Nu pogodi",
+  "short_description": "Elektronika IM-02 - Nu, Pogodi!",
+  "version": "1.3"
+}
