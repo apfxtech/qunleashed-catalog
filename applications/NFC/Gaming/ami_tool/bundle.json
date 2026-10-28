@@ -1,0 +1,15 @@
+{
+  "author": "Firefox2100",
+  "category": "NFC/Gaming",
+  "changelog": "v0.3.0",
+  "description": "An NTAG215 toolkit for Flipper Zero to work with tags used with gaming consoles.",
+  "family": "application",
+  "id": "ami_tool",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/Gaming/ami_tool/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/ami_tool"
+  },
+  "name": "AmiTool",
+  "short_description": "An NTAG215 toolkit for Flipper Zero to work with tags used with gaming consoles.",
+  "version": "0.3.0"
+}

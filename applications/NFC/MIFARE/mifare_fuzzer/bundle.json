@@ -1,0 +1,15 @@
+{
+  "author": "@spheeere98 & (Fixes for new API by @Sil333033)",
+  "category": "NFC/MIFARE",
+  "changelog": "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for new API, v1.3 - Various fixes, v1.4 - Sync updates and latest API support, v1.5 - Sync with latest version",
+  "description": "App emulates Mifare Classic cards with various UIDs to check how reader reacts on them",
+  "family": "application",
+  "id": "mifare_fuzzer",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/MIFARE/mifare_fuzzer/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/mifare_fuzzer"
+  },
+  "name": "Mifare Fuzzer",
+  "short_description": "App emulates Mifare Classic cards with various UIDs to check how reader reacts on them",
+  "version": "1.5"
+}

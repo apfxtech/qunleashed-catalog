@@ -1,0 +1,15 @@
+{
+  "author": "cyanic",
+  "category": "NFC/Gaming",
+  "changelog": "v1.2",
+  "description": "Makes transferring characters with VB Lab less cumbersome",
+  "family": "application",
+  "id": "vb_migrate",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/Gaming/vb_migrate/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/flipperzero_vb_migrate"
+  },
+  "name": "VB Migration Assistant",
+  "short_description": "Makes transferring characters with VB Lab less cumbersome",
+  "version": "1.2"
+}

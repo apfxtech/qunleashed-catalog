@@ -1,0 +1,15 @@
+{
+  "author": "Aaronjamt",
+  "category": "NFC/Access",
+  "changelog": "v0.1",
+  "description": "SaFlip Hospitality Tool for Flipper Zero",
+  "family": "application",
+  "id": "saflip",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/Access/saflip/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/de1539b0da6d53bb6303f819be0518a63c460b32/non_catalog_apps/saflip"
+  },
+  "name": "SaFlip",
+  "short_description": "SaFlip Hospitality Tool for Flipper Zero",
+  "version": "0.1"
+}

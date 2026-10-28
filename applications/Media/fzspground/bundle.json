@@ -1,0 +1,15 @@
+{
+  "author": "Alan Silva",
+  "category": "Media",
+  "changelog": "./changelog.md",
+  "description": "This is a screensaver that simulates a space with planets and asteroids.\nYou can configure the simlation to your liking, including the number of planets, gravity, and speed.\n",
+  "family": "application",
+  "id": "fzspground",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/fzspground/manifest.yml",
+    "source_code": "https://github.com/alanfortlink/fzspground/tree/fd3c2480001828801434c4f2616739daca50fbc2"
+  },
+  "name": "Space Playground",
+  "short_description": "Space Playground for Flipper Zero",
+  "version": "0.1"
+}

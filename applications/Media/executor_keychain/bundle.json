@@ -1,0 +1,15 @@
+{
+  "author": "Esteban Fuentealba",
+  "category": "Media",
+  "changelog": "## 0.1\n - Initial release\n",
+  "description": "# 🔫 🔊 Flipper Keyller\n\n**Flipper Keyller** is an app for the [Flipper Zero](https://flipperzero.one/) that emulates the iconic sounds of the classic 80s keychain: the **Echo Keyller** (also known as the **Executor Keychain**). This vintage gadget produced laser-like sounds when pressing its buttons — and now, you can carry that nostalgic experience right on your Flipper!\n\n\n## 🎮 Features\n\n- 🎵 8 retro laser-style sound effects  \n- 📟 Simple, nostalgic interface  \n\n## 📦 Installation\n\nInstall directly from the official Flipper Zero app catalog.\n\n\n## 🕹️ Controls\n\n| Button  | Action                  |\n|---------|-------------------------|\n| OK      | Play sound (pressed)              |\n| ←/→/↑/↓ | Switch sound type       |\n| Back    | Exit                    |\n\n\n## 👾 Credits\n\n- Inspired by the **Echo Keyller / Executor Keychain** (1980s)  \n- Sounds are not the originals — PRs are welcome if you know how to improve them!\n\n\nFrom Talcahuano 🇨🇱 with ❤  \n",
+  "family": "application",
+  "id": "executor_keychain",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/executor_keychain/manifest.yml",
+    "source_code": "https://github.com/EstebanFuentealba/Flipper-Keyller/tree/ffea64ec5a443e8ef08707fd20d431b9601d8f1b"
+  },
+  "name": "Flipper Keyller",
+  "short_description": "Flipper Keyller is an app for the Flipper Zero that emulates the iconic sounds of the classic 80s keychain.",
+  "version": "0.1"
+}

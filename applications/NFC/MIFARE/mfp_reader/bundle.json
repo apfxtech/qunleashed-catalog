@@ -1,0 +1,15 @@
+{
+  "author": "Defensor7",
+  "category": "NFC/MIFARE",
+  "changelog": "v1.1",
+  "description": "MIFARE Plus SL3 reader, dumper and emulator",
+  "family": "application",
+  "id": "mfp_reader",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/MIFARE/mfp_reader/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/nfc_mfp_reader"
+  },
+  "name": "MFP Reader",
+  "short_description": "MIFARE Plus SL3 reader, dumper and emulator",
+  "version": "1.1"
+}

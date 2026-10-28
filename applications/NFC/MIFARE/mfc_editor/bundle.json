@@ -1,0 +1,15 @@
+{
+  "author": "TollyH",
+  "category": "NFC/MIFARE",
+  "changelog": "v1.0",
+  "description": "Application for viewing and editing MIFARE Classic .nfc files",
+  "family": "application",
+  "id": "mfc_editor",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/MIFARE/mfc_editor/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/base_pack/mfc_editor"
+  },
+  "name": "MIFARE Classic Editor",
+  "short_description": "Application for viewing and editing MIFARE Classic .nfc files",
+  "version": "1.0"
+}
