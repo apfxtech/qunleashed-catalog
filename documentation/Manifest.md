@@ -1,6 +1,6 @@
 # Manifest
 
-Each entry submitted to this catalog is defined by a manifest file called `manifest.yml`. The CI uses it to fetch the code, check it and package it, and the package is then uploaded to the qUnleashed catalog server, which manages builds for every SDK it keeps.
+Each entry submitted to this catalog is defined by a manifest file called `manifest.yml`. The CI uses it to fetch the code, check it and assemble the entry's bundle: `bundle/` and `bundle.json` next to the manifest. The bundle is sent to the qUnleashed catalog server, which builds it in the latest Unleashed firmware with fbt and publishes it.
 
 The full path of a manifest tells what the entry is, where it belongs and how it is called:
 
@@ -9,6 +9,8 @@ The full path of a manifest tells what the entry is, where it belongs and how it
 | App | `applications/<Category>[/<Subcategory>]/<appid>/manifest.yml` | `/ext/apps/<Category>[/<Subcategory>]/<appid>.fap` |
 | Menu style | `menustyles/<Category>/<appid>/manifest.yml` | `/ext/apps_data/loader/plugins/<appid>.fal` |
 | Animation | `animations/<Pack>[/<Collection>]/<Name>/manifest.yml` | `/ext/dolphin/<Name>` |
+
+Once a day app-stream goes through the manifests of [flipper-application-catalog](https://github.com/flipperdevices/flipper-application-catalog). One for an app that has no manifest here is copied to the path it has there, `applications/<Category>/<appid>/manifest.yml`, in the top folder of the category. Ours is replaced by the official one when it is, byte for byte, a version the official manifest once was: an unchanged copy follows the official catalog, and a manifest we edited, or one pointing at a fork, stays as it is. Nothing is deleted.
 
 ## Minimal manifest example
 
@@ -107,7 +109,11 @@ A manifest is a YAML file that points to the source code repository and provides
 
 **It is recommended to specify as many fields as possible in `application.fam` and not in `manifest.yml`, to avoid duplication and keep the manifest file short.**
 
-If your `application.fam` defines multiple apps, specify the one this manifest is for with the `id` field. This is always the case for menu styles kept together in one repository: each style gets its own manifest with its `id`.
+### The first App()
+
+**The first `App()` in `application.fam` is the entry's app.** Every later `EXTERNAL` app is another build of it, offered beside it (ProtoPirate Extra beside ProtoPirate); a `PLUGIN` is built into the app that requires it. If your `application.fam` defines several apps, the one this manifest is for, its `id`, must come first.
+
+Menu styles kept together in one repository are the exception: each style gets its own manifest with its `id`, and its bundle gets an `application.fam` with that style alone.
 
 ### Animations
 
@@ -161,14 +167,14 @@ max_level: 3
 
 PNG frames are not accepted: compile them first, for example with `python3 scripts/assets.py dolphin` from the firmware or the `ufbt` SDK.
 
-The CI sends the animation to the catalog server as one bundle, `manifest.yml` with `meta.txt` and the frames, to `/api/v1/animations/version/bundle`.
+The CI sends the animation to the catalog server as a bundle folder: `meta.txt` and the frames.
 
 ### Source code location
 
 The source code origin is specified in the `sourcecode` section. It contains the `type` field, which must be set to `git`. It must also contain the `location` section, which specifies the repository location.
 
  * `origin` is the git URL of the repository. Required.
- * `commit_sha` is the full SHA of the commit that contains the code being submitted. Required, except for trusted repositories, see [Following HEAD](#following-head).
+ * `commit_sha` is the full SHA of the commit that contains the code being submitted. Required, except for trusted repositories, see [Trusted repositories](#trusted-repositories).
  * `subdir` is optional and specifies the subdirectory within the repository where the entry is located. If `subdir` is not specified, the root of the repository is used. This is useful if the repository contains several apps or animations.
 
 Example:
@@ -182,7 +188,7 @@ sourcecode:
     subdir: metronome
 ```
 
-### Following HEAD
+### Trusted repositories
 
 For trusted repositories, such as [all-the-plugins](https://github.com/xMasterX/all-the-plugins) and those of friends of the project, `commit_sha` may be left out:
 
@@ -194,11 +200,11 @@ sourcecode:
     subdir: base_pack/esp32_wifi_marauder
 ```
 
-Such an entry is built from the repository HEAD. The CI re-reads it once a day and publishes a new version when its version changes. Whether a repository is trusted is decided at review; for everyone else `commit_sha` is required.
+Once a day app-stream writes `commit_sha` in: the last commit on the repository HEAD that changed the entry's folder, and it keeps moving it there. Publish then sends the entry like any other changed manifest, so every manifest names the code the catalog holds. Trusted repositories are listed in [`trusted.yml`](../trusted.yml), and only the maintainers add to it; for everyone else `commit_sha` is required and moves by pull request.
 
 ### Missing metadata
 
-Some sources, such as [all-the-plugins](https://github.com/xMasterX/all-the-plugins), carry code but no catalog metadata. When an app or menu style manifest has no `screenshots`, the CI submits a blank white screenshot; an empty `short_description` becomes the app name, an empty `description` becomes the short description, and an empty `changelog` becomes `v<version>`. Nothing is added to the source repository. This is how the catalog lists apps that exist only in all-the-plugins, and apps whose copy there is patched for Unleashed in place of the original upstream.
+Some sources, such as [all-the-plugins](https://github.com/xMasterX/all-the-plugins), carry code but no catalog metadata. An entry from a repository in `trusted.yml` is published with what it has: no screenshots, a `short_description` from `fap_description` or the name, a `description` from the short one, a `changelog` of `v<version>`. The check of a pull request names what is missing as warnings. Nothing is added to the source repository. This is how the catalog lists apps that exist only in all-the-plugins, and apps whose copy there is patched for Unleashed in place of the original upstream.
 
 ### Version
 
@@ -262,7 +268,7 @@ venv\Scripts\activate.bat
 python -m pip install -r tools\requirements.txt
 ```
 
-The bundler installs the Unleashed SDK for `ufbt` itself. To keep it apart from the SDK you use day to day, point `UFBT_HOME` into the virtual environment.
+The check builds an app with `ufbt` against the Unleashed SDK. To keep that SDK apart from the one you use day to day, point `UFBT_HOME` into the virtual environment, then install it.
 
 On Linux, macOS, or WSL:
 
@@ -282,15 +288,17 @@ On Windows Command Prompt:
 set UFBT_HOME=%CD%\venv\ufbt
 ```
 
-Then run the validation script, passing it the path to your manifest file. For an app or a menu style:
-
 ```bash
-python3 tools/bundle.py --nolint applications/CATEGORY/APPID/manifest.yml bundle.zip
+ufbt update --index-url https://up.unleashedflip.com/directory.json --channel dev
 ```
 
-`BUNDLE_SDK_CHANNEL=dev` checks against the Development SDK instead of Release.
+The development channel is the one the server builds on. Then run the check from the root of your checkout, passing it the path to your manifest file. For an app, `--build` builds it as the pull request does, within 60 seconds:
 
-For an animation, or to check only the paths and fields of any manifest:
+```bash
+python3 tools/publish.py check --build applications/CATEGORY/APPID/manifest.yml
+```
+
+For a menu style or an animation, or to check only the paths and fields of any manifest:
 
 ```bash
 python3 tools/publish.py check animations/PACK/NAME/manifest.yml
@@ -303,7 +311,11 @@ If there are any errors, the script will print them and exit with non-zero exit 
 
 ## Build process
 
-1. A pull request runs `tools/bundle.py` for every changed app and menu style manifest, and `tools/publish.py check` for animations. Nothing is submitted.
-2. A push to `main` submits every changed manifest to the catalog server without building it in CI, since the server builds for every SDK itself: app and menu style sources to `/api/v1/sources/upload`, animation bundles to `/api/v1/animations/version/bundle`. A changed file next to an animation manifest counts as a change of that animation. A deleted app manifest hides the app. Nothing is submitted while the `QU_CATALOG_URL` variable or the `QU_CI_TOKEN` secret is not set.
-3. Once a day, every manifest without `commit_sha` is processed again from the repository HEAD.
-4. The server builds what it receives for its Release and Development SDK; an entry is shown in qUnleashed once it has a successful build for the user's firmware.
+Four workflows, each with one task:
+
+1. **pull-request** runs `tools/publish.py check --build` for every changed manifest: every rule above, the apps `application.fam` gives the server, and a `ufbt` build against the development SDK of Unleashed, within 60 seconds, for an app from a repository outside `trusted.yml`. The result is a comment on the pull request and the summary of the run. Nothing is published.
+2. **app-stream** runs once a day. It adds the official catalog's manifests we have none of, updates our unchanged copies of the others, and pins the entries of trusted repositories to their latest commit. It writes manifests only.
+3. **publish** runs on every push to `main`, a merged pull request and app-stream's commit alike. The manifests changed since the last commit the server took are assembled into `bundle/` and `bundle.json` next to the manifest and, when they differ from what this repository holds, sent in batches to every catalog server listed in [`servers.yml`](../servers.yml), a domain each; the CI then commits them. A deleted manifest takes its entry out of every server. The tag `published` marks the last commit all the servers took, so a run that could not reach one of them is caught up by the next one.
+4. **bootstrap** is started by hand by a code owner, with the address of a catalog server and a mode: `update` sends what the server does not hold or holds at another version, `force` sends every entry.
+
+The server builds every app in the latest Unleashed firmware with fbt, and keeps the last version of every entry; its history is this repository's. An app from a repository outside `trusted.yml` must also build with `ufbt`, as it does in the official catalog: that is what the pull request checks. The firmware's core contributors, listed in `trusted.yml`, may publish apps that need the whole firmware tree.

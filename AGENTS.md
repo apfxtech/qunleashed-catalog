@@ -9,7 +9,7 @@ Authoritative reference: `documentation/Manifest.md`.
 Always validate before submitting:
 
 ```
-python3 tools/bundle.py --nolint applications/CATEGORY/APPID/manifest.yml bundle.zip
+python3 tools/publish.py check --build applications/CATEGORY/APPID/manifest.yml
 python3 tools/publish.py check animations/PACK/NAME/manifest.yml
 ```
 
@@ -33,6 +33,10 @@ python3 tools/publish.py check animations/PACK/NAME/manifest.yml
   points at it in another repository (`origin` + `commit_sha` + `subdir`), or, without `origin`,
   at its own folder (`subdir: .`) where the files lie next to `manifest.yml`. The `<Name>` folder
   is the name it gets on the SD card.
+- In `application.fam` the **first `App()` is the app** this manifest is for. Any later `EXTERNAL`
+  App() is another build of it offered beside it; a `PLUGIN` is built into the app that requires it.
+- The app must build with `ufbt` against the Unleashed SDK. Only repositories in `trusted.yml` may
+  rely on the whole firmware tree.
 - Authors are `@name`, one or more: `fap_author="@alice @bob"`.
 - Use the catalog schema — not any other format:
 
@@ -41,7 +45,7 @@ python3 tools/publish.py check animations/PACK/NAME/manifest.yml
     type: git
     location:
       origin: https://github.com/<user>/<repo>.git
-      commit_sha: <full 40-character commit hash>   # NOT a short hash; omitted only for trusted repos
+      commit_sha: <full 40-character commit hash>   # NOT a short hash; only a trusted repo leaves it to app-stream
       subdir: <path>          # optional, only if the app lives in a subfolder
   ```
 

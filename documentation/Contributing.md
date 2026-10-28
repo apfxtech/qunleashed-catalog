@@ -14,6 +14,7 @@ In this guide, you will learn how to use this repository to publish and update y
  6. **Metadata or source code updates**. If any changes to the metadata or source code are required, we will contact the author, as specified in the submitted pull request or using the contact information provided in the manifest file. If we do not receive a response within 14 days, the entry will be removed from the catalog.
  7. **Emergency updates**. If immediate changes are required to address a security vulnerability, copyright or any other critical issue, we reserve the right to unpublish the entry before contacting the author.
  8. **Reserved right to unpublish**. We reserve the right to reject and unpublish entries that do not comply with these terms and requirements, or for any other reason at any time.
+ 9. **Builds with ufbt**. An app must build with `ufbt` against the Unleashed SDK, as it does in the official catalog. Only repositories in [`trusted.yml`](../trusted.yml), those of the firmware's core contributors, may publish apps that need the whole firmware tree.
 
 
 ## Publishing to the catalog
@@ -35,7 +36,7 @@ Below, we discuss each step in more detail.
 
 For an **app** or a **menu style**:
 
- 1. Ensure your code is buildable with [uFBT](https://pypi.org/project/ufbt/) against the latest Release or Development SDK of Unleashed firmware.
+ 1. Ensure your code is buildable with [uFBT](https://pypi.org/project/ufbt/) against the latest Release SDK of Unleashed firmware.
  2. Add an app icon to the repository (10x10px 1-bit .png file). Menu styles may omit the icon.
  3. Add screenshots to the repository (take them using qFlipper and do not change their resolution or format). The first screenshot is shown in the preview.
  4. Create a Markdown-formatted file `README.md` with additional information. It is displayed as the detailed description in the catalog.
@@ -82,7 +83,7 @@ To learn more about contributing and forking on GitHub, see [Contributing to pro
 
 Once you submit your pull request, it will be moderated. Check your GitHub notifications to follow the review process. If you receive any error notifications, go to your PR page and find the review step that caused the issue for more details.
 
-A few minutes after your pull request is merged, the entry is submitted to the catalog server. The server builds it for the current Release and Development SDK, and it appears in qUnleashed once a build succeeds.
+A few minutes after your pull request is merged, the entry is published to the catalog server. The server builds it in the latest Unleashed firmware, and it appears in qUnleashed once a build succeeds.
 
 ## Updating
 
@@ -90,6 +91,6 @@ Updating is done in the same way as publishing. Each app and menu style submissi
 
 An animation has no version: any change to its files is a new version.
 
-## Entries that follow HEAD
+## Entries of trusted repositories
 
-A manifest may leave `commit_sha` out. It is accepted only for repositories the maintainers trust, such as [all-the-plugins](https://github.com/xMasterX/all-the-plugins) and repositories of friends of the project, and it is decided at review. Such entries are re-read once a day, and a new build is published when the version changes.
+A manifest may leave `commit_sha` out only for a repository listed in [`trusted.yml`](../trusted.yml), such as [all-the-plugins](https://github.com/xMasterX/all-the-plugins); the maintainers decide what goes there. Once a day app-stream writes it in, the last commit that changed the app, and the entry is published when its code changed.

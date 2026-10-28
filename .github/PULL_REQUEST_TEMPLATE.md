@@ -15,8 +15,8 @@
 - [ ] I own the code I'm submitting or have code owner's permission to submit it
 - [ ] I have performed a self-review of my own code
 - [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] The manifest pins `commit_sha`, or I explained below why it follows HEAD
-- [ ] I [have validated](../blob/HEAD/documentation/Manifest.md#validating-manifest) the manifest file(s) with `python3 tools/bundle.py --nolint <path>/manifest.yml bundle.zip` (apps and menu styles) or `python3 tools/publish.py check <path>/manifest.yml` (animations)
+- [ ] The manifest pins `commit_sha`; only a repository in `trusted.yml` may leave it to app-stream
+- [ ] I [have validated](../blob/HEAD/documentation/Manifest.md#validating-manifest) the manifest file(s) with `python3 tools/publish.py check --build <path>/manifest.yml`
 
 # AI usage disclosure (Fill this out)
 

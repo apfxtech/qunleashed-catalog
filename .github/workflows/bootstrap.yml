@@ -1,0 +1,163 @@
+name: Bootstrap
+
+# By hand, by a code owner: brings a catalog server to what this repository
+# holds. update sends the entries the server does not hold or holds at a
+# version other than the one in bundle.json; force sends every entry.
+
+on:
+  workflow_dispatch:
+    inputs:
+      api:
+        description: "Catalog server address, https://..."
+        type: string
+        required: true
+      mode:
+        description: "update: what the server lacks or holds at another version; force: every entry"
+        type: choice
+        options:
+          - update
+          - force
+        required: true
+
+concurrency:
+  group: catalog-bootstrap
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  QU_CATALOG_URL: ${{ inputs.api }}
+
+jobs:
+  plan:
+    name: What to send
+    runs-on: ubuntu-latest
+    outputs:
+      batches: ${{ steps.plan.outputs.batches }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Only a code owner, only from main
+        # The owners of main's CODEOWNERS, by name; a team there is not resolved.
+        env:
+          ACTOR: ${{ github.triggering_actor }}
+        run: |
+          if [ "$GITHUB_REF" != "refs/heads/main" ] ; then
+            echo "::error::Bootstrap runs from main only"
+            exit 1
+          fi
+          owners=$( awk '!/^[[:space:]]*#/ { for (i = 2; i <= NF; i++) { if ($i ~ /^#/) break; if ($i ~ /^@[^\/]+$/) print tolower($i) } }' .github/CODEOWNERS )
+          if ! grep -qxF "@$( tr '[:upper:]' '[:lower:]' <<< "$ACTOR" )" <<< "$owners" ; then
+            echo "::error::$ACTOR is not in .github/CODEOWNERS"
+            exit 1
+          fi
+
+      - name: Check the server settings
+        env:
+          HAS_TOKEN: ${{ secrets.QU_CI_TOKEN != '' }}
+        run: |
+          case "$QU_CATALOG_URL" in
+            https://*) ;;
+            *) echo "::error::api must be an https:// address" ; exit 1 ;;
+          esac
+          if [ "$HAS_TOKEN" != "true" ] ; then
+            echo "::error::QU_CI_TOKEN secret is not set"
+            exit 1
+          fi
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Setup Python requirements
+        run: python3 -m pip install PyYAML==6.0.2
+
+      - name: Choose the entries
+        id: plan
+        env:
+          QU_CI_TOKEN: ${{ secrets.QU_CI_TOKEN }}
+          MODE: ${{ inputs.mode }}
+        run: |
+          python3 tools/publish.py stale --mode "$MODE" --batch 20 > plan.json
+          echo "batches=$( jq -c '.batches' plan.json )" >> "$GITHUB_OUTPUT"
+          echo "$MODE: $( jq '.count' plan.json ) entries to send to $QU_CATALOG_URL" >> "$GITHUB_STEP_SUMMARY"
+
+  send:
+    name: Send ${{ strategy.job-index }}
+    needs: plan
+    if: needs.plan.outputs.batches != '[]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        manifests: ${{ fromJson(needs.plan.outputs.batches) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Setup Python requirements
+        run: python3 -m pip install -r tools/requirements.txt
+
+      - name: Send
+        env:
+          QU_CI_TOKEN: ${{ secrets.QU_CI_TOKEN }}
+          MANIFESTS: ${{ toJson(matrix.manifests) }}
+          REPORT: ${{ runner.temp }}/reports/report-${{ strategy.job-index }}.json
+        run: |
+          mapfile -t list < <( jq -r '.[]' <<< "$MANIFESTS" )
+          python3 tools/publish.py publish --force --report "$REPORT" "${list[@]}"
+
+      - name: Commit the bundles
+        if: always()
+        run: |
+          .github/scripts/commit.sh "Bundles: bootstrap" ':(glob)**/bundle/**' ':(glob)**/bundle.json'
+
+      - name: Keep the report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-${{ strategy.job-index }}
+          path: ${{ runner.temp }}/reports/
+          if-no-files-found: ignore
+
+  report:
+    name: Report
+    needs: [plan, send]
+    if: always() && needs.plan.result == 'success' && needs.plan.outputs.batches != '[]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Get the reports
+        uses: actions/download-artifact@v4
+        with:
+          pattern: report-*
+          path: reports
+          merge-multiple: true
+
+      - name: Summary
+        run: |
+          python3 tools/publish.py report --title "Bootstrap" 'reports/*.json' >> "$GITHUB_STEP_SUMMARY"

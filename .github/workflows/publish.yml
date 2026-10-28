@@ -1,0 +1,202 @@
+name: Publish
+
+# Every push to main, and every app-stream run once it is through: the
+# manifests changed since the last commit the catalog server took are
+# assembled and sent in batches, their bundles committed, and the entries of
+# deleted manifests taken out. The tag `published` marks that commit. A run
+# that was cancelled while it waited, or one whose entries the server could
+# not take, leaves the tag where it was, and the next run takes its commits
+# too.
+
+on:
+  push:
+    branches:
+      - main
+  workflow_run:
+    workflows: [App stream]
+    types: [completed]
+
+concurrency:
+  group: catalog-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  MARK: published
+
+jobs:
+  changes:
+    name: Changed manifests
+    if: github.event_name == 'push' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    outputs:
+      head: ${{ steps.changes.outputs.head }}
+      batches: ${{ steps.changes.outputs.batches }}
+      count: ${{ steps.changes.outputs.count }}
+      deleted: ${{ steps.changes.outputs.deleted }}
+    steps:
+      - name: Check server settings
+        # The servers are servers.yml; the token is the one they all share.
+        env:
+          HAS_TOKEN: ${{ secrets.QU_CI_TOKEN != '' }}
+        run: |
+          if [ "$HAS_TOKEN" != "true" ] ; then
+            echo "::error::QU_CI_TOKEN secret is not set, nothing is published"
+            exit 1
+          fi
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Setup Python requirements
+        run: python3 -m pip install PyYAML==6.0.2
+
+      - name: Get changed manifests
+        id: changes
+        env:
+          BEFORE: ${{ github.event.before || github.event.workflow_run.head_sha }}
+        run: |
+          # From the last commit the server took; before the first run, from
+          # the commit this run was started for.
+          if BASE=$( git rev-parse -q --verify "refs/tags/$MARK^{commit}" ) ; then
+            :
+          elif git cat-file -e "$BEFORE^{commit}" 2>/dev/null ; then
+            BASE=$BEFORE
+          else
+            BASE=$( git hash-object -t tree /dev/null )
+          fi
+          HEAD=$( git rev-parse HEAD )
+          python3 tools/publish.py changed --batch 20 "$BASE" "$HEAD" > changes.json
+          echo "head=$HEAD" >> "$GITHUB_OUTPUT"
+          echo "batches=$( jq -c '.batches' changes.json )" >> "$GITHUB_OUTPUT"
+          echo "count=$( jq '.batches | length' changes.json )" >> "$GITHUB_OUTPUT"
+          echo "deleted=$( jq -c '.deleted' changes.json )" >> "$GITHUB_OUTPUT"
+          echo "Commits from \`$BASE\` to \`$HEAD\`" >> "$GITHUB_STEP_SUMMARY"
+
+  publish:
+    name: Publish ${{ strategy.job-index }}
+    needs: changes
+    if: needs.changes.outputs.batches != '[]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        manifests: ${{ fromJson(needs.changes.outputs.batches) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Setup Python requirements
+        run: python3 -m pip install -r tools/requirements.txt
+
+      - name: Publish
+        env:
+          QU_CI_TOKEN: ${{ secrets.QU_CI_TOKEN }}
+          MANIFESTS: ${{ toJson(matrix.manifests) }}
+          REPORT: ${{ runner.temp }}/reports/report-${{ strategy.job-index }}.json
+        run: |
+          mapfile -t list < <( jq -r '.[]' <<< "$MANIFESTS" )
+          python3 tools/publish.py publish --report "$REPORT" "${list[@]}"
+
+      - name: Commit the bundles
+        if: always()
+        run: |
+          .github/scripts/commit.sh "Bundles: publish" ':(glob)**/bundle/**' ':(glob)**/bundle.json'
+
+      - name: Keep the report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-${{ strategy.job-index }}
+          path: ${{ runner.temp }}/reports/
+          if-no-files-found: ignore
+
+  finish:
+    name: Withdraw and mark
+    needs: [changes, publish]
+    if: always() && needs.changes.result == 'success'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Setup Python requirements
+        run: python3 -m pip install PyYAML==6.0.2
+
+      - name: Withdraw deleted entries
+        if: needs.changes.outputs.deleted != '[]'
+        env:
+          QU_CI_TOKEN: ${{ secrets.QU_CI_TOKEN }}
+          DELETED: ${{ needs.changes.outputs.deleted }}
+        run: |
+          mapfile -t list < <( jq -r '.[]' <<< "$DELETED" )
+          python3 tools/publish.py withdraw --report reports/withdraw.json "${list[@]}"
+
+      - name: Drop bundles left without a manifest
+        if: always()
+        run: |
+          python3 tools/publish.py prune
+          .github/scripts/commit.sh "Bundles: drop withdrawn" ':(glob)**/bundle/**' ':(glob)**/bundle.json'
+
+      - name: Get the reports
+        if: always()
+        continue-on-error: true  # none when nothing was sent; the mark then waits
+        uses: actions/download-artifact@v4
+        with:
+          pattern: report-*
+          path: reports
+          merge-multiple: true
+
+      - name: Summary
+        if: always()
+        run: |
+          python3 tools/publish.py report --title "Publish" 'reports/*.json' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Mark the commits as published
+        if: always()
+        env:
+          HEAD: ${{ needs.changes.outputs.head }}
+          COUNT: ${{ needs.changes.outputs.count }}
+          DELETED: ${{ needs.changes.outputs.deleted }}
+        run: |
+          expected=$COUNT
+          [ "$DELETED" = "[]" ] || expected=$(( expected + 1 ))
+          if python3 tools/publish.py settled --expect "$expected" 'reports/*.json' ; then
+            git tag -f "$MARK" "$HEAD"
+            git push -q -f origin "refs/tags/$MARK"
+          else
+            echo "::warning::Not every entry reached the server; the next run takes these commits again"
+          fi

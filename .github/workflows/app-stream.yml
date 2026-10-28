@@ -1,0 +1,54 @@
+name: App stream
+
+# Once a day: the official catalog's manifests we have none of, or hold an
+# older copy of, and the entries of the repositories in trusted.yml
+# pinned to the last commit that changed their app. Only manifests are
+# written; publish sends them once this run is through.
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: app-stream
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  OFW_CATALOG: https://github.com/flipperdevices/flipper-application-catalog.git
+
+jobs:
+  stream:
+    name: Upstream manifests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Setup Python requirements
+        run: python3 -m pip install PyYAML==6.0.2
+
+      - name: Take in the official catalog
+        # Its manifests and every version they had: applications/ alone,
+        # history without blobs.
+        run: |
+          git clone -q --filter=blob:none --sparse "$OFW_CATALOG" "$RUNNER_TEMP/ofw-catalog"
+          git -C "$RUNNER_TEMP/ofw-catalog" sparse-checkout set applications
+          python3 tools/publish.py sync-ofw "$RUNNER_TEMP/ofw-catalog"
+
+      - name: Pin the entries of trusted repositories
+        run: python3 tools/publish.py pin
+
+      - name: Commit the manifests
+        run: |
+          .github/scripts/commit.sh "Stream: upstream manifests" ':(glob)**/manifest.yml'
