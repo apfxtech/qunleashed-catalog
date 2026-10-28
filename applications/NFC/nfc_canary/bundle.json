@@ -1,0 +1,15 @@
+{
+  "author": "antitree",
+  "category": "NFC",
+  "changelog": "v0.2",
+  "description": "Passive NFC skim detector: alarms when a reader interrogates the device.",
+  "family": "application",
+  "id": "nfc_canary",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/nfc_canary/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/643ba9d910ecd0ee797702ec282dbe2414a14bba/non_catalog_apps/nfc_canary"
+  },
+  "name": "NFC Canary",
+  "short_description": "Passive NFC skim detector: alarms when a reader interrogates the device.",
+  "version": "0.2"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "acegoal07",
+  "category": "NFC",
+  "changelog": "v2.3",
+  "description": "A tool to check if a physical NFC card is the same as a saved digital one",
+  "family": "application",
+  "id": "nfc_comparator",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/nfc_comparator/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/nfc_comparator"
+  },
+  "name": "compare_checks",
+  "short_description": "A tool to check if a physical NFC card is the same as a saved digital one",
+  "version": "2.3"
+}

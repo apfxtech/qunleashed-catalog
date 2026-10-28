@@ -1,0 +1,15 @@
+{
+  "author": "Torron",
+  "category": "RFID",
+  "changelog": "v1.2",
+  "description": "@README.md",
+  "family": "application",
+  "id": "t5577_writer",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/RFID/t5577_writer/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/t5577_raw_writer"
+  },
+  "name": "T5577 Raw Writer",
+  "short_description": "@README.md",
+  "version": "1.2"
+}

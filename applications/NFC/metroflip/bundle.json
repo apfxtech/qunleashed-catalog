@@ -1,0 +1,15 @@
+{
+  "author": "luu176",
+  "category": "NFC",
+  "changelog": "v2.0",
+  "description": "Read public transport cards from around the world",
+  "family": "application",
+  "id": "metroflip",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/metroflip/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/metroflip"
+  },
+  "name": "Metroflip",
+  "short_description": "Read public transport cards from around the world",
+  "version": "2.0"
+}

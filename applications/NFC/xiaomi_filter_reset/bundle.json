@@ -1,0 +1,15 @@
+{
+  "author": "@khmm12",
+  "category": "NFC",
+  "changelog": "v1.0",
+  "description": "Reset or check the filter-life counter on Xiaomi air purifier NFC filters.",
+  "family": "application",
+  "id": "xiaomi_filter_reset",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/xiaomi_filter_reset/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/de1539b0da6d53bb6303f819be0518a63c460b32/non_catalog_apps/xiaomi_filter_reset"
+  },
+  "name": "Xiaomi Filter Reset",
+  "short_description": "Reset or check the filter-life counter on Xiaomi air purifier NFC filters.",
+  "version": "1.0"
+}

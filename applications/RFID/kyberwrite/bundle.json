@@ -1,0 +1,15 @@
+{
+  "author": "Spandox",
+  "category": "RFID",
+  "changelog": "v0.1.0",
+  "description": "Program EM4x05 tubes as Disney Galaxy's Edge kyber crystals",
+  "family": "application",
+  "id": "kyberwrite",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/RFID/kyberwrite/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/kyberwrite"
+  },
+  "name": "KyberWrite",
+  "short_description": "Program EM4x05 tubes as Disney Galaxy's Edge kyber crystals",
+  "version": "0.1.0"
+}

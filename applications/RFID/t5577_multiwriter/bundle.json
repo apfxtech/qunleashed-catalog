@@ -1,0 +1,15 @@
+{
+  "author": "@Leptopt1los & (improved by @mishamyte)",
+  "category": "RFID",
+  "changelog": "## v0.2\n\n**Initial implementation:**\n- First version",
+  "description": "T5577 chip allows you to store multiple UID's of EM41xx tags, be aware, this is very experimental and not every reader will accept that!\nWith this app you can write 3 different saved dumps of your EM tags to just one t5577 blank by using flipper, pls do not report an issue if your reader won't read that tag, you have been warned!\n\nPoC of https://forum.dangerousthings.com/t/hack-store-2-to-3-different-em41xx-on-a-single-t5577/12116",
+  "family": "application",
+  "id": "t5577_multiwriter",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/RFID/t5577_multiwriter/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/2e6bfafdee3eaa5a47e9d8ace4fced36251d9968/apps_source_code/t5577_multiwriter"
+  },
+  "name": "T5577 MultiWriter",
+  "short_description": "Write up to three EM4100 keys onto one T5577, read them back, and lock the tag",
+  "version": "0.3"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "bettse",
+  "category": "NFC",
+  "changelog": "v1.6",
+  "description": "eMRTD Reader",
+  "family": "application",
+  "id": "passy",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/passy/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/37a6334f1c89d9b25fc39f224154c76a9c8d49b3/non_catalog_apps/passy"
+  },
+  "name": "asn1",
+  "short_description": "eMRTD Reader",
+  "version": "1.6"
+}

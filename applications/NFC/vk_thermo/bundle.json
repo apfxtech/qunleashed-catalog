@@ -1,0 +1,15 @@
+{
+  "author": "VivoKey Technologies",
+  "category": "NFC",
+  "changelog": "v1.1",
+  "description": "Read temperature from your VivoKey Thermo via NFC. Supports multi-Thermo tracking, history, and graph views.",
+  "family": "application",
+  "id": "vk_thermo",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/vk_thermo/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/vk_thermo"
+  },
+  "name": "VK Thermo",
+  "short_description": "Read temperature from your VivoKey Thermo via NFC. Supports multi-Thermo tracking, history, and graph views.",
+  "version": "1.1"
+}

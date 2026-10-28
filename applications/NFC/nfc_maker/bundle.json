@@ -1,0 +1,15 @@
+{
+  "author": "@WillyJL",
+  "category": "NFC",
+  "changelog": "v2.1",
+  "description": "Create NFC files for BT MACs, Contacts, Links, Emails, Phones, Text and WiFis",
+  "family": "application",
+  "id": "nfc_maker",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/NFC/nfc_maker/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/6b33af2966bfc5efb9183d45d46a0a1c41aea196/base_pack/nfc_maker"
+  },
+  "name": "NFC Maker",
+  "short_description": "Create NFC files for BT MACs, Contacts, Links, Emails, Phones, Text and WiFis",
+  "version": "2.1"
+}

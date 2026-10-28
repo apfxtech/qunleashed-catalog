@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "RFID",
+  "changelog": "v0.1",
+  "description": "RFID Metal Detector",
+  "family": "application",
+  "id": "rfid_metal_detector",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/RFID/rfid_metal_detector/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/flipper-rfid-metal-detector"
+  },
+  "name": "RFID Metal Detector",
+  "short_description": "RFID Metal Detector",
+  "version": "0.1"
+}
