@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "flipper_chronometer",
+      "file": "flipper_chronometer.fap",
+      "icon": "assets/icon.png",
+      "name": "Chronometer",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "Tools/Timers",
+  "category_id": "tools-timers",
   "changelog": "v0.1",
   "description": "Chronometer",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "flipper_chronometer",
+  "install_path": "Tools/Timers",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Timers/flipper_chronometer/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/flipper_chronometer"
   },
   "name": "Chronometer",
+  "screenshots": [],
   "short_description": "Chronometer",
   "version": "0.1"
 }

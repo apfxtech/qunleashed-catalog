@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "trackerflipx",
+      "file": "trackerflipx.fap",
+      "icon": "assets/icon.png",
+      "name": "Flipper Time Tracker",
+      "version": "0.1"
+    }
+  ],
   "author": "@MassivDash (https://spaceout.pl)",
+  "authors": [
+    {
+      "id": "massivdash",
+      "name": "MassivDash"
+    }
+  ],
   "category": "Tools/Timers",
+  "category_id": "tools-timers",
   "changelog": "v0.1",
   "description": "Flipper Time Tracker is an application for flipperzero device that allows the user to track multiple tasks at the same time.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "trackerflipx",
+  "install_path": "Tools/Timers",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Timers/trackerflipx/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/flipper_task_tracker"
   },
   "name": "Flipper Time Tracker",
+  "screenshots": [],
   "short_description": "Flipper Time Tracker is an application for flipperzero device that allows the user to track multiple tasks at the same time. Application uses csv file to store and handle task data that can be easily exported to excel or similar for further analysis. This also allows to track tasks time in the background or even if the device is switched off !",
   "version": "0.1"
 }

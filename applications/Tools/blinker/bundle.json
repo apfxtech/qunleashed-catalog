@@ -1,15 +1,38 @@
 {
+  "apps": [
+    {
+      "appid": "blinker",
+      "file": "blinker.fap",
+      "icon": "assets/icon.png",
+      "name": "LED Blinker",
+      "version": "1.0"
+    }
+  ],
   "author": "@Cupprum",
+  "authors": [
+    {
+      "id": "cupprum",
+      "name": "Cupprum"
+    }
+  ],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "## v0.1.0\n\nInitial version of LED Blinker.\n\nCupprum",
   "description": "# Blinker\n\nA Flipper Zero application that blinks LEDs with a decreasing frequency over time. Unlike traditional Pomodoro timers, it provides visual feedback through LED blinks that gradually slow down.\n\n# Application Features\n\n## Main screen\n* **Menu:** available options\n    * **Int.** - configuration of max and min intervals using the number picker screen\n    * **Dur.** - configuration of duration of execution using the number picker screen\n    * **Flash** - start blinking the LED light and move to execution screen\n\n## Number picker screen\n* **Header:** name of selected mode selected mode and unit.\n    * Available modes are max interval, min interval and duration.\n    * Units: Beats per minute or BPM for intervals, minutes for duration.\n* **Number picker:** keyboard with buffer to choose a number in correct constrains. 1 - 200 for intervals and 1-60 for duration.\n\n## Execution screen\n* **Text:** showing current tempo of blinking in beats per minute.",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "blinker",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/blinker/manifest.yml",
     "source_code": "https://github.com/Cupprum/Blinker/tree/c88d25be55ee83ffe5309312d0d73dcd90f3ffe6"
   },
   "name": "LED Blinker",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png"
+  ],
   "short_description": "App that blinks LEDs with a decreasing frequency over time",
   "version": "1.0"
 }

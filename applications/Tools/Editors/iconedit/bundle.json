@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "iconedit",
+      "file": "iconedit.fap",
+      "icon": "assets/icon.png",
+      "name": "IconEdit",
+      "version": "0.7.1"
+    }
+  ],
   "author": "Roberto De Feo",
+  "authors": [],
   "category": "Tools/Editors",
+  "category_id": "tools-editors",
   "changelog": "v0.7.1",
   "description": "Icon editor",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "iconedit",
+  "install_path": "Tools/Editors",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Editors/iconedit/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/774f509b1997668219398d3a69e13fdd646d219b/non_catalog_apps/iconedit"
   },
   "name": "IconEdit",
+  "screenshots": [],
   "short_description": "Icon editor",
   "version": "0.7.1"
 }

@@ -1,15 +1,34 @@
 {
+  "apps": [
+    {
+      "appid": "ai_dashboard",
+      "file": "ai_dashboard.fap",
+      "icon": "assets/icon.png",
+      "name": "AI Radar",
+      "version": "0.1"
+    }
+  ],
   "author": "T-Damer",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v0.1:\ninitial public release\noverview and provider detail screens\nusb and ble companion sync support\nprovider visibility and display settings\n",
   "description": "# AI Radar\n\nAI Radar is a Flipper Zero dashboard for tracking AI provider usage windows on-device.\n\n## Features\n\n- Main overview screen for all visible providers\n- Per-provider detail screens\n- Settings for overview visibility, autoscroll, and display dimming\n- USB snapshot sync from a host machine\n- BLE snapshot sync support for host-to-Flipper updates\n\n## Companion Bridge\n\nThe Flipper app reads a compact snapshot file from the Flipper app data path:\n/ext/apps_data/ai_dashboard/usage.txt\n\nThe companion bridge script can:\n\n- collect Codex usage through the local Codex app-server\n- parse Claude usage through the local Claude usage command\n- merge manual provider snapshots\n- push snapshots to the Flipper over USB or BLE\n\n## Controls\n\n- Left / Right: switch between overview and provider screens\n- Up / Down: scroll the overview or switch provider subpages\n- OK: open settings\n- Back: leave settings or exit the app\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "ai_dashboard",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/ai_dashboard/manifest.yml",
     "source_code": "https://github.com/T-Damer/flipper-ai-dashboard/tree/788d8e97d3ea7133d8a44d312dedc156e806f384/flipper"
   },
   "name": "AI Radar",
+  "screenshots": [
+    "assets/screenshots/0.png",
+    "assets/screenshots/1.png",
+    "assets/screenshots/2.png",
+    "assets/screenshots/3.png"
+  ],
   "short_description": "Track AI usage windows on Flipper Zero",
   "version": "0.1"
 }

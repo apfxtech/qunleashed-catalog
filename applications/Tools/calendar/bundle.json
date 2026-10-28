@@ -1,15 +1,29 @@
 {
+  "apps": [
+    {
+      "appid": "calendar",
+      "file": "calendar.fap",
+      "icon": "assets/icon.png",
+      "name": "Calendar",
+      "version": "0.1"
+    }
+  ],
   "author": "",
+  "authors": [],
   "category": "Tools",
+  "category_id": "64971d11577d519190ede5c5",
   "changelog": "v0.1",
   "description": "Calendar",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "calendar",
+  "install_path": "Tools",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/calendar/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/calendar"
   },
   "name": "Calendar",
+  "screenshots": [],
   "short_description": "Calendar",
   "version": "0.1"
 }

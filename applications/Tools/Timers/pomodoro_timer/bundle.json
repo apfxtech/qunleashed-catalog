@@ -1,15 +1,36 @@
 {
+  "apps": [
+    {
+      "appid": "pomodoro_timer",
+      "file": "pomodoro_timer.fap",
+      "icon": "assets/icon.png",
+      "name": "Pomodoro Timer",
+      "version": "1.5"
+    }
+  ],
   "author": "@sbrin",
+  "authors": [
+    {
+      "id": "sbrin",
+      "name": "sbrin"
+    }
+  ],
   "category": "Tools/Timers",
+  "category_id": "tools-timers",
   "changelog": "v1.0 - Initial release, v1.1 - Description update, v1.2 - Sync Updates, v1.3 - Fixes for latest API, v1.4 - Sync updates and latest API support, v1.5 - Sync with latest version",
   "description": "The Flipper Pomodoro app helps you to organize your work using the time management technique called Pomodoro. The method helps you to switch between work and rest in 25-minute intervals.\n\nRun the app and choose from three modes:\n\n- Classic: work for 25 minutes, have rest for 5 minutes.\n- Long: work for 50 minutes, have rest for 10 minutes.\n- Sprint: work for 10 minutes, have rest for 2 minutes.\n",
   "family": "application",
+  "icon": "assets/icon.png",
   "id": "pomodoro_timer",
+  "install_path": "Tools/Timers",
   "links": {
     "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/Timers/pomodoro_timer/manifest.yml",
     "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/apps_source_code/pomodoro"
   },
   "name": "Pomodoro Timer",
+  "screenshots": [
+    "assets/screenshots/0.png"
+  ],
   "short_description": "Use your Flipper Zero as a Pomodoro Timer.",
   "version": "1.5"
 }
