@@ -1,0 +1,15 @@
+{
+  "author": "tbelbek",
+  "category": "Tools",
+  "changelog": "## 0.2\n- Right opens the selected app (the Right hint is labelled Open).\n## 0.1\n- Launch any installed app or built-in tool from one list, most-used first.\n- Fuzzy search by name (Left opens the keyboard).\n- Real manifest names, parsed on-device from each .fap; cached for fast re-opens.\n- Recursive /ext/apps scan with duplicate names removed.\n- Returns to App Search when the launched app exits.\n",
+  "description": "App Search lists every app installed on your Flipper Zero, plus the built-in\ntools, in one place and launches them. The most-used apps float to the top, so\nyour favorites are one press away.\n\nFeatures\n- One list of every installed .fap (scanned from /ext/apps, including\n  sub-folders) and the built-in tools: Sub-GHz, NFC, Infrared, 125 kHz RFID,\n  iButton, GPIO, Bad USB and U2F.\n- Real app names, read from each app's own manifest on the device.\n- Fuzzy search by name: press Left to open the keyboard and type.\n- Most-used-first ranking: every launch is counted and remembered.\n- Fast re-opens: scanned names are cached, so the list is ready in well under a\n  second once it has been built, and only new or changed apps are re-read.\n- Returns to App Search when the app you launched exits.\n\nControls\n- Up/Down move the selection, OK launches the selected app.\n- Left opens the search keyboard; type and confirm to filter the list.\n- Back returns to the list from search, or exits from the list.\n",
+  "family": "application",
+  "id": "appsearch",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/appsearch/manifest.yml",
+    "source_code": "https://github.com/tbelbek/flipper-app-search/tree/3f2620ef4367f04c3974903c2670927aad5815d7"
+  },
+  "name": "App Search",
+  "short_description": "Launch any installed app or built-in tool, most-used first.",
+  "version": "0.2"
+}

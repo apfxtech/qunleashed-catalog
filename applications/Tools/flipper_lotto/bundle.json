@@ -1,0 +1,15 @@
+{
+  "author": "molykima",
+  "category": "Tools",
+  "changelog": "# Change Log\n\n## V1.0-preview\n\n- Added the initial app source file (flipper_lotto.c)\n\n## V1.0-beta\n\n- Fixed the duplicate number issue so now all the balls are guaranteed to be generate completely unique numbers\n\n- Updated the broken GitHub link in the about scene\n\n- Added the screenshot directory\n\n- Added the docs directory\n",
+  "description": "# Flipper Lottery Number Generator\n\nThis is a number generator for choosing lottery numbers specifically, for now I've set it up for lotteries in BC Canada but any PR is welcome\n",
+  "family": "application",
+  "id": "flipper_lotto",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/flipper_lotto/manifest.yml",
+    "source_code": "https://github.com/molykima/Flipper-Lottery-Number-Generator/tree/4a592b8e6e0cc1c01944712bd4c50c86acf9072e"
+  },
+  "name": "Flipper Lotto",
+  "short_description": "Pick random numbers for lottery tickets",
+  "version": "1.0"
+}

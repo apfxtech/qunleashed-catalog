@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Tools",
+  "changelog": "v0.1",
+  "description": "Calendar",
+  "family": "application",
+  "id": "calendar",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/calendar/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/non_catalog_apps/calendar"
+  },
+  "name": "Calendar",
+  "short_description": "Calendar",
+  "version": "0.1"
+}

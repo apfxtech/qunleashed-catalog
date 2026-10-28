@@ -1,0 +1,15 @@
+{
+  "author": "@ezod & @xMasterX & @apfxtech",
+  "category": "Tools",
+  "changelog": "v3.0",
+  "description": "Shows the companion device location over RPC",
+  "family": "application",
+  "id": "gps_rpc",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/gps_rpc/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/gps_rpc"
+  },
+  "name": "[RPC] GPS",
+  "short_description": "Shows the companion device location over RPC",
+  "version": "3.0"
+}

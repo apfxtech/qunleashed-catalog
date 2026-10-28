@@ -1,0 +1,15 @@
+{
+  "author": "Dangerous Things",
+  "category": "Tools",
+  "changelog": "v1.1",
+  "description": "Read RFID/NFC tags and type UIDs as HID keyboard input via USB or Bluetooth. Supports NDEF text records. Inspired by the Dangerous Things KBR1",
+  "family": "application",
+  "id": "flipper_wedge",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/flipper_wedge/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a174c63c3df1433ff9edb3434318eec0e2ff7f0e/non_catalog_apps/flipper_wedge"
+  },
+  "name": "Flipper Wedge",
+  "short_description": "Read RFID/NFC tags and type UIDs as HID keyboard input via USB or Bluetooth. Supports NDEF text records. Inspired by the Dangerous Things KBR1",
+  "version": "1.1"
+}

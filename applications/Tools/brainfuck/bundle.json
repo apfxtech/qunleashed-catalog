@@ -1,0 +1,15 @@
+{
+  "author": "@nymda",
+  "category": "Tools",
+  "changelog": "v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for new API, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version",
+  "description": "Brainfuck language interpreter",
+  "family": "application",
+  "id": "brainfuck",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/brainfuck/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a/apps_source_code/brainfuck"
+  },
+  "name": "Brainfuck",
+  "short_description": "Brainfuck language interpreter",
+  "version": "1.5"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "category": "Tools",
+  "changelog": "v0.1",
+  "description": "Letter Beacon",
+  "family": "application",
+  "id": "flipper_letterbeacon",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Tools/flipper_letterbeacon/manifest.yml",
+    "source_code": "https://github.com/xMasterX/all-the-plugins/tree/77338a5a2731b621730324952e7e5e8772dc98ac/non_catalog_apps/flipper_letterbeacon"
+  },
+  "name": "Letter Beacon",
+  "short_description": "Letter Beacon",
+  "version": "0.1"
+}
