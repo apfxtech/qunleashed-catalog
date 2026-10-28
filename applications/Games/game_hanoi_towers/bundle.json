@@ -1,0 +1,15 @@
+{
+  "author": "@AlexTaran",
+  "category": "Games",
+  "changelog": "v1.0 - Initial release",
+  "description": "In this classic puzzle game, your objective is to move all disks to another stick.\nYou are allowed to move one disk at once. You cannot put a bigger disk on a smaller disk.\n\nThe game ends when you build the same tower on one of other sticks.\nTry to finish it in a minimal number of moves!\n",
+  "family": "application",
+  "id": "game_hanoi_towers",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/game_hanoi_towers/manifest.yml",
+    "source_code": "https://github.com/AlexTaran/flipperzero/tree/016307aaea59ac6776b6dbc3f5557d9b06ef0042/games/hanoi_towers"
+  },
+  "name": "Hanoi Towers",
+  "short_description": "A puzzle game about moving tower of disks to another stick",
+  "version": "1.0"
+}

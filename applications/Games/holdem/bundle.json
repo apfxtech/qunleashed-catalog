@@ -1,0 +1,15 @@
+{
+  "author": "code-phreak",
+  "category": "Games",
+  "changelog": "v1.1\n- UI/UX refresh across gameplay, menus, and results\n- Bot behavior and difficulty upgrades\n- Support for up to 4 CPU opponents\n- Optional progressive blinds and expanded table settings\n\nv1.0\n- Initial app release\n",
+  "description": "Hold 'em is a native single-player Texas Hold'em game built for Flipper Zero.\n\nFeatures:\n- Play heads-up or against up to 4 CPU opponents\n- Full hand flow from preflop through showdown\n- Side-pot-aware payouts and split-pot handling\n- Four bot difficulty levels: Easy, Medium, Hard, and Extreme\n- Blind editor with optional progressive blinds\n- Save/load for full game state and table settings\n- Compact Flipper-first table, menu, and result screens\n",
+  "family": "application",
+  "id": "holdem",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/holdem/manifest.yml",
+    "source_code": "https://github.com/code-phreak/flipper-holdem/tree/f2e41e71f7633ed76622ea57088b0c928b095020"
+  },
+  "name": "Hold 'em",
+  "short_description": "Single-player Texas Hold'em with smart bots",
+  "version": "1.1"
+}

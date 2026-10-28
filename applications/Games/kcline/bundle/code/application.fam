@@ -1,0 +1,28 @@
+App(
+    # Foldername of the application
+    appid="kcline",
+    # name will be show on the Flip.x0 browser
+    name="KC Line",
+    apptype=FlipperAppType.EXTERNAL,
+    # Main function (entry point) of the application
+    entry_point="kcline_main",
+    stack_size=6 * 1024,
+    # Where the application will be stored into the Flip.x0
+    fap_category="Games",
+    requires=["gui"],
+    # Directory of applications image assets
+    # If you want to insert images in your application, you have to specify the
+    # directory of your image in the fap_icon_assets of your application.fam.
+    # Then, include it as a header file like that: {app_id}_icon.h. For example,
+    # if you want to include an image in your application example, you have to
+    # put this in your code:
+    #
+    # include "example_icons.h"
+    fap_icon="icons/kcline.png",
+    fap_icon_assets="icons",
+    # Optional values
+    fap_version=(1, 2),
+    fap_description="One line dot munching game!",
+    fap_author="Andrew Diamond",
+    fap_weburl="https://github.com/HappyAmos/",
+)

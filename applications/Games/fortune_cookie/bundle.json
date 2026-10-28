@@ -1,0 +1,15 @@
+{
+  "author": "@evillero",
+  "category": "Games",
+  "changelog": "## 0.1\n - Initial release\n",
+  "description": "## Fortune Cookie\n\nThe Fortune Cookie app delivers a random motivational quote or fortune each time you open it, \nproviding a small dose of inspiration to brighten your day. \n\nSimple app for Flipper Zero.\n\nEnjoy\n\n## Version history\n- 0.1 - Initial release \n\n## Author\n@evillero\n",
+  "family": "application",
+  "id": "fortune_cookie",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/fortune_cookie/manifest.yml",
+    "source_code": "https://github.com/evillero/fortune_cookie/tree/2dd905b19ebebdf793f2d75f164c891927ae1af6"
+  },
+  "name": "Fortune Cookie",
+  "short_description": "Get inspired with a random motivational quote or fortune each time you open the app.",
+  "version": "0.1"
+}

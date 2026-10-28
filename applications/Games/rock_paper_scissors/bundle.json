@@ -1,0 +1,15 @@
+{
+  "author": "@jamisonderek",
+  "category": "Games",
+  "changelog": "v1.5 - datetime update v1.4 - Update description\nv1.3 - More robust radio communication\nv1.2 - Updated subghz API",
+  "description": "This is a multiplayer adaptation of the classic rock-paper-scissors game—you need at least two devices to play the game.\n\nSelect \"Host game\" from the Main menu to allow your opponent to connect using the \"Join game\" option. Once the Sub-Ghz connection is established, you can start the battle.\n\nOn your Flipper Zero, press the OK button twice and then press one of three buttons:\n\n- The Up button to select a rock.\n- The Right button to select paper.\n- The Down button to select scissors.\n\nRock beats scissors, scissors beat paper, and paper beats rock.\n\nWins and losses stats are available in the app, as well as the ability to change your name for games.\n\n",
+  "family": "application",
+  "id": "rock_paper_scissors",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/rock_paper_scissors/manifest.yml",
+    "source_code": "https://github.com/jamisonderek/flipper-zero-tutorials/tree/ca9efc0342c62ec96a5a5c39c3b9cf680899408e/subghz/plugins/rock_paper_scissors"
+  },
+  "name": "Rock Paper Scissors",
+  "short_description": "Play the rock-paper-scissors game with your friends using the Flipper Zero Sub-GHz radio!",
+  "version": "1.5"
+}

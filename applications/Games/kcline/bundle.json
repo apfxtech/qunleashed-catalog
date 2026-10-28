@@ -1,0 +1,15 @@
+{
+  "author": "@HappyAmos",
+  "category": "Games",
+  "changelog": "v1.0 - Initial release\nv1.1 - Fixed crash on exit after changes due to firmware update.\nv1.2 - Fixed memory leak due to unfreed variable\n",
+  "description": "One lined (row) version of a bit munching character being chased by a ghost.\n",
+  "family": "application",
+  "id": "kcline",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/kcline/manifest.yml",
+    "source_code": "https://github.com/HappyAmos/Flipper_FAPS/tree/135be9893fa4e606d8bfb2a703dab19242941794/kcline"
+  },
+  "name": "KC Line",
+  "short_description": "A simple one line bit munching game.",
+  "version": "1.2"
+}

@@ -1,0 +1,15 @@
+{
+  "author": "Abzac",
+  "category": "Games",
+  "changelog": "# Changelog\n\nv1.2.2:\n- Fixed dropping worn cursed Charms bypassing their removal restriction. Decurse still unlocks them; unworn cursed Charms may still be dropped.\n- Added regression tests for Charm removal, item dropping, and the v1.2.1 stairs/chest interaction priority through the real button handler.\n\nv1.2.1:\n- Fixed OK interaction priority so stairs, shrines, and other current-tile actions win over adjacent chests.\n\nv1.2:\n- Reduced saved-floor and pathfinding RAM pressure for more stable device runs.\n- Fixed coarse saved exploration revealing extra remembered wall tiles.\n- Tuned low-HP LED feedback to stay red instead of leaking the previous green state.\n\nv1.1:\n- Added dungeon decorators, hazards, flooded rooms, deep water, ice, fire fields, grates, shrines, chests, mimics, and lurkers.\n- Added persistent high scores and sound settings on SD.\n- Reworked UI modules, tile sprites, item interactions, class perks, and documentation for the first public catalog-ready release.\n- Improved teleport, blink, eel, charm, LED feedback, and trap behavior.\n",
+  "description": "# FlipRogue\n\nFlipRogue is a tiny roguelike RPG for Flipper Zero.\n\nExplore pocket-sized ASCII dungeons, choose a class, gather gold and charms, brave fire, water, ice, traps, grates, chests, mimics, lurkers, eels, dragonlings, and the Yonder Warden.\n\nThe game has 18 floors, procedural rooms, compact tile sprites, persistent high scores, unknown magic items, class perks, and short dangerous runs built for the tiny screen.\n\nInspired by Brogue, NetHack, Pathos, and Dungeon Crawl Stone Soup.\n",
+  "family": "application",
+  "id": "fliprogue",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/fliprogue/manifest.yml",
+    "source_code": "https://github.com/Abzac/fliprogue/tree/d5664b63497687f42ad5a4a3c74f95457d2e6566"
+  },
+  "name": "FlipRogue",
+  "short_description": "A tiny roguelike RPG for Flipper Zero: ASCII dungeons, charms, hazards, and monster trouble.",
+  "version": "1.2.2"
+}

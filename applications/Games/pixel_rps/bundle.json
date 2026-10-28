@@ -1,0 +1,15 @@
+{
+  "author": "Ugur",
+  "category": "Games",
+  "changelog": "# Changelog\n\n## v1.0\n\n- Initial public release.\n- Added animated random rock, paper, and scissors results.\n- Added three hand-crafted 1-bit bitmap sprites.\n- Added a custom 10x10 monochrome launcher icon.\n- Added one-button replay with the OK button.\n",
+  "description": "# Rock Paper Scissors\n\nRock Paper Scissors is a minimal game for Flipper Zero. The app quickly cycles through three pixel-art hand signs and stops on a random result.\n\n## Features\n\n- Animated rock, paper, and scissors sequence\n- A new random result on every play\n- Large monochrome bitmap artwork\n- Minimal one-button interface\n\n## Controls\n\n- OK: Play again\n- BACK: Exit the application\n",
+  "family": "application",
+  "id": "pixel_rps",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/pixel_rps/manifest.yml",
+    "source_code": "https://github.com/xantopren/rock-paper-scissors/tree/fffa4ea5233e1c56c18952b357ab34f409a9cf7d"
+  },
+  "name": "Rock Paper Scissors",
+  "short_description": "Play rock, paper, or scissors",
+  "version": "1.0"
+}

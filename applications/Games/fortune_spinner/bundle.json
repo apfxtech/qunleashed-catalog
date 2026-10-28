@@ -1,0 +1,15 @@
+{
+  "author": "Ugur",
+  "category": "Games",
+  "changelog": "# Changelog\n\n## v1.0\n\n- Initial public release.\n- Added an animated wheel with YES, NO, and MAYBE results.\n- Added a custom 10x10 monochrome application icon.\n- Added support for repeated spins with the OK button.\n",
+  "description": "# Fortune Spinner\n\nFortune Spinner is a simple decision wheel for Flipper Zero. Press OK to spin and receive one of three English results: YES, NO, or MAYBE.\n\n## Features\n\n- Animated spinning wheel\n- YES, NO, and MAYBE outcomes\n- One-button operation\n- A new random result on every spin\n\n## Controls\n\n- OK: Spin the wheel\n- OK after a result: Spin again\n- BACK: Exit the application\n",
+  "family": "application",
+  "id": "fortune_spinner",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/fortune_spinner/manifest.yml",
+    "source_code": "https://github.com/xantopren/fortune-spinner/tree/136cb3081ae52541f726a53f6f7a875d4f8056b3"
+  },
+  "name": "Fortune Spinner",
+  "short_description": "Spin for YES, NO, or MAYBE",
+  "version": "1.0"
+}

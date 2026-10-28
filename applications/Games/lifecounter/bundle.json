@@ -1,0 +1,15 @@
+{
+  "author": "@antsy",
+  "category": "Games",
+  "changelog": "## v1.0\n\n- Initial release by antsy",
+  "description": "# Lifecounter\n\nA Flipper Zero life tracker for collectible card games such as Flesh and Blood, Magic the Gathering, Sorcery, Lorcana etc.\n\n",
+  "family": "application",
+  "id": "lifecounter",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Games/lifecounter/manifest.yml",
+    "source_code": "https://github.com/antsy/Lifecounter/tree/a65f9dbc0bff89085d1c9054465ddcaebf836b48"
+  },
+  "name": "Lifecounter",
+  "short_description": "Life tracker for collectible card games such as Flesh and Blood, Magic the Gathering, Sorcery, Lorcana etc.",
+  "version": "1.0"
+}
