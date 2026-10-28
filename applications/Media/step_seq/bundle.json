@@ -1,0 +1,15 @@
+{
+  "author": "rseufert",
+  "category": "Media",
+  "changelog": "v0.2:\n- Song mode: chain patterns into a song of up to 16 places\n- Note lengths: short, or held for 2 to 8 steps\n- Accents on notes and drums\n- Arpeggio chords: octave, fifth and triad\n- Three more drum sounds: open hat, clap and tom\n- Transpose, shift, random melody and undo\n- Export the melody as a Flipper music file for the Music Player\n\nv0.1:\nFirst release\n",
+  "description": "# Step Seq\n\nA step sequencer for the Flipper's piezo speaker, with a melody grid and a drum row.\n\n## Features\n\n- **Melody:** one note per step across 15 pitch rows that follow the chosen scale, so everything stays in key\n- **Note length, accents and chords:** notes can be short or held for up to 8 steps, accented, or played as a fast chiptune-style chord\n- **Drums:** kick, snare, hi-hat, open hat, clap and tom made from square-wave sweeps and noise\n- **Patterns:** eight slots of 16 or 32 steps, each with its own tempo, swing, scale, root and octave\n- **Song:** chain the patterns into a song of up to 16 places\n- **Scales:** minor and major pentatonic, minor, major, blues and chromatic, in any root\n- **Tools:** transpose, shift, random melody and undo\n- **Export:** writes the melody as a music file for the Music Player app\n- **Saving:** all patterns and the song are saved to the SD card when you quit\n\n## Controls\n\n- **D-pad:** move the cursor; up/down also previews the pitch\n- **Down on the drum row:** pick the next drum sound\n- **OK:** place or remove a note or drum, or apply the chosen tool (accent, length, chord)\n- **Back:** play / stop\n- **Hold OK:** settings, tools, song editor and export\n- **Hold Back:** save and quit\n",
+  "family": "application",
+  "id": "step_seq",
+  "links": {
+    "manifest_uri": "https://github.com/apfxtech/qunleashed-catalog/blob/main/applications/Media/step_seq/manifest.yml",
+    "source_code": "https://github.com/rseufert/step_seq/tree/56a344ae02f044c0457e451dc86952a967fcbda0"
+  },
+  "name": "Step Seq",
+  "short_description": "Melody and drum step sequencer for the piezo speaker, with songs, chords and Music Player export",
+  "version": "0.2"
+}
