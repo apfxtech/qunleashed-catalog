@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a174c63c3df1433ff9edb3434318eec0e2ff7f0e
+    subdir: base_pack/camera_suite
+id: camera_suite
+category: GPIO/ESP32
+author: '@CodyTolene @Z4urce @leedave @rnadyrshin'
+short_description: A camera suite application for the Flipper Zero ESP32-CAM module.
+description: '@./docs/README.md'
+changelog: '@./docs/CHANGELOG.md'
+screenshots:
+- screenshots/camera.png
+- screenshots/camera_preview.png
+- screenshots/guide.png
+- screenshots/guide_connect.png
+- screenshots/main_menu.png
+- screenshots/settings_app.png
+- screenshots/settings_camera.png

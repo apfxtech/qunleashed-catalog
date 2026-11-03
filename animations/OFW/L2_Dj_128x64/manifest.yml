@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/apfxtech/FlipperAnimations.git
+    commit_sha: a081b9941b13f0d0c55c3179c631991f52f5c5c9
+    subdir: OFW/L2_Dj_128x64
+author: "@flipperdevices"
+min_butthurt: 0
+max_butthurt: 8
+min_level: 2
+max_level: 3
+weight: 3

@@ -1,0 +1,20 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a174c63c3df1433ff9edb3434318eec0e2ff7f0e
+    subdir: non_catalog_apps/24cxxprog
+id: 24cxxprog
+category: GPIO/Programmers
+author: '@Dr.Mosfet'
+short_description: EEPROM 24Cxx programmer via I2C
+description: 'A comprehensive EEPROM programmer application for the Flipper Zero
+
+  that interfaces with 24Cxx series I2C memory chips. Supports read,
+
+  write, erase and dump/restore operations with a user-friendly
+
+  menu interface for all 24C series memory sizes.
+
+  '
+changelog: CHANGELOG.md

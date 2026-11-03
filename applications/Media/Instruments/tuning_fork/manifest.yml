@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a174c63c3df1433ff9edb3434318eec0e2ff7f0e
+    subdir: apps_source_code/flipperzero-tuning-fork
+id: tuning_fork
+category: Media/Instruments
+author: '@besya'
+short_description: Tuning fork for tuning musical instruments and more
+screenshots:
+  - img/1.png
+  - img/2.png
+  - img/screenshot_1.png
+  - img/screenshot_2.png

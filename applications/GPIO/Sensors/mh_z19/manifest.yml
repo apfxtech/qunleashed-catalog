@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a174c63c3df1433ff9edb3434318eec0e2ff7f0e
+    subdir: non_catalog_apps/mh_z19
+id: mh_z19
+category: GPIO/Sensors
+author: '@meshchaninov'
+short_description: "Measuring carbon dioxide (CO2) with mh-z19 \n"
+description: 'Application for measuring carbon dioxide (CO2) with mh-z19 sensor and Flipper zero
+
+  '

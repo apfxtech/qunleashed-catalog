@@ -1,0 +1,27 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/apfxtech/FlipCliTictactoe.git
+    commit_sha: b5dc745475e1ca3ec8b6c73cfe011be0999b984a
+category: Games
+author: "@apfxtech"
+screenshots:
+  - screenshots/terminal.png
+description: |
+  # TicTacToe CLI
+
+  Play tic-tac-toe against a minimax computer in the Flipper terminal.
+  A short computer-versus-computer demonstration runs first. Then you play
+  against the computer, alternating between X and O after every game.
+
+  Enter a cell number from 1 to 9 and press Enter. Press Ctrl+C to exit.
+  After installation, run reload_ext_cmds, then tictactoe in the terminal.
+
+  This is a native C port of TicTacToe.py. It preserves the original Russian
+  prompts, move choices and pauses. It runs in the CLI and has no LCD interface.
+changelog: |
+  # Version 1.0
+
+  - Initial native CLI port of TicTacToe.py.
+  - Minimax opponent, introductory demonstration and alternating symbols.
+  - Supports Ctrl+C and clean exit when the terminal disconnects.

@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a174c63c3df1433ff9edb3434318eec0e2ff7f0e
+    subdir: apps_source_code/mifare_fuzzer
+id: mifare_fuzzer
+category: NFC/MIFARE
+author: '@spheeere98 & (Fixes for new API by @Sil333033)'
+description: App emulates Mifare Classic cards with various UIDs to check how reader reacts on them
+changelog: v1.0 - Initial release, v1.1 - Sync Updates, v1.2 - Fixes for new API, v1.3 - Various fixes, v1.4 - Sync updates and latest API support, v1.5 - Sync with latest version
+screenshots:
+- ./img/2.png
+- ./img/1.png

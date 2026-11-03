@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a174c63c3df1433ff9edb3434318eec0e2ff7f0e
+    subdir: base_pack/text_viewer
+description: "Text viewer application (Update!)"
+changelog: "v1.0 - New Initial release, v1.5 - Sync Updates, v1.6 - Sync updates and latest API support, v1.7 - Sync with latest version"
+author: "@Willy-JL (Original by @kowalski7cc & @kyhwana)"
+screenshots:
+  - "./img/2.png"
+  - "./img/1.png"
+category: "Tools/Editors"

@@ -1,0 +1,9 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a
+    subdir: non_catalog_apps/simultaneous_rfid_reader
+id: simultaneous_rfid_reader
+author: '@Haffnerriley'
+description: "This app is designed to \nwork with the M6e Nano, \nM7E Hecto, or YRM100 \nUHF RFID Readers and the \nFlipper Zero. \nThis app supports reading\nup to 150 tags per second,\nwriting to tags (EPC, TID, \nReserved, and User Memory \nBanks), viewing all tag \ninformation, saving tags, \nand more!\n"

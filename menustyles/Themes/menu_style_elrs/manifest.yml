@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/apfxtech/all-menu-styles.git
+    commit_sha: 7836ccea89e775016d93823e3d761a5590d7acc1
+id: menu_style_elrs
+author: "@apfxtech"
+short_description: ExpressLRS-like main menu.
+description: Main menu drawn as the ExpressLRS configurator draws its device page.
+changelog: |
+  v0.1:
+  first version
+screenshots:
+  - screenshots/elrs/1.png
+  - screenshots/elrs/2.png
+  - screenshots/elrs/3.png

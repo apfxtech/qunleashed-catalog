@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 64e54527446bc248f3b790e5ef02e67908b67a02
+    subdir: non_catalog_apps/quadrastic
+id: quadrastic
+category: Games/Arcade
+description: 'Quadrastic is a simple addicting game inspired by the Arduboy game of the same name. This, in turn, was based on a popular PSP homebrew game called Squarez. Squarez itself drew inspiration from Ball, a game created by Nicolay Edin and Axel Hammarback, which was originally inspired by Eskiv, a game developed by Jean-François Geyelin.
+
+  '

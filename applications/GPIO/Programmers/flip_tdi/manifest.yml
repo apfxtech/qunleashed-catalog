@@ -1,0 +1,15 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: bb3d8162ffb7daf7fa3ad6ef72420f51bcb770af
+    subdir: base_pack/flip_tdi
+id: flip_tdi
+category: GPIO/Programmers
+author: "@SkorP"
+description: '@.catalog/README.md'
+changelog: '@.catalog/changelog.md'
+screenshots:
+- .catalog/screenshots/1.png
+- .catalog/screenshots/2.png
+- .catalog/screenshots/3.png

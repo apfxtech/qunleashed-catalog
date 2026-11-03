@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/apfxtech/FlipperAnimations.git
+    commit_sha: a081b9941b13f0d0c55c3179c631991f52f5c5c9
+    subdir: Kuronons/Black_Flags_Collection/Kuronons_BlackFlags_Teach_128x64
+author: '@Kuronons'
+min_butthurt: 0
+max_butthurt: 14
+min_level: 1
+max_level: 30
+weight: 5

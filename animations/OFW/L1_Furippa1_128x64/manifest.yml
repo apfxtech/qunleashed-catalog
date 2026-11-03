@@ -1,0 +1,12 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/apfxtech/FlipperAnimations.git
+    commit_sha: a081b9941b13f0d0c55c3179c631991f52f5c5c9
+    subdir: OFW/L1_Furippa1_128x64
+author: "@flipperdevices"
+min_butthurt: 0
+max_butthurt: 6
+min_level: 1
+max_level: 1
+weight: 3

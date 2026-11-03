@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a
+    subdir: base_pack/minesweeper
+id: minesweeper_redux
+category: Games/Puzzle
+author: "@squee72564"
+description: '@./img/SIMPLEREADME.md'
+changelog: '@./docs/changelog.md'
+screenshots:
+- ./img/screenshot1.png
+- ./img/screenshot2.png
+- ./img/screenshot3.png
+- ./img/screenshot4.png
+- ./img/screenshot5.png

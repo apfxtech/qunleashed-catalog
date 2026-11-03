@@ -1,0 +1,4 @@
+Pillow==10.4.0
+PyYAML==6.0.2
+Markdown==3.7
+ufbt>=0.2.5

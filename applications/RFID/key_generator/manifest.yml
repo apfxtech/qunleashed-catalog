@@ -1,0 +1,13 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a
+    subdir: apps_source_code/fz-em4100-generator
+id: key_generator
+author: "@Milk-Cool"
+short_description: RFID potential universal keys generator
+description: '@README.md'
+changelog: v1.1 - Increased version so that it shows up in the catalog; v1.0 - initial release
+screenshots:
+- ./.flipcorg/gallery/Screenshot-20230223-203332.png

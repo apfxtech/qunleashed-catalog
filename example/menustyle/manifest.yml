@@ -1,0 +1,26 @@
+## This is a sample menu style manifest for the qUnleashed Catalog.
+## Create one for your style in a corresponding directory in the 'menustyles' folder,
+## for this one: menustyles/Themes/menu_style_ps4/manifest.yml
+
+sourcecode:
+  type: git
+  location:
+    ## Specify the git URL of your repository
+    origin: https://github.com/apfxtech/all-menu-styles.git
+    ## Put the full commit SHA of the commit with the code you want to submit
+    commit_sha: 4d64cfd4d0bd654caf222e6de7753c04316a31dd
+    ## (Optional) If the style is located in a subdirectory of the repository, specify it here
+    # subdir: .
+## The PLUGIN app from application.fam this manifest is for
+id: menu_style_ps4
+short_description: PS4-like horizontal menu.
+## For 'description' and 'changelog', you can use limited markdown syntax
+## You can also specify a file from your repository as a source with @
+description: |
+  Main menu drawn as a horizontal row of large icons.
+changelog: |
+  v1.0:
+  first version
+## Unmodified screenshots from qFlipper
+screenshots:
+  - screenshots/menu_style_ps4.png

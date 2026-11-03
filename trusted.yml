@@ -1,0 +1,7 @@
+# Repositories app-stream follows: once a day it pins each of their entries
+# to the last commit that changed its app, so their manifests may leave
+# commit_sha out. Their apps may also need fbt: a pull request does not build
+# them with ufbt. A repository is added here by the maintainers, never in a
+# submission.
+- https://github.com/xMasterX/all-the-plugins.git
+- https://github.com/apfxtech/all-menu-styles.git

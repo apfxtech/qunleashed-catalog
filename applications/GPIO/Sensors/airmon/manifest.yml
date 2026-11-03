@@ -1,0 +1,14 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a
+    subdir: apps_source_code/airmon
+id: airmon
+category: GPIO/Sensors
+author: "@3cky"
+description: Plantower PMSx003 sensor reader
+changelog: v1.0 - Initial release, v1.1 - Various fixes, v1.2 - Fixes for latest API, v1.3 - Sync updates and latest API support, v1.4 - Sync with latest version
+screenshots:
+- ./img/2.png
+- ./img/1.png

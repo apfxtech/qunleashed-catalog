@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a174c63c3df1433ff9edb3434318eec0e2ff7f0e
+    subdir: non_catalog_apps/seader
+id: seader
+author: "@bettse"
+category: NFC/Access
+short_description: Allows for reading credential from HID iClass, iClass SE, Desfire EV1/EV2, and Seos
+description: "Allows for reading credential from HID iClass, iClass SE, MFC SE, Desfire EV1/EV2, and Seos. Credentials can be saved in an agnostic format, or as various Flipper formats (Prox, MFC, iClass, iClass SR), depending on the original type.\nRequires addon: UART to mini-SIM adapter and HID SAM. \nSee full readme for wiring and more information: https://github.com/bettse/seader/blob/main/readme.md\n"

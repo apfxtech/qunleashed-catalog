@@ -1,0 +1,18 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a174c63c3df1433ff9edb3434318eec0e2ff7f0e
+    subdir: base_pack/solitaire
+id: solitaire
+author: "@doofy-dev"
+category: Games/Board
+description: '@docs/README.md'
+changelog: '@docs/CHANGELOG.md'
+screenshots:
+- screenshots/catalog_1.png
+- screenshots/catalog_2.png
+- screenshots/catalog_3.png
+- screenshots/catalog_4.png
+- screenshots/catalog_5.png
+- screenshots/catalog_6.png

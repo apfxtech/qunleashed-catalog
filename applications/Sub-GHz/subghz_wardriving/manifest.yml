@@ -1,0 +1,8 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: 46b1fcad7cdeb9031b98912bfaeb080c6c61c270
+    subdir: base_pack/subghz_wardriving
+id: subghz_wardriving
+author: "@Dmitry422"

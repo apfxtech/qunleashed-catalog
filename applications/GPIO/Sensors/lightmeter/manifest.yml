@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a174c63c3df1433ff9edb3434318eec0e2ff7f0e
+    subdir: base_pack/lightmeter
+id: lightmeter
+author: "@oleksiikutuzov"
+category: GPIO/Sensors
+description: '@./docs/README.md'
+changelog: '@./docs/changelog.md'

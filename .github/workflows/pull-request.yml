@@ -1,0 +1,146 @@
+name: Pull request
+
+# Checks the manifests a pull request changes and reports, in the run's
+# summary and in a comment, what application.fam gives the server and
+# whether each app built with ufbt within the time limit. Nothing is
+# published and nothing is committed.
+
+on:
+  pull_request:
+
+concurrency:
+  group: pull-request-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  UNLEASHED_SDK_INDEX: https://up.unleashedflip.com/directory.json
+  BUILD_TIMEOUT: 60
+
+jobs:
+  changes:
+    name: Changed manifests
+    runs-on: ubuntu-latest
+    outputs:
+      batches: ${{ steps.changes.outputs.batches }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Setup Python requirements
+        run: python3 -m pip install PyYAML==6.0.2
+
+      - name: Get changed manifests
+        id: changes
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          python3 tools/publish.py changed --batch 10 "$BASE" HEAD > changes.json
+          echo "batches=$( jq -c '.batches' changes.json )" >> "$GITHUB_OUTPUT"
+
+  check:
+    name: Check ${{ strategy.job-index }}
+    needs: changes
+    if: needs.changes.outputs.batches != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        manifests: ${{ fromJson(needs.changes.outputs.batches) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Setup Python requirements
+        run: python3 -m pip install -r tools/requirements.txt
+
+      - name: Setup ufbt with the Unleashed SDK
+        # The development channel, as the server builds on the dev branch of
+        # the firmware. The first build fetches the toolchain, so it happens
+        # here, outside the time limit.
+        run: |
+          ufbt update --index-url "$UNLEASHED_SDK_INDEX" --channel dev
+          mkdir -p "$RUNNER_TEMP/warmup" && cd "$RUNNER_TEMP/warmup"
+          ufbt create APPID=warmup && ufbt
+
+      - name: Check manifests
+        env:
+          MANIFESTS: ${{ toJson(matrix.manifests) }}
+          REPORT: ${{ runner.temp }}/reports/check-${{ strategy.job-index }}.json
+        run: |
+          mapfile -t list < <( jq -r '.[]' <<< "$MANIFESTS" )
+          python3 tools/publish.py check --build --timeout "$BUILD_TIMEOUT" --report "$REPORT" "${list[@]}"
+
+      - name: Keep the report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-${{ strategy.job-index }}
+          path: ${{ runner.temp }}/reports/
+          if-no-files-found: ignore
+
+  report:
+    name: Report
+    needs: [changes, check]
+    if: always() && needs.changes.result == 'success' && needs.changes.outputs.batches != '[]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Get the reports
+        uses: actions/download-artifact@v4
+        with:
+          pattern: report-*
+          path: reports
+          merge-multiple: true
+
+      - name: Write the report
+        run: |
+          python3 tools/publish.py report --title "Catalog check" 'reports/*.json' > report.md
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+
+      # A pull request from a fork gets a read-only token: its report is the
+      # summary of the run.
+      - name: Find the comment
+        uses: peter-evans/find-comment@v3
+        id: find-comment
+        if: ${{ !github.event.pull_request.head.repo.fork }}
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: '### Catalog check'
+
+      - name: Create or update the comment
+        if: ${{ !github.event.pull_request.head.repo.fork }}
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-id: ${{ steps.find-comment.outputs.comment-id }}
+          body-path: report.md
+          edit-mode: replace

@@ -1,0 +1,17 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a
+    subdir: base_pack/flipper_share
+id: flipper_share
+description: '@README_catalog.md'
+changelog: '@CHANGELOG.md'
+screenshots:
+- screenshots/1.png
+- screenshots/2.png
+- screenshots/3.png
+- screenshots/4.png
+- screenshots/5.png
+- screenshots/6.png
+- screenshots/7.png

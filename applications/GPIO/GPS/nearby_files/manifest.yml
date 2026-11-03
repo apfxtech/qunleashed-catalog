@@ -1,0 +1,16 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a
+    subdir: base_pack/nearby_files
+id: nearby_files
+category: GPIO/GPS
+author: '@Stichoza'
+short_description: GPS-enabled file browser that displays files sorted by distance from your current location.
+description: '@.catalog/README.md'
+changelog: '@.catalog/CHANGELOG.md'
+screenshots:
+- .catalog/screenshots/screenshot3.png
+- .catalog/screenshots/screenshot1.png
+- .catalog/screenshots/screenshot2.png

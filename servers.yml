@@ -1,0 +1,4 @@
+# The catalog servers publish sends every bundle to, and takes withdrawn
+# entries out of: a domain each, spoken to over https. Every one of them is
+# set up with the same CI token, the QU_CI_TOKEN secret of this repository.
+- qunleashed.aperturefox.ru

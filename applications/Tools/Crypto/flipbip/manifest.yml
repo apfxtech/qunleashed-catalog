@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a174c63c3df1433ff9edb3434318eec0e2ff7f0e
+    subdir: non_catalog_apps/FlipBIP
+id: flipbip
+category: Tools/Crypto
+author: '@xtruan'
+description: Cryptocurrency wallet with support for BTC, ETH, DOGE, and ZEC (t-addr)
+changelog: v1.17

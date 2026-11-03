@@ -1,0 +1,11 @@
+sourcecode:
+  type: git
+  location:
+    origin: https://github.com/xMasterX/all-the-plugins.git
+    commit_sha: a1884147eab65b2db1f9db9c6a8c2a7dfe4ddc6a
+    subdir: non_catalog_apps/hangman_game
+id: hangman
+category: Games/Puzzle
+author: '@bolknote'
+description: Hangman is a guessing game. Flipper thinks of a word and the gamer tries to guess it by suggesting letters within a certain number of guesses.
+changelog: v1.4 - Spanish and Tatar languages were added, fixed several bugs
