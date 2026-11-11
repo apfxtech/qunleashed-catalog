@@ -2,7 +2,7 @@ sourcecode:
   type: git
   location:
     origin: https://github.com/xMasterX/all-the-plugins.git
-    commit_sha: 4b718695420ac9e9c4242eadf8308d9db6cd5949
+    commit_sha: fec1f9e7ea070bf46264eebae2fe14dad7719e64
     subdir: apps_source_code/gpio_controller
 description: "@./catalog/docs/Readme.md"
 changelog: "@./catalog/docs/Changelog.md"
